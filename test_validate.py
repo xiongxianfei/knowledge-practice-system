@@ -32,7 +32,7 @@ class PublicationChecks(unittest.TestCase):
         self.assertFalse(r['ok']); self.assertIn(code,[x['code'] for x in r['errors']],r['errors'])
     def add(self,p,text):p.write_text(p.read_text()+'\n'+text+'\n')
     def make_manifest(self):
-        paths=sorted(p for p in self.root.rglob('*') if p.is_file() and p.name!='MANIFEST.sha256' and '__pycache__' not in p.parts)
+        paths=v.manifest_payload_files(self.root)
         (self.root/'MANIFEST.sha256').write_text(''.join(v.sha(p)+'  '+p.relative_to(self.root).as_posix()+'\n' for p in paths))
 
     def test_01_clean_package(self):
@@ -102,5 +102,14 @@ class PublicationChecks(unittest.TestCase):
         self.add(self.root/'README.md','[Missing](does-not-exist.md)')
         old=(self.root/'summary-dependencies.json').read_bytes();r=v.validate(self.root,refresh=True)
         self.assertFalse(r['ok']);self.assertEqual(old,(self.root/'summary-dependencies.json').read_bytes())
+
+    def test_31_manifest_ignores_checkout_and_caches(self):
+        self.make_manifest()
+        for name in ('.git/objects/fixture', '.pytest_cache/fixture', '__pycache__/fixture.pyc'):
+            path=self.root/name
+            path.parent.mkdir(parents=True,exist_ok=True)
+            path.write_bytes(b'build tooling, not publication payload')
+        result=v.validate(self.root,manifest=True)
+        self.assertTrue(result['ok'],result['errors'])
 
 if __name__=='__main__':unittest.main(verbosity=2)
