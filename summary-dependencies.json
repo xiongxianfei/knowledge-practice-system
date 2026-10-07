@@ -1,0 +1,248 @@
+{
+  "format": 1,
+  "meaning": "Declared/direct dependencies requiring human summary review after content changes; not proof of factual or semantic validity.",
+  "entries": {
+    "concepts/concept.md": {
+      "models/knowledge-role-model.md": "5a1c738c433c008465fd5cedde7696c310d2f4d26dd4335087a10665f6834eab"
+    },
+    "concepts/evidence.md": {
+      "models/knowledge-role-model.md": "5a1c738c433c008465fd5cedde7696c310d2f4d26dd4335087a10665f6834eab"
+    },
+    "concepts/identity-title-and-link-target.md": {
+      "methods/build-and-check-navigation.md": "82a23b7daa8ed105b501859507fd18948db64c2df0f12957e10265330b955315",
+      "models/document-navigation-model.md": "9ff4ce1474dc296fa66a7ffb79f7b9257d3864f5b9d63cc21ad7bd1a452621ca",
+      "references/github-undated-markdown-formatting.md": "f34baa0a131c88fe58b0390cf313a6febdd7ca7be660d7c10932dfc6931b2241"
+    },
+    "concepts/knowledge-object.md": {
+      "models/knowledge-role-model.md": "5a1c738c433c008465fd5cedde7696c310d2f4d26dd4335087a10665f6834eab"
+    },
+    "concepts/local-completeness.md": {
+      "concepts/knowledge-object.md": "0cf915aa6bcdd3cb88543f1cde614137c148130e11ae629e753b3f0a044b6dff",
+      "concepts/rationale.md": "822d917b56478f99bf5b11670872382f5f8d16fcb48c798618ab55b9c209dc0e"
+    },
+    "concepts/method.md": {
+      "models/knowledge-role-model.md": "5a1c738c433c008465fd5cedde7696c310d2f4d26dd4335087a10665f6834eab"
+    },
+    "concepts/model.md": {
+      "models/knowledge-role-model.md": "5a1c738c433c008465fd5cedde7696c310d2f4d26dd4335087a10665f6834eab"
+    },
+    "concepts/observation-and-interpretation.md": {
+      "models/knowledge-role-model.md": "5a1c738c433c008465fd5cedde7696c310d2f4d26dd4335087a10665f6834eab"
+    },
+    "concepts/practice.md": {
+      "models/knowledge-role-model.md": "5a1c738c433c008465fd5cedde7696c310d2f4d26dd4335087a10665f6834eab"
+    },
+    "concepts/principle.md": {
+      "models/knowledge-role-model.md": "5a1c738c433c008465fd5cedde7696c310d2f4d26dd4335087a10665f6834eab"
+    },
+    "concepts/rationale.md": {
+      "models/knowledge-role-model.md": "5a1c738c433c008465fd5cedde7696c310d2f4d26dd4335087a10665f6834eab"
+    },
+    "concepts/source-and-reference.md": {
+      "models/knowledge-role-model.md": "5a1c738c433c008465fd5cedde7696c310d2f4d26dd4335087a10665f6834eab"
+    },
+    "methods/build-and-check-navigation.md": {
+      "concepts/identity-title-and-link-target.md": "e959c7c3910932694eafc8019149f4c018206b0af9daa8fc908ae26cb9f69b65",
+      "models/document-navigation-model.md": "9ff4ce1474dc296fa66a7ffb79f7b9257d3864f5b9d63cc21ad7bd1a452621ca",
+      "principles/navigation-depends-on-rendering-conventions.md": "a4eba4420eba1fc93f69e63fbe6cf8e171c8dcef3c79ce4d47b5f52fb9b1e3a9",
+      "references/github-undated-markdown-formatting.md": "f34baa0a131c88fe58b0390cf313a6febdd7ca7be660d7c10932dfc6931b2241",
+      "references/mkdocs-undated-writing-your-docs.md": "6815c118e5a3baca97e810b65ba278f1c88d3b891e8f5b0ca9d049cbc6a00d69",
+      "references/python-markdown-undated-toc-extension.md": "2bd97636dd6b57c47f3360e80c26f9dc1c5eff730d9866fba352c5eadc46d428"
+    },
+    "methods/check-local-completeness.md": {
+      "methods/make-file-self-contained.md": "678b8165abc74edaf7b506cc619ce0ccd78d84accdb12b89803a39d218bdb306",
+      "models/local-summary-dependency-model.md": "ad9f1b74b11a04601df77c9f3cbcf2efd082aafa0ef69d5ab2172e49843f73fb",
+      "principles/provenance-does-not-establish-truth.md": "008547f9adab630b177ea1682c033cd3eb99001e4ad4603c16eab29d6eabc36b",
+      "principles/summaries-can-omit-decision-critical-conditions.md": "bfb16e4f76311d3ddc80bf415ce25c538fc1cdbaea7cc8461f8e6a6cffaf9e12"
+    },
+    "methods/classify-knowledge.md": {
+      "models/knowledge-role-model.md": "5a1c738c433c008465fd5cedde7696c310d2f4d26dd4335087a10665f6834eab"
+    },
+    "methods/create-knowledge-object.md": {
+      "methods/check-local-completeness.md": "3e7c4ea2749340a6467b88ad7235317da6199e5bc2c0d76a1f6947fdf85106b3",
+      "methods/classify-knowledge.md": "94834d368a4fac1bd9ffd4e2717bae92d72be0ed323798a197375c67a4ce65ab",
+      "models/domain-package-model.md": "5906e8fefd21ac2c5eb5841ef493b0e66901a8941682ab997f0dea310a587124",
+      "models/knowledge-role-model.md": "5a1c738c433c008465fd5cedde7696c310d2f4d26dd4335087a10665f6834eab",
+      "principles/explicit-reasoning-exposes-assumptions.md": "1a70cba37b20573736afcec87aaff97b78e7088e4363956534faf7181d880f78",
+      "principles/independent-representations-can-diverge.md": "544fb3f8698e34716b4960d48569eb992ff60f062eb543992eb73fc3d35e5f62"
+    },
+    "methods/make-file-self-contained.md": {
+      "models/local-summary-dependency-model.md": "ad9f1b74b11a04601df77c9f3cbcf2efd082aafa0ef69d5ab2172e49843f73fb",
+      "principles/independent-representations-can-diverge.md": "544fb3f8698e34716b4960d48569eb992ff60f062eb543992eb73fc3d35e5f62",
+      "principles/summaries-can-omit-decision-critical-conditions.md": "bfb16e4f76311d3ddc80bf415ce25c538fc1cdbaea7cc8461f8e6a6cffaf9e12"
+    },
+    "methods/publish-independent-domain.md": {
+      "methods/build-and-check-navigation.md": "82a23b7daa8ed105b501859507fd18948db64c2df0f12957e10265330b955315",
+      "methods/check-local-completeness.md": "3e7c4ea2749340a6467b88ad7235317da6199e5bc2c0d76a1f6947fdf85106b3",
+      "models/domain-package-model.md": "5906e8fefd21ac2c5eb5841ef493b0e66901a8941682ab997f0dea310a587124",
+      "principles/provenance-does-not-establish-truth.md": "008547f9adab630b177ea1682c033cd3eb99001e4ad4603c16eab29d6eabc36b"
+    },
+    "methods/register-reference.md": {
+      "models/domain-package-model.md": "5906e8fefd21ac2c5eb5841ef493b0e66901a8941682ab997f0dea310a587124",
+      "principles/multiple-reports-can-share-one-evidence-base.md": "992d3d600ccb86bbf67a8d16e3caaf1173b4c69d1d7f38e7d50d4b14a9fc72d8",
+      "principles/provenance-does-not-establish-truth.md": "008547f9adab630b177ea1682c033cd3eb99001e4ad4603c16eab29d6eabc36b",
+      "references/cochrane-2024-handbook-v6-5.md": "c31bf3acd7def619c2e4407bc520cbb832fa28bd4b1e5ca0d82a6c021923f8be",
+      "references/w3c-2013-prov-overview.md": "cdf0988bcc727f756335fb3908be32b148c1be56432019efd444403f10d620ad"
+    },
+    "methods/revise-linked-knowledge.md": {
+      "methods/check-local-completeness.md": "3e7c4ea2749340a6467b88ad7235317da6199e5bc2c0d76a1f6947fdf85106b3",
+      "models/application-and-revision-model.md": "e1a4bae923cc24c44661831b41ce1da9a7a8a129383c0c2cc07a74d5830a515b",
+      "models/claim-evidence-model.md": "189283e4576a8b551d9f76aa9b7ff3d70b2e8863309e618a0c1fb3e312865b82",
+      "principles/independent-representations-can-diverge.md": "544fb3f8698e34716b4960d48569eb992ff60f062eb543992eb73fc3d35e5f62",
+      "principles/revised-interpretation-does-not-change-past-observation.md": "3d1011fff01342a53db2a0eba54d375930c6712d5c51eac2c5827205a77a70c7"
+    },
+    "methods/synthesize-sources.md": {
+      "methods/register-reference.md": "c357ba4992b6117d5c94c21b5d26928b13d32272c60b4adfeaab8eb652eb0779",
+      "methods/trace-method-rationale.md": "38bf7c21864205626578ee97536908d67ebac1be900a66564cdd77910b2142ba",
+      "models/claim-evidence-model.md": "189283e4576a8b551d9f76aa9b7ff3d70b2e8863309e618a0c1fb3e312865b82",
+      "principles/evidence-applicability-depends-on-the-question.md": "29e34ce2089348e09b6e3459a1b21321cbb21dc553b7ce9f5b2aea69f3b6456e",
+      "principles/multiple-reports-can-share-one-evidence-base.md": "992d3d600ccb86bbf67a8d16e3caaf1173b4c69d1d7f38e7d50d4b14a9fc72d8",
+      "principles/observations-can-fit-multiple-explanations.md": "dd2119413d25187a3f67de3a14fcd66b9c213a5ebd0747fce14d2451ea01b550",
+      "references/cochrane-2024-handbook-v6-5.md": "c31bf3acd7def619c2e4407bc520cbb832fa28bd4b1e5ca0d82a6c021923f8be"
+    },
+    "methods/test-knowledge-in-use.md": {
+      "models/application-and-revision-model.md": "e1a4bae923cc24c44661831b41ce1da9a7a8a129383c0c2cc07a74d5830a515b",
+      "principles/learning-effects-depend-on-task-and-comparison.md": "68acc5500db2e687d0b894ff21003c2aeede53c701fcfb149a40d982176630f7",
+      "principles/observations-can-fit-multiple-explanations.md": "dd2119413d25187a3f67de3a14fcd66b9c213a5ebd0747fce14d2451ea01b550",
+      "references/karpicke-2011-spaced-retrieval.md": "746a19e066364380b70a60d10b9a08a2c103ba5eb4d42f1e093a0a7e2cf0587e",
+      "references/mayrhofer-2023-reexamining-the-testing-effect.md": "4003fd180775b17f8adddc34328e796de58de962f096d9a1889a093a9c35c485"
+    },
+    "methods/trace-method-rationale.md": {
+      "models/rationale-trace-model.md": "1172ef77068b3d2934c486a4f9ecdb60240bc1f68b569b5704e3f6fa9c2137cd",
+      "principles/explicit-reasoning-exposes-assumptions.md": "1a70cba37b20573736afcec87aaff97b78e7088e4363956534faf7181d880f78",
+      "principles/provenance-does-not-establish-truth.md": "008547f9adab630b177ea1682c033cd3eb99001e4ad4603c16eab29d6eabc36b"
+    },
+    "methods/write-explanatory-principle.md": {
+      "methods/check-local-completeness.md": "3e7c4ea2749340a6467b88ad7235317da6199e5bc2c0d76a1f6947fdf85106b3",
+      "methods/synthesize-sources.md": "915e2e6405f28ae5d1643508e0df1197e058b16aa5b563136d6af196c591408b",
+      "models/claim-evidence-model.md": "189283e4576a8b551d9f76aa9b7ff3d70b2e8863309e618a0c1fb3e312865b82",
+      "models/knowledge-role-model.md": "5a1c738c433c008465fd5cedde7696c310d2f4d26dd4335087a10665f6834eab",
+      "principles/evidence-applicability-depends-on-the-question.md": "29e34ce2089348e09b6e3459a1b21321cbb21dc553b7ce9f5b2aea69f3b6456e",
+      "principles/explicit-reasoning-exposes-assumptions.md": "1a70cba37b20573736afcec87aaff97b78e7088e4363956534faf7181d880f78"
+    },
+    "models/application-and-revision-model.md": {
+      "principles/observations-can-fit-multiple-explanations.md": "dd2119413d25187a3f67de3a14fcd66b9c213a5ebd0747fce14d2451ea01b550",
+      "principles/revised-interpretation-does-not-change-past-observation.md": "3d1011fff01342a53db2a0eba54d375930c6712d5c51eac2c5827205a77a70c7",
+      "references/karpicke-2011-spaced-retrieval.md": "746a19e066364380b70a60d10b9a08a2c103ba5eb4d42f1e093a0a7e2cf0587e",
+      "references/mayrhofer-2023-reexamining-the-testing-effect.md": "4003fd180775b17f8adddc34328e796de58de962f096d9a1889a093a9c35c485"
+    },
+    "models/claim-evidence-model.md": {
+      "principles/evidence-applicability-depends-on-the-question.md": "29e34ce2089348e09b6e3459a1b21321cbb21dc553b7ce9f5b2aea69f3b6456e",
+      "principles/multiple-reports-can-share-one-evidence-base.md": "992d3d600ccb86bbf67a8d16e3caaf1173b4c69d1d7f38e7d50d4b14a9fc72d8",
+      "principles/provenance-does-not-establish-truth.md": "008547f9adab630b177ea1682c033cd3eb99001e4ad4603c16eab29d6eabc36b",
+      "references/cochrane-2024-handbook-v6-5.md": "c31bf3acd7def619c2e4407bc520cbb832fa28bd4b1e5ca0d82a6c021923f8be",
+      "references/w3c-2013-prov-overview.md": "cdf0988bcc727f756335fb3908be32b148c1be56432019efd444403f10d620ad"
+    },
+    "models/document-navigation-model.md": {
+      "concepts/identity-title-and-link-target.md": "e959c7c3910932694eafc8019149f4c018206b0af9daa8fc908ae26cb9f69b65",
+      "methods/build-and-check-navigation.md": "82a23b7daa8ed105b501859507fd18948db64c2df0f12957e10265330b955315",
+      "principles/navigation-depends-on-rendering-conventions.md": "a4eba4420eba1fc93f69e63fbe6cf8e171c8dcef3c79ce4d47b5f52fb9b1e3a9",
+      "references/github-undated-markdown-formatting.md": "f34baa0a131c88fe58b0390cf313a6febdd7ca7be660d7c10932dfc6931b2241",
+      "references/mkdocs-undated-writing-your-docs.md": "6815c118e5a3baca97e810b65ba278f1c88d3b891e8f5b0ca9d049cbc6a00d69"
+    },
+    "models/domain-package-model.md": {
+      "concepts/knowledge-object.md": "0cf915aa6bcdd3cb88543f1cde614137c148130e11ae629e753b3f0a044b6dff",
+      "concepts/source-and-reference.md": "4aa1bdd4abf9cb30c7ba781df29a9bd6bfe81e0dd2eefc627021071abca2e41a",
+      "principles/independent-representations-can-diverge.md": "544fb3f8698e34716b4960d48569eb992ff60f062eb543992eb73fc3d35e5f62",
+      "references/w3c-2013-prov-overview.md": "cdf0988bcc727f756335fb3908be32b148c1be56432019efd444403f10d620ad"
+    },
+    "models/knowledge-role-model.md": {
+      "concepts/concept.md": "18cc1c013c800bd67b2dfabce0667115cbc6e97151df696cc7478b8428787c71",
+      "concepts/method.md": "cf4253bd64364cc17021fffaf628d0a035fd579c9cdd3a62fef23ec8c30a4006",
+      "concepts/model.md": "fa7d65728566c925dd39f334b1f86b47f28b80b68bac194cd269dc68ae190213",
+      "concepts/practice.md": "8cde8282e8295a2c5e7c0c9552b622ab5e1c24ec4998397838ca326ebf9b7667",
+      "concepts/principle.md": "7c38a0bcbd7f431225487c022dfb3b722a1075f8f51b276091869458daf5bfe0"
+    },
+    "models/local-summary-dependency-model.md": {
+      "concepts/local-completeness.md": "a15b66a2f094c2dc2052408986a75f788e6922f5ae256fcc9e38051751a07993",
+      "principles/independent-representations-can-diverge.md": "544fb3f8698e34716b4960d48569eb992ff60f062eb543992eb73fc3d35e5f62",
+      "principles/summaries-can-omit-decision-critical-conditions.md": "bfb16e4f76311d3ddc80bf415ce25c538fc1cdbaea7cc8461f8e6a6cffaf9e12"
+    },
+    "models/rationale-trace-model.md": {
+      "principles/evidence-applicability-depends-on-the-question.md": "29e34ce2089348e09b6e3459a1b21321cbb21dc553b7ce9f5b2aea69f3b6456e",
+      "principles/explicit-reasoning-exposes-assumptions.md": "1a70cba37b20573736afcec87aaff97b78e7088e4363956534faf7181d880f78"
+    },
+    "practices/build-domain-knowledge.md": {
+      "methods/build-and-check-navigation.md": "82a23b7daa8ed105b501859507fd18948db64c2df0f12957e10265330b955315",
+      "methods/check-local-completeness.md": "3e7c4ea2749340a6467b88ad7235317da6199e5bc2c0d76a1f6947fdf85106b3",
+      "methods/classify-knowledge.md": "94834d368a4fac1bd9ffd4e2717bae92d72be0ed323798a197375c67a4ce65ab",
+      "methods/create-knowledge-object.md": "6b31ccaf90e3c6ad676a3e3832d878cfc0b202ff3d38ab278a84945848325574",
+      "methods/make-file-self-contained.md": "678b8165abc74edaf7b506cc619ce0ccd78d84accdb12b89803a39d218bdb306",
+      "methods/publish-independent-domain.md": "7c42fb5f43376a9be45b053817081171a4dad1fb5a0f6e3e901821d41ea95441",
+      "methods/register-reference.md": "c357ba4992b6117d5c94c21b5d26928b13d32272c60b4adfeaab8eb652eb0779",
+      "methods/synthesize-sources.md": "915e2e6405f28ae5d1643508e0df1197e058b16aa5b563136d6af196c591408b",
+      "methods/write-explanatory-principle.md": "44cb2021c714c09f7ac4df139521269509e0f1ab83336ba136486f0186b1ce2b",
+      "models/domain-package-model.md": "5906e8fefd21ac2c5eb5841ef493b0e66901a8941682ab997f0dea310a587124"
+    },
+    "practices/improve-kps.md": {
+      "methods/build-and-check-navigation.md": "82a23b7daa8ed105b501859507fd18948db64c2df0f12957e10265330b955315",
+      "methods/check-local-completeness.md": "3e7c4ea2749340a6467b88ad7235317da6199e5bc2c0d76a1f6947fdf85106b3",
+      "methods/make-file-self-contained.md": "678b8165abc74edaf7b506cc619ce0ccd78d84accdb12b89803a39d218bdb306",
+      "methods/publish-independent-domain.md": "7c42fb5f43376a9be45b053817081171a4dad1fb5a0f6e3e901821d41ea95441",
+      "methods/revise-linked-knowledge.md": "b40f69fa5f1e771717c40c452b9a9aa17f6cc3b0b6de7af0f71985b15e2dce51",
+      "methods/synthesize-sources.md": "915e2e6405f28ae5d1643508e0df1197e058b16aa5b563136d6af196c591408b",
+      "methods/test-knowledge-in-use.md": "3ad61763cda2f176fa13ebb1b250c98dd15d759d4cafbc4d8ce9f182bdfe22f0",
+      "models/domain-package-model.md": "5906e8fefd21ac2c5eb5841ef493b0e66901a8941682ab997f0dea310a587124",
+      "models/knowledge-role-model.md": "5a1c738c433c008465fd5cedde7696c310d2f4d26dd4335087a10665f6834eab"
+    },
+    "practices/review-and-learn.md": {
+      "methods/check-local-completeness.md": "3e7c4ea2749340a6467b88ad7235317da6199e5bc2c0d76a1f6947fdf85106b3",
+      "methods/make-file-self-contained.md": "678b8165abc74edaf7b506cc619ce0ccd78d84accdb12b89803a39d218bdb306",
+      "methods/revise-linked-knowledge.md": "b40f69fa5f1e771717c40c452b9a9aa17f6cc3b0b6de7af0f71985b15e2dce51",
+      "methods/synthesize-sources.md": "915e2e6405f28ae5d1643508e0df1197e058b16aa5b563136d6af196c591408b",
+      "methods/test-knowledge-in-use.md": "3ad61763cda2f176fa13ebb1b250c98dd15d759d4cafbc4d8ce9f182bdfe22f0",
+      "principles/learning-effects-depend-on-task-and-comparison.md": "68acc5500db2e687d0b894ff21003c2aeede53c701fcfb149a40d982176630f7"
+    },
+    "practices/use-kps.md": {
+      "methods/check-local-completeness.md": "3e7c4ea2749340a6467b88ad7235317da6199e5bc2c0d76a1f6947fdf85106b3",
+      "methods/classify-knowledge.md": "94834d368a4fac1bd9ffd4e2717bae92d72be0ed323798a197375c67a4ce65ab",
+      "methods/make-file-self-contained.md": "678b8165abc74edaf7b506cc619ce0ccd78d84accdb12b89803a39d218bdb306",
+      "methods/revise-linked-knowledge.md": "b40f69fa5f1e771717c40c452b9a9aa17f6cc3b0b6de7af0f71985b15e2dce51",
+      "methods/synthesize-sources.md": "915e2e6405f28ae5d1643508e0df1197e058b16aa5b563136d6af196c591408b",
+      "methods/test-knowledge-in-use.md": "3ad61763cda2f176fa13ebb1b250c98dd15d759d4cafbc4d8ce9f182bdfe22f0",
+      "methods/trace-method-rationale.md": "38bf7c21864205626578ee97536908d67ebac1be900a66564cdd77910b2142ba",
+      "models/application-and-revision-model.md": "e1a4bae923cc24c44661831b41ce1da9a7a8a129383c0c2cc07a74d5830a515b"
+    },
+    "principles/evidence-applicability-depends-on-the-question.md": {
+      "references/cochrane-2024-handbook-v6-5.md": "c31bf3acd7def619c2e4407bc520cbb832fa28bd4b1e5ca0d82a6c021923f8be",
+      "references/mayrhofer-2023-reexamining-the-testing-effect.md": "4003fd180775b17f8adddc34328e796de58de962f096d9a1889a093a9c35c485"
+    },
+    "principles/explicit-reasoning-exposes-assumptions.md": {
+      "references/w3c-2013-prov-overview.md": "cdf0988bcc727f756335fb3908be32b148c1be56432019efd444403f10d620ad"
+    },
+    "principles/independent-representations-can-diverge.md": {
+      "references/w3c-2013-prov-overview.md": "cdf0988bcc727f756335fb3908be32b148c1be56432019efd444403f10d620ad"
+    },
+    "principles/learning-effects-depend-on-task-and-comparison.md": {
+      "references/karpicke-2011-retrieval-and-concept-mapping.md": "a5a9ed7ea63d20f6d6ffdb44ceb49742e3445d612eb2448da584c8a56b49acd7",
+      "references/karpicke-2011-spaced-retrieval.md": "746a19e066364380b70a60d10b9a08a2c103ba5eb4d42f1e093a0a7e2cf0587e",
+      "references/mayrhofer-2023-reexamining-the-testing-effect.md": "4003fd180775b17f8adddc34328e796de58de962f096d9a1889a093a9c35c485"
+    },
+    "principles/multiple-reports-can-share-one-evidence-base.md": {
+      "references/cochrane-2024-handbook-v6-5.md": "c31bf3acd7def619c2e4407bc520cbb832fa28bd4b1e5ca0d82a6c021923f8be",
+      "references/w3c-2013-prov-overview.md": "cdf0988bcc727f756335fb3908be32b148c1be56432019efd444403f10d620ad"
+    },
+    "principles/navigation-depends-on-rendering-conventions.md": {
+      "methods/build-and-check-navigation.md": "82a23b7daa8ed105b501859507fd18948db64c2df0f12957e10265330b955315",
+      "models/document-navigation-model.md": "9ff4ce1474dc296fa66a7ffb79f7b9257d3864f5b9d63cc21ad7bd1a452621ca",
+      "references/github-undated-markdown-formatting.md": "f34baa0a131c88fe58b0390cf313a6febdd7ca7be660d7c10932dfc6931b2241",
+      "references/mkdocs-undated-writing-your-docs.md": "6815c118e5a3baca97e810b65ba278f1c88d3b891e8f5b0ca9d049cbc6a00d69",
+      "references/python-markdown-undated-toc-extension.md": "2bd97636dd6b57c47f3360e80c26f9dc1c5eff730d9866fba352c5eadc46d428"
+    },
+    "principles/observations-can-fit-multiple-explanations.md": {
+      "references/cochrane-2024-handbook-v6-5.md": "c31bf3acd7def619c2e4407bc520cbb832fa28bd4b1e5ca0d82a6c021923f8be",
+      "references/mayrhofer-2023-reexamining-the-testing-effect.md": "4003fd180775b17f8adddc34328e796de58de962f096d9a1889a093a9c35c485"
+    },
+    "principles/provenance-does-not-establish-truth.md": {
+      "references/cochrane-2024-handbook-v6-5.md": "c31bf3acd7def619c2e4407bc520cbb832fa28bd4b1e5ca0d82a6c021923f8be",
+      "references/w3c-2013-prov-overview.md": "cdf0988bcc727f756335fb3908be32b148c1be56432019efd444403f10d620ad"
+    },
+    "principles/revised-interpretation-does-not-change-past-observation.md": {
+      "references/w3c-2013-prov-overview.md": "cdf0988bcc727f756335fb3908be32b148c1be56432019efd444403f10d620ad"
+    },
+    "principles/summaries-can-omit-decision-critical-conditions.md": {
+      "concepts/local-completeness.md": "a15b66a2f094c2dc2052408986a75f788e6922f5ae256fcc9e38051751a07993",
+      "concepts/rationale.md": "822d917b56478f99bf5b11670872382f5f8d16fcb48c798618ab55b9c209dc0e"
+    }
+  }
+}

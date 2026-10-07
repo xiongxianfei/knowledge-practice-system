@@ -1,0 +1,37 @@
+name: Knowledge proposal
+description: Propose a new or revised Concept, Principle, Model, Method, Practice, or Reference.
+title: "Knowledge proposal: "
+labels: []
+body:
+  - type: dropdown
+    id: role
+    attributes:
+      label: Knowledge role
+      options:
+        - Concept
+        - Principle
+        - Model
+        - Method
+        - Practice
+        - Reference record
+        - Authoring or validation tooling
+    validations:
+      required: true
+  - type: textarea
+    id: question
+    attributes:
+      label: Question or real-world goal
+    validations:
+      required: true
+  - type: textarea
+    id: claim
+    attributes:
+      label: Candidate knowledge and supporting reasoning
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Sources and open questions
+    validations:
+      required: false

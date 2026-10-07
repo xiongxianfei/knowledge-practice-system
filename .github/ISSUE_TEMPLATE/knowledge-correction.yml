@@ -1,0 +1,28 @@
+name: Knowledge correction
+description: Report an incorrect, unsupported, misleading or out-of-scope claim.
+title: "Knowledge correction: "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: "Please identify the exact KPS claim and what evidence challenges it. Do not include private information."
+  - type: input
+    id: object
+    attributes:
+      label: Knowledge file or claim
+      placeholder: "e.g. principles/example.md — claim in Statement"
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What is wrong or unclear
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Relevant sources and their limitations
+      description: Distinguish direct support from inference and note access limits.
+    validations:
+      required: false
