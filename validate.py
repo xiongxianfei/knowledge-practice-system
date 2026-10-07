@@ -45,6 +45,21 @@ def slug(title: str) -> str:
 def sha(path: Path) -> str:
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
+MANIFEST_IGNORED_PARTS = frozenset({'.git', '__pycache__', '.pytest_cache'})
+
+def manifest_payload_files(root: Path) -> list[Path]:
+    """Publication payload shared by manifest generation and verification.
+
+    Exclude Git internals and tool caches, but retain ordinary repository
+    content (including .github, .gitignore, LICENSE and knowledge files).
+    """
+    return sorted(
+        path for path in root.rglob('*')
+        if path.is_file()
+        and path.name != 'MANIFEST.sha256'
+        and not MANIFEST_IGNORED_PARTS.intersection(path.relative_to(root).parts)
+    )
+
 def split_frontmatter(text: str) -> tuple[dict[str,Any],str]:
     if not text.startswith('---\n'):
         return {},text
@@ -246,7 +261,7 @@ def validate(root: Path, manifest: bool=False, refresh: bool=False) -> dict[str,
                 except ValueError:error('manifest',mf,'path escapes');continue
                 named.add(name);manifest_files+=1
                 if not p.is_file() or sha(p)!=digest:error('manifest-hash',name,'missing file or checksum mismatch')
-            actual={p.relative_to(root).as_posix() for p in root.rglob('*') if p.is_file() and p.name!='MANIFEST.sha256' and '__pycache__' not in p.parts}
+            actual={p.relative_to(root).as_posix() for p in manifest_payload_files(root)}
             if actual!=named:error('manifest-coverage','MANIFEST.sha256','listed/actual payload sets differ')
     types=Counter(d.meta.get('type','document') for d in docs.values())
     stats={'markdown_documents':len(docs),'knowledge_objects':sum(types[x] for x in CORE),'reference_records':types['reference'],'by_type':{k:types[k] for k in sorted(CORE)},'local_links':local_links,'typed_relationships':relations,'practice_stages':stage_count,'heading_identifiers':sum(len(d.headings) for d in docs.values()),'summary_recipients':len(expected['entries']),'summary_dependencies':sum(map(len,expected['entries'].values())),'manifest_files':manifest_files}
