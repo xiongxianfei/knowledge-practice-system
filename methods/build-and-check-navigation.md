@@ -1,10 +1,10 @@
 ---
 id: "kps:me:build-and-check-navigation"
 type: "method"
-version: "9.0.0"
+version: "9.1.0"
 language: "KPS 9.x"
 status: "active"
-reviewed: "2026-10-07"
+reviewed: "2026-10-11"
 basis_kind: "authored design with claim-specific basis; not an effectiveness trial"
 confidence: "provisional application"
 uses_concepts: ["kps:c:identity-title-and-link-target"]
@@ -44,6 +44,9 @@ A reader reaches the named section without decoding an internal code. A missing 
 
 ## Limits and evidence
 This is an authored maintenance Method. The chosen subset is informed by [GitHub heading links](../references/github-undated-markdown-formatting.md), [MkDocs source handling](../references/mkdocs-undated-writing-your-docs.md) and [Python Markdown heading generation](../references/python-markdown-undated-toc-extension.md), not a universal syntax guarantee.
+
+## Check image and resource destinations
+A live Markdown image needs a real local file and descriptive alternative text; verify its explanation alongside the action it supports. The checker reports missing local images and warns about remote images. An external website can remain an ordinary annotated link without becoming an essential navigation dependency. Do not claim external URL availability from an offline local-link pass.
 
 ## Deeper knowledge
 [Document navigation model](../models/document-navigation-model.md); [Navigation guide](../NAVIGATION.md); [Compatibility](../COMPATIBILITY.md).

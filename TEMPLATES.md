@@ -1,7 +1,7 @@
 ---
-package_version: "9.0.1"
+package_version: "9.1.0"
 language: "KPS 9.x"
-reviewed: "2026-10-07"
+reviewed: "2026-10-11"
 ---
 
 # Reusable authoring templates
@@ -54,43 +54,47 @@ Purpose; necessary terms; actual representation; relationships; assumptions; imp
 Objective; inputs and prerequisites; rationale; numbered procedure; expected effect; observations and counter-signals; limits or stop conditions; example; deeper evidence. A new comparison procedure is a proposal until used; examples do not establish effectiveness.
 
 ## Practice content
+This is one example, not a mandatory sequence of supporting headings. Keep the steps locally usable and add only the material that resolves a reader's uncertainty.
+
 ```markdown
-# Practice name
+# Repair a knowledge link
 
 ## Key takeaway
-The recurring goal and central approach.
+Correct a real target and check it in the intended viewer.
 
 ## Summary
-Audience, permitted use, prerequisites and limits.
-Stage numbers show recommended order, not mandatory completion.
+Work in a copy of the affected document. Stage numbers show recommended order;
+permission and safe working conditions are actual prerequisites.
 
 ## Stage map
-Generate links from the actual numbered headings.
+1. [Stage1 Locate and repair the target](#stage1-locate-and-repair-the-target)
 
-## Stage1 Meaningful first stage
-**Goal:** The bounded result.
-**Why:** Essential reasoning in context.
-**What to do:** Compact action.
-**What to observe:** Relevant signals.
-**Success signal:** What supports the next decision.
-**Next:** Forward, revisit, stop or get help.
+## Stage1 Locate and repair the target
+Check the destination before changing the heading.
 
-**Understanding**
-Necessary Concepts, Principles and Model relationships in plain language.
+**Steps**
+1. Compare the complete heading with the link's fragment.
+2. For "Stage1 Capture a record", use #stage1-capture-a-record.
+3. Run the checker and then click the link in the intended viewer.
 
-**Procedure**
-Executable local steps, not a list of links.
+If the file is missing, repair its path first. If the fragment matches but
+navigation fails, inspect viewer support; do not claim a successful click test.
 
-**Decision points and fallback**
-What changes the next action and when not to proceed.
+**Worked example**
+The short fragment #stage1 does not match the complete example heading.
+This is an illustrative repair, not an observed result.
 
-**Deeper knowledge**
-Canonical detail and source locators after the usable explanation.
+**Useful resource**
+[GitHub section links](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#section-links)
+explains GitHub heading identifiers, not every reader.
 
 ## Current practice summary
-Actual findings, uncertainty and next focus; leave unfilled until real use.
+Actual document, action, observed result and remaining issue: not recorded.
 ```
-Stages can logically compose smaller goals within one file. Create a separately reusable Practice only when it has its own meaningful goal and decision logic. Composition must not create an endless call loop.
+
+For a branching task, a decision table can replace an ordered list. The inputs, actions and completion/fallback conditions still need to be understandable. Diagrams need a text explanation; quantitative charts need the source data and scale. Never add filler merely to reach a length threshold.
+
+Use `practice_format: "steps-first-v1"` and record a minimum checker of 9.1.0 for this presentation. The old six labels are not required. Practice composition stays optional and must not create circular containment.
 
 ## Reference content
 Publication identity, creators, publication or update year and its basis, external URL or DOI, actual access date and extent, located claims, evidence family, limitations and non-claims. Use creator-year-short-title filenames, or `undated` when a date was not established. The record must summarize what the source contributes without requiring immediate external access; it is not a copy of the publication.

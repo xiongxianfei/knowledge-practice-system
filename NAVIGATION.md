@@ -1,7 +1,7 @@
 ---
-package_version: "9.0.1"
+package_version: "9.1.0"
 language: "KPS 9.x"
-reviewed: "2026-10-07"
+reviewed: "2026-10-11"
 ---
 
 # Practical Markdown navigation
@@ -22,7 +22,7 @@ Link to that complete heading with `[Stage1 Breathing and air access](#stage1-br
 ## File and fragment targets
 Use `[Model](models/example-model.md)` for an entire file and append `#assumptions` only when its actual Assumptions section is the target. Paths are relative to the current file, remain inside this package and include the `.md` extension. File and heading case must match the chosen convention. No raw HTML anchor, wiki-link or special renderer plugin is required.
 
-Within stages use bold labels such as **Goal**, **Why**, **Procedure**, **Success signal** and **Next**. Do not create several identical Summary or Procedure headings with ambiguous auto-numbered anchors. Examples inside fenced code blocks are demonstrations, not live link destinations.
+Within stages a repeated bold **Steps** or **Procedure** label does not create a heading target. Supporting labels are optional. Give navigable subheadings unique names rather than creating identical Summary or Procedure headings with ambiguous auto-numbered anchors. Examples inside fenced code blocks are demonstrations, not live link destinations.
 
 ## Renaming and reordering
 A change from Stage3 to Stage4 changes the conventional heading fragment. Update the stage map, all incoming local links and any summary-dependency records together. Record the stage name and Practice version in real application records rather than only an ordinal. Outside links into old releases cannot be repaired by the new archive; keep an old release when such historical navigation matters.
@@ -34,7 +34,10 @@ Follow [the destination below](#navigation-test-destination), [the package summa
 This is the local target. [Return to the click test](#a-small-click-test).
 
 ## Validation and limits
-Run `python validate.py . --manifest`. This checks the authored subset, real target files and heading fragments, not a complete implementation of every Markdown dialect. CHECKS.md records the independent local rendering performed for this release. No live website or desktop application is certified by a local parse. A plain Markdown processor is not required to generate IDs at all; choose a viewer supporting conventional heading links.
+Run `python validate.py .`. Use `--manifest` only when verifying a prepared release archive with `MANIFEST.sha256`. This checks the authored subset, real target files and heading fragments, not a complete implementation of every Markdown dialect. CHECKS.md records the independent local rendering performed for this release. No live website or desktop application is certified by a local parse. A plain Markdown processor is not required to generate IDs at all; choose a viewer supporting conventional heading links.
 
 ## Basis
 GitHub's documentation describes lowercasing headings and hyphenating spaces, as well as the need to repair links after heading edits. MkDocs supports YAML and document-relative Markdown links; its published paths may differ from source paths. These support the profile's syntax choices, not a guarantee about all viewers. See [GitHub formatting](references/github-undated-markdown-formatting.md) and [Compatibility](COMPATIBILITY.md). No renderer-specific edition is distributed.
+
+## Local illustrations and source links
+Use ordinary image syntax such as `![Flow with success and revision branches](assets/review-flow.svg)` with a real local file. That example is inline code, not a live image. The checker verifies live local destinations; nearby prose must explain the image's meaning. A source website is a supporting link with an annotation, not a place to hide an essential instruction. [W3C image guidance](references/w3c-2026-complex-images.md) records the relevant external contribution.
