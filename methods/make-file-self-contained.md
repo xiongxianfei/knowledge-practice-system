@@ -1,10 +1,10 @@
 ---
 id: "kps:me:make-file-self-contained"
 type: "method"
-version: "9.0.0"
+version: "9.1.0"
 language: "KPS 9.x"
 status: "active"
-reviewed: "2026-10-07"
+reviewed: "2026-10-11"
 basis_kind: "authored KPS design; explicit reasoning, not an effectiveness trial"
 confidence: "provisional application"
 uses_principles: ["kps:p:summaries-can-omit-decision-critical-conditions", "kps:p:independent-representations-can-diverge"]
@@ -56,6 +56,9 @@ The file has a meaningful Summary, enough local reasoning and the role-specific 
 ## Limits
 
 Length is not a pass criterion. A file may be concise and complete for a narrow task, or long and still omit a critical condition. This Method does not certify domain expertise, physical competence or scientific truth.
+
+## Support the action locally
+Write the steps before expanding the explanation. At the step where an input, operation or interpretation is ambiguous, add a small worked example or decision table. Use a flow diagram for a relationship, not decoration. Keep chart data, scales and the meaning in text. Annotate a relevant website with the section to inspect and the limit of its contribution; never substitute a link for the necessary instruction. The six repeated stage labels are optional, not completeness criteria.
 
 ## Deeper knowledge
 

@@ -1,10 +1,10 @@
 ---
 id: "kps:me:check-local-completeness"
 type: "method"
-version: "9.0.0"
+version: "9.1.0"
 language: "KPS 9.x"
 status: "active"
-reviewed: "2026-10-07"
+reviewed: "2026-10-11"
 basis_kind: "authored KPS design; explicit reasoning, not an effectiveness trial"
 confidence: "provisional application"
 uses_principles: ["kps:p:summaries-can-omit-decision-critical-conditions", "kps:p:provenance-does-not-establish-truth"]
@@ -51,6 +51,9 @@ A concrete review note such as “Stage lacks a fallback when air access fails; 
 ## Counterevidence and limits
 
 If the reader still cannot choose the next action with links hidden, the file is incomplete for that task. If source comparison shows an omitted qualifier, the compression needs revision even when readable. A file can pass this review and still contain a false underlying claim.
+
+## Check supporting material
+Walk through the stage with external links hidden and images unavailable. The reader must still know what to do, what the output means and when to stop or change course. Check that examples are labelled synthetic or grounded in actual records. A diagram must not add an unsupported relationship; a quantitative chart needs data and scale. Record the exact ambiguity rather than scoring word count, label presence or number of illustrations.
 
 ## Deeper knowledge
 

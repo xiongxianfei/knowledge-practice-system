@@ -1,10 +1,10 @@
 ---
 id: "kps:c:practice"
 type: "concept"
-version: "9.0.0"
+version: "9.1.0"
 language: "KPS 9.x"
 status: "active"
-reviewed: "2026-10-07"
+reviewed: "2026-10-11"
 basis_kind: "language convention"
 uses_models: ["kps:mo:knowledge-role-model"]
 local_audience: "Adult reader; terms needed here are explained in the body"
@@ -14,29 +14,32 @@ local_audience: "Adult reader; terms needed here are explained in the body"
 
 ## Key takeaway
 
-A Practice contains enough local knowledge to pursue a goal, with stages and decisions rather than just links.
+A Practice makes a real task executable and interpretable without requiring the reader to reconstruct it from links.
 
 ## Summary
 
-A Practice combines operations and reasoning for recurring real work. Its opening summary orients the reader; stage summaries guide immediate action; stage details contain the essential understanding, procedure, checks and fallback. Stages are logical boundaries and can remain in one file.
+A Practice selects, combines and adapts knowledge for recurring work. Its Summary orients the reader; stages contain actions and the explanations needed at their point of use. Examples, diagrams and decision tables support those actions when helpful. Six repeated labels are not the definition of a Practice.
 
 ## Definition and use
 
-A reusable way of selecting, combining and adapting knowledge to pursue a recurring goal, with feedback from application.
+A reusable, context-aware workflow with feedback from application. A Method gives an operation; a Practice organizes operations toward a real goal and decides what to do with the results. Authorship does not determine either role.
 
-“Build a domain” can have stages for scope, source comparison, reusable objects, operational synthesis and release review. It may reuse another Practice by reference, but must still summarize the work needed locally. Composition is optional; repeated runtime learning loops are not circular containment.
+For example, building a domain combines scope selection, source inspection, knowledge writing, content review and publication. These can remain stages inside one file. Keep essential local instructions even when linking a reusable Method for depth.
+
+## Representation
+
+```text
+Reader goal -> actions -> observable output -> interpretation -> next decision
+                  ^                                           |
+                  +----------- revise when needed ------------+
+```
+
+The loop connects doing to learning; it is not a mandatory linear curriculum or circular file containment. Stage numbers show recommended order, while prerequisites and permissions determine actual entry.
 
 ## Boundary and non example
 
-Self-contained means usable by the declared audience with real-world prerequisites. It does not confer swimming competence, clinical clearance or authority to deploy a system. Personal state is recorded only after real use.
+A directory of links, an empty form, or a summary of aims without instructions is not locally executable. Conversely, a concise stage can be sufficient without a diagram or a fixed word count. Self-containment does not grant domain competence or authorization. A blank record and a synthetic example are not evidence of actual use.
 
-## Local evidence and uncertainty
+## Basis and deeper knowledge
 
-This file uses KPS’s declared conventions or an explicit reasoning argument rather than claiming an externally tested intervention. Its explanation and counterexample are local; linked objects identify reusable connections, not independent confirmation.
-
-## Deeper knowledge
-
-Links below identify reusable connections or source depth. The meaning and limits above do not require opening them.
-
-
-- **Models:** [Knowledge role model](../models/knowledge-role-model.md)
+This is a KPS design definition, not an empirically established productivity claim. [Knowledge role model](../models/knowledge-role-model.md) explains the surrounding distinctions. [Build domain knowledge](../practices/build-domain-knowledge.md) demonstrates the definition in a complete task.

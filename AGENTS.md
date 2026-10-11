@@ -1,7 +1,7 @@
 ---
-package_version: "9.0.1"
+package_version: "9.1.0"
 language: "KPS 9.x"
-reviewed: "2026-10-07"
+reviewed: "2026-10-11"
 ---
 
 # AI contribution guidance
@@ -23,3 +23,6 @@ An explanatory Principle must not be rewritten as a command. Models must represe
 
 ## Verify
 Run `python validate.py .` and `python test_validate.py`; review summary dependencies before any refresh. Passing structural tests is not evidence that the material is scientifically correct.
+
+## Practice editing
+Write actions first, preserve prerequisites and interpretation, and add examples or visuals only where they improve use. Do not recreate the six-label stage form or optimize prose to a word-count threshold. Inspect `REVIEW.md` as well as the structural checker. Never report a self-review as an independent reader trial.

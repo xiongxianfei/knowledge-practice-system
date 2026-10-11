@@ -1,7 +1,7 @@
 ---
-package_version: "9.0.1"
+package_version: "9.1.0"
 language: "KPS 9.x"
-reviewed: "2026-10-07"
+reviewed: "2026-10-11"
 ---
 
 # Knowledge Practice System
@@ -11,6 +11,12 @@ Build locally understandable and evidence-aware knowledge, connect it through ex
 
 ## Summary
 Build locally understandable and evidence-aware knowledge, connect it through explicit reasoning, and compose it into Practices usable in real work.
+
+## Steps first Practices
+
+The four Core Practices now put executable steps first and supply worked cases, decision tables, text diagrams and annotated websites where needed. The authoring contract no longer requires six labels or a minimum stage length. Start with [Use KPS](practices/use-kps.md), [Build a domain](practices/build-domain-knowledge.md), [Improve KPS](practices/improve-kps.md), or [Review and learn](practices/review-and-learn.md).
+
+The five knowledge roles remain unchanged. Steps-first files need the 9.1 checker; old domain packages remain untouched. See [Compatibility](COMPATIBILITY.md), [Templates](TEMPLATES.md) and the [task-based content review](REVIEW.md).
 
 ## What is KPS
 KPS is an open-source, self-describing architecture for organising reusable knowledge and applying it in real situations. It uses five **knowledge roles** and structured **Reference records**. The roles are a design convention, not a proven universal taxonomy.
@@ -59,7 +65,7 @@ Principles are not normative rules. A source's publication prestige does not est
 KPS welcomes corrections, more defensible explanations, improved Methods, new worked examples and validator improvements. Please read [Contributing](CONTRIBUTING.md) and [Governance](GOVERNANCE.md). For problems, use the issue templates; for changes, open a pull request with the relevant evidence and validation result. Respect the [Code of conduct](CODE_OF_CONDUCT.md).
 
 ## Version and compatibility
-This open-source repository edition is **9.0.1**, based on the KPS 9.0.0 knowledge release. Domain projects can declare **KPS 9.x** compatibility while versioning their own content independently. Read [Compatibility](COMPATIBILITY.md) and [Release notes](RELEASE.md). No future release has been automatically validated.
+This open-source repository edition is **9.1.0**, refining the KPS 9.0.1 source tree. Domain projects can declare **KPS 9.x** compatibility while versioning their own content independently. Read [Compatibility](COMPATIBILITY.md) and [Release notes](RELEASE.md). No future release has been automatically validated.
 
 ## License
 **MIT License** for the KPS-authored documentation and tooling, subject to the rights of their respective authors. Third-party publications remain under their own terms; KPS Reference records describe and link to them without bundling copies. Review [LICENSE](LICENSE) and the [reference register](references/README.md) before republishing any external material.

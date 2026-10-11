@@ -1,36 +1,31 @@
 ---
-package_version: "9.0.1"
+package_version: "9.1.0"
 language: "KPS 9.x"
-reviewed: "2026-10-07"
+reviewed: "2026-10-11"
 ---
 
-# Release notes
+# KPS 9 1 0 steps first authoring release
 
 ## Key takeaway
-This is a clean coordinated edition using KPS 9.x and one practical Markdown profile. Stage order is visible; object identity remains separate.
+
+Core Practices become task guides rather than six-label forms; domain packages are not migrated by this change.
 
 ## Summary
-The prior KPS 8.0, Swim 3.0 and REM 0.2 knowledge packages were inspected as source material. Relevant explanatory content, inline Practice stages and evidence limitations were retained while navigation, compatibility declarations, reference inspection records and publication checks were rebuilt. This is not a claim that every paragraph is newly discovered knowledge or that field effectiveness has been demonstrated.
 
-## Public repository edition 9 0 1
+This release updates the authoritative authoring contract, the four Core Practices, supporting authoring/review guidance, templates and structural tests. Stable knowledge identities, the five roles, StageN numbering and ordinary Markdown navigation remain intact.
 
-This patch-level edition adds a single authoritative `AUTHORING.md` contract, MIT licensing for KPS-authored content and tools, GitHub contribution and conduct guidance, PR/issue templates, and a read-only GitHub Actions validation workflow. Core knowledge-role semantics and KPS 9.x compatibility remain unchanged. It does not claim that public publication or domain effectiveness has already occurred.
+## Content changes
 
-## Original knowledge release 9 0 0
-The original KPS 9.0.0 notes follow. This repository edition does not silently revalidate the substantive scientific claims.
+The four Practices preserve their 17 stage names and replace repetitive cards with executable steps, context-specific explanations, worked examples, decision tables, text diagrams and annotated source websites. Personal working summaries remain unfilled. Two new Reference records identify narrowly used external guidance; no effectiveness claims or third-party full texts are added.
 
-## Material changes
-- One canonical Markdown edition; no platform-specific exported copies or custom HTML anchors.
-- Practice headings are `Stage1 Meaningful title`, with matching maps and complete heading fragments. Numbers communicate recommended order, not stable identity.
-- Package version is separate from `KPS 9.x` language compatibility and exact `validated_with: 9.0.0` audit metadata.
-- All retained knowledge and Reference files preserve local takeaway/summary, reasoning, action or representation and limits. Brief source extracts remain qualified when current full text is inaccessible.
-- The standalone checker detects structure, navigation and stale declared summaries. It cannot certify evidence truth or silently revise a scientific claim.
+## Validation changes
 
-## Domain boundary
-KPS still describes and maintains itself using the same five knowledge roles. Its policies belong in Models/Methods/Practices; explanatory Principles are not disguised commands.
+The checker no longer demands six labels, the word “procedure” or a minimum stage length. It checks for an actual local action list or decision table, while retaining identity, links, stage order/maps, relationship roles, dependency review and checksum integrity. Missing local image files are errors; image text alternatives and remote-image dependencies receive diagnostic warnings for human review.
 
-## Migration
-Extract into a new directory. Whole-file IDs are retained where their knowledge role is unchanged, but numbered heading targets have changed. All bundled local links are rebuilt. External links into earlier archives are not repaired by this release; keep the earlier artifact when historical navigation matters. Real records should name the stage meaning and Practice version, not only a number.
+## Compatibility
 
-## Review limits
-Current source access is described in [Source review](SOURCE-REVIEW.md). Inspection is claim-oriented rather than a comprehensive systematic review. No independent professional, reader or field trial was performed. Future KPS minor releases are not pretested by this archive. Use [Checks](CHECKS.md) for actual automated results and the [Navigation click test](NAVIGATION.md#a-small-click-test) in the viewer you use.
+KPS 9.1 accepts earlier valid stage layouts. New steps-first documents require a 9.1 checker; old 9.0 checkers reject their absent labels. Package metadata records that minimum explicitly. No Swim, Technical Insight or REM repository is changed. See [COMPATIBILITY.md](COMPATIBILITY.md).
+
+## Publication status and history
+
+This source change is intended for one PR against `main`, with merge according to the owner's authorization and passing checks. A generated package version is not a GitHub Release or tag. Exact executed checks and remaining limits are in [CHECKS.md](CHECKS.md). Existing scientific source records retain their prior inspection history.

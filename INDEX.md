@@ -1,7 +1,7 @@
 ---
-package_version: "9.0.1"
+package_version: "9.1.0"
 language: "KPS 9.x"
-reviewed: "2026-10-07"
+reviewed: "2026-10-11"
 ---
 
 # KPS knowledge index
@@ -10,7 +10,7 @@ reviewed: "2026-10-07"
 Start from the real task, then use a locally complete file. The index is navigation, not the explanation itself.
 
 ## Summary
-This independent package contains 45 knowledge objects and 8 structured external Reference records. Perspective is metadata. Sources, validation tools and publication notes are supporting infrastructure, not further knowledge types.
+This independent package contains 45 knowledge objects and 10 structured external Reference records. Perspective is metadata. Sources, validation tools and publication notes are supporting infrastructure, not further knowledge types.
 
 ## Concept files
 
@@ -86,3 +86,6 @@ This independent package contains 45 knowledge objects and 8 structured external
 ## Release support
 
 [Source review](SOURCE-REVIEW.md), [Compatibility](COMPATIBILITY.md), [Navigation](NAVIGATION.md), [Checks](CHECKS.md) and [Release](RELEASE.md) describe what this edition includes and what remains untested.
+
+## Steps first supporting guidance
+[How-to guidance and its KPS boundary](references/procida-undated-how-to-guides.md) and [Complex images and text alternatives](references/w3c-2026-complex-images.md) document the two added external contributions. The core object count remains 45; there are now 10 supporting Reference records.

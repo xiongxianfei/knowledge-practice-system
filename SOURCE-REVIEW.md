@@ -1,7 +1,7 @@
 ---
-package_version: "9.0.1"
+package_version: "9.1.0"
 language: "KPS 9.x"
-reviewed: "2026-10-07"
+reviewed: "2026-10-11"
 ---
 
 # Source review for this release
@@ -10,10 +10,12 @@ reviewed: "2026-10-07"
 A checked source is a specific inspected contribution, not an endorsement of every application. Access limits remain visible beside the claims.
 
 ## Summary
-This record describes the source access performed for the current reconstruction. Reference files retain publication identity, claim locators, evidence families, non-claims and an explicit current inspection note. Historical access is not silently presented as new inspection. Sources were chosen for material claims, not to meet a fixed count or prestige hierarchy.
+This record separates retained inspection history from the source access performed for the steps-first revision. Reference files retain publication identity, claim locators, evidence families, non-claims and their recorded inspection dates. Historical access is not silently presented as new inspection. Sources were chosen for material claims, not to meet a fixed count or prestige hierarchy.
 
-## Current inspection register
-| Reference record | Current extent | Qualification |
+## Retained inspection register
+The following entries preserve the previous release's recorded inspection extent. They are not claims of fresh full-source review for 9.1.0.
+
+| Reference record | Previously recorded extent | Qualification |
 |---|---|---|
 | [cochrane-2024-handbook-v6-5](references/cochrane-2024-handbook-v6-5.md) | selected handbook chapters | Selected material reviewed; no raw-data reanalysis |
 | [github-undated-markdown-formatting](references/github-undated-markdown-formatting.md) | selected official HTML | Selected material reviewed; no raw-data reanalysis |
@@ -32,3 +34,8 @@ No fresh statistical reanalysis, comprehensive systematic search, independent ex
 
 ## How to use this record
 Read the local claim and its Reference contribution. Check whether the population, setting, mechanism and inspected extent support the intended use. For a consequential unresolved claim, obtain more appropriate evidence or qualified review before treating the inference as established. The publication contains Markdown records only, not copies of external source materials.
+
+## Steps first authoring review
+On 2026-10-11, selected HTML sections of [Diataxis how-to guidance](references/procida-undated-how-to-guides.md), [W3C complex-image guidance](references/w3c-2026-complex-images.md), and the existing [GitHub formatting source](references/github-undated-markdown-formatting.md) were inspected. The first two new records state their precise contribution and limits. Task orientation does not imply that KPS must omit necessary local explanations; that is a deliberate KPS departure from strict how-to separation.
+
+Earlier learning and provenance records are retained with their existing inspection dates. This release does not claim a fresh review of every scientific source or an independent evaluation of the new Practices. No downloaded source pages or images are redistributed.
