@@ -1,7 +1,7 @@
 ---
 id: "kps:concept:evidence-indirectness"
 type: "concept"
-version: "10.0.0"
+version: "10.2.0"
 language: "KPS 9.x"
 status: "active"
 reviewed: "2026-10-12"
@@ -27,6 +27,14 @@ Differences between the studied and intended population, intervention, compariso
 ## Example
 
 A synthetic review asks about long-term functioning, while an available study reports only a short-term surrogate. It may remain relevant, but an additional argument is needed to use it for the intended outcome.
+
+## Evidence and target can differ
+
+![A short term surrogate result and a long term functioning question need an additional evidential connection](../diagrams/principles/evidence-to-target.svg)
+
+Here the studied outcome and target outcome differ. A short-term surrogate is not the long-term functioning outcome itself. The unresolved connection explains indirectness without declaring the evidence useless or assigning a certainty rating. This synthetic example preserves the intervention-review scope. The same drawing supports the related Principle without a duplicate source file.
+
+[Editable D2 source](../diagrams/principles/evidence-to-target.d2). Source basis and limits remain in this document.
 
 ## Boundary
 

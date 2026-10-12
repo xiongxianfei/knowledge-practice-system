@@ -41,15 +41,15 @@
       "references/w3c-2009-skos-reference.md": "494c6dcc72554c828575d861e7878a5f4432e748e03da8a461995be987cf0d17"
     },
     "practices/build-domain-knowledge.md": {
-      "concepts/evidence-indirectness.md": "2d9322189768a031ce0276f867a52086feb760af5213452f270ac08dde5608ec",
-      "concepts/skos-concept.md": "156fba3de9aa919a9262603bfeb6559b7639a4ef78b7c34b7acd3e58fe733950",
+      "concepts/evidence-indirectness.md": "a5e556c8866a6480b336feb5cf6704a7ae583d04b229496cc431a10bdbe6d13f",
+      "concepts/skos-concept.md": "899d8dbfea2773e70c19c71f1e1a7293af91e11f35a6bbf061ce0d51d89d1f69",
       "concepts/study-and-report.md": "65942012b0ad594bb81cc16f1c41df4d9e1a6d4bbe13ccd989699a5664b2a805",
-      "methods/cognitive-walkthrough.md": "b294f92a380866b0871824830de13547270e39a4ce378c9c73ecfcfff5eaa422",
-      "methods/pico-question-formulation.md": "f6b89c6d7a4b357d9aa6442ce89fb3a81e073cbae8f7ae8bd8ae523fa5550d4d",
-      "methods/study-data-extraction.md": "edb46fbeb89d700d43b0000631a597cc1e151b992aa50a6450808dc57f743243",
+      "methods/cognitive-walkthrough.md": "8292ff2ea0b235bb1d453ec7b3800b127476c68bff901cfa3f891c6fd5cda3a0",
+      "methods/pico-question-formulation.md": "96de731c4dde1a72148d873258f610bb378da07f61c174440dfbd96dd04bdcc7",
+      "methods/study-data-extraction.md": "7137ea18a7207f3bf783b5cf1988a3fdf394ce05abcb297321b67f191f1357c3",
       "models/prov-data-model.md": "2c2c502be0c107e8c1b42b5a68a3d4283383ef0441d44ca0db999db91c51e345",
-      "models/skos-data-model.md": "aff3c055856ab8754d49a6c8eccfbb210fdbc60ed206225d40afac3df4c0339d",
-      "principles/indirectness-limits-applicability.md": "090d200618005242f347f79c860299dd5e471781fe5967ae36d3abac0984354d",
+      "models/skos-data-model.md": "b96ddaa80d8d2e1afdc6ff3349920dd57eb6533fdf699333c08408604af7295a",
+      "principles/indirectness-limits-applicability.md": "ac8b3219065c48e3f27235ced79aa11de2ef893156e854b84858caafd2580fee",
       "principles/study-level-evidence-independence.md": "a71f3c779e6eb4affcb7cc697296692c6cc731f5da3cb58f0d1d66bfd1dd5bc6",
       "references/cochrane-2024-certainty-chapter-14.md": "644ea7ebd720a4441d552c6c7ad0ebd64c697bbdba2c1dadbe2ba918602cb1df",
       "references/cochrane-2024-collecting-data-chapter-5.md": "e7bbb297a09bc3e7c7e3411066a02338ecc74e2f7006b81072c863c00fdf41d3",
@@ -59,16 +59,16 @@
       "references/w3c-2026-complex-images.md": "e32dc76448b9d5f81819b32866ac58cbfa7037e28e7c85c1f97e1c6a14624def"
     },
     "practices/improve-kps.md": {
-      "methods/cognitive-walkthrough.md": "b294f92a380866b0871824830de13547270e39a4ce378c9c73ecfcfff5eaa422",
+      "methods/cognitive-walkthrough.md": "8292ff2ea0b235bb1d453ec7b3800b127476c68bff901cfa3f891c6fd5cda3a0",
       "methods/pdca.md": "4544571f9cc488dbee609a10c492661ff777c085ea67f4606ddbd0d30ad6416b",
       "references/asq-undated-pdca-cycle.md": "628c4df58d5f16d31e65df42eb9575078901f0ba1b76ca0f9515076e753dbab3",
       "references/wharton-undated-cognitive-walkthrough-report-93-07.md": "4f8ba6f515d66f6d876e29876473e7d9cadf40f60c2845b96d14f16f395f4262"
     },
     "practices/review-and-learn.md": {
       "methods/pdca.md": "4544571f9cc488dbee609a10c492661ff777c085ea67f4606ddbd0d30ad6416b",
-      "methods/retrieval-practice.md": "343983c8d1f8243a1e1ef57e1d4455701df6461bee8282a974aafeb1c3e6f11e",
+      "methods/retrieval-practice.md": "fed26277d55de3b3132674a76b85df93f20eca133292b984d12daf2703a53756",
       "models/prov-data-model.md": "2c2c502be0c107e8c1b42b5a68a3d4283383ef0441d44ca0db999db91c51e345",
-      "principles/spacing-effect.md": "b51a8731d36aa835934d7d4684d831a785f9e2dc2966971b4e7d9e69da00cf1d",
+      "principles/spacing-effect.md": "09037ef25ef2ff8ce127cafaf2167037eff166d27e2eba6b2374900495525866",
       "principles/testing-effect.md": "e181a9bf1e2bc0ed1a6ef6ed03f69a85285766833f445f6aa63d479155cc64ac",
       "references/cochrane-2024-collecting-data-chapter-5.md": "e7bbb297a09bc3e7c7e3411066a02338ecc74e2f7006b81072c863c00fdf41d3",
       "references/karpicke-2011-retrieval-and-concept-mapping.md": "4f4ab70f6598913de7d2cdb2b6f096e82f34b7e44ebf363df1d5dac668c0713e",
@@ -76,9 +76,9 @@
       "references/mayrhofer-2023-reexamining-the-testing-effect.md": "4038850f059b2a6af0a99ccc66bfac1e58fb06e09a19e740646661794dd54e1e"
     },
     "practices/use-kps.md": {
-      "concepts/provenance.md": "f1d66b1f7d0d6b9439b803699d6774ec698e2167e4f1fd81e0decde50eb075f7",
-      "concepts/uniform-resource-identifier.md": "5c7c7cba255a6b418f18727ae728900065e4c9c3873310b57612561b20eb40a5",
-      "methods/retrieval-practice.md": "343983c8d1f8243a1e1ef57e1d4455701df6461bee8282a974aafeb1c3e6f11e",
+      "concepts/provenance.md": "d8e55145490df5d400cd2579b568c5c355fda724cd615320ae123536f59f8954",
+      "concepts/uniform-resource-identifier.md": "c212ffbed0979052366e051771b6d634d77e0d0470f6a4a1f878658b35bc7113",
+      "methods/retrieval-practice.md": "fed26277d55de3b3132674a76b85df93f20eca133292b984d12daf2703a53756",
       "models/prov-data-model.md": "2c2c502be0c107e8c1b42b5a68a3d4283383ef0441d44ca0db999db91c51e345",
       "references/github-undated-markdown-formatting.md": "1ef9d50fd11ba8b461f0c5c5e50761c5219728649a0bf6c8aaa2448926456660",
       "references/ietf-rfc3986-2005-uri-syntax.md": "48561fdf6a188b81dbb2ada45dec47e781004ad3aa1fd2bfae3ed07038713ece"

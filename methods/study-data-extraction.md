@@ -1,7 +1,7 @@
 ---
 id: "kps:method:study-data-extraction"
 type: "method"
-version: "10.0.0"
+version: "10.2.0"
 language: "KPS 9.x"
 status: "active"
 reviewed: "2026-10-12"
@@ -35,6 +35,14 @@ A conclusion cannot be checked if its underlying population, methods and results
 3. Extract source locations, design, participants, interventions, outcomes and results without filling missing values from expectation.
 4. For Cochrane intervention reviews, have at least two people independently extract outcome data; duplicate extraction of study characteristics is highly desirable. Define disagreement resolution in advance and retain the source-based resolution.
 5. Keep the extraction record and source links available for later checking.
+
+## Independent extraction before reconciliation
+
+![Linked study reports feed two independent extractions which are compared and reconciled using source evidence](../diagrams/methods/independent-extraction.svg)
+
+For the Cochrane intervention-review outcome-data step, two people work independently from the linked study reports and planned form before comparing results. Agreement retains source locations; disagreement follows the prespecified resolution process. Unsupported values stay unknown. This does not assert that every KPS note requires two reviewers or that agreement proves correctness. Duplicate study-characteristic extraction is desirable but is not the same mandatory condition as duplicate outcome extraction.
+
+[Editable D2 source](../diagrams/methods/independent-extraction.d2). Source basis and limits remain in this document.
 
 ## Working record
 

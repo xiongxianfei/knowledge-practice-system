@@ -1,7 +1,7 @@
 ---
 id: "kps:pr:improve-kps"
 type: "practice"
-version: "10.0.0"
+version: "10.2.0"
 language: "KPS 9.x"
 status: "active"
 reviewed: "2026-10-12"
@@ -80,6 +80,14 @@ Prefer the repair that solves the observed problem without creating a second sou
 No option wins because it is fashionable. For this task, select content based on missing reader understanding, and use graphics only when they explain a real relation.
 
 **Use an established improvement cycle:** Treat the proposed repair as a [PDCA](../methods/pdca.md) change: plan a bounded improvement, try it, check the result and act accordingly. Our choices of Markdown structure, local completeness and release workflow belong to this Practice, not to ASQ's original procedure. Prefer a source-compatible repair to inventing another reusable category.
+
+**Match the repair to its reach**
+
+![A located problem leads to either a local content repair or a contract and checker change, then a pilot and separate content and structural review](../diagrams/practices/repair-scope.svg)
+
+The branches distinguish repair reach, not mutually exclusive causes. A local edit may be enough; changing a governing convention also needs a compatibility and migration assessment. Both routes meet at a real-content pilot. If content still requires guessing or structural tests fail, revise the proposal instead of publishing for the sake of a green dashboard. This is KPS application guidance, not a new external Method.
+
+[Editable D2 source](../diagrams/practices/repair-scope.d2). Source basis and limits remain in this document.
 
 ## Stage3 Pilot the repair on real content
 

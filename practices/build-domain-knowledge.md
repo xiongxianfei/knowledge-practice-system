@@ -1,7 +1,7 @@
 ---
 id: "kps:pr:build-domain-knowledge"
 type: "practice"
-version: "10.0.0"
+version: "10.2.0"
 language: "KPS 9.x"
 status: "active"
 reviewed: "2026-10-12"
@@ -235,6 +235,14 @@ The two checks answer different questions. A self-review is not an independent u
 **Identity and navigation check:** Keep the object ID in metadata, the meaningful title in the heading and current order in `StageN`. A metadata ID does not create an anchor. Generate the fragment from the complete heading, resolve relative paths from the containing file, and test the actual viewer. Renumbering requires updating incoming stage links. This is a local Markdown convention, not a property imposed by RFC 3986.
 
 **Publication decision:** Preserve the inspected repository baseline and license. Make one coherent PR against `main`, rerun CI and merge when the owner has authorized it and checks pass. If a corresponding repository is absent, prepare a validated ZIP. Do not manufacture a separate official release or modify sibling domains merely to finish this task.
+
+**Two different release checks**
+
+![Content review and structural checks must both pass before an authorized repository PR or ZIP is published](../diagrams/practices/release-gates.svg)
+
+This is the local KPS release decision, not a certification procedure. A reader-use gap leads back to content repair, while a structural diagnostic leads to a targeted technical fix. Both must be addressed before the authorized publication action. A repository uses one PR; an absent repository uses a validated ZIP. A paper walkthrough remains a self-review and does not establish reader effectiveness or scientific truth.
+
+[Editable D2 source](../diagrams/practices/release-gates.d2). Source basis and limits remain in this document.
 
 ## Current practice summary
 

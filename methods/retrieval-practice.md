@@ -1,7 +1,7 @@
 ---
 id: "kps:method:retrieval-practice"
 type: "method"
-version: "10.0.0"
+version: "10.2.0"
 language: "KPS 9.x"
 status: "active"
 reviewed: "2026-10-12"
@@ -34,6 +34,14 @@ Recall attempts can contribute to later learning rather than serve only as a mea
 2. Put it aside and attempt to retrieve or reconstruct the relevant content.
 3. Return to the material to inspect omissions and errors; record what was actually recalled.
 4. Repeat or assess later according to the purpose and an explicitly chosen plan.
+
+## Keep recall and checking distinct
+
+![After studying, put the material aside, preserve an unaided response, then compare it with the source and assess later under a chosen plan](../diagrams/methods/recall-and-check.svg)
+
+The response is produced with the material put aside, then preserved before correction. Checking against the source identifies omissions; a later assessment has its own purpose and conditions. Do not replace the original response with the corrected one or report current familiarity as delayed retention. This illustrates the local operation summarized above, not an optimal schedule or an exact replication of every study procedure.
+
+[Editable D2 source](../diagrams/methods/recall-and-check.d2). Source basis and limits remain in this document.
 
 ## Synthetic example
 

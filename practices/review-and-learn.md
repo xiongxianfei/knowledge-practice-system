@@ -1,7 +1,7 @@
 ---
 id: "kps:pr:review-and-learn"
 type: "practice"
-version: "10.0.0"
+version: "10.2.0"
 language: "KPS 9.x"
 status: "active"
 reviewed: "2026-10-12"
@@ -82,6 +82,14 @@ Observed result
 ```
 
 The diagram is an authored reasoning aid, not a statistical causal test. [Cochrane's studies and reports guidance](https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current/chapter-05) helps inspect shared evidence origins; it does not settle the causal question for an individual application.
+
+**Do not turn an outcome into a cause**
+
+![Check actual execution, changed conditions and distinguishing evidence before updating a causal explanation](../diagrams/practices/attribution-check.svg)
+
+This authored review route summarizes Stage2. First verify actual execution. Then note changes that limit attribution and ask whether available evidence distinguishes rival accounts. When it does not, keep the observed result but leave the mechanism unresolved. Distinguishing evidence permits only a scoped update under its assumptions, not universal causation. Multiple concerns can apply at once.
+
+[Editable D2 source](../diagrams/practices/attribution-check.d2). Source basis and limits remain in this document.
 
 ## Stage3 Select the smallest warranted revision
 

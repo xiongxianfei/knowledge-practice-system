@@ -38,14 +38,15 @@ class DiagramTests(unittest.TestCase):
             return d.run(self.root, write=write)
 
     def test_01_inventory_and_owners(self):
-        self.assertEqual(6, len(self.cfg['diagrams']))
+        self.assertGreater(len(self.cfg['diagrams']), 0)
+        self.assertEqual(len(self.cfg['diagrams']), len({x['source'] for x in self.cfg['diagrams']}))
         for item in self.cfg['diagrams']:
             self.assertTrue((self.root / item['owner']).is_file())
             self.assertTrue(item['reason'].strip())
             d.svg_check((self.root / item['source']).with_suffix('.svg').read_bytes())
 
     def test_02_metadata_graph_matches(self):
-        item = self.cfg['diagrams'][-1]
+        item = next(x for x in self.cfg['diagrams'] if x.get('metadata_root'))
         self.assertEqual(d.knowledge_graph(self.root, item['metadata_root']),
                          (self.root / item['source']).read_text())
 
@@ -64,7 +65,7 @@ class DiagramTests(unittest.TestCase):
     def test_05_check_is_read_only(self):
         paths = list((self.root / 'diagrams').rglob('*'))
         before = {p: p.read_bytes() for p in paths if p.is_file()}
-        self.assertEqual(6, self.run_check())
+        self.assertEqual(len(self.cfg['diagrams']), self.run_check())
         self.assertEqual(before, {p: p.read_bytes() for p in before})
 
     def test_06_modified_svg_is_rejected(self):
@@ -114,7 +115,7 @@ class DiagramTests(unittest.TestCase):
     def test_14_write_restores_render(self):
         path = (self.root / self.cfg['diagrams'][0]['source']).with_suffix('.svg')
         path.write_bytes(b'stale')
-        self.assertEqual(6, self.run_check(write=True))
+        self.assertEqual(len(self.cfg['diagrams']), self.run_check(write=True))
         self.assertEqual(self.original[self.cfg['diagrams'][0]['source']], path.read_bytes())
 
     def test_15_unregistered_source_is_rejected(self):

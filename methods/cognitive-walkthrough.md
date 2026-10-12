@@ -1,7 +1,7 @@
 ---
 id: "kps:method:cognitive-walkthrough"
 type: "method"
-version: "10.0.0"
+version: "10.2.0"
 language: "KPS 9.x"
 status: "active"
 reviewed: "2026-10-12"
@@ -35,6 +35,14 @@ An interface can expose the correct action without making its relevance or resul
 3. Ask whether the user would pursue the needed subgoal, notice the available action, connect it to the desired result and recognize progress afterward.
 4. Record a credible success or failure explanation, including the cues and assumed knowledge.
 5. Revise the suspected obstacle and inspect the route again.
+
+## Inspect every action from the user perspective
+
+![For each action inspect intended subgoal, action visibility, goal connection and feedback, then record the predicted difficulty or success](../diagrams/methods/walkthrough-action.svg)
+
+For each action, inspect all four questions using the specified user knowledge and visible cues. An unexplained or negative answer identifies a predicted difficulty, not a measured failure. Record both credible success reasoning and obstacles, then inspect the next action or revise the design. Continue through all four prompts even after predicting a difficulty; this is not a participant test or a numerical usability score.
+
+[Editable D2 source](../diagrams/methods/walkthrough-action.d2). Source basis and limits remain in this document.
 
 ## Synthetic example
 

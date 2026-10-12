@@ -1,5 +1,5 @@
 ---
-package_version: "10.1.0"
+package_version: "10.2.0"
 language: "KPS 9.x"
 reviewed: "2026-10-12"
 ---
@@ -12,9 +12,9 @@ Add a diagram only when it resolves a real reading or execution difficulty; pres
 
 ## Summary
 
-This guide implements [AUTHORING.md](AUTHORING.md), rather than introducing another knowledge type or a parallel authoring standard. D2 is the preferred editable source and its generated SVG is the publication image. Six selected examples demonstrate different jobs; most Core knowledge files remain text-only. Reading needs neither a D2 installation nor a hosted diagram service.
+This guide implements [AUTHORING.md](AUTHORING.md), rather than introducing another knowledge type or a parallel authoring standard. D2 is the preferred editable source and its generated SVG is the publication image. The [Core-wide audit](DIAGRAM-AUDIT.md) records a decision for all 20 objects, with 17 explanatory sources and one small metadata graph. Shared diagrams have one editable source; there is no per-file quota. Reading needs neither a D2 installation nor a hosted diagram service.
 
-## The selected diagrams
+## Original diagrams retained
 
 | Owning content | What the diagram makes explicit |
 |---|---|
@@ -26,6 +26,10 @@ This guide implements [AUTHORING.md](AUTHORING.md), rather than introducing anot
 | [Knowledge neighborhood](KNOWLEDGE-MAP.md) | Actual declared use relationships around one Practice, with omitted edges disclosed |
 
 These are original explanatory drawings or a metadata view, not copied professional-source figures. Their accompanying text retains source alignment and the limits of synthetic examples. The repository MIT license covers our diagram sources; external publications retain their own rights. Default D2 rendering supplies fonts internally; no separate font files are distributed here.
+
+## Additional explanations
+
+New sources clarify concept labels, URI resolution, indirect evidence, spacing variables, SKOS predicates, PICO comparison, independent extraction, walkthrough prompts, recall records, release gates, repair reach and causal-attribution limits. The [audit](DIAGRAM-AUDIT.md) links each owner and explains reuse and text-only decisions.
 
 ## Add or revise one diagram
 
@@ -51,6 +55,7 @@ D2 installation is needed only for rendering, not reading. The [official install
 python diagram_tools.py --write
 python diagram_tools.py --check
 python test_diagrams.py
+python test_diagram_audit.py
 python validate.py .
 python test_validate.py
 python test_alignment.py
