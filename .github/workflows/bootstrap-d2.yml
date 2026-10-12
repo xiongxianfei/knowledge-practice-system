@@ -34,12 +34,13 @@ jobs:
       - name: Make visual inspection previews
         shell: bash
         run: |
-          mkdir -p "$RUNNER_TEMP/d2-previews"
+          mkdir -p "$RUNNER_TEMP/d2-review/previews"
+          cp -R diagrams "$RUNNER_TEMP/d2-review/diagrams"
           find diagrams -name '*.d2' -print0 | while IFS= read -r -d '' src; do
-            d2 --layout=dagre --theme=0 --pad=24 "$src" "$RUNNER_TEMP/d2-previews/$(basename "$src" .d2).png"
+            d2 --layout=dagre --theme=0 --pad=24 "$src" "$RUNNER_TEMP/d2-review/previews/$(basename "$src" .d2).png"
           done
       - uses: actions/upload-artifact@v4
         with:
           name: d2-visual-review
-          path: ${{ runner.temp }}/d2-previews/*.png
+          path: ${{ runner.temp }}/d2-review/
           retention-days: 7
