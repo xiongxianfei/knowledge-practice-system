@@ -1,20 +1,22 @@
 ---
 id: "kps:pr:build-domain-knowledge"
 type: "practice"
-version: "9.1.0"
+version: "10.0.0"
 language: "KPS 9.x"
 status: "active"
-reviewed: "2026-10-11"
-basis_kind: "authored orchestration; not an independently tested programme"
+reviewed: "2026-10-12"
+basis_kind: "KPS-specific application synthesis; external methods are distinguished from adaptations"
 confidence: "provisional for real-world application"
-uses_methods: ["kps:me:make-file-self-contained", "kps:me:check-local-completeness", "kps:me:classify-knowledge", "kps:me:register-reference", "kps:me:synthesize-sources", "kps:me:write-explanatory-principle", "kps:me:create-knowledge-object", "kps:me:publish-independent-domain", "kps:me:build-and-check-navigation"]
-uses_models: ["kps:mo:domain-package-model"]
-uses_principles: []
+uses_methods: ["kps:method:pico-question-formulation", "kps:method:study-data-extraction", "kps:method:cognitive-walkthrough"]
+uses_models: ["kps:model:skos-data-model", "kps:model:prov-data-model"]
+uses_principles: ["kps:principle:study-level-evidence-independence", "kps:principle:indirectness-limits-applicability"]
 practice_format: "steps-first-v1"
 stage_order: "recommended; stated prerequisites and stopping conditions govern entry"
 stage_titles: ["Stage1 Define the domain boundary", "Stage2 Find evidence for explicit claims", "Stage3 Create locally complete objects", "Stage4 Compile the Practice", "Stage5 Check and release"]
-references: ["kps:r:procida-how-to", "kps:r:wai-complex-images"]
+references: ["kps:r:skos", "kps:r:prov-dm", "kps:r:data-extraction", "kps:r:indirectness", "kps:r:procida-how-to", "kps:r:wai-complex-images"]
+uses_concepts: ["kps:concept:skos-concept", "kps:concept:study-and-report", "kps:concept:evidence-indirectness"]
 ---
+
 
 # Build an independent domain knowledge package
 
@@ -68,6 +70,8 @@ The tree separates reusable knowledge from publication support. It does not impl
 
 Choose a stable package name and an actual reviewed version. The number does not prove compatibility; inspect the contract before declaring it.
 
+**KPS design boundary:** The five file roles, one-object-per-file rule and dependency fields are our publishing conventions. They are not prescribed by SKOS, PROV, Cochrane or ISO. Use the [authoring contract](../AUTHORING.md) for syntax; use the source-aligned library only for the source's actual meaning. A Model that merely describes our package layout is embedded here, not promoted as external theory. Domain-specific deployment technology remains replaceable.
+
 ## Stage2 Find evidence for explicit claims
 
 Search for the support the claim needs, not for an impressive bibliography.
@@ -87,7 +91,24 @@ Search for the support the claim needs, not for an impressive bibliography.
 | A procedure improves outcomes | An applicable comparison | Population and outcome may differ | Keep the recommendation conditional |
 | Two reports confirm a finding | Both cite one study | One evidence family | Do not count them as two replications |
 
-[Cochrane Chapter 5](https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current/chapter-05) explains the studies-versus-reports distinction. That is its contribution here; it does not prescribe this KPS workflow. Keep the corresponding [local Reference](../references/cochrane-2024-handbook-v6-5.md) so readers can inspect the provenance later.
+[Cochrane Chapter 5](https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current/chapter-05) explains the studies-versus-reports distinction. That is its contribution here; it does not prescribe this KPS workflow. Keep the corresponding [local Reference](../references/cochrane-2024-collecting-data-chapter-5.md) so readers can inspect the provenance later.
+
+**Apply professional sources without borrowing their authority**
+
+1. For terminology or a defined data relation, inspect the defining specification. For effectiveness, inspect the relevant experiment or review; a standards logo does not establish an effect.
+2. For an intervention question, [PICO](../methods/pico-question-formulation.md) can clarify population, intervention, comparator and outcome. For an identifier definition, skip PICO and inspect the defining section. Using “reader and task” in place of a clinical population is our explicit analogy, not a Cochrane requirement.
+3. Apply the discipline of [study data extraction](../methods/study-data-extraction.md) to a local claim worksheet: source/version, locator, exact supported claim, conditions, contrary evidence and what was not inspected. This small worksheet is not a systematic review.
+4. Keep the source, our inference and our chosen action in separate cells. If no source supports a purported definition or established Method, move the local idea into this Practice or leave it a private hypothesis.
+
+```text
+Inspected source -> located premise -> qualified inference -> local action
+                         |                   |
+                 original scope      assumptions and alternatives
+```
+
+This is our reasoning bridge, not a new professional model. A single source can define its own term; independent effectiveness claims need different support. Conflicting authorities can define different scopes. Name both rather than silently blending them or forcing exact equivalence.
+
+**Reference identity:** Save one structured Markdown record per publication or clearly identified chapter. Include creator, full title, edition/year basis, URL, inspected locator, access extent and nonclaims. Abstract-only and inaccessible evidence remain limited; do not fabricate a full-text review. The source itself stays external.
 
 ## Stage3 Create locally complete objects
 
@@ -117,11 +138,27 @@ status: "draft"
 | Text you are writing | Likely home |
 |---|---|
 | What a link target means | Concept |
-| Why a title change can invalidate navigation | Explanatory Principle or Model, scoped to the reader |
-| How to repair a destination | Method |
+| Why a title change can invalidate navigation | Local explanation in the navigation step, supported by reader documentation |
+| How to repair this package destination | Practice step using the documented syntax |
 | How to maintain a whole knowledge package | Practice |
 
 If a detail is only useful inside one step, keep it there. Split a file when it gains independent use or becomes difficult to navigate, not merely because a template has another heading.
+
+**Role assignment is KPS application knowledge**
+
+| What the file actually does | KPS role and boundary |
+|---|---|
+| Explains an externally defined term | Concept; preserve that discipline and scope |
+| Explains a published empirical or methodological relationship | Principle; state conditions rather than commands |
+| Shows an established representation | Model; distinguish the full model from the subset shown |
+| Teaches a published repeatable technique | Method; identify the actual procedure and limitations |
+| Chooses and adapts knowledge for a local task | Practice; identify the adaptation as ours |
+
+These are working roles, not external definitions of the five capitalized labels. Our own rule, such as “store each claim in one file,” stays here or in the authoring specification. It does not become a scientific Principle.
+
+**Alignment record to copy:** Include the source Reference, relation (`definition-paraphrase`, `scoped-empirical-finding`, `methodological-relationship`, `standard-model-subset` or `published-procedure-summary`) and exact locator in `source_alignment`. These labels describe our documentation relationship, not formal SKOS mappings. Claiming SKOS `exactMatch` requires the specification's stronger semantics; similar wording is insufficient.
+
+**Write the actual reasoning:** State the source relationship, the assumptions needed in this context, the alternative actions and why this choice is useful. A Method is not uniquely deduced from a Principle. Split a proposed object only when it has independent use; combine overlapping fragments and keep purely local operations in the stage that needs them.
 
 ## Stage4 Compile the Practice
 
@@ -157,6 +194,12 @@ After:  Compare the fragment with the complete heading.
 
 [Diataxis how-to guidance](https://diataxis.fr/how-to-guides/) supports task-focused instructions and branching. KPS deliberately differs by retaining essential explanations inline; it is not a pure Diataxis how-to. [W3C guidance on complex images](https://www.w3.org/WAI/tutorials/images/complex/) informs the text alternative for a meaningful visual, not a requirement to add images everywhere.
 
+**Check the compiled guide without recreating the old labels**
+
+Hide its links, then attempt one declared task from the stated prerequisites. Mark where the action, terminology, reason, expected result or safe fallback is missing. Restore links and compare the local explanation to its source; a fluent summary can omit the very condition that permits use. This two-pass KPS review is our composition of inspection techniques, not a separately established Method.
+
+For navigation and discoverability, adapt a [cognitive walkthrough](../methods/cognitive-walkthrough.md): at each step inspect whether a reader would pursue the needed goal, notice the action, connect it to the result and recognize progress. Record the assumed reader knowledge and visible cues. A paper inspection predicts difficulties; it does not demonstrate improved comprehension. Obtain actual reader evidence when that claim matters.
+
 ## Stage5 Check and release
 
 Test the content as a task guide before treating a green checker as success.
@@ -189,10 +232,36 @@ Both pass           -> permitted PR or ZIP -> report exact status
 
 The two checks answer different questions. A self-review is not an independent usability trial, and neither check establishes scientific truth.
 
+**Identity and navigation check:** Keep the object ID in metadata, the meaningful title in the heading and current order in `StageN`. A metadata ID does not create an anchor. Generate the fragment from the complete heading, resolve relative paths from the containing file, and test the actual viewer. Renumbering requires updating incoming stage links. This is a local Markdown convention, not a property imposed by RFC 3986.
+
+**Publication decision:** Preserve the inspected repository baseline and license. Make one coherent PR against `main`, rerun CI and merge when the owner has authorized it and checks pass. If a corresponding repository is absent, prepare a validated ZIP. Do not manufacture a separate official release or modify sibling domains merely to finish this task.
+
 ## Current practice summary
 
 No domain-building outcome is supplied. Record the actual task, inspected sources, unresolved claims, checks run and publication result only after execution. Synthetic examples above are not application records.
 
 ## Deeper knowledge
 
-[Domain package model](../models/domain-package-model.md), [Classify knowledge](../methods/classify-knowledge.md), [Register a Reference](../methods/register-reference.md), [Synthesize sources](../methods/synthesize-sources.md), [Write an explanatory Principle](../methods/write-explanatory-principle.md), [Create an object](../methods/create-knowledge-object.md), [Make a file self-contained](../methods/make-file-self-contained.md), [Check local completeness](../methods/check-local-completeness.md), [Build navigation](../methods/build-and-check-navigation.md) and [Publish an independent domain](../methods/publish-independent-domain.md) contain the reusable detail. The sequencing and examples here are authored KPS design, not an independently evaluated programme.
+The following files explain the external meanings and procedures used above. Their selection, adaptation and KPS workflow remain our application.
+
+- [PICO Question Formulation](../methods/pico-question-formulation.md)
+
+- [Study Data Extraction](../methods/study-data-extraction.md)
+
+- [Cognitive Walkthrough](../methods/cognitive-walkthrough.md)
+
+- [SKOS Data Model](../models/skos-data-model.md)
+
+- [PROV Data Model](../models/prov-data-model.md)
+
+- [SKOS Concept](../concepts/skos-concept.md)
+
+- [Study and Report](../concepts/study-and-report.md)
+
+- [Evidence Indirectness](../concepts/evidence-indirectness.md)
+
+- [Study Level Evidence Independence](../principles/study-level-evidence-independence.md)
+
+- [Indirectness Limits Applicability](../principles/indirectness-limits-applicability.md)
+
+[Authoring contract](../AUTHORING.md) defines the local file roles. [Alignment and migration](../ALIGNMENT.md) distinguishes external meaning from KPS design.

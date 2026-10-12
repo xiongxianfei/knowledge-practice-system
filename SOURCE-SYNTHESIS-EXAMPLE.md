@@ -1,7 +1,7 @@
 ---
 language: "KPS 9.x"
-package_version: "9.0.1"
-reviewed: "2026-10-07"
+package_version: "10.0.0"
+reviewed: "2026-10-12"
 ---
 
 # Worked source synthesis retrieval and concept mapping
@@ -39,6 +39,8 @@ The inspected studies show that learning activity details and the later test mat
 A candidate operation is to attempt an explanation from memory, compare it with the source, correct misunderstandings, and later apply it to a new task. That is an authored review procedure with relevant empirical inputs, not a claim that these studies tested this exact procedure.
 
 ## Search and access limits
+
+This comparison was assembled in the earlier release. In this revision the original main article and the spacing abstract were rechecked; the Mayrhofer publisher page did not provide usable content, so its earlier inspection account is retained rather than claimed as a new review.
 
 This is a selected original-versus-challenge comparison, not a complete search of retrieval and mapping research. The original main article was inspected through the authors’ PDF, including visual inspection of printed page 773; supplementary materials and raw data were not audited. The re-examination was read in full HTML. The spacing source was inspected at abstract level. No effect-size synthesis or independent reanalysis was performed.
 

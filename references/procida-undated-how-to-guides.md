@@ -13,7 +13,10 @@ accessed: "2026-10-11"
 access_extent: "Selected HTML sections inspected"
 evidence_family: "procida-how-to"
 reviewed: "2026-10-11"
+rechecked_this_release: false
+retained_inspection_note: "Earlier inspection retained with its original date; not a new inspection in Core 10.0.0."
 ---
+
 
 # How to guides
 

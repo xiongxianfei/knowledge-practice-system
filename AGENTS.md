@@ -1,8 +1,9 @@
 ---
-package_version: "9.1.0"
+package_version: "10.0.0"
 language: "KPS 9.x"
-reviewed: "2026-10-11"
+reviewed: "2026-10-12"
 ---
+
 
 # AI contribution guidance
 
@@ -26,3 +27,7 @@ Run `python validate.py .` and `python test_validate.py`; review summary depende
 
 ## Practice editing
 Write actions first, preserve prerequisites and interpretation, and add examples or visuals only where they improve use. Do not recreate the six-label stage form or optimize prose to a word-count threshold. Inspect `REVIEW.md` as well as the structural checker. Never report a self-review as an independent reader trial.
+
+## Source grounded Core editing
+
+Apply ALIGNMENT.md: verify meaning against the located source, retain uncertainty and name adaptations. Place local workflows in Practices. Run `python test_alignment.py` as well as the structural suite. User-authorized auto-merge is allowed after CI; do not require another approval already supplied. Never disable checks or overwrite unrelated changes to force publication.

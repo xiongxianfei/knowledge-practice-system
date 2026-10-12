@@ -1,20 +1,21 @@
 ---
 id: "kps:pr:improve-kps"
 type: "practice"
-version: "9.1.0"
+version: "10.0.0"
 language: "KPS 9.x"
 status: "active"
-reviewed: "2026-10-11"
-basis_kind: "authored orchestration; not an independently tested programme"
+reviewed: "2026-10-12"
+basis_kind: "KPS-specific application synthesis; external methods are distinguished from adaptations"
 confidence: "provisional for real-world application"
-uses_methods: ["kps:me:make-file-self-contained", "kps:me:check-local-completeness", "kps:me:synthesize-sources", "kps:me:test-knowledge-in-use", "kps:me:revise-linked-knowledge", "kps:me:publish-independent-domain", "kps:me:build-and-check-navigation"]
-uses_models: ["kps:mo:knowledge-role-model", "kps:mo:domain-package-model"]
+uses_methods: ["kps:method:pdca", "kps:method:cognitive-walkthrough"]
+uses_models: []
 uses_principles: []
 practice_format: "steps-first-v1"
 stage_order: "recommended; stated prerequisites and stopping conditions govern entry"
 stage_titles: ["Stage1 Locate the actual problem", "Stage2 Compare bounded repairs", "Stage3 Pilot the repair on real content", "Stage4 Release and monitor"]
-references: ["kps:r:wai-complex-images"]
+references: ["kps:r:pdca", "kps:r:walkthrough"]
 ---
+
 
 # Improve KPS without mistaking structure for usefulness
 
@@ -78,6 +79,8 @@ Prefer the repair that solves the observed problem without creating a second sou
 
 No option wins because it is fashionable. For this task, select content based on missing reader understanding, and use graphics only when they explain a real relation.
 
+**Use an established improvement cycle:** Treat the proposed repair as a [PDCA](../methods/pdca.md) change: plan a bounded improvement, try it, check the result and act accordingly. Our choices of Markdown structure, local completeness and release workflow belong to this Practice, not to ASQ's original procedure. Prefer a source-compatible repair to inventing another reusable category.
+
 ## Stage3 Pilot the repair on real content
 
 A template is not a pilot. Apply the change to the actual files a reader would use.
@@ -103,6 +106,8 @@ Structural tests actually run:
 
 A synthetic fixture can exercise the checker but cannot establish real-reader comprehension. If the content still requires guessing, revise it even when CI is green.
 
+**Evaluate usability without claiming a trial:** Use the [cognitive walkthrough](../methods/cognitive-walkthrough.md) questions on a specified reader and task. Note the visible cues and the knowledge a successful action assumes. Record predictions of difficulty separately from observed reader behavior. To investigate an actual improvement, compare task, assistance and familiarity conditions as well as document versions; several changed factors leave causal attribution uncertain.
+
 ## Stage4 Release and monitor
 
 Make the change discoverable without forcing unrelated packages to migrate now.
@@ -123,4 +128,10 @@ Record the observed problem, selected repair, checks performed, publication stat
 
 ## Deeper knowledge
 
-[Knowledge role model](../models/knowledge-role-model.md), [Domain package model](../models/domain-package-model.md), [Make a file self-contained](../methods/make-file-self-contained.md), [Check local completeness](../methods/check-local-completeness.md), [Synthesize sources](../methods/synthesize-sources.md), [Test knowledge in use](../methods/test-knowledge-in-use.md), [Revise linked knowledge](../methods/revise-linked-knowledge.md), [Publish a domain](../methods/publish-independent-domain.md) and [Build navigation](../methods/build-and-check-navigation.md) provide deeper reasoning. This workflow is an authored maintenance Practice, not an empirical validation of KPS.
+The following files explain the external meanings and procedures used above. Their selection, adaptation and KPS workflow remain our application.
+
+- [Plan Do Check Act](../methods/pdca.md)
+
+- [Cognitive Walkthrough](../methods/cognitive-walkthrough.md)
+
+[Authoring contract](../AUTHORING.md) defines the local file roles. [Alignment and migration](../ALIGNMENT.md) distinguishes external meaning from KPS design.

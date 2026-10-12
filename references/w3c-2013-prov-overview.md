@@ -13,14 +13,16 @@ updated_year: null
 date_basis: "publication year shown by source"
 url: "https://www.w3.org/TR/prov-overview/"
 accessed: "2026-10-07"
-evidence_family: "W3C PROV family"
+evidence_family: "w3c-prov"
 doi: null
 previous_access_extent: "Official 2013 Working Group Note overview inspected. This is the overview of the PROV family, not a review of every normative specification."
 access_extent: "selected official HTML"
-rechecked_this_release: true
+rechecked_this_release: false
 current_review_date: "2026-10-07"
 current_review_note: "The recommendation overview and provenance definitions were inspected. Provenance identifies origins and activities; it does not itself establish truth."
+retained_inspection_note: "Earlier inspection retained with its original date; not a new inspection in Core 10.0.0."
 ---
+
 
 # PROV Overview
 
@@ -33,7 +35,9 @@ PROV describes how entities, activities and agents can be related in provenance 
 PROV describes how entities, activities and agents can be related in provenance records. It helps KPS describe where information came from. A provenance record can be complete while the recorded claim is false; this overview is not an effectiveness trial.
 
 
-## Current inspection and use limit
+## Retained inspection and use limit
+
+This account retains the earlier dated inspection; no new full source inspection is claimed for Core 10.0.0.
 
 The recommendation overview and provenance definitions were inspected. Provenance identifies origins and activities; it does not itself establish truth.
 
@@ -46,7 +50,7 @@ The recommendation overview and provenance definitions were inspected. Provenanc
 **Date basis:** publication year shown by source  
 **External publication:** [Primary source](https://www.w3.org/TR/prov-overview/)  
 **Accessed:** 2026-10-07  
-**Inspected extent this release:** selected official HTML.
+**Previously inspected extent:** selected official HTML.
 
 ## Evidence lineage
 
@@ -64,7 +68,7 @@ It does not validate KPS, prove a claim true, or experimentally establish a bene
 
 ## Interpretation boundary
 
-The claims above are located paraphrases of the source, not independent replications. The local Summary makes the contribution understandable, but verifying it requires inspecting the external material. Downstream choices and synthesis are authored in knowledge objects; no full source copy is stored here.
+The claims above are located paraphrases of the source, not independent replications. The local Summary makes the contribution understandable, but verifying it requires inspecting the external material. Downstream KPS choices and application synthesis are authored in Practices; no full source copy is stored here.
 
 ## Deeper knowledge
 

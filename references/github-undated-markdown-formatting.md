@@ -18,10 +18,12 @@ accessed: "2026-10-07"
 evidence_family: "GitHub documentation"
 previous_access_extent: "Official HTML documentation inspected for the named sections. No installed application behavior was inferred as tested."
 access_extent: "selected official HTML"
-rechecked_this_release: true
+rechecked_this_release: false
 current_review_date: "2026-10-07"
 current_review_note: "Section links, duplicate headings, editing headings and relative links were inspected. Simple complete headings are the navigation basis; no universal Markdown fragment standard is inferred."
+retained_inspection_note: "Earlier inspection retained with its original date; not a new inspection in Core 10.0.0."
 ---
+
 
 # GitHub Basic writing and formatting syntax
 
@@ -32,13 +34,15 @@ GitHub documents how headings become section links and how relative file links a
 This reference identifies the documented link interface used by the package. The extracted rules support the navigation profile; they do not establish that an untested application configuration behaves identically. The source remains external.
 
 
-## Current inspection and use limit
+## Retained inspection and use limit
+
+This account retains the earlier dated inspection; no new full source inspection is claimed for Core 10.0.0.
 
 Section links, duplicate headings, editing headings and relative links were inspected. Simple complete headings are the navigation basis; no universal Markdown fragment standard is inferred.
 
 
 ## Source identity
-**Creator:** GitHub. **Title:** Basic writing and formatting syntax. **Source:** [Official documentation](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax). **Date:** undated; accessed 2026-10-07. **Inspected extent this release:** selected official HTML.
+**Creator:** GitHub. **Title:** Basic writing and formatting syntax. **Source:** [Official documentation](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax). **Date:** undated; accessed 2026-10-07. **Previously inspected extent:** selected official HTML.
 
 ## Evidence lineage
 GitHub documentation. MkDocs delegates heading generation to Python-Markdown; those two records are not independent engines.

@@ -1,10 +1,10 @@
 {
   "package": "KPS",
-  "version": "9.1.0",
+  "version": "10.0.0",
   "kps_language": "9.x",
   "validated_with": "9.1.0",
   "markdown_profile": "practical-markdown-v1",
-  "released": "2026-10-11",
+  "released": "2026-10-12",
   "independent": true,
   "knowledge_types": [
     "concept",
@@ -14,9 +14,10 @@
     "practice"
   ],
   "reference_is_supporting_record": true,
-  "scope": "self-applying knowledge architecture and operating methodology",
+  "scope": "source-aligned knowledge and KPS-specific application Practices",
   "repository_distribution": "GitHub source tree",
   "license": "MIT",
   "minimum_validator": "9.1.0",
-  "practice_format": "steps-first-v1"
+  "practice_format": "steps-first-v1",
+  "alignment_profile": "core-established-knowledge-v1"
 }

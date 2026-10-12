@@ -1,32 +1,32 @@
 ---
+package_version: "10.0.0"
 language: "KPS 9.x"
-package_version: "9.0.1"
-reviewed: "2026-10-07"
+reviewed: "2026-10-12"
 ---
 
-# Method to reason map
+# Source and application map
 
 ## Key takeaway
-A Method names an action; its rationale explains why that action is a candidate rather than an inevitable consequence.
+
+Use a source for the claim it supports and a Practice for the local action.
 
 ## Summary
-The map links operations to their deeper explanatory dependencies. Each Method already summarizes the needed reasoning inline. These links provide depth, not a substitute for local understanding. A typed relationship indicates intended use, not evidence of effectiveness.
 
-## Operations and explanations
-| Operation | Explanatory Principles | Models |
+This map makes the external-to-local relationship visible without claiming that the workflow is uniquely derived from professional sources.
+
+## From professional knowledge to KPS use
+
+| Source-aligned knowledge | What it supports | Our receiving application |
 |---|---|---|
-| [Build and check navigation](methods/build-and-check-navigation.md) | [Navigation depends on rendering conventions](principles/navigation-depends-on-rendering-conventions.md) | [Document navigation model](models/document-navigation-model.md) |
-| [Check local completeness and faithful compression](methods/check-local-completeness.md) | [Summaries can omit decision critical conditions](principles/summaries-can-omit-decision-critical-conditions.md); [Provenance does not establish truth](principles/provenance-does-not-establish-truth.md) | [Local summary and dependency model](models/local-summary-dependency-model.md) |
-| [Classify knowledge](methods/classify-knowledge.md) | The local rationale states the basis and limits. | [Knowledge role model](models/knowledge-role-model.md) |
-| [Create a usable knowledge object](methods/create-knowledge-object.md) | [Independent representations can diverge](principles/independent-representations-can-diverge.md); [Explicit reasoning exposes assumptions](principles/explicit-reasoning-exposes-assumptions.md) | [Knowledge role model](models/knowledge-role-model.md); [Independent domain package model](models/domain-package-model.md) |
-| [Make a knowledge file self contained](methods/make-file-self-contained.md) | [Summaries can omit decision critical conditions](principles/summaries-can-omit-decision-critical-conditions.md); [Independent representations can diverge](principles/independent-representations-can-diverge.md) | [Local summary and dependency model](models/local-summary-dependency-model.md) |
-| [Publish an independent domain](methods/publish-independent-domain.md) | [Provenance does not establish truth](principles/provenance-does-not-establish-truth.md) | [Independent domain package model](models/domain-package-model.md) |
-| [Register a reference](methods/register-reference.md) | [Provenance does not establish truth](principles/provenance-does-not-establish-truth.md); [Multiple reports can share one evidence base](principles/multiple-reports-can-share-one-evidence-base.md) | [Independent domain package model](models/domain-package-model.md) |
-| [Revise linked knowledge](methods/revise-linked-knowledge.md) | [Revised interpretation does not change past observation](principles/revised-interpretation-does-not-change-past-observation.md); [Independent representations can diverge](principles/independent-representations-can-diverge.md) | [Application and revision model](models/application-and-revision-model.md) |
-| [Synthesize sources](methods/synthesize-sources.md) | [Multiple reports can share one evidence base](principles/multiple-reports-can-share-one-evidence-base.md); [Evidence applicability depends on the question](principles/evidence-applicability-depends-on-the-question.md); [Observations can fit multiple explanations](principles/observations-can-fit-multiple-explanations.md) | [Claim evidence inference model](models/claim-evidence-model.md) |
-| [Test knowledge in use](methods/test-knowledge-in-use.md) | [Learning effects depend on task and comparison](principles/learning-effects-depend-on-task-and-comparison.md); [Observations can fit multiple explanations](principles/observations-can-fit-multiple-explanations.md) | [Application and revision model](models/application-and-revision-model.md) |
-| [Trace a Method rationale](methods/trace-method-rationale.md) | [Explicit reasoning exposes assumptions](principles/explicit-reasoning-exposes-assumptions.md); [Provenance does not establish truth](principles/provenance-does-not-establish-truth.md) | [Rationale trace model](models/rationale-trace-model.md) |
-| [Write an explanatory Principle](methods/write-explanatory-principle.md) | [Explicit reasoning exposes assumptions](principles/explicit-reasoning-exposes-assumptions.md); [Evidence applicability depends on the question](principles/evidence-applicability-depends-on-the-question.md) | [Knowledge role model](models/knowledge-role-model.md); [Claim evidence inference model](models/claim-evidence-model.md) |
+| [SKOS Concept](concepts/skos-concept.md) and [model](models/skos-data-model.md) | Distinctions between meaning, labels and vocabulary relationships | [Classify and name](practices/build-domain-knowledge.md#stage3-create-locally-complete-objects) |
+| [URI](concepts/uniform-resource-identifier.md) | Identification and reference resolution terminology | [Repair navigation](practices/use-kps.md#stage2-retrieve-and-inspect-the-local-explanation) |
+| [Provenance](concepts/provenance.md) and [PROV model](models/prov-data-model.md) | Production history and derivation | [Preserve records](practices/review-and-learn.md#stage1-reconstruct-the-record) |
+| [PICO](methods/pico-question-formulation.md) and [data extraction](methods/study-data-extraction.md) | Explicit questions and source-located study data | [Claim worksheet](practices/build-domain-knowledge.md#stage2-find-evidence-for-explicit-claims) |
+| [Evidence indirectness](concepts/evidence-indirectness.md) | Applicability gaps in intervention evidence | [Review the target question](practices/build-domain-knowledge.md#stage2-find-evidence-for-explicit-claims) |
+| [Cognitive walkthrough](methods/cognitive-walkthrough.md) | Task-based predictions about learnability | [Inspect a guide](practices/build-domain-knowledge.md#stage4-compile-the-practice) |
+| [PDCA](methods/pdca.md) | Iterative improvement procedure | [Improve KPS](practices/improve-kps.md) |
+| [Retrieval practice](methods/retrieval-practice.md) and [spacing](principles/spacing-effect.md) | Scoped learning operations and findings | [Choose a learning check](practices/review-and-learn.md#stage4-define-the-next-check) |
 
-## Reading the reasoning
-Identify the goal and context, read the Method rationale, inspect relevant assumptions and competing explanations, and decide what would count against adopting it. Do not turn a successful local trial into proof of a universal mechanism. [Source synthesis](SOURCE-SYNTHESIS-EXAMPLE.md) explains source comparison.
+## Interpret the arrows
+
+Each row is an application relationship, not institutional endorsement or formal equivalence. An authority can define its own vocabulary while remaining silent on KPS. When the adaptation changes the task, participant assumptions or evidence requirements, write the adaptation in the Practice and test it there.
