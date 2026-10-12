@@ -89,6 +89,6 @@ class CoreAlignmentTests(unittest.TestCase):
         self.assertEqual(20,sum(1 for folder in ['concepts','principles','models','methods','practices'] for _ in (self.root/folder).glob('*.md')))
         self.assertEqual(16,sum(1 for folder in ALLOWED for _ in (self.root/(folder+'s')).glob('*.md')))
     def test_12_existing_content_language_remains_explicit(self):
-        p=json.loads((self.root/'publication.json').read_text());self.assertEqual('10.1.0',p['version']);self.assertEqual('9.x',p['kps_language']);self.assertEqual('9.1.0',p['validated_with'])
+        p=json.loads((self.root/'publication.json').read_text());self.assertEqual('10.2.0',p['version']);self.assertEqual('9.x',p['kps_language']);self.assertEqual('9.1.0',p['validated_with'])
 
 if __name__ == '__main__': unittest.main(verbosity=2)
