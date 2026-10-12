@@ -1,0 +1,45 @@
+name: Prepare D2 publication assets
+on:
+  push:
+    branches: [feat/selective-d2-10.1.0]
+permissions:
+  contents: write
+jobs:
+  render:
+    if: github.ref == 'refs/heads/feat/selective-d2-10.1.0'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: feat/selective-d2-10.1.0
+      - name: Install pinned D2 with verified digest
+        shell: bash
+        run: |
+          curl --fail --location --silent --show-error --retry 3 https://github.com/d2lang/d2/releases/download/v0.9.0/d2-v0.9.0-linux-amd64.tar.gz -o "$RUNNER_TEMP/d2.tar.gz"
+          echo "5669ddc46b99e942cc96078f4a4e36d5e62103348f4c05179ede27802fdd87a9  $RUNNER_TEMP/d2.tar.gz" | sha256sum --check
+          tar -xzf "$RUNNER_TEMP/d2.tar.gz" -C "$RUNNER_TEMP"
+          echo "$RUNNER_TEMP/d2-v0.9.0/bin" >> "$GITHUB_PATH"
+      - name: Render and independently rerender
+        run: |
+          python3 diagram_tools.py --write
+          python3 diagram_tools.py --check
+      - name: Record generated SVGs on this publication branch only
+        run: |
+          git add -- diagrams
+          if ! git diff --cached --quiet; then
+            git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m 'build: render D2 explanatory diagrams'
+            git push origin HEAD:refs/heads/feat/selective-d2-10.1.0
+          fi
+      - name: Make visual inspection previews
+        shell: bash
+        run: |
+          mkdir -p "$RUNNER_TEMP/d2-previews"
+          find diagrams -name '*.d2' -print0 | while IFS= read -r -d '' src; do
+            d2 --layout=dagre --theme=0 --pad=24 "$src" "$RUNNER_TEMP/d2-previews/$(basename "$src" .d2).png"
+          done
+      - uses: actions/upload-artifact@v4
+        with:
+          name: d2-visual-review
+          path: ${{ runner.temp }}/d2-previews/*.png
+          retention-days: 7

@@ -1,0 +1,11 @@
+# W3C PROV-DM explanatory subset with relation directions preserved.
+# Synthetic conversion example; not a formal PROV serialization.
+direction: right
+input: "Input document\nEntity"
+activity: "Summarize\nActivity" {shape: hexagon}
+output: "Summary document\nEntity"
+agent: "Editor\nAgent" {shape: person}
+activity -> input: used
+output -> activity: wasGeneratedBy
+activity -> agent: wasAssociatedWith
+output -> input: wasDerivedFrom {style.stroke-dash: 4}
