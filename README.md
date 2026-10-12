@@ -8,52 +8,37 @@ reviewed: "2026-10-12"
 
 ## Key takeaway
 
-Reuse established knowledge and make KPS-specific application explicit.
+Apply source-aligned professional knowledge through locally usable, task-oriented Practices. Keep KPS-specific choices distinct from externally established meanings.
 
 ## Summary
 
-KPS Core 10.2.0 organizes professional knowledge and applies it through steps-first Practices. This release adds selective visual explanations to the source-aligned library introduced in 10.0.0. The 41 former local abstractions remain retired; their useful application responsibilities remain in the four retained Practices.
+KPS Core contains 20 knowledge objects (five Concepts, four Principles, two Models, five Methods and four Practices) plus 18 external Reference records. This working layout separates the knowledge library, authoring guidance, maintenance tools and historical records.
 
 ## Start with the task
 
-[Use KPS](practices/use-kps.md) answers one bounded question. [Build domain knowledge](practices/build-domain-knowledge.md) connects sources to usable knowledge. [Improve KPS](practices/improve-kps.md) tests a change. [Review and learn](practices/review-and-learn.md) preserves actual observations and revisable conclusions.
+- [Use KPS](practices/use-kps.md) — answer one bounded question.
+- [Build domain knowledge](practices/build-domain-knowledge.md) — turn evidence into usable knowledge.
+- [Improve KPS](practices/improve-kps.md) — pilot an improvement on real content.
+- [Review and learn](practices/review-and-learn.md) — retain justified observations and conclusions.
 
-## What is reusable and what is ours
+Browse the [knowledge library](docs/library.md) for Concepts, Principles, Models, Methods, References, and a small dependency map.
 
-| Library | Examples | Boundary |
-|---|---|---|
-| Concepts | SKOS Concept, Provenance, URI, Study and Report, Evidence Indirectness | Named source meanings, not universal definitions |
-| Principles | Testing Effect, Spacing Effect, evidence independence and applicability | Scoped findings or methodological relationships, not rules |
-| Models | SKOS and PROV data models | Explanatory subsets, not RDF conformance claims |
-| Methods | PICO, Study Data Extraction, PDCA, Cognitive Walkthrough, Retrieval Practice | Published procedures, not newly named KPS workflows |
-| Practices | Use, build, improve, review | Our task-specific synthesis, explicitly identified |
+## For authors and maintainers
 
-The library contains **20 core objects and 18 Reference records**. Smaller does not mean that every removed statement was false. Local workflow abstractions no longer masquerade as reusable professional knowledge. [INDEX.md](INDEX.md) lists the current library; [MIGRATION.md](MIGRATION.md) accounts for each old ID and destination.
+The [authoring contract](docs/authoring.md) governs structure; the [Core source-alignment policy](docs/alignment.md) distinguishes professional knowledge from KPS-specific applications. See [templates](docs/templates.md), [reader review](docs/review.md), [diagram authoring](docs/diagrams.md), and [compatibility and migration](docs/compatibility.md). [Contributing](.github/CONTRIBUTING.md) describes project decisions and publication.
 
-## Authoring and source alignment
+## Validate
 
-[AUTHORING.md](AUTHORING.md) is the local format contract. [ALIGNMENT.md](ALIGNMENT.md) is the Core curation policy. [TEMPLATES.md](TEMPLATES.md) gives examples, not another authority. The five roles, StageN convention and Markdown profile remain KPS choices; none is attributed to W3C, Cochrane or ASQ.
-
-Every substantial file has a takeaway and summary. Practices put actions first and retain needed reasoning, examples, interpretation and fallback inline. Source records state actual inspection extent. No source PDF, private record, measured learning outcome or institutional endorsement is bundled or invented.
-
-## Versions and checks
-
-Core 10.0.0 introduced breaking IDs and paths; **10.2.0** adds diagrams without further identity changes. The five-role **KPS 9.x authoring language** is unchanged, and the included structural checker remains **9.1.0**. The new Core alignment test is an additional curation check, not a new domain-language requirement. See [COMPATIBILITY.md](COMPATIBILITY.md).
+From the repository root:
 
 ```bash
 python validate.py .
-python test_validate.py
-python test_alignment.py
+python -m unittest discover -s internal/tests -p "test_*.py"
+python -m internal.diagram_tools --check --root .
 ```
 
-These checks do not prove factual correctness or usability. [CHECKS.md](CHECKS.md) separates executed checks from their limits. [REVIEW.md](REVIEW.md) describes the content review.
+The D2 rendering check requires the pinned version documented in [diagram authoring](docs/diagrams.md). Structural checks do not certify scientific validity or reader usability. The [10.2.0 release record](docs/history/10.2.0-release.md) preserves historical verification.
 
-## Publication and rights
+## Scope and rights
 
-Use one change branch and PR; merge when authorized and checks pass. Keep Git history rather than parallel obsolete files. No separate tag or official release is implied. Swim, Technical Insight and REM are unchanged by this Core-only revision.
-
-KPS-authored content and tooling use the retained [MIT license](LICENSE); cited works retain their own rights. Follow [CONTRIBUTING.md](CONTRIBUTING.md) and [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md).
-
-## Selective explanatory diagrams
-
-The [Core-wide necessity audit](DIAGRAM-AUDIT.md) covers all 20 objects. Seventeen explanatory diagrams and one metadata neighborhood are committed as D2 and SVG. Two explanatory sources are reused; Testing Effect stays text-only rather than inventing an effect-size chart. SVGs are committed beside their editable sources and embedded where used. Text remains sufficient without images; this is not an image quota or a new graph platform. Start with [Use KPS](practices/use-kps.md), the [knowledge neighborhood](KNOWLEDGE-MAP.md), or the [diagram guide](DIAGRAMS.md).
+KPS uses one source-aligned Core library, locally usable Practices, and linked external publications rather than bundled third-party full texts. Source records preserve inspection limits. KPS-authored content and tools use the [MIT License](LICENSE); third-party publications retain their own rights.
