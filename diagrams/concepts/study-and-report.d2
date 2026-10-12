@@ -1,0 +1,12 @@
+# Synthetic many-to-many example; not actual study records.
+# Based on Cochrane Chapter 5, Section 5.2.1; see the owning Concept.
+direction: right
+s1: "Study A\nInvestigation" {shape: rectangle}
+s2: "Study B\nInvestigation" {shape: rectangle}
+r1: "Report 1\nDescribes A" {shape: document}
+r2: "Report 2\nDescribes A and B" {shape: document}
+r3: "Report 3\nDescribes B" {shape: document}
+r1 -> s1: describes
+r2 -> s1: describes
+r2 -> s2: describes
+r3 -> s2: describes

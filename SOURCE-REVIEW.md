@@ -1,5 +1,5 @@
 ---
-package_version: "10.0.0"
+package_version: "10.1.0"
 language: "KPS 9.x"
 reviewed: "2026-10-12"
 ---
@@ -14,7 +14,7 @@ New inspection and retained history are not interchangeable.
 
 The source review for Core 10.0.0 supports specific definitions, findings and procedure summaries. No complete standard conformance audit, full systematic review or independent KPS evaluation was performed.
 
-## Inspected for this change
+## Core 10 0 0 inspection history
 
 | Source | Extent | Use and limit |
 |---|---|---|
@@ -31,7 +31,7 @@ The source review for Core 10.0.0 supports specific definitions, findings and pr
 
 ## Retained inspection and failed access
 
-The remaining prior Reference records retain their earlier dated inspection history. Their claims were not silently converted into newly checked findings. The current attempt to fetch the Mayrhofer publisher article failed; the previous recorded inspection is retained and its methodological qualification remains visible in the testing-effect discussion. No fresh full-text access is claimed.
+The remaining prior Reference records retain their earlier dated inspection history. Their claims were not silently converted into newly checked findings. During the 10.0.0 revision, the attempt to fetch the Mayrhofer publisher article failed; the previous recorded inspection is retained and its methodological qualification remains visible in the testing-effect discussion. No fresh full-text access is claimed.
 
 The three Cochrane chapters belong to one handbook family. The two W3C models have distinct purposes, not two confirmations of a single efficacy claim. Authoritative descriptions, empirical comparisons and KPS inference are kept separate. The existing [learning synthesis example](SOURCE-SYNTHESIS-EXAMPLE.md) remains an earlier worked synthesis, not a new experiment.
 
@@ -40,3 +40,9 @@ The three Cochrane chapters belong to one handbook family. The two W3C models ha
 Concepts preserve named source scopes. Principles are scoped findings or methodological relationships. Model files explicitly present subsets. Published procedures do not import a requirement to use the same technique for every KPS task. All workflow adaptations, proposed checks and maintenance rules remain in Practices or minimal publication specifications.
 
 No licensed full publications, personal records or claim of ISO, W3C, Cochrane or ASQ endorsement is included.
+
+## Selective D2 diagrams in 10 1 0
+
+On 2026-10-12, the diagram-specific review inspected Cochrane Chapter 5 Section 5.2.1 and MECIR C42, W3C PROV-DM's named relations, ASQ's PDCA procedure, and W3C WAI complex-image guidance. The diagrams preserve those contributions rather than claiming new empirical findings. D2 official CLI/export/embedding sections are recorded in the new D2 Reference. Earlier source reviews and access limitations remain historical; unrelated learning findings were not revalidated.
+
+The many-to-many study/report drawing and repeated-report example are synthetic. The PROV drawing is a subset with labeled relation directions, not a formal serialization. The Practice decision flow is KPS-authored. The neighborhood uses current metadata only. Diagram review is author inspection, not an independent reader study.

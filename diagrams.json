@@ -1,0 +1,39 @@
+{
+  "d2_version": "0.9.0",
+  "layout": "dagre",
+  "theme": 0,
+  "pad": 24,
+  "diagrams": [
+    {
+      "source": "diagrams/concepts/study-and-report.d2",
+      "owner": "concepts/study-and-report.md",
+      "reason": "Show the many-to-many distinction between an investigation and reports."
+    },
+    {
+      "source": "diagrams/principles/reports-and-evidence.d2",
+      "owner": "principles/study-level-evidence-independence.md",
+      "reason": "Explain why repeating the same study outcome does not add independent trials."
+    },
+    {
+      "source": "diagrams/models/prov-relations.d2",
+      "owner": "models/prov-data-model.md",
+      "reason": "Keep entity, activity and agent relations and their directions distinct."
+    },
+    {
+      "source": "diagrams/methods/pdca-loop.d2",
+      "owner": "methods/pdca.md",
+      "reason": "Show that checking a trial informs adoption or another planning cycle."
+    },
+    {
+      "source": "diagrams/practices/check-and-observe.d2",
+      "owner": "practices/use-kps.md",
+      "reason": "Separate structural checks, real viewer checks and untested behavior."
+    },
+    {
+      "source": "diagrams/knowledge-map/use-kps-dependencies.d2",
+      "owner": "KNOWLEDGE-MAP.md",
+      "reason": "Show one Practice neighborhood, not an invented universal hierarchy.",
+      "metadata_root": "kps:pr:use-kps"
+    }
+  ]
+}

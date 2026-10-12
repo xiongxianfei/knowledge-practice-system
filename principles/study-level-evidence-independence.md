@@ -1,7 +1,7 @@
 ---
 id: "kps:principle:study-level-evidence-independence"
 type: "principle"
-version: "10.0.0"
+version: "10.1.0"
 language: "KPS 9.x"
 status: "active"
 reviewed: "2026-10-12"
@@ -31,6 +31,14 @@ Duplicating a description introduces no new observation by itself. Complementary
 ## Example
 
 Three synthetic documents repeat the same outcome for the same participants. Treating them as three trials would count the participants more than once. Keep the report links, extract complementary information and retain uncertainty about possible overlap.
+
+## Why repeated reports are not repeated trials
+
+![Three reports of the same participants and outcome lead to one linked study contribution rather than three trials](../diagrams/principles/reports-and-evidence.svg)
+
+The arrows show the reasoning in the synthetic example: trace the repeated outcome to its investigation, preserve useful complementary details, and avoid counting it as three trials. This does not say every study has only one outcome or that different studies must be independent. If overlap is uncertain, retain that uncertainty rather than forcing a count.
+
+[Editable D2 source](../diagrams/principles/reports-and-evidence.d2). The explanation follows the study-level distinction in Cochrane Section 5.2.1 and MECIR C42; diagram layout is our own.
 
 ## Limits
 

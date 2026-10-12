@@ -1,7 +1,7 @@
 ---
 id: "kps:concept:study-and-report"
 type: "concept"
-version: "10.0.0"
+version: "10.1.0"
 language: "KPS 9.x"
 status: "active"
 reviewed: "2026-10-12"
@@ -23,6 +23,14 @@ Cochrane distinguishes the investigation from the documents describing it. That 
 ## Meaning
 
 A study is the investigation of interest; a report is a source describing some part of it. The relationships can be many-to-many. A conference report and later article may contain complementary rather than independent findings.
+
+## Diagram of the distinction
+
+![Three reports describe two studies, including one report describing both studies](../diagrams/concepts/study-and-report.svg)
+
+Read each arrow as **describes**, not **causes**. In this synthetic example, Report 1 describes Study A; Report 2 describes Studies A and B; Report 3 describes Study B. A study and a document are not interchangeable counting units. The drawing illustrates a possible many-to-many relation, not an assertion about any real reports.
+
+[Editable D2 source](../diagrams/concepts/study-and-report.d2). Original explanatory drawing based on Cochrane Section 5.2.1, not a copied source figure.
 
 ## Example
 

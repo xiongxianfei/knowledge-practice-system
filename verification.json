@@ -1,14 +1,14 @@
 {
-  "scope": "Local structural tests, source-summary self-review and publication checks; not independent empirical validation",
+  "scope": "Structural checks, actual pinned remote D2 rendering, and author visual review; not scientific or independent user validation",
   "checked_on": "2026-10-12",
-  "baseline_commit": "ff0d546d07cd880c743b9cec170bfb53f2263f21",
-  "content_version": "10.0.0",
+  "baseline_commit": "383a7b896ca3f515bd1c6937004e5e62bad9d8c1",
+  "content_version": "10.1.0",
   "kps_language": "9.x",
   "structural_checker": "9.1.0",
   "stats": {
-    "markdown_documents": 58,
+    "markdown_documents": 61,
     "knowledge_objects": 20,
-    "reference_records": 17,
+    "reference_records": 18,
     "by_type": {
       "concept": 5,
       "method": 5,
@@ -16,21 +16,19 @@
       "practice": 4,
       "principle": 4
     },
-    "local_links": 246,
+    "local_links": 277,
     "typed_relationships": 54,
     "practice_stages": 17,
-    "heading_identifiers": 462,
+    "heading_identifiers": 489,
     "summary_recipients": 20,
     "summary_dependencies": 54,
     "manifest_files": 0
   },
   "structural_regression_tests": 52,
   "alignment_regression_tests": 12,
-  "pandoc_gfm_heading_identifiers": 462,
-  "markdown_it_link_destinations": 272,
-  "retired_non_practice_objects": 41,
-  "retained_practices": 4,
-  "preserved_stage_titles": 17,
-  "github_ci": "not determined by local verification",
+  "diagram_unit_tests": 16,
+  "d2_renderer": "0.9.0",
+  "d2_sources_rendered": 6,
+  "d2_render_comparison": "passed on GitHub Actions Linux runner; repeated in final PR workflow",
   "independent_user_trial": false
 }

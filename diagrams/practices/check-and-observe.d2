@@ -1,0 +1,18 @@
+# KPS-specific troubleshooting flow; not a universal Markdown standard.
+direction: down
+edit: "Make one bounded edit"
+structure: "Local structure passes?" {shape: diamond}
+repair: "Read the diagnostic\nRepair path or fragment"
+viewer: "Test the link in\nthe intended viewer"
+observed: "Navigation works?" {shape: diamond}
+inspect: "Inspect viewer behavior\nKeep other causes open"
+record: "Record observed behavior\nand untested limits"
+unavailable: "Record click behavior\nas untested"
+edit -> structure
+structure -> repair: no
+repair -> structure: recheck
+structure -> viewer: yes
+viewer -> observed: test performed
+viewer -> unavailable: test unavailable
+observed -> inspect: no
+observed -> record: yes

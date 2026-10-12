@@ -1,7 +1,7 @@
 ---
 id: "kps:pr:use-kps"
 type: "practice"
-version: "10.0.0"
+version: "10.1.0"
 language: "KPS 9.x"
 status: "active"
 reviewed: "2026-10-12"
@@ -111,6 +111,12 @@ Edit made -> structural check -> click in intended viewer
                  v                        v
           inspect diagnostic       inspect renderer behavior
 ```
+
+![After a bounded edit, failed structure checks return to diagnostics; a passed check leads to a viewer test, with separate paths for success, failure and an unavailable test](../diagrams/practices/check-and-observe.svg)
+
+This expands the text route above. Failed local checks lead to a path/fragment repair and another check. Passing them permits a viewer test; failed navigation leaves the cause open, while an unavailable viewer must be recorded as untested. Only an observed success supports recording that navigation worked. This is our KPS repair workflow, not a general rule supplied by an external standards body.
+
+[Editable D2 source](../diagrams/practices/check-and-observe.d2).
 
 The diagram separates textual validity from actual navigation. A passed checker cannot establish that a person understands the instructions. If rendering is unavailable, report “structurally checked; click behavior untested” rather than success.
 

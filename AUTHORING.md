@@ -1,5 +1,5 @@
 ---
-package_version: "10.0.0"
+package_version: "10.1.0"
 language: "KPS 9.x"
 reviewed: "2026-10-12"
 ---
@@ -77,6 +77,16 @@ Place the support beside the action it clarifies. Add a worked example when the 
 Prefer text diagrams and Markdown tables for simple relationships. When an image is useful, embed a local PNG or SVG through ordinary Markdown image syntax, add meaningful alternative text and a nearby explanation, and include its source/rights information. Keep essential text available if the image cannot render. Avoid hotlinked images and renderer plugins as dependencies for understanding; external images receive a checker warning rather than an assumption of offline availability.
 
 Link directly to relevant websites where useful, with a short annotation stating what to inspect, what it supports and the important limit. Maintain the full publication identity and inspection extent in `references/`. Essential instructions stay inline. A collection of links is not a self-contained Practice, and embedding a third-party article is not a substitute for synthesis.
+
+## Selective D2 diagrams
+
+D2 is the preferred editable format when a diagram adds a useful distinction, relationship, decision or feedback path. It is not required in every object or stage. Explanatory diagrams beside the relevant text take priority over cross-file maps. Do not create another knowledge type for diagrams or use a graph to turn a local choice into a scientific Principle.
+
+Keep `.d2` and generated `.svg` together under semantic paths in `diagrams/`. Embed the SVG with ordinary relative Markdown image syntax, meaningful alternative text and a nearby account of its essential meaning. Link the D2 source. Readers do not need D2 or renderer plugins. Never hand-edit the generated SVG. Retain source attribution, synthetic-example labels, limitations and edge meanings in the owning document. Visuals of external knowledge must preserve the source's relation directions and scope.
+
+A knowledge relationship graph must use declared metadata edges. Label the relation type and state which objects and edges were omitted. It is not causal evidence or a compulsory reading path. Keep normal Markdown links outside the SVG for dependable navigation.
+
+Register each diagram with its owning document and reason in `diagrams.json`. Update text and diagram together when meaning changes. With the pinned renderer, `python diagram_tools.py --write` generates artifacts and `python diagram_tools.py --check` rejects stale outputs or a stale metadata graph. The base validator still checks links/images; separate diagram checks validate rendering, not explanatory accuracy. See [Diagram authoring guide](DIAGRAMS.md) for the small implementation and review procedure.
 
 ## Format and tool compatibility
 
