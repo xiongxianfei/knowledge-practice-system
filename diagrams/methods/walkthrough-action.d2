@@ -1,0 +1,16 @@
+# Original summary of the published cognitive walkthrough prompts.
+# All four prompts apply even after a predicted difficulty. Not an observed user test.
+direction: down
+action: "One action\nspecified user and task"
+q1: "Would the user pursue\nthe needed subgoal?"
+q2: "Would the user notice\nthe available action?"
+q3: "Would the user connect\naction and desired effect?"
+q4: "Would feedback reveal\nprogress toward the task?"
+record: "Record reasoning and cues\npredictions, not observations"
+next: "Inspect next action\nor revise and inspect again"
+action -> q1
+q1 -> q2: also ask
+q2 -> q3: also ask
+q3 -> q4: also ask
+q4 -> record
+record -> next

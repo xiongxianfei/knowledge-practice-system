@@ -1,0 +1,12 @@
+# Original PICO question schematic; not randomization, execution or effect data.
+direction: down
+population: "P: population\nand context"
+intervention: "I: intervention"
+comparator: "C: comparator"
+outcome: "O: outcomes\nand assessment time"
+question: "Explicit review question\nnot an observed study"
+population -> intervention: question about
+population -> comparator: question about
+intervention -> outcome: evaluate against C
+comparator -> outcome: baseline for comparison
+outcome -> question: specify before search

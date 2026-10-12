@@ -1,5 +1,5 @@
 ---
-package_version: "10.1.0"
+package_version: "10.2.0"
 language: "KPS 9.x"
 reviewed: "2026-10-12"
 ---
@@ -46,3 +46,11 @@ No licensed full publications, personal records or claim of ISO, W3C, Cochrane o
 On 2026-10-12, the diagram-specific review inspected Cochrane Chapter 5 Section 5.2.1 and MECIR C42, W3C PROV-DM's named relations, ASQ's PDCA procedure, and W3C WAI complex-image guidance. The diagrams preserve those contributions rather than claiming new empirical findings. D2 official CLI/export/embedding sections are recorded in the new D2 Reference. Earlier source reviews and access limitations remain historical; unrelated learning findings were not revalidated.
 
 The many-to-many study/report drawing and repeated-report example are synthetic. The PROV drawing is a subset with labeled relation directions, not a formal serialization. The Practice decision flow is KPS-authored. The neighborhood uses current metadata only. Diagram review is author inspection, not an independent reader study.
+
+## Diagram necessity audit in 10 2 0
+
+The drawings summarize current owning content. On 2026-10-12, the audit rechecked W3C SKOS Sections 3, 5, 8 and 10; RFC 3986 resolution and fragments; Cochrane Chapters 2, 5 and 14 for PICO, independent extraction and indirectness; and the PROV relation subset. The walkthrough report was inspected visually on printed pages 2 and 3 (PDF pages 5 and 6), plus task context on printed page 7. Karpicke and Blunt printed pages 772 and 773 were visually checked for the recall operation. No raw data or effect-size plot was extracted.
+
+The new PubMed fetch for the spacing article supplied no usable abstract. Its drawing uses only the distinction already retained in the abstract-level Core account and explicitly synthetic arithmetic intervals; this is not fresh full-text verification. Existing empirical qualifications and the Mayrhofer access limit are unchanged.
+
+Practice diagrams visualize existing local decisions, not professional-source requirements. The [per-object audit](DIAGRAM-AUDIT.md) records necessity, reuse and text-only decisions. Content inspection is author review, not an independent reader study.

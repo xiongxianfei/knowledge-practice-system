@@ -1,7 +1,7 @@
 ---
 id: "kps:model:skos-data-model"
 type: "model"
-version: "10.0.0"
+version: "10.2.0"
 language: "KPS 9.x"
 status: "active"
 reviewed: "2026-10-12"
@@ -30,6 +30,14 @@ Concept -- closeMatch or exactMatch --> concept in another scheme
 ```
 
 `exactMatch` expresses stronger interchangeability than `closeMatch`; only the former is transitive. `broader` itself is not a transitive property. These are vocabulary semantics, not causal arrows.
+
+## Read each vocabulary relationship separately
+
+![Concept A has a preferred label, a broader concept, a related concept and a close match in another scheme](../diagrams/models/skos-relations.svg)
+
+This synthetic subset uses four different predicates. A points to B with broader; A and C are related; A has a literal preferred label; D in another scheme is a closeMatch, not an exactMatch. Double-headed edges illustrate symmetry, not causal feedback. The layout asserts no additional relationships: broader is not transitive, and closeMatch is not transitive. The full specification contains constraints omitted from this illustration; a D2 drawing is not proof of SKOS conformance.
+
+[Editable D2 source](../diagrams/models/skos-relations.d2). Source basis and limits remain in this document.
 
 ## Illustrative use
 

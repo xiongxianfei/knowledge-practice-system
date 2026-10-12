@@ -1,0 +1,14 @@
+# Original illustration of the owning retrieval-practice operation.
+# Preserve original recall separately from correction; not an optimal schedule.
+direction: down
+study: "Study selected material"
+recall: "Put material aside\nattempt recall"
+original: "Preserve original response"
+check: "Reopen material\ncompare omissions and errors"
+correction: "Record corrections separately"
+later: "Repeat or assess later\nunder a stated plan"
+study -> recall
+recall -> original
+original -> check
+check -> correction
+correction -> later

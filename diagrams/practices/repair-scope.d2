@@ -1,0 +1,18 @@
+# KPS-authored repair reach. Branches are not mutually exclusive causes.
+direction: down
+problem: "Located reader problem"
+local: "Local content repair"
+governed: "Contract or checker change\nassess compatibility"
+pilot: "Pilot on real content"
+check: "Content and structure\nboth acceptable?"
+check.shape: diamond
+revise: "Revise bounded repair"
+release: "Publish authorized change\nrecord remaining limits"
+problem -> local: local gap
+problem -> governed: governing constraint
+local -> pilot
+governed -> pilot
+pilot -> check
+check -> revise: no
+revise -> pilot: try revised repair
+check -> release: yes

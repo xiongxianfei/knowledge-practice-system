@@ -1,7 +1,7 @@
 ---
 id: "kps:method:pico-question-formulation"
 type: "method"
-version: "10.0.0"
+version: "10.2.0"
 language: "KPS 9.x"
 status: "active"
 reviewed: "2026-10-12"
@@ -35,6 +35,14 @@ Different populations, comparators or outcomes can lead to different searches an
 3. Specify the relevant outcomes and their assessment timing.
 4. Distinguish the question intended for the review from what each included study actually investigated.
 5. Resolve material ambiguity before selecting or combining evidence.
+
+## The comparison being asked
+
+![Within a specified population, compare an intervention with a comparator on defined outcomes and timing](../diagrams/methods/pico-comparison.svg)
+
+The two options belong to the same question about a specified population, outcome and assessment time. These arrows organize a review question; they are not random assignment, an observed trial, or a causal-effect estimate. Record what each included study actually investigated separately from the intended question. This original schematic retains the intervention-review meaning rather than silently substituting engineering terms.
+
+[Editable D2 source](../diagrams/methods/pico-comparison.d2). Source basis and limits remain in this document.
 
 ## Worked illustration
 

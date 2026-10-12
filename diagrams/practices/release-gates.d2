@@ -1,0 +1,17 @@
+# KPS-authored release decision. No scientific or institutional certification.
+direction: down
+review: "Task guide ready\nfor review"
+content: "Content usable in\nthe declared review?"
+content.shape: diamond
+fixtext: "Repair missing action\nreason or fallback"
+struct: "Structural checks pass?"
+struct.shape: diamond
+fixtarget: "Repair reported target\nthen recheck"
+publish: "Authorized publication\nrepository PR or validated ZIP"
+review -> content
+content -> fixtext: no
+fixtext -> content: review again
+content -> struct: yes
+struct -> fixtarget: no
+fixtarget -> struct: recheck
+struct -> publish: yes

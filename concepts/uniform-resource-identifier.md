@@ -1,7 +1,7 @@
 ---
 id: "kps:concept:uniform-resource-identifier"
 type: "concept"
-version: "10.0.0"
+version: "10.2.0"
 language: "KPS 9.x"
 status: "active"
 reviewed: "2026-10-12"
@@ -27,6 +27,14 @@ A URI identifies a resource. A relative reference needs a base for resolution. A
 ## Example
 
 From `practices/use-kps.md`, the reference `../README.md` resolves relative to that file, not a reader's home directory. The local ID `kps:pr:use-kps` is not thereby a navigable section of the Markdown document.
+
+## Resolution is not retrieval
+
+![A base URI and relative reference resolve to a URI; retrieval and fragment interpretation remain separate](../diagrams/concepts/uri-resolution.svg)
+
+In this synthetic example, base `https://example.org/practices/use-kps.md` plus `../README.md#summary` resolves to `https://example.org/README.md#summary`. The two inputs are needed together. Resolution does not fetch the file or prove that summary is a valid fragment. The representation and viewer determine fragment interpretation; RFC 3986 does not create Markdown heading slugs. The domain and paths are illustrative, not requested network resources.
+
+[Editable D2 source](../diagrams/concepts/uri-resolution.d2). Source basis and limits remain in this document.
 
 ## Boundary and use
 

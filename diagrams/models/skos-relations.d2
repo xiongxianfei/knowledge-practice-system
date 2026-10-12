@@ -1,0 +1,12 @@
+# Original synthetic SKOS subset. Predicate directions are significant.
+# This is neither a causal graph nor a complete SKOS serialization.
+direction: down
+a: "Concept A\nscheme one"
+b: "Concept B\nbroader concept"
+c: "Concept C\nassociated concept"
+literal: "\"term a\"@en\nlexical label"
+d: "Concept D\nscheme two"
+a -> b: broader
+a <-> c: related
+a -> literal: prefLabel
+a <-> d: closeMatch

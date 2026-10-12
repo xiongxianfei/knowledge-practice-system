@@ -1,7 +1,7 @@
 ---
 id: "kps:principle:spacing-effect"
 type: "principle"
-version: "10.0.0"
+version: "10.2.0"
 language: "KPS 9.x"
 status: "active"
 reviewed: "2026-10-12"
@@ -31,6 +31,14 @@ Total spacing and the pattern of spacing are different variables. A claim about 
 ## Example
 
 If two proposed review plans differ both in number of attempts and in elapsed time, their results do not isolate a spacing effect. A learner can compare bounded plans, but the observations must remain separate from the published result.
+
+## Different spacing variables
+
+![Illustrative interval sets of one one one, two two two, and one two three distinguish total spacing from its distribution](../diagrams/principles/spacing-variables.svg)
+
+These are synthetic arithmetic examples, not the study schedules or learning results. Four attempts have three gaps: A uses 1 + 1 + 1 units, B uses 2 + 2 + 2, and C uses 1 + 2 + 3. A versus B changes total spacing while keeping an equal-gap pattern; B versus C keeps a total of 6 but changes the pattern. Units are arbitrary. No plan is recommended, and no retention magnitude, superiority or optimal delay is encoded.
+
+[Editable D2 source](../diagrams/principles/spacing-variables.d2). Source basis and limits remain in this document.
 
 ## Limits
 

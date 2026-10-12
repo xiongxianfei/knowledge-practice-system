@@ -1,0 +1,13 @@
+# Original KPS explanation of RFC 3986 resolution. Synthetic example.
+direction: down
+base: "Base URI\nhttps://example.org/\npractices/use-kps.md"
+ref: "Relative reference\n../README.md#summary"
+resolve: "Resolve against the base"
+uri: "Resolved URI\nhttps://example.org/\nREADME.md#summary"
+retrieve: "Retrieve representation\nmay be unavailable"
+fragment: "Interpret fragment\nusing representation rules"
+base -> resolve: input
+ref -> resolve: input
+resolve -> uri: result
+uri -> retrieve: separate operation
+retrieve -> fragment: if available

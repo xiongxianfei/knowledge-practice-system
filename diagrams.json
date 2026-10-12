@@ -34,6 +34,66 @@
       "owner": "KNOWLEDGE-MAP.md",
       "reason": "Show one Practice neighborhood, not an invented universal hierarchy.",
       "metadata_root": "kps:pr:use-kps"
+    },
+    {
+      "source": "diagrams/concepts/concept-and-label.d2",
+      "owner": "concepts/skos-concept.md",
+      "reason": "Separate two concept identities from their identical lexical label."
+    },
+    {
+      "source": "diagrams/concepts/uri-resolution.d2",
+      "owner": "concepts/uniform-resource-identifier.md",
+      "reason": "Distinguish resolving a reference from retrieving a resource and interpreting its fragment."
+    },
+    {
+      "source": "diagrams/principles/evidence-to-target.d2",
+      "owner": "principles/indirectness-limits-applicability.md",
+      "reason": "Expose the unestablished bridge between a measured surrogate and the target outcome."
+    },
+    {
+      "source": "diagrams/principles/spacing-variables.d2",
+      "owner": "principles/spacing-effect.md",
+      "reason": "Keep total spacing distinct from the pattern of intervals without inventing effect sizes."
+    },
+    {
+      "source": "diagrams/models/skos-relations.d2",
+      "owner": "models/skos-data-model.md",
+      "reason": "Distinguish literal labels, broader and related relations, and cross-scheme mappings."
+    },
+    {
+      "source": "diagrams/methods/pico-comparison.d2",
+      "owner": "methods/pico-question-formulation.md",
+      "reason": "Make the intervention and comparator distinction and common outcome explicit before searching."
+    },
+    {
+      "source": "diagrams/methods/independent-extraction.d2",
+      "owner": "methods/study-data-extraction.md",
+      "reason": "Separate independent extraction from comparison and documented disagreement resolution."
+    },
+    {
+      "source": "diagrams/methods/walkthrough-action.d2",
+      "owner": "methods/cognitive-walkthrough.md",
+      "reason": "Make all four learnability questions visible without presenting predictions as observed behavior."
+    },
+    {
+      "source": "diagrams/methods/recall-and-check.d2",
+      "owner": "methods/retrieval-practice.md",
+      "reason": "Separate unaided recall, subsequent checking, and later assessment."
+    },
+    {
+      "source": "diagrams/practices/release-gates.d2",
+      "owner": "practices/build-domain-knowledge.md",
+      "reason": "Separate content-use review from structural checks and the owner-authorized publication choice."
+    },
+    {
+      "source": "diagrams/practices/repair-scope.d2",
+      "owner": "practices/improve-kps.md",
+      "reason": "Distinguish local content repairs from governing-rule changes before a pilot and compatibility check."
+    },
+    {
+      "source": "diagrams/practices/attribution-check.d2",
+      "owner": "practices/review-and-learn.md",
+      "reason": "Separate execution failures and inconclusive attribution from a supported scoped update."
     }
   ]
 }

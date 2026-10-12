@@ -1,7 +1,7 @@
 ---
 id: "kps:concept:skos-concept"
 type: "concept"
-version: "10.0.0"
+version: "10.2.0"
 language: "KPS 9.x"
 status: "active"
 reviewed: "2026-10-12"
@@ -27,6 +27,14 @@ SKOS represents an idea or notion as a resource; lexical labels name it. Identic
 ## Example
 
 In a synthetic vocabulary, the label “bank” could name a financial institution or a river feature. Separate identities and scope descriptions make the intended sense inspectable. Renaming a label does not by itself create a new subject.
+
+## Different identities can share a label
+
+![Two separate concept identities, financial institution and river feature, both have the English label bank](../diagrams/concepts/concept-and-label.svg)
+
+This synthetic vocabulary gives two distinct concepts the same label, bank in English. The arrows mean prefLabel; they do not assert equivalence between the concepts. Compare scope and identity rather than spelling. This is an original illustration of the lexical distinction, not a complete SKOS serialization or a copied W3C figure.
+
+[Editable D2 source](../diagrams/concepts/concept-and-label.d2). Source basis and limits remain in this document.
 
 ## Use and limits
 

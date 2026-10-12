@@ -1,0 +1,17 @@
+# Original Cochrane outcome-extraction procedure summary.
+# Two people extract independently; agreement does not prove correctness.
+direction: down
+reports: "Linked study reports\npiloted extraction form"
+one: "Reviewer 1\nindependent outcome extraction"
+two: "Reviewer 2\nindependent outcome extraction"
+compare: "Compare extracted records"
+compare.shape: diamond
+resolve: "Resolve using sources\nand predefined process"
+record: "Retain located values\nand explicit unknowns"
+reports -> one
+reports -> two
+one -> compare
+two -> compare
+compare -> record: agree
+compare -> resolve: disagree
+resolve -> record: document resolution
