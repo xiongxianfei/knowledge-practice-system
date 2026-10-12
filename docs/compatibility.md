@@ -24,7 +24,7 @@ Core 10.0.0 removed prior Core object IDs and filenames; 10.1.0 adds diagrams wi
 
 ## Break and migration
 
-Old links to 41 standalone local objects no longer resolve. The four Practice IDs and all 17 stage titles are retained. Migrate incoming links deliberately using [MIGRATION.md](MIGRATION.md); a new professional definition is not automatically an exact replacement for an old local role definition.
+Old links to 41 standalone local objects no longer resolve. The four Practice IDs and all 17 stage titles are retained. Migrate incoming links deliberately using [MIGRATION.md](history/10.0.0-migration.md); a new professional definition is not automatically an exact replacement for an old local role definition.
 
 Domain repositories declaring KPS 9.x do not have to adopt these new Core content IDs. They remain independently readable and versioned. No sibling repository is automatically rewritten. The additional alignment test applies to this Core; adoption by a domain is a separate requested change.
 

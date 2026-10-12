@@ -8,7 +8,7 @@ reviewed: "2026-10-12"
 # Reusable authoring templates
 
 ## Key takeaway
-These are non-normative examples implementing the [authoring contract](AUTHORING.md).
+These are non-normative examples implementing the [authoring contract](authoring.md).
 
 A template supports the job of the knowledge type; it does not prove correctness or require every field to become a file.
 
@@ -101,7 +101,7 @@ Use `practice_format: "steps-first-v1"` and record a minimum checker of 9.1.0 fo
 Publication identity, creators, publication or update year and its basis, external URL or DOI, actual access date and extent, located claims, evidence family, limitations and non-claims. Use creator-year-short-title filenames, or `undated` when a date was not established. The record must summarize what the source contributes without requiring immediate external access; it is not a copy of the publication.
 
 ## Review before publication
-Hide links and attempt the intended use; restore links and check the summary remains faithful. Check claim-source fit, headings and fragments, then run the package checker. [Authoring](AUTHORING.md), [Navigation](NAVIGATION.md) and [Compatibility](COMPATIBILITY.md) provide the complete local maintenance instructions.
+Hide links and attempt the intended use; restore links and check the summary remains faithful. Check claim-source fit, headings and fragments, then run the package checker. [Authoring](authoring.md), [Navigation](authoring.md) and [Compatibility](compatibility.md) provide the complete local maintenance instructions.
 
 ## Core source alignment example
 

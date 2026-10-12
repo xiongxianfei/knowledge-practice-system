@@ -22,9 +22,9 @@ Does the inspected evidence establish that retrieval is always better than conce
 
 | Source | Inspected material and finding | What it does not establish |
 |---|---|---|
-| [Karpicke and Blunt, 2011](references/karpicke-2011-retrieval-and-concept-mapping.md) | Main article reports retrieval-condition advantages in two experiments; total learning time was matched. Mapping used text-present construction, while retrieval included recall and restudy. | All forms of mapping are ineffective; KPS improves learning; one method is universally optimal. |
-| [Mayrhofer and colleagues, 2023](references/mayrhofer-2023-reexamining-the-testing-effect.md) | Full article varies additional memorization and instructions. No significant retrieval advantage remains on verbatim questions in the added-memorization mapping comparison. | A universal refutation of retrieval or of spacing. The inference findings use only two questions. |
-| [Karpicke and Bauernschmidt, 2011](references/karpicke-2011-spaced-retrieval.md) | Abstract reports a spacing effect in its retrieval task. | The same optimal schedule for every topic; a comparison with KPS or every mapping variant. |
+| [Karpicke and Blunt, 2011](../../references/karpicke-2011-retrieval-and-concept-mapping.md) | Main article reports retrieval-condition advantages in two experiments; total learning time was matched. Mapping used text-present construction, while retrieval included recall and restudy. | All forms of mapping are ineffective; KPS improves learning; one method is universally optimal. |
+| [Mayrhofer and colleagues, 2023](../../references/mayrhofer-2023-reexamining-the-testing-effect.md) | Full article varies additional memorization and instructions. No significant retrieval advantage remains on verbatim questions in the added-memorization mapping comparison. | A universal refutation of retrieval or of spacing. The inference findings use only two questions. |
+| [Karpicke and Bauernschmidt, 2011](../../references/karpicke-2011-spaced-retrieval.md) | Abstract reports a spacing effect in its retrieval task. | The same optimal schedule for every topic; a comparison with KPS or every mapping variant. |
 
 ## Agreement disagreement and independence
 

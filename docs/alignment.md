@@ -24,7 +24,7 @@ This is the Core library curation policy, not a claim that a professional body e
 | Method | Recognizable published procedure with rationale and checks | Our sequence for authoring, publishing and revising KPS |
 | Practice | Explicit application synthesis with usable inline steps | The actual KPS-specific workflow belongs here |
 
-The authoring specification remains necessary infrastructure. Removing local conventions from the knowledge library does not make a Markdown format externally standardized. The five roles remain KPS design choices, as explained in the [domain-building Practice](practices/build-domain-knowledge.md#stage3-create-locally-complete-objects).
+The authoring specification remains necessary infrastructure. Removing local conventions from the knowledge library does not make a Markdown format externally standardized. The five roles remain KPS design choices, as explained in the [domain-building Practice](../practices/build-domain-knowledge.md#stage3-create-locally-complete-objects).
 
 ## Select authority for the claim
 
@@ -50,4 +50,4 @@ The alignment tests check declared relationships, locators, valid targets and th
 - PDCA is documented by ASQ. KPS's release process is our application, not an ASQ certification.
 - Retrieval findings do not validate the folder structure or guarantee general superiority.
 
-The [migration record](MIGRATION.md) identifies the location of each retired local object. The [source review](SOURCE-REVIEW.md) records what was inspected for this edition.
+The [migration record](history/10.0.0-migration.md) identifies the location of each retired local object. The [source review](history/source-review.md) records what was inspected for this edition.
