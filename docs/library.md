@@ -90,7 +90,7 @@ This Core library contains 20 knowledge objects: five Concepts, four Principles,
 
 Each relationship above represents KPS's selected application, not institutional endorsement, scientific validation of KPS, or formal semantic equivalence. Apply external terminology only within its source scope.
 
-## One-hop knowledge neighborhood
+## One hop knowledge neighborhood
 
 ![Use KPS directly uses the Provenance and URI Concepts, Retrieval Practice Method, and PROV Data Model](../diagrams/knowledge-map/use-kps-dependencies.svg)
 

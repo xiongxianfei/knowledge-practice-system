@@ -36,7 +36,7 @@ The structural checker and its 52 existing regressions are retained unchanged. A
 
 The five knowledge roles and steps-first profile are unchanged. Ordinary Markdown readers can display local SVGs without D2. Rendering or checking source/render freshness needs D2 0.9.0; `diagram_tools.py` and `test_diagrams.py` are separate from the 9.1.0 structural validator. Older structural tools cannot claim to have checked D2 rendering. No sibling domain's metadata or checker is changed.
 
-## Repository layout migration after Core 10.2.0
+## Repository layout migration after Core 10 2 0
 
 The working project cleanup consolidates overlapping root documentation and **intentionally breaks old document URLs**, as authorized. This is a layout migration rather than a change to the five KPS knowledge roles, object identities or 18 Reference records. Existing domain packages should not be rewritten merely because Core is reorganized.
 
@@ -57,3 +57,5 @@ The working project cleanup consolidates overlapping root documentation and **in
 | `verification.json` | `docs/history/10.1.0-verification.json` |
 
 The public command `python validate.py .` stays at the root. The validator recognizes both the new internal dependency snapshot location and the original root snapshot location for independent older domain packages. For the reorganized Core, run `python -m unittest discover -s internal/tests -p "test_*.py"` and `python -m internal.diagram_tools --check --root .` (D2 0.9.0 required for rendering checks). Follow the [10.0.0 historical migration record](history/10.0.0-migration.md) when resolving retired *knowledge* object identities; it is distinct from this file-layout change.
+
+**Dependency review for this layout change:** The GitHub Markdown reference record changed only in its local Markdown link destination; its cited publication, inspected scope and claims remain unchanged. The dependent Use KPS summary was reviewed for semantic consistency before updating the snapshot fingerprint. Other source and practice relationships were preserved.
