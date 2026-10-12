@@ -12,7 +12,7 @@ import sys
 import tempfile
 import unittest
 
-HERE=Path(__file__).resolve().parent
+HERE=Path(__file__).resolve().parents[2]
 spec=importlib.util.spec_from_file_location('publication_validator',HERE/'validate.py')
 v=importlib.util.module_from_spec(spec);sys.modules[spec.name]=v;spec.loader.exec_module(v)
 
@@ -85,7 +85,7 @@ class PublicationChecks(unittest.TestCase):
     def test_17_metadata_id_is_not_an_anchor(self):
         p=self.find('method');self.add(p,'[Object identity](#'+v.parse(p).meta['id']+')');self.expect('missing-fragment')
     def test_18_changed_dependency_needs_review(self):
-        s=json.loads((self.root/'summary-dependencies.json').read_text())
+        s=json.loads((self.root/'internal/metadata/summary-dependencies.json').read_text())
         target=next(iter(next(iter(s['entries'].values())).keys()))
         self.add(self.root/target,'A changed source condition needs a deliberate review.');self.expect('stale-summary')
     def test_19_exact_version_not_major_line(self):
@@ -114,8 +114,8 @@ class PublicationChecks(unittest.TestCase):
         p.write_text(p.read_text().replace('](#'+v.slug(h)+')','](../README.md)'));self.expect('stage-navigation')
     def test_30_review_refresh_does_not_hide_broken_links(self):
         self.add(self.root/'README.md','[Missing](does-not-exist.md)')
-        old=(self.root/'summary-dependencies.json').read_bytes();r=v.validate(self.root,refresh=True)
-        self.assertFalse(r['ok']);self.assertEqual(old,(self.root/'summary-dependencies.json').read_bytes())
+        old=(self.root/'internal/metadata/summary-dependencies.json').read_bytes();r=v.validate(self.root,refresh=True)
+        self.assertFalse(r['ok']);self.assertEqual(old,(self.root/'internal/metadata/summary-dependencies.json').read_bytes())
 
     def test_31_manifest_ignores_checkout_and_caches(self):
         self.make_manifest()
@@ -208,11 +208,11 @@ class PublicationChecks(unittest.TestCase):
         self.refresh_and_check()
 
     def test_50_missing_image_blocks_review_refresh(self):
-        old=(self.root/'summary-dependencies.json').read_bytes()
+        old=(self.root/'internal/metadata/summary-dependencies.json').read_bytes()
         self.add(self.root/'README.md','![Missing](absent.svg)')
         result=v.validate(self.root,refresh=True)
         self.assertFalse(result['ok'])
-        self.assertEqual(old,(self.root/'summary-dependencies.json').read_bytes())
+        self.assertEqual(old,(self.root/'internal/metadata/summary-dependencies.json').read_bytes())
 
     def test_51_heading_steps_not_mandatory_label(self):
         self.stage_body('### Repair the destination\n\n1. Compare the complete heading and update the fragment.\n\nIf the target is missing, stop and restore it first.')

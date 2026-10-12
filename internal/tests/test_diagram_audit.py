@@ -6,12 +6,12 @@ import shutil
 import tempfile
 import unittest
 
-ROOT = Path(__file__).resolve().parent
+ROOT = Path(__file__).resolve().parents[2]
 ROLES = ('concepts','principles','models','methods','practices')
 
 def inspect_audit(root):
-    audit=json.loads((root/'diagram-audit.json').read_text())
-    cfg=json.loads((root/'diagrams.json').read_text())
+    audit=json.loads((root/'diagrams/audit.json').read_text())
+    cfg=json.loads((root/'diagrams/manifest.json').read_text())
     registry={d['source'] for d in cfg['diagrams']}
     objects={p.relative_to(root).as_posix() for r in ROLES for p in (root/r).glob('*.md')}
     errors=[]
@@ -40,7 +40,7 @@ class DiagramAuditTests(unittest.TestCase):
         shutil.copytree(ROOT,self.root,ignore=shutil.ignore_patterns('.git','__pycache__','.pytest_cache'))
     def tearDown(self): self.tmp.cleanup()
     def mutate(self,change):
-        p=self.root/'diagram-audit.json'; a=json.loads(p.read_text()); change(a);p.write_text(json.dumps(a))
+        p=self.root/'diagrams/audit.json'; a=json.loads(p.read_text()); change(a);p.write_text(json.dumps(a))
     def test_01_coverage_and_embeds(self): self.assertEqual([],inspect_audit(self.root))
     def test_02_missing_object(self):
         self.mutate(lambda a:a['objects'].pop());self.assertIn('coverage',inspect_audit(self.root))

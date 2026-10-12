@@ -18,13 +18,13 @@ jobs:
       - name: Verify knowledge links and structure
         run: python3 validate.py .
       - name: Run regression tests
-        run: python3 test_validate.py
+        run: python3 -m unittest internal.tests.test_validate
       - name: Verify source alignment and migration declarations
-        run: python3 test_alignment.py
+        run: python3 -m unittest internal.tests.test_alignment
       - name: Check diagram metadata and regression behavior
-        run: python3 test_diagrams.py
+        run: python3 -m unittest internal.tests.test_diagrams
       - name: Check Core-wide diagram audit
-        run: python3 test_diagram_audit.py
+        run: python3 -m unittest internal.tests.test_diagram_audit
       - name: Install pinned D2 with verified digest
         shell: bash
         run: |
@@ -33,4 +33,4 @@ jobs:
           tar -xzf "$RUNNER_TEMP/d2.tar.gz" -C "$RUNNER_TEMP"
           echo "$RUNNER_TEMP/d2-v0.9.0/bin" >> "$GITHUB_PATH"
       - name: Verify D2 sources match committed SVGs
-        run: python3 diagram_tools.py --check
+        run: python3 -m internal.diagram_tools --check --root .
