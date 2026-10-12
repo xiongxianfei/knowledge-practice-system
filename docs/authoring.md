@@ -86,11 +86,11 @@ Keep `.d2` and generated `.svg` together under semantic paths in `diagrams/`. Em
 
 A knowledge relationship graph must use declared metadata edges. Label the relation type and state which objects and edges were omitted. It is not causal evidence or a compulsory reading path. Keep normal Markdown links outside the SVG for dependable navigation.
 
-Register each diagram with its owning document and reason in `diagrams.json`. Update text and diagram together when meaning changes. With the pinned renderer, `python diagram_tools.py --write` generates artifacts and `python diagram_tools.py --check` rejects stale outputs or a stale metadata graph. The base validator still checks links/images; separate diagram checks validate rendering, not explanatory accuracy. See [Diagram authoring guide](DIAGRAMS.md) for the small implementation and review procedure.
+Register each diagram with its owning document and reason in `diagrams.json`. Update text and diagram together when meaning changes. With the pinned renderer, `python diagram_tools.py --write` generates artifacts and `python diagram_tools.py --check` rejects stale outputs or a stale metadata graph. The base validator still checks links/images; separate diagram checks validate rendering, not explanatory accuracy. See [Diagram authoring guide](diagrams.md) for the small implementation and review procedure.
 
 ## Format and tool compatibility
 
-The five roles, stage numbering and Markdown navigation contract are unchanged. KPS 9.1.0 relaxes fixed stage layout: existing six-label stages can still be checked, but Core now authors steps-first stages rather than two parallel templates. Mark new Practices `practice_format: "steps-first-v1"` and record `minimum_validator: "9.1.0"` in package metadata. Earlier 9.0 validators reject missing labels and cannot validate the new presentation; the 9.x declaration alone does not make old tools understand it. See [Compatibility](COMPATIBILITY.md) before migrating a domain.
+The five roles, stage numbering and Markdown navigation contract are unchanged. KPS 9.1.0 relaxes fixed stage layout: existing six-label stages can still be checked, but Core now authors steps-first stages rather than two parallel templates. Mark new Practices `practice_format: "steps-first-v1"` and record `minimum_validator: "9.1.0"` in package metadata. Earlier 9.0 validators reject missing labels and cannot validate the new presentation; the 9.x declaration alone does not make old tools understand it. See [Compatibility](compatibility.md) before migrating a domain.
 
 ## Markdown links
 KPS uses UTF-8 `.md`, ordinary inline relative file links and conservative heading fragments; avoid application-specific wikilinks, embedded HTML anchors and renderer-dependent extensions. For links to a full file, use `[Text](../models/example.md)` rather than a fragile section fragment. For section links, the destination must match the complete real heading under the chosen lowercase/hyphenated profile:
@@ -115,6 +115,15 @@ Root-level GitHub community and automation files are repository infrastructure r
 
 ## Core professional alignment policy
 
-Core content 10.0.0 adopts [ALIGNMENT.md](ALIGNMENT.md). Its standalone Concepts, Principles, Models and Methods identify the actual source, relation and passage. Source-defined meaning takes precedence over a conflicting local paraphrase; scope differences must not be disguised as equivalence. KPS-specific workflows, reasoning aids and design choices are embedded in Practices. Necessary file-format rules remain here as specifications, not scientific Principles.
+Core content 10.0.0 adopts [ALIGNMENT.md](alignment.md). Its standalone Concepts, Principles, Models and Methods identify the actual source, relation and passage. Source-defined meaning takes precedence over a conflicting local paraphrase; scope differences must not be disguised as equivalence. KPS-specific workflows, reasoning aids and design choices are embedded in Practices. Necessary file-format rules remain here as specifications, not scientific Principles.
 
 This is a Core curation decision, not a silent change to the five-role KPS 9.x language. The unchanged 9.1.0 structural checker accepts these files; `test_alignment.py` checks the additional Core declarations and migration. A passing test cannot determine authority, faithfulness or scientific validity. Other domain packages adopt the policy separately rather than being changed by this release.
+
+## Practical navigation and viewer checks
+
+KPS object IDs are metadata, not heading fragments. For a heading `## Stage1 Capture a record`, link to `#stage1-capture-a-record`; when renaming it, update inbound links. Avoid application-specific Markdown anchors and test the actual reader, since renderers differ.
+
+**Click test:** Follow a real stage-map link in the intended viewer, use Back, and repeat after changing a heading. A passing link parser cannot establish viewer behavior. Check rendered images with the essential explanations hidden and restored.
+
+See the [GitHub section-link reference](../references/github-undated-markdown-formatting.md) and [Markdown compatibility guidance](compatibility.md) for limits; the [reader review guide](review.md) addresses usability beyond syntax.
+

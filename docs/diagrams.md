@@ -12,24 +12,24 @@ Add a diagram only when it resolves a real reading or execution difficulty; pres
 
 ## Summary
 
-This guide implements [AUTHORING.md](AUTHORING.md), rather than introducing another knowledge type or a parallel authoring standard. D2 is the preferred editable source and its generated SVG is the publication image. The [Core-wide audit](DIAGRAM-AUDIT.md) records a decision for all 20 objects, with 17 explanatory sources and one small metadata graph. Shared diagrams have one editable source; there is no per-file quota. Reading needs neither a D2 installation nor a hosted diagram service.
+This guide implements [AUTHORING.md](authoring.md), rather than introducing another knowledge type or a parallel authoring standard. D2 is the preferred editable source and its generated SVG is the publication image. The [Core-wide audit](../diagrams/audit.json) records a decision for all 20 objects, with 17 explanatory sources and one small metadata graph. Shared diagrams have one editable source; there is no per-file quota. Reading needs neither a D2 installation nor a hosted diagram service.
 
 ## Original diagrams retained
 
 | Owning content | What the diagram makes explicit |
 |---|---|
-| [Study and Report](concepts/study-and-report.md) | A report can describe multiple studies and one study can have multiple reports |
-| [Study Level Evidence Independence](principles/study-level-evidence-independence.md) | Repeating the same participants and outcome in reports is not repeating the trial |
-| [PROV Data Model](models/prov-data-model.md) | The direction and meaning of four named provenance relations |
-| [PDCA](methods/pdca.md) | A checked result feeds a new improvement decision instead of guaranteeing rollout |
-| [Use KPS](practices/use-kps.md) | Failed structure, failed navigation and unavailable tests lead to different actions |
-| [Knowledge neighborhood](KNOWLEDGE-MAP.md) | Actual declared use relationships around one Practice, with omitted edges disclosed |
+| [Study and Report](../concepts/study-and-report.md) | A report can describe multiple studies and one study can have multiple reports |
+| [Study Level Evidence Independence](../principles/study-level-evidence-independence.md) | Repeating the same participants and outcome in reports is not repeating the trial |
+| [PROV Data Model](../models/prov-data-model.md) | The direction and meaning of four named provenance relations |
+| [PDCA](../methods/pdca.md) | A checked result feeds a new improvement decision instead of guaranteeing rollout |
+| [Use KPS](../practices/use-kps.md) | Failed structure, failed navigation and unavailable tests lead to different actions |
+| [Knowledge neighborhood](library.md) | Actual declared use relationships around one Practice, with omitted edges disclosed |
 
 These are original explanatory drawings or a metadata view, not copied professional-source figures. Their accompanying text retains source alignment and the limits of synthetic examples. The repository MIT license covers our diagram sources; external publications retain their own rights. Default D2 rendering supplies fonts internally; no separate font files are distributed here.
 
 ## Additional explanations
 
-New sources clarify concept labels, URI resolution, indirect evidence, spacing variables, SKOS predicates, PICO comparison, independent extraction, walkthrough prompts, recall records, release gates, repair reach and causal-attribution limits. The [audit](DIAGRAM-AUDIT.md) links each owner and explains reuse and text-only decisions.
+New sources clarify concept labels, URI resolution, indirect evidence, spacing variables, SKOS predicates, PICO comparison, independent extraction, walkthrough prompts, recall records, release gates, repair reach and causal-attribution limits. The [audit](../diagrams/audit.json) links each owner and explains reuse and text-only decisions.
 
 ## Add or revise one diagram
 
@@ -73,4 +73,11 @@ A failed diagram check may mean missing D2, wrong version, invalid input or stal
 
 ## Source notes
 
-[D2 documentation record](references/d2-undated-cli-and-svg-export.md) identifies the official CLI, export and embedding information inspected for this feature. [W3C complex-image guidance](https://www.w3.org/WAI/tutorials/images/complex/) supports a text alternative plus the essential relationships in nearby text; it does not certify this package's accessibility. No mandatory quota of diagrams or chart types follows from either source.
+[D2 documentation record](../references/d2-undated-cli-and-svg-export.md) identifies the official CLI, export and embedding information inspected for this feature. [W3C complex-image guidance](https://www.w3.org/WAI/tutorials/images/complex/) supports a text alternative plus the essential relationships in nearby text; it does not certify this package's accessibility. No mandatory quota of diagrams or chart types follows from either source.
+
+## Core diagram necessity audit
+
+The [machine-readable per-object audit](../diagrams/audit.json) records each knowledge object's diagram decision, explanatory purpose, and source reuse. It is authoritative for audit coverage; avoid maintaining another manually synchronized table. The audit is a record of author judgment, not a requirement that every document contain a graphic or proof of reader comprehension.
+
+The retired `DIAGRAM-AUDIT.md` duplicated this registry with a prose table. To review any object, inspect the owning explanation, the registered D2/SVG files, accessibility text, and the declared limits. Keep reasons and content aligned when a diagram is added, removed, or reused.
+
