@@ -23,14 +23,14 @@ Inspect the target file, its direct dependencies, and the local evidence. Identi
 An explanatory Principle must not be rewritten as a command. Models must represent actual relationships. Methods must explain a rationale and a checkable operation. Practices must contain substantive inline stages with `Stage1` names and valid links. References describe external publications and their located contributions rather than becoming summaries of author preferences.
 
 ## Verify
-Run `python validate.py .` and `python test_validate.py`; review summary dependencies before any refresh. Passing structural tests is not evidence that the material is scientifically correct.
+Run `python validate.py .` and `python -m unittest internal.tests.test_validate`; review summary dependencies before any refresh. Passing structural tests is not evidence that the material is scientifically correct.
 
 ## Practice editing
 Write actions first, preserve prerequisites and interpretation, and add examples or visuals only where they improve use. Do not recreate the six-label stage form or optimize prose to a word-count threshold. Inspect `docs/review.md` as well as the structural checker. Never report a self-review as an independent reader trial.
 
 ## Source grounded Core editing
 
-Apply docs/alignment.md: verify meaning against the located source, retain uncertainty and name adaptations. Place local workflows in Practices. Run `python test_alignment.py` as well as the structural suite. User-authorized auto-merge is allowed after CI; do not require another approval already supplied. Never disable checks or overwrite unrelated changes to force publication.
+Apply docs/alignment.md: verify meaning against the located source, retain uncertainty and name adaptations. Place local workflows in Practices. Run `python -m unittest internal.tests.test_alignment` as well as the structural suite. User-authorized auto-merge is allowed after CI; do not require another approval already supplied. Never disable checks or overwrite unrelated changes to force publication.
 
 ## Diagrams
 

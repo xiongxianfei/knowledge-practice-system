@@ -34,10 +34,10 @@ New sources clarify concept labels, URI resolution, indirect evidence, spacing v
 ## Add or revise one diagram
 
 1. Identify the exact confusion: a distinction, relation, branch, loop or comparison. If a sentence or small table already does the job, do not add an image.
-2. Put a semantic `.d2` file under `diagrams/` in the relevant role subfolder. Register its `source`, `owner` and `reason` in `diagrams.json`. Each SVG is generated beside its source. Write short labels and label arrows by their actual meaning. In particular, a use relationship is not a causal or chronological claim.
+2. Put a semantic `.d2` file under `diagrams/` in the relevant role subfolder. Register its `source`, `owner` and `reason` in `diagrams/manifest.json`. Each SVG is generated beside its source. Write short labels and label arrows by their actual meaning. In particular, a use relationship is not a causal or chronological claim.
 3. Embed the SVG beside the relevant explanation or steps. Include useful alternative text, a short reading guide, the important limit, and a source link. Explain every essential relationship in text so the task still works with images hidden.
-4. With D2 **0.9.0** available, run `python diagram_tools.py --write`. The configuration pins Dagre, theme and padding. Inspect the rendered result at normal document width; shorten labels or change orientation if the text is too small. Do not edit SVG by hand.
-5. Compare text and diagram semantics, run `python diagram_tools.py --check` and the normal checks, and review affected local summaries before refreshing their fingerprints. Commit the source and generated SVG together. Rendering success is not semantic approval.
+4. With D2 **0.9.0** available, run `python -m internal.diagram_tools --write`. The configuration pins Dagre, theme and padding. Inspect the rendered result at normal document width; shorten labels or change orientation if the text is too small. Do not edit SVG by hand.
+5. Compare text and diagram semantics, run `python -m internal.diagram_tools --check` and the normal checks, and review affected local summaries before refreshing their fingerprints. Commit the source and generated SVG together. Rendering success is not semantic approval.
 
 ```markdown
 ![A report can describe two studies](../diagrams/concepts/study-and-report.svg)
@@ -47,18 +47,18 @@ Read each arrow as describes, not causes. This is a synthetic example.
 [Editable D2 source](../diagrams/concepts/study-and-report.d2)
 ```
 
-D2 installation is needed only for rendering, not reading. The [official installation guide](https://www.d2lang.com/tour/install/) describes supported installation routes. Use the version in `diagrams.json`, not an unspecified latest renderer. Our Linux CI downloads the fixed release archive and checks its recorded SHA-256 before using it.
+D2 installation is needed only for rendering, not reading. The [official installation guide](https://www.d2lang.com/tour/install/) describes supported installation routes. Use the version in `diagrams/manifest.json`, not an unspecified latest renderer. Our Linux CI downloads the fixed release archive and checks its recorded SHA-256 before using it.
 
 ## Build and verify
 
 ```bash
-python diagram_tools.py --write
-python diagram_tools.py --check
-python test_diagrams.py
-python test_diagram_audit.py
+python -m internal.diagram_tools --write
+python -m internal.diagram_tools --check
+python -m unittest internal.tests.test_diagrams
+python -m unittest internal.tests.test_diagram_audit
 python validate.py .
-python test_validate.py
-python test_alignment.py
+python -m unittest internal.tests.test_validate
+python -m unittest internal.tests.test_alignment
 ```
 
 `--check` renders to temporary files and compares the bytes with the committed SVGs; it never rewrites them. It also regenerates the expected metadata graph in memory. A different renderer version, changed metadata, missing source/owner/output, invalid D2 or a stale render must be corrected rather than accepted by disabling the check. `d2 --check` is a formatting check and is not used as a substitute for this source/render comparison.
@@ -79,5 +79,5 @@ A failed diagram check may mean missing D2, wrong version, invalid input or stal
 
 The [machine-readable per-object audit](../diagrams/audit.json) records each knowledge object's diagram decision, explanatory purpose, and source reuse. It is authoritative for audit coverage; avoid maintaining another manually synchronized table. The audit is a record of author judgment, not a requirement that every document contain a graphic or proof of reader comprehension.
 
-The retired `DIAGRAM-AUDIT.md` duplicated this registry with a prose table. To review any object, inspect the owning explanation, the registered D2/SVG files, accessibility text, and the declared limits. Keep reasons and content aligned when a diagram is added, removed, or reused.
+The retired `diagrams/audit.json` duplicated this registry with a prose table. To review any object, inspect the owning explanation, the registered D2/SVG files, accessibility text, and the declared limits. Keep reasons and content aligned when a diagram is added, removed, or reused.
 

@@ -33,7 +33,7 @@ Explain the precise claim being added or changed. Identify which parts are direc
 2. Edit the smallest meaningful set of files, keeping each revised file self-contained.
 3. Update incoming links if a file, heading, or `StageN` order changes.
 4. Review the receiving summaries when a referenced canonical object changes; do not blindly refresh them.
-5. Run `python validate.py .` and `python test_validate.py`. Include failures and limitations in the PR if they cannot be resolved.
+5. Run `python validate.py .` and `python -m unittest internal.tests.test_validate`. Include failures and limitations in the PR if they cannot be resolved.
 6. Submit a pull request describing: **problem, changed claim/contract, evidence or rationale, affected objects, validation and remaining uncertainty**.
 
 ## Review criteria

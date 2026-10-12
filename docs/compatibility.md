@@ -35,3 +35,25 @@ The structural checker and its 52 existing regressions are retained unchanged. A
 ## Diagram authoring in Core 10 1 0
 
 The five knowledge roles and steps-first profile are unchanged. Ordinary Markdown readers can display local SVGs without D2. Rendering or checking source/render freshness needs D2 0.9.0; `diagram_tools.py` and `test_diagrams.py` are separate from the 9.1.0 structural validator. Older structural tools cannot claim to have checked D2 rendering. No sibling domain's metadata or checker is changed.
+
+## Repository layout migration after Core 10.2.0
+
+The working project cleanup consolidates overlapping root documentation and **intentionally breaks old document URLs**, as authorized. This is a layout migration rather than a change to the five KPS knowledge roles, object identities or 18 Reference records. Existing domain packages should not be rewritten merely because Core is reorganized.
+
+| Previous location | Current location |
+|---|---|
+| `AUTHORING.md`, `NAVIGATION.md` | [Authoring contract](authoring.md) |
+| `ALIGNMENT.md` | [Core source alignment](alignment.md) |
+| `INDEX.md`, `WHY-MAP.md`, `KNOWLEDGE-MAP.md` | [Knowledge library](library.md) |
+| `DIAGRAMS.md`, `DIAGRAM-AUDIT.md` | [Diagram guide](diagrams.md); [audit registry](../diagrams/audit.json) |
+| `TEMPLATES.md`, `REVIEW.md` | [Templates](templates.md), [review guide](review.md) |
+| `CONTRIBUTING.md`, `GOVERNANCE.md`, `PUBLISHING.md` | [Contribution and governance](../.github/CONTRIBUTING.md) |
+| `CODE_OF_CONDUCT.md`, `SECURITY.md` | `.github/CODE_OF_CONDUCT.md`, `.github/SECURITY.md` |
+| `SOURCE-SYNTHESIS-EXAMPLE.md` | [Worked synthesis](examples/source-synthesis.md) |
+| `SOURCE-REVIEW.md`, `MIGRATION.md`, `RELEASE.md`, `CHECKS.md` | `docs/history/` (versioned historical records) |
+| `diagram_tools.py`, `test_*.py` | `internal/diagram_tools.py`, `internal/tests/` |
+| `diagrams.json`, `diagram-audit.json` | `diagrams/manifest.json`, `diagrams/audit.json` |
+| `summary-dependencies.json`, `transition.json` | `internal/metadata/` |
+| `verification.json` | `docs/history/10.1.0-verification.json` |
+
+The public command `python validate.py .` stays at the root. The validator recognizes both the new internal dependency snapshot location and the original root snapshot location for independent older domain packages. For the reorganized Core, run `python -m unittest discover -s internal/tests -p "test_*.py"` and `python -m internal.diagram_tools --check --root .` (D2 0.9.0 required for rendering checks). Follow the [10.0.0 historical migration record](history/10.0.0-migration.md) when resolving retired *knowledge* object identities; it is distinct from this file-layout change.
