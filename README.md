@@ -1,5 +1,5 @@
 ---
-package_version: "10.2.0"
+package_version: "11.0.0"
 language: "KPS 9.x"
 reviewed: "2026-10-12"
 ---
@@ -12,7 +12,7 @@ Apply source-aligned professional knowledge through locally usable, task-oriente
 
 ## Summary
 
-KPS Core contains 20 knowledge objects (five Concepts, four Principles, two Models, five Methods and four Practices) plus 18 external Reference records. This working layout separates the knowledge library, authoring guidance, maintenance tools and historical records.
+KPS Core contains 20 knowledge objects (five Concepts, four Principles, two Models, five Methods and four Practices) plus 18 external Reference records. Core 11.0.0 reorganizes repository documentation and tooling without changing those knowledge identities. The layout separates the knowledge library, authoring guidance, maintenance tools and historical records.
 
 ## Start with the task
 

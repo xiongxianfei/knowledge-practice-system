@@ -1,5 +1,5 @@
 ---
-package_version: "10.1.0"
+package_version: "11.0.0"
 language: "KPS 9.x"
 reviewed: "2026-10-12"
 ---
@@ -17,7 +17,7 @@ Core 10.0.0 removed prior Core object IDs and filenames; 10.1.0 adds diagrams wi
 ## Declarations
 
 ```json
-{"version":"10.1.0","kps_language":"9.x","validated_with":"9.1.0","minimum_validator":"9.1.0","alignment_profile":"core-established-knowledge-v1"}
+{"version":"11.0.0","kps_language":"9.x","validated_with":"9.1.0","minimum_validator":"9.1.0","alignment_profile":"core-established-knowledge-v1"}
 ```
 
 `version` identifies this Core content release. `validated_with` names the structural authoring/checker revision actually used, not a claim that another institution approved the content. `alignment_profile` identifies this Core's additional curation policy.
@@ -36,9 +36,9 @@ The structural checker and its 52 existing regressions are retained unchanged. A
 
 The five knowledge roles and steps-first profile are unchanged. Ordinary Markdown readers can display local SVGs without D2. Rendering or checking source/render freshness needs D2 0.9.0; `diagram_tools.py` and `test_diagrams.py` are separate from the 9.1.0 structural validator. Older structural tools cannot claim to have checked D2 rendering. No sibling domain's metadata or checker is changed.
 
-## Repository layout migration after Core 10 2 0
+## Core 11 0 0 repository layout migration
 
-The working project cleanup consolidates overlapping root documentation and **intentionally breaks old document URLs**, as authorized. This is a layout migration rather than a change to the five KPS knowledge roles, object identities or 18 Reference records. Existing domain packages should not be rewritten merely because Core is reorganized.
+Core 11.0.0 consolidates overlapping root documentation and **intentionally breaks old document URLs**, as authorized. This is a layout migration rather than a change to the five KPS knowledge roles, object identities or 18 Reference records. Existing domain packages should not be rewritten merely because Core is reorganized.
 
 | Previous location | Current location |
 |---|---|

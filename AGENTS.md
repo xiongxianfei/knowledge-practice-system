@@ -1,5 +1,5 @@
 ---
-package_version: "10.1.0"
+package_version: "11.0.0"
 language: "KPS 9.x"
 reviewed: "2026-10-12"
 ---
