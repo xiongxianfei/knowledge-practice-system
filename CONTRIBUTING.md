@@ -1,8 +1,9 @@
 ---
-package_version: "9.0.1"
+package_version: "10.0.0"
 language: "KPS 9.x"
-reviewed: "2026-10-07"
+reviewed: "2026-10-12"
 ---
+
 
 # Contributing to KPS
 

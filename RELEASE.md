@@ -1,31 +1,31 @@
 ---
-package_version: "9.1.0"
+package_version: "10.0.0"
 language: "KPS 9.x"
-reviewed: "2026-10-11"
+reviewed: "2026-10-12"
 ---
 
-# KPS 9 1 0 steps first authoring release
+# Core 10 0 0 change record
 
 ## Key takeaway
 
-Core Practices become task guides rather than six-label forms; domain packages are not migrated by this change.
+This release replaces local abstractions with source-aligned knowledge and keeps the local synthesis in Practices.
 
 ## Summary
 
-This release updates the authoritative authoring contract, the four Core Practices, supporting authoring/review guidance, templates and structural tests. Stable knowledge identities, the five roles, StageN numbering and ordinary Markdown navigation remain intact.
+This is a breaking Core content refactoring of the 9.1.0 baseline, not a change to the KPS 9.x authoring language.
 
-## Content changes
+## Changes
 
-The four Practices preserve their 17 stage names and replace repetitive cards with executable steps, context-specific explanations, worked examples, decision tables, text diagrams and annotated source websites. Personal working summaries remain unfilled. Two new Reference records identify narrowly used external guidance; no effectiveness claims or third-party full texts are added.
+- Retire 12 Concepts, 10 Principles, 7 Models and 12 Methods as standalone KPS-local objects.
+- Add five source-aligned Concepts, four scoped Principles, two established Models and five published Method summaries.
+- Embed the previous objects' relevant application responsibilities in the four steps-first Practices, retaining all 17 stage titles.
+- Add claim-specific source alignment, a complete migration map and Core curation tests.
+- Preserve the structural checker, its existing regressions, evidence limitations and the MIT license.
 
-## Validation changes
+## Evidence and compatibility
 
-The checker no longer demands six labels, the word “procedure” or a minimum stage length. It checks for an actual local action list or decision table, while retaining identity, links, stage order/maps, relationship roles, dependency review and checksum integrity. Missing local image files are errors; image text alternatives and remote-image dependencies receive diagnostic warnings for human review.
+Definitions come from their named specifications or disciplines. Empirical relationships retain their comparator, outcome and access limits. Own examples and cross-domain adaptations are labelled. [SOURCE-REVIEW.md](SOURCE-REVIEW.md) records inspected extent; [COMPATIBILITY.md](COMPATIBILITY.md) separates content from language versions.
 
-## Compatibility
+## Publication status
 
-KPS 9.1 accepts earlier valid stage layouts. New steps-first documents require a 9.1 checker; old 9.0 checkers reject their absent labels. Package metadata records that minimum explicitly. No Swim, Technical Insight or REM repository is changed. See [COMPATIBILITY.md](COMPATIBILITY.md).
-
-## Publication status and history
-
-This source change is intended for one PR against `main`, with merge according to the owner's authorization and passing checks. A generated package version is not a GitHub Release or tag. Exact executed checks and remaining limits are in [CHECKS.md](CHECKS.md). Existing scientific source records retain their prior inspection history.
+This document describes the candidate source change. Actual PR, CI and merge status must be read from GitHub, not inferred from the presence of this file. No separate release tag or official GitHub Release is requested. Swim, Technical Insight and REM are not changed.

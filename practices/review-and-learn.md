@@ -1,19 +1,21 @@
 ---
 id: "kps:pr:review-and-learn"
 type: "practice"
-version: "9.1.0"
+version: "10.0.0"
 language: "KPS 9.x"
 status: "active"
-reviewed: "2026-10-11"
-basis_kind: "authored orchestration; not an independently tested programme"
+reviewed: "2026-10-12"
+basis_kind: "KPS-specific application synthesis; external methods are distinguished from adaptations"
 confidence: "provisional for real-world application"
-uses_methods: ["kps:me:make-file-self-contained", "kps:me:check-local-completeness", "kps:me:test-knowledge-in-use", "kps:me:revise-linked-knowledge", "kps:me:synthesize-sources"]
-uses_models: []
-uses_principles: ["kps:p:learning-effects-depend-on-task-and-comparison"]
+uses_methods: ["kps:method:retrieval-practice", "kps:method:pdca"]
+uses_models: ["kps:model:prov-data-model"]
+uses_principles: ["kps:principle:testing-effect", "kps:principle:spacing-effect"]
 practice_format: "steps-first-v1"
 stage_order: "recommended; stated prerequisites and stopping conditions govern entry"
 stage_titles: ["Stage1 Reconstruct the record", "Stage2 Compare explanations", "Stage3 Select the smallest warranted revision", "Stage4 Define the next check"]
+references: ["kps:r:mapping-comparison", "kps:r:reexamination", "kps:r:retrieval", "kps:r:data-extraction"]
 ---
+
 
 # Review an application and retain justified learning
 
@@ -54,6 +56,8 @@ Begin with evidence of execution, not the explanation you remember.
 | Readers now understand the concept better | Interpretation without a test | Not established by the click result |
 
 No real user result is reported by this example. It shows why an apparently successful task may support a narrower conclusion than the review first suggests.
+
+**Production history and interpretation:** A source URL is not proof of the claim. The [PROV model](../models/prov-data-model.md) offers vocabulary for what was used, produced and attributed; our record additionally distinguishes observation from interpretation. A revised interpretation does not require rewriting the original observation. If the record itself is corrected, preserve the correction's provenance and reason.
 
 ## Stage2 Compare explanations
 
@@ -121,10 +125,24 @@ Next check or stopping reason:
 
 If the reader cannot tell what decision the next check might change, narrow it or stop. More testing is not automatically more useful knowledge.
 
+**Separate learning from task execution:** If the objective is delayed recall, try [retrieval practice](../methods/retrieval-practice.md) and record the response before reopening the source. If the objective is executing a procedure, test the action and interpretation instead; remembering a heading is not enough. Select any review spacing as a local, revisable choice. The [spacing finding](../principles/spacing-effect.md) does not prescribe a universal calendar, and the [testing-effect evidence](../principles/testing-effect.md) contains comparator and outcome qualifications. No actual learner result is supplied here.
+
 ## Current practice summary
 
 No application record, demonstrated improvement or next experiment is supplied. Fill the record from actual permitted use; keep synthetic examples labelled.
 
 ## Deeper knowledge
 
-[Learning effects depend on task and comparison](../principles/learning-effects-depend-on-task-and-comparison.md) carries the scoped learning evidence. [Make a file self-contained](../methods/make-file-self-contained.md), [Check local completeness](../methods/check-local-completeness.md), [Test knowledge in use](../methods/test-knowledge-in-use.md), [Revise linked knowledge](../methods/revise-linked-knowledge.md) and [Synthesize sources](../methods/synthesize-sources.md) provide deeper procedures. The present workflow is authored synthesis and has not undergone an independent effectiveness trial.
+The following files explain the external meanings and procedures used above. Their selection, adaptation and KPS workflow remain our application.
+
+- [Retrieval Practice](../methods/retrieval-practice.md)
+
+- [Plan Do Check Act](../methods/pdca.md)
+
+- [PROV Data Model](../models/prov-data-model.md)
+
+- [Testing Effect](../principles/testing-effect.md)
+
+- [Spacing Effect](../principles/spacing-effect.md)
+
+[Authoring contract](../AUTHORING.md) defines the local file roles. [Alignment and migration](../ALIGNMENT.md) distinguishes external meaning from KPS design.

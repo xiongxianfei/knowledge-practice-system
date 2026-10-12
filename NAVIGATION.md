@@ -1,8 +1,9 @@
 ---
-package_version: "9.1.0"
+package_version: "10.0.0"
 language: "KPS 9.x"
-reviewed: "2026-10-11"
+reviewed: "2026-10-12"
 ---
+
 
 # Practical Markdown navigation
 

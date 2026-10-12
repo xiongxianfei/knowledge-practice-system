@@ -1,19 +1,20 @@
 ---
-package_version: "9.1.0"
+package_version: "10.0.0"
 language: "KPS 9.x"
-reviewed: "2026-10-11"
+reviewed: "2026-10-12"
 ---
+
 
 # KPS Authoring Contract
 
 ## Key takeaway
-This is the single normative KPS 9.x authoring contract; examples and domain repositories must implement it rather than redefine it.
+This local specification defines the KPS 9.x document format; it is not an externally endorsed knowledge taxonomy.
 
 ## Summary
-This is the single normative KPS 9.x authoring contract; examples and domain repositories must implement it rather than redefine it.
+This local specification defines the KPS 9.x document format; it is not an externally endorsed knowledge taxonomy.
 
 ## Authority and scope
-This document defines the **KPS 9.x authoring convention** for the five knowledge roles, publication-based Reference records, self-contained content, metadata, naming, stage headings and local links. `TEMPLATES.md`, `NAVIGATION.md` and Methods provide examples or implementation guidance, not competing authoring requirements. This is a project convention, not a universally standardized Markdown dialect.
+This document defines the **KPS 9.x authoring convention** for the five knowledge roles, publication-based Reference records, self-contained content, metadata, naming, stage headings and local links. `TEMPLATES.md`, `NAVIGATION.md` and Practices provide examples or application guidance, not competing authoring requirements. This is a project convention, not a universally standardized Markdown dialect.
 
 An *incompatible change to these requirements* needs a new KPS language major version; compatible explanations, tooling and optional guidance may change within 9.x. A domain package declares `kps_language: "9.x"` and separately records the KPS release it was checked against.
 
@@ -28,13 +29,13 @@ An *incompatible change to these requirements* needs a new KPS language major ve
 Supporting root-level documents and verification tooling are infrastructure, not extra knowledge types.
 
 ## Filename and identity
-Use lowercase, meaningful kebab-case filenames, such as `independent-representations-can-diverge.md` for a Principle, `compare-evidence.md` for a Method or `build-domain-knowledge.md` for a Practice. Reference filenames identify the **publication**, normally `creator-year-short-title.md`, `creator-undated-short-title.md`, or `organization-standard-id-year.md` when the official identifier matters. Do not infer a publication year from the date accessed.
+Use lowercase, meaningful kebab-case filenames, such as `spacing-effect.md` for a Principle, `study-data-extraction.md` for a Method or `build-domain-knowledge.md` for a Practice. Reference filenames identify the **publication**, normally `creator-year-short-title.md`, `creator-undated-short-title.md`, or `organization-standard-id-year.md` when the official identifier matters. Do not infer a publication year from the date accessed.
 
 Metadata must include a stable `id`, `type`, `version`, `language` and `status` for a knowledge object. Stable IDs are **not** Markdown link anchors. Metadata is for identities, indexing and typed dependency hints; body prose explains why the relationships matter.
 
 ```yaml
 ---
-id: "domain:method:compare-evidence"
+id: "domain:method:study-data-extraction"
 type: "method"
 version: "1.0.0"
 language: "KPS 9.x"
@@ -101,3 +102,9 @@ A Reference must include its full identity, external URL/DOI, reliable publicati
 Run `python validate.py .` and `python test_validate.py`. The checker covers structurally testable elements, including section IDs, stage order/maps, metadata relationships, missing inline actions, local image targets, and declared dependency changes. It does not enforce repeated stage labels or a word-count minimum. The absence of a required action structure is a mechanical error; the usefulness of the steps, examples, source fit, interpretation and fallback requires the content review in `REVIEW.md`. It is **not** a proof of scientific truth or user comprehension. If a canonical source changes, review affected local summaries before refreshing the dependency snapshot using `--accept-reviewed-summaries`.
 
 Root-level GitHub community and automation files are repository infrastructure rather than KPS knowledge objects; the checker applies KPS-specific Markdown rules to the knowledge/content documents, not the GitHub form templates under `.github/`.
+
+## Core professional alignment policy
+
+Core content 10.0.0 adopts [ALIGNMENT.md](ALIGNMENT.md). Its standalone Concepts, Principles, Models and Methods identify the actual source, relation and passage. Source-defined meaning takes precedence over a conflicting local paraphrase; scope differences must not be disguised as equivalence. KPS-specific workflows, reasoning aids and design choices are embedded in Practices. Necessary file-format rules remain here as specifications, not scientific Principles.
+
+This is a Core curation decision, not a silent change to the five-role KPS 9.x language. The unchanged 9.1.0 structural checker accepts these files; `test_alignment.py` checks the additional Core declarations and migration. A passing test cannot determine authority, faithfulness or scientific validity. Other domain packages adopt the policy separately rather than being changed by this release.

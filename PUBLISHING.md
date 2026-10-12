@@ -1,42 +1,33 @@
 ---
-package_version: "9.0.1"
+package_version: "10.0.0"
 language: "KPS 9.x"
-reviewed: "2026-10-07"
+reviewed: "2026-10-12"
 ---
 
-# Publishing KPS on GitHub
+# Publish a permitted knowledge change
 
 ## Key takeaway
-Create one independent public repository for KPS, review the proposed license and community contacts, and publish the validated sources without bundling unrelated domain packages.
+
+Use one checked change and one history record rather than a chain of dependent publication tasks.
 
 ## Summary
-Create one independent public repository for KPS, review the proposed license and community contacts, and publish the validated sources without bundling unrelated domain packages.
 
-## Before publishing
-- Review [LICENSE](LICENSE), copyright attribution and external references. MIT is the **proposed default** for KPS-authored documentation and code; check that you have rights to publish all included material under it.
-- Supply a private moderation/contact route for [Code of conduct](CODE_OF_CONDUCT.md) and [Security](SECURITY.md), particularly if you want outsiders to report issues privately.
-- Review the history and files for private data, secrets or accidentally bundled third-party materials.
-- Confirm that `AUTHORING.md` matches the desired contract and `publication.json` records the correct release.
-- Run validation and check the source files directly before publishing publicly.
+This is a local publication policy, not a scientific Method. The complete task guidance is in [Build domain knowledge](practices/build-domain-knowledge.md#stage5-check-and-release). GitHub records the work; it does not determine the knowledge.
 
-## Create the repository
-On GitHub choose **New repository**. Use the proposed name `knowledge-practice-system`, select **Public**, and leave README, .gitignore and License creation **unchecked** because they are included locally. The user interface may differ; GitHub's official creation guide describes the current flow: https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-new-repository
+## Existing repository
 
-## Push the files
-From a terminal in the extracted root directory:
+1. Inspect the current main branch, existing license and open work before editing. Preserve unrelated changes.
+2. Complete the requested knowledge change, review source fidelity and run `python validate.py .`, `python test_validate.py`, and the Core curation checks `python test_alignment.py`.
+3. Create one branch and one ready-for-review PR against main. Confirm that its diff equals the reviewed change.
+4. Check CI against the actual PR head. Merge automatically only when the owner has authorized it and the checks pass; otherwise leave the PR for the owner.
+5. Confirm the result on main. Report the actual PR, checks and merge status. Do not create tags or official releases unless requested.
 
-```bash
-git init -b main
-git add .
-git commit -m "Publish Knowledge Practice System 9.0.1"
-git remote add origin https://github.com/YOUR-ACCOUNT/knowledge-practice-system.git
-git push -u origin main
-```
+## No corresponding repository
 
-Replace `YOUR-ACCOUNT` with the actual repository owner, and authenticate using your own supported GitHub credential flow. If you create or clone an initialized repository instead of an empty one, follow GitHub's standard merge/push instructions rather than forcing histories.
+Produce a complete ZIP with a checksum manifest. Extract and validate it independently before providing it. Do not modify an unrelated repository or claim that a ZIP was published on GitHub.
 
-## After publishing
-Enable Issues and pull requests, review the code-of-conduct and security contact, configure branch protection or branch rules as appropriate, verify the [validation workflow](.github/workflows/validate.yml), and tag a release only after inspecting its checked content. Contributions should follow [Contributing](CONTRIBUTING.md). If the author's knowledge package is later hosted as GitHub Pages or MkDocs, keep the same source in one repository rather than maintaining inconsistent published copies.
+## Review boundaries
 
-## Scope
-The GitHub repository is an open-source **knowledge framework**. Swim and REM are independent applications and are intentionally not included in its source tree.
+Preserve private records, publication rights and the existing [license](LICENSE). A source-linked paragraph is not permission to redistribute its full publication. The package contains Reference records, not downloaded articles. No sibling domain changes are implied by a Core release.
+
+[Compatibility](COMPATIBILITY.md) explains content, language and checker versions. [Review](REVIEW.md) and [Checks](CHECKS.md) separate content judgment from structural tests.

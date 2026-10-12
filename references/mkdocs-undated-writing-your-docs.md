@@ -18,10 +18,12 @@ accessed: "2026-10-07"
 evidence_family: "Python-Markdown implementation lineage"
 previous_access_extent: "Official HTML documentation inspected for the named sections. No installed application behavior was inferred as tested."
 access_extent: "selected official HTML"
-rechecked_this_release: true
+rechecked_this_release: false
 current_review_date: "2026-10-07"
 current_review_note: "Heading links, relative Markdown file links and YAML metadata documentation were inspected. No installed MkDocs website or custom theme was tested."
+retained_inspection_note: "Earlier inspection retained with its original date; not a new inspection in Core 10.0.0."
 ---
+
 
 # MkDocs Writing your docs
 
@@ -32,13 +34,15 @@ MkDocs describes source-relative Markdown links, generated output paths and head
 This reference identifies the documented link interface used by the package. The extracted rules support the navigation profile; they do not establish that an untested application configuration behaves identically. The source remains external.
 
 
-## Current inspection and use limit
+## Retained inspection and use limit
+
+This account retains the earlier dated inspection; no new full source inspection is claimed for Core 10.0.0.
 
 Heading links, relative Markdown file links and YAML metadata documentation were inspected. No installed MkDocs website or custom theme was tested.
 
 
 ## Source identity
-**Creator:** MkDocs. **Title:** Writing your docs. **Source:** [Official documentation](https://www.mkdocs.org/user-guide/writing-your-docs/). **Date:** undated; accessed 2026-10-07. **Inspected extent this release:** selected official HTML.
+**Creator:** MkDocs. **Title:** Writing your docs. **Source:** [Official documentation](https://www.mkdocs.org/user-guide/writing-your-docs/). **Date:** undated; accessed 2026-10-07. **Previously inspected extent:** selected official HTML.
 
 ## Evidence lineage
 Python-Markdown implementation lineage. MkDocs delegates heading generation to Python-Markdown; those two records are not independent engines.

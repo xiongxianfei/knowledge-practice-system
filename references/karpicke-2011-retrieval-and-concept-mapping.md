@@ -4,7 +4,7 @@ type: "reference"
 version: "9.0.0"
 language: "KPS 9.x"
 status: "active"
-reviewed: "2026-10-07"
+reviewed: "2026-10-12"
 source_type: "primary experiment"
 creator: "Jeffrey D. Karpicke and Janell R. Blunt"
 publication_year: 2011
@@ -12,16 +12,18 @@ citation_year: 2011
 updated_year: null
 date_basis: "publication year shown by source"
 url: "https://www.science.org/doi/10.1126/science.1199327"
-accessed: "2026-10-07"
+accessed: "2026-10-12"
 evidence_family: "Karpicke–Blunt 2011 experiments"
 doi: "10.1126/science.1199327"
 alternate_url: "https://learninglab.psych.purdue.edu/downloads/2011/2011_Karpicke_Blunt_Science.pdf"
 previous_access_extent: "Primary article PDF text inspected; printed page 773 also visually checked. Supplementary materials and raw data were not audited."
 access_extent: "primary article PDF and page image"
 rechecked_this_release: true
-current_review_date: "2026-10-07"
-current_review_note: "The primary main article was read and its relevant results/discussion page visually inspected. The article explicitly reports matched total learning time. Supporting materials and raw data were not audited."
+current_review_date: "2026-10-12"
+current_review_note: "Main article procedure and results inspected; printed page 773 checked visually. Raw data and supplementary materials not reanalyzed."
 ---
+
+
 
 # Retrieval practice produces more learning than elaborative studying with concept mapping
 
@@ -36,7 +38,7 @@ Two experiments reported an advantage for the tested retrieval conditions over e
 
 ## Current inspection and use limit
 
-The primary main article was read and its relevant results/discussion page visually inspected. The article explicitly reports matched total learning time. Supporting materials and raw data were not audited.
+Main article procedure and results inspected; printed page 773 checked visually. Raw data and supplementary materials not reanalyzed.
 
 
 ## Source identity
@@ -46,7 +48,7 @@ The primary main article was read and its relevant results/discussion page visua
 **Source type:** primary experiment  
 **Date basis:** publication year shown by source  
 **External publication:** [10.1126/science.1199327](https://www.science.org/doi/10.1126/science.1199327)  
-**Accessed:** 2026-10-07  
+**Accessed:** 2026-10-12  
 **Inspected extent this release:** primary article PDF and page image.
 
 **Inspected alternative host:** [Original article/author record](https://learninglab.psych.purdue.edu/downloads/2011/2011_Karpicke_Blunt_Science.pdf). This is the same publication, not an additional independent source.
@@ -75,7 +77,7 @@ The later methodological challenge concerns the distribution of learning activit
 
 ## Interpretation boundary
 
-The claims above are located paraphrases of the source, not independent replications. The local Summary makes the contribution understandable, but verifying it requires inspecting the external material. Downstream choices and synthesis are authored in knowledge objects; no full source copy is stored here.
+The claims above are located paraphrases of the source, not independent replications. The local Summary makes the contribution understandable, but verifying it requires inspecting the external material. Downstream KPS choices and application synthesis are authored in Practices; no full source copy is stored here.
 
 ## Deeper knowledge
 

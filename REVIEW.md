@@ -1,8 +1,9 @@
 ---
-package_version: "9.1.0"
+package_version: "10.0.0"
 language: "KPS 9.x"
-reviewed: "2026-10-11"
+reviewed: "2026-10-12"
 ---
+
 
 # Review content by trying the task
 
@@ -49,3 +50,7 @@ Do not fill these fields from expected results. Domain validity, physical compet
 ## Structural checks and limits
 
 Run `python validate.py .` and `python test_validate.py`. Resolve file/fragment, metadata, image and dependency errors. The checker accepts substantive action lists or decision tables without the six-label form; it cannot prove that those actions are useful, safe or true. [AUTHORING.md](AUTHORING.md) is the authority; [CHECKS.md](CHECKS.md) reports checks actually performed for this release.
+
+## Source fidelity review
+
+For every Concept, Principle, Model and Method, compare the actual passage with the local statement. Check the discipline, edition, certainty, missing conditions and model subset. Inspect an opposing source when it could change the claim. A declared `source_alignment` field is not evidence that this review happened. Keep local adaptations in Practices and record actual inspected extent.

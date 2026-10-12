@@ -1,0 +1,36 @@
+{
+  "scope": "Local structural tests, source-summary self-review and publication checks; not independent empirical validation",
+  "checked_on": "2026-10-12",
+  "baseline_commit": "ff0d546d07cd880c743b9cec170bfb53f2263f21",
+  "content_version": "10.0.0",
+  "kps_language": "9.x",
+  "structural_checker": "9.1.0",
+  "stats": {
+    "markdown_documents": 58,
+    "knowledge_objects": 20,
+    "reference_records": 17,
+    "by_type": {
+      "concept": 5,
+      "method": 5,
+      "model": 2,
+      "practice": 4,
+      "principle": 4
+    },
+    "local_links": 246,
+    "typed_relationships": 54,
+    "practice_stages": 17,
+    "heading_identifiers": 462,
+    "summary_recipients": 20,
+    "summary_dependencies": 54,
+    "manifest_files": 0
+  },
+  "structural_regression_tests": 52,
+  "alignment_regression_tests": 12,
+  "pandoc_gfm_heading_identifiers": 462,
+  "markdown_it_link_destinations": 272,
+  "retired_non_practice_objects": 41,
+  "retained_practices": 4,
+  "preserved_stage_titles": 17,
+  "github_ci": "not determined by local verification",
+  "independent_user_trial": false
+}

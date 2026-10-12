@@ -1,41 +1,42 @@
 ---
-package_version: "9.1.0"
+package_version: "10.0.0"
 language: "KPS 9.x"
-reviewed: "2026-10-11"
+reviewed: "2026-10-12"
 ---
 
-# Source review for this release
+# Source inspection record
 
 ## Key takeaway
-A checked source is a specific inspected contribution, not an endorsement of every application. Access limits remain visible beside the claims.
+
+New inspection and retained history are not interchangeable.
 
 ## Summary
-This record separates retained inspection history from the source access performed for the steps-first revision. Reference files retain publication identity, claim locators, evidence families, non-claims and their recorded inspection dates. Historical access is not silently presented as new inspection. Sources were chosen for material claims, not to meet a fixed count or prestige hierarchy.
 
-## Retained inspection register
-The following entries preserve the previous release's recorded inspection extent. They are not claims of fresh full-source review for 9.1.0.
+The source review for Core 10.0.0 supports specific definitions, findings and procedure summaries. No complete standard conformance audit, full systematic review or independent KPS evaluation was performed.
 
-| Reference record | Previously recorded extent | Qualification |
+## Inspected for this change
+
+| Source | Extent | Use and limit |
 |---|---|---|
-| [cochrane-2024-handbook-v6-5](references/cochrane-2024-handbook-v6-5.md) | selected handbook chapters | Selected material reviewed; no raw-data reanalysis |
-| [github-undated-markdown-formatting](references/github-undated-markdown-formatting.md) | selected official HTML | Selected material reviewed; no raw-data reanalysis |
-| [karpicke-2011-retrieval-and-concept-mapping](references/karpicke-2011-retrieval-and-concept-mapping.md) | primary article PDF and page image | Selected material reviewed; no raw-data reanalysis |
-| [karpicke-2011-spaced-retrieval](references/karpicke-2011-spaced-retrieval.md) | primary indexed abstract | Selected material reviewed; no raw-data reanalysis |
-| [mayrhofer-2023-reexamining-the-testing-effect](references/mayrhofer-2023-reexamining-the-testing-effect.md) | primary publisher article HTML | Selected material reviewed; no raw-data reanalysis |
-| [mkdocs-undated-writing-your-docs](references/mkdocs-undated-writing-your-docs.md) | selected official HTML | Selected material reviewed; no raw-data reanalysis |
-| [python-markdown-undated-toc-extension](references/python-markdown-undated-toc-extension.md) | selected official HTML | Selected material reviewed; no raw-data reanalysis |
-| [w3c-2013-prov-overview](references/w3c-2013-prov-overview.md) | selected official HTML | Selected material reviewed; no raw-data reanalysis |
+| [W3C SKOS 2009](references/w3c-2009-skos-reference.md) | HTML sections 1.3, 3, 5, 8 and 10 | Concepts, labels and relationships; not KPS taxonomy |
+| [W3C PROV DM 2013](references/w3c-2013-prov-dm.md) | Selected overview and definitions | Provenance subset; not truth certification |
+| [RFC 3986](references/ietf-rfc3986-2005-uri-syntax.md) | Sections 1.1, 3.5 and 5 | URI terminology; not every browser or Markdown slug |
+| [ASQ PDCA](references/asq-undated-pdca-cycle.md) | Definition and four-part procedure | Professional procedure; not effect estimate |
+| [Wharton report 93-07](references/wharton-undated-cognitive-walkthrough-report-93-07.md) | Cover, title and printed pages 2, 3, 6 visually inspected | Inputs and action questions; not the entire PDF or final 1994 chapter |
+| [Cochrane chapter 2](references/cochrane-2024-review-questions-chapter-2.md) | Sections 2.1 to 2.3 | PICO scope |
+| [Cochrane chapter 5](references/cochrane-2024-collecting-data-chapter-5.md) | Sections 5.2.1, 5.4 and 5.5 | Study/report linkage and extraction |
+| [Cochrane chapter 14](references/cochrane-2024-certainty-chapter-14.md) | Section 14.2.2 indirectness | One GRADE consideration, not complete grading |
+| [Karpicke and Blunt 2011](references/karpicke-2011-retrieval-and-concept-mapping.md) | Main-article procedure and results; page 773 visually checked | Scoped finding, no raw-data reanalysis |
+| [Karpicke and Bauernschmidt 2011](references/karpicke-2011-spaced-retrieval.md) | Indexed abstract | Absolute versus relative spacing; no universal interval |
 
-## Synthesis and independence
-Several chapters from one handbook or several pages from one organization are not independent experimental replications. Official coaching guidance, foundational explanation, empirical results and authored application are distinguished. Where sources differ, the selected working reference remains a qualified choice. KPS's folder structure and REM's methodology are design syntheses, not scientifically proven optima.
+## Retained inspection and failed access
 
-## What was not established
-No fresh statistical reanalysis, comprehensive systematic search, independent expert review or real-user effectiveness trial was completed. An abstract can support only what it actually reports. Inaccessible full text remains inaccessible; links and credentials do not fill its gaps. Validators check publication structure, not evidence truth, medical suitability or engineering conformance.
+The remaining prior Reference records retain their earlier dated inspection history. Their claims were not silently converted into newly checked findings. The current attempt to fetch the Mayrhofer publisher article failed; the previous recorded inspection is retained and its methodological qualification remains visible in the testing-effect discussion. No fresh full-text access is claimed.
 
-## How to use this record
-Read the local claim and its Reference contribution. Check whether the population, setting, mechanism and inspected extent support the intended use. For a consequential unresolved claim, obtain more appropriate evidence or qualified review before treating the inference as established. The publication contains Markdown records only, not copies of external source materials.
+The three Cochrane chapters belong to one handbook family. The two W3C models have distinct purposes, not two confirmations of a single efficacy claim. Authoritative descriptions, empirical comparisons and KPS inference are kept separate. The existing [learning synthesis example](SOURCE-SYNTHESIS-EXAMPLE.md) remains an earlier worked synthesis, not a new experiment.
 
-## Steps first authoring review
-On 2026-10-11, selected HTML sections of [Diataxis how-to guidance](references/procida-undated-how-to-guides.md), [W3C complex-image guidance](references/w3c-2026-complex-images.md), and the existing [GitHub formatting source](references/github-undated-markdown-formatting.md) were inspected. The first two new records state their precise contribution and limits. Task orientation does not imply that KPS must omit necessary local explanations; that is a deliberate KPS departure from strict how-to separation.
+## Scope review
 
-Earlier learning and provenance records are retained with their existing inspection dates. This release does not claim a fresh review of every scientific source or an independent evaluation of the new Practices. No downloaded source pages or images are redistributed.
+Concepts preserve named source scopes. Principles are scoped findings or methodological relationships. Model files explicitly present subsets. Published procedures do not import a requirement to use the same technique for every KPS task. All workflow adaptations, proposed checks and maintenance rules remain in Practices or minimal publication specifications.
+
+No licensed full publications, personal records or claim of ISO, W3C, Cochrane or ASQ endorsement is included.

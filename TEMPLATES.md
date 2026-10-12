@@ -1,8 +1,9 @@
 ---
-package_version: "9.1.0"
+package_version: "10.0.0"
 language: "KPS 9.x"
-reviewed: "2026-10-11"
+reviewed: "2026-10-12"
 ---
+
 
 # Reusable authoring templates
 
@@ -101,3 +102,11 @@ Publication identity, creators, publication or update year and its basis, extern
 
 ## Review before publication
 Hide links and attempt the intended use; restore links and check the summary remains faithful. Check claim-source fit, headings and fragments, then run the package checker. [Authoring](AUTHORING.md), [Navigation](NAVIGATION.md) and [Compatibility](COMPATIBILITY.md) provide the complete local maintenance instructions.
+
+## Core source alignment example
+
+```yaml
+source_alignment: [{"reference":"kps:r:skos","relation":"definition-paraphrase","locator":"Sections 3 and 5"}]
+```
+
+Record the actual source and locator, its meaning and boundary, and any qualification. This declaration is not a formal equivalence mapping. KPS-specific authoring routines belong in Practices rather than new generic Methods. The five role labels remain our local organization.

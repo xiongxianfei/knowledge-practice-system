@@ -1,19 +1,22 @@
 ---
 id: "kps:pr:use-kps"
 type: "practice"
-version: "9.1.0"
+version: "10.0.0"
 language: "KPS 9.x"
 status: "active"
-reviewed: "2026-10-11"
-basis_kind: "authored orchestration; not an independently tested programme"
+reviewed: "2026-10-12"
+basis_kind: "KPS-specific application synthesis; external methods are distinguished from adaptations"
 confidence: "provisional for real-world application"
-uses_methods: ["kps:me:make-file-self-contained", "kps:me:check-local-completeness", "kps:me:classify-knowledge", "kps:me:synthesize-sources", "kps:me:trace-method-rationale", "kps:me:test-knowledge-in-use", "kps:me:revise-linked-knowledge"]
-uses_models: ["kps:mo:application-and-revision-model"]
+uses_methods: ["kps:method:retrieval-practice"]
+uses_models: ["kps:model:prov-data-model"]
 uses_principles: []
 practice_format: "steps-first-v1"
 stage_order: "recommended; stated prerequisites and stopping conditions govern entry"
 stage_titles: ["Stage1 Bound the task", "Stage2 Retrieve and inspect the local explanation", "Stage3 Use and observe", "Stage4 Update the smallest justified target"]
+uses_concepts: ["kps:concept:uniform-resource-identifier", "kps:concept:provenance"]
+references: ["kps:r:github-markdown", "kps:r:uri"]
 ---
+
 
 
 # Use KPS for one real task
@@ -134,10 +137,22 @@ Decision and next check:
 
 Keep personal or sensitive records outside public packages. Reusable knowledge should contain an appropriately scoped explanation, not identifying details or a fabricated successful session.
 
+**Canonical content and dependent summaries:** Independently edited copies can disagree. For example, changing A without changing B leaves different values. This reasoning supports our maintenance choice; it is not a W3C mandate to use one repository. Keep a reusable account and concise local summaries where they aid execution. Review each affected summary when a dependency changes. A fingerprint detects changed bytes, not a false interpretation. Preserve previous observations as records even when the current explanation changes.
+
 ## Current practice summary
 
 Actual task, observations, interpretation and next check are not recorded. Fill them only from a real application, preferably in a private record. The worked link example is illustrative.
 
 ## Deeper knowledge
 
-[Application and revision model](../models/application-and-revision-model.md), [Make a file self-contained](../methods/make-file-self-contained.md), [Check local completeness](../methods/check-local-completeness.md), [Classify knowledge](../methods/classify-knowledge.md), [Synthesize sources](../methods/synthesize-sources.md), [Trace rationale](../methods/trace-method-rationale.md), [Test knowledge in use](../methods/test-knowledge-in-use.md) and [Revise linked knowledge](../methods/revise-linked-knowledge.md) provide reusable detail. The workflow and example are authored KPS design; no effectiveness study or independent reader test is claimed.
+The following files explain the external meanings and procedures used above. Their selection, adaptation and KPS workflow remain our application.
+
+- [Retrieval Practice](../methods/retrieval-practice.md)
+
+- [PROV Data Model](../models/prov-data-model.md)
+
+- [Uniform Resource Identifier](../concepts/uniform-resource-identifier.md)
+
+- [Provenance](../concepts/provenance.md)
+
+[Authoring contract](../AUTHORING.md) defines the local file roles. [Alignment and migration](../ALIGNMENT.md) distinguishes external meaning from KPS design.

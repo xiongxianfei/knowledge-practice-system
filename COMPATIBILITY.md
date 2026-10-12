@@ -1,52 +1,33 @@
 ---
-package_version: "9.1.0"
+package_version: "10.0.0"
 language: "KPS 9.x"
-reviewed: "2026-10-11"
+reviewed: "2026-10-12"
 ---
 
-# KPS major line and authoring tool compatibility
+# Content and authoring compatibility
 
 ## Key takeaway
 
-KPS 9.1.0 keeps the five-role language and accepts earlier Practice layouts; steps-first documents require the updated checker.
+A content-library break is not the same as a language or checker change.
 
 ## Summary
 
-A package version identifies content, a language declaration identifies the knowledge contract, and the minimum checker identifies a tooling feature. Do not infer that every 9.x checker understands every later presentation. This release relaxes stage formatting without changing Concept, Principle, Model, Method or Practice meanings.
+Core 10.0.0 removes prior Core object IDs and filenames. The KPS 9.x file-role language, StageN navigation and steps-first representation remain unchanged.
 
-## Declaration
+## Declarations
 
-```yaml
-kps_language: "9.x"
-validated_with: "9.1.0"
-minimum_validator: "9.1.0"
-markdown_profile: "practical-markdown-v1"
+```json
+{"version":"10.0.0","kps_language":"9.x","validated_with":"9.1.0","minimum_validator":"9.1.0","alignment_profile":"core-established-knowledge-v1"}
 ```
 
-Knowledge files keep `language: "KPS 9.x"`; new Core Practices declare `practice_format: "steps-first-v1"`. Their stable identities and StageN targets remain independent of formatting labels.
+`version` identifies this Core content release. `validated_with` names the structural authoring/checker revision actually used, not a claim that another institution approved the content. `alignment_profile` identifies this Core's additional curation policy.
 
-## Compatibility direction
+## Break and migration
 
-| Content | KPS 9.0 checker | KPS 9.1 checker |
-|---|---|---|
-| Existing valid six-label stages with inline procedures | Existing behavior | Accepted |
-| Steps-first stages without the six labels | Rejects missing labels | Accepted when structurally valid |
-| Missing actions or broken local targets | Rejects applicable defects | Rejects applicable defects |
+Old links to 41 standalone local objects no longer resolve. The four Practice IDs and all 17 stage titles are retained. Migrate incoming links deliberately using [MIGRATION.md](MIGRATION.md); a new professional definition is not automatically an exact replacement for an old local role definition.
 
-Backward acceptance means the new checker accepts the earlier representation, not that the old checker understands the new one. Existing domain repositories are not edited or automatically upgraded. Retain their inspected 9.0 tooling until migration is requested; adopting steps-first content requires the matching authoring guidance and checker.
+Domain repositories declaring KPS 9.x do not have to adopt these new Core content IDs. They remain independently readable and versioned. No sibling repository is automatically rewritten. The additional alignment test applies to this Core; adoption by a domain is a separate requested change.
 
-## When a new major is needed
+## Tool boundary
 
-Changing a core role's meaning, removing an existing valid representation, or changing the required navigation semantics calls for a breaking-version assessment. Optional support and a relaxation that preserves earlier documents can be introduced within 9.x. This is KPS's explicit compatibility policy, not evidence of cross-tool behavior beyond the stated checks.
-
-## Domain migration
-
-1. Compare the inspected contract with the domain's actual files and declared tooling version.
-2. Keep useful content and rewrite Practices as task guides, not by deleting labels alone.
-3. Update examples, source annotations and local visuals together with dependencies.
-4. Use the new checker and regression suite; review the content separately.
-5. Record the exact checked release and minimum checker. Publish only the requested domain.
-
-## Independence and limits
-
-No mandatory filesystem dependency on another package is introduced. A bundled checker is an inspected copy, not a separate authoring authority. A compatibility declaration does not certify factual accuracy, reader comprehension, physical competence or future releases. [AUTHORING.md](AUTHORING.md) remains the normative contract.
+The structural checker and its 52 existing regressions are retained unchanged. A 9.0 checker still does not understand steps-first content. The 9.1 checker tests structure, not the truth of a source paraphrase. Format changes that alter roles or navigation still require a separate language-compatibility assessment.

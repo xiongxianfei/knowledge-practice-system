@@ -1,74 +1,55 @@
 ---
-package_version: "9.1.0"
+package_version: "10.0.0"
 language: "KPS 9.x"
-reviewed: "2026-10-11"
+reviewed: "2026-10-12"
 ---
 
 # Knowledge Practice System
 
 ## Key takeaway
-Build locally understandable and evidence-aware knowledge, connect it through explicit reasoning, and compose it into Practices usable in real work.
+
+Reuse established knowledge and make KPS-specific application explicit.
 
 ## Summary
-Build locally understandable and evidence-aware knowledge, connect it through explicit reasoning, and compose it into Practices usable in real work.
 
-## Steps first Practices
+KPS Core 10.0.0 organizes professional knowledge and applies it through steps-first Practices. This is a decisive content refactoring: 41 former local Concepts, Principles, Models and Methods are retired as standalone objects. Their useful application responsibilities are embedded in the four retained Practices.
 
-The four Core Practices now put executable steps first and supply worked cases, decision tables, text diagrams and annotated websites where needed. The authoring contract no longer requires six labels or a minimum stage length. Start with [Use KPS](practices/use-kps.md), [Build a domain](practices/build-domain-knowledge.md), [Improve KPS](practices/improve-kps.md), or [Review and learn](practices/review-and-learn.md).
+## Start with the task
 
-The five knowledge roles remain unchanged. Steps-first files need the 9.1 checker; old domain packages remain untouched. See [Compatibility](COMPATIBILITY.md), [Templates](TEMPLATES.md) and the [task-based content review](REVIEW.md).
+[Use KPS](practices/use-kps.md) answers one bounded question. [Build domain knowledge](practices/build-domain-knowledge.md) connects sources to usable knowledge. [Improve KPS](practices/improve-kps.md) tests a change. [Review and learn](practices/review-and-learn.md) preserves actual observations and revisable conclusions.
 
-## What is KPS
-KPS is an open-source, self-describing architecture for organising reusable knowledge and applying it in real situations. It uses five **knowledge roles** and structured **Reference records**. The roles are a design convention, not a proven universal taxonomy.
+## What is reusable and what is ours
 
-| Role | What it contributes |
-|---|---|
-| [Concept](concepts/concept.md) | A useful distinction or definition |
-| [Principle](concepts/principle.md) | A scoped, declarative explanation; **not a rule or command** |
-| [Model](concepts/model.md) | A representation of relationships, assumptions and behavior |
-| [Method](concepts/method.md) | An operation, its rationale, how to perform it, and how to assess it |
-| [Practice](concepts/practice.md) | Self-contained stages for pursuing a recurring real-world goal |
-| [Reference](concepts/source-and-reference.md) | A record identifying an external publication and what it supports |
+| Library | Examples | Boundary |
+|---|---|---|
+| Concepts | SKOS Concept, Provenance, URI, Study and Report, Evidence Indirectness | Named source meanings, not universal definitions |
+| Principles | Testing Effect, Spacing Effect, evidence independence and applicability | Scoped findings or methodological relationships, not rules |
+| Models | SKOS and PROV data models | Explanatory subsets, not RDF conformance claims |
+| Methods | PICO, Study Data Extraction, PDCA, Cognitive Walkthrough, Retrieval Practice | Published procedures, not newly named KPS workflows |
+| Practices | Use, build, improve, review | Our task-specific synthesis, explicitly identified |
 
-`references/` is supporting provenance infrastructure—not a sixth knowledge type. KPS describes itself using its own structure. **Validation checks structure, not the factual truth or proven effectiveness of the framework.**
+The library contains **20 core objects and 17 Reference records**. Smaller does not mean that every removed statement was false. Local workflow abstractions no longer masquerade as reusable professional knowledge. [INDEX.md](INDEX.md) lists the current library; [MIGRATION.md](MIGRATION.md) accounts for each old ID and destination.
 
-## Start here
-1. [Use KPS](practices/use-kps.md) to start from one real knowledge question.
-2. [Build a domain knowledge package](practices/build-domain-knowledge.md) to organise a domain with the five roles.
-3. [Read the authoring contract](AUTHORING.md) before changing the structure, stage titles, relationships or Markdown conventions.
-4. [Use the templates](TEMPLATES.md) as examples and [run the checks](CHECKS.md) before opening a contribution.
+## Authoring and source alignment
 
-**One guiding standard:** every file should be locally understandable at its own abstraction level. Links deepen evidence and reasoning; they do not replace the explanation a reader needs right now.
+[AUTHORING.md](AUTHORING.md) is the local format contract. [ALIGNMENT.md](ALIGNMENT.md) is the Core curation policy. [TEMPLATES.md](TEMPLATES.md) gives examples, not another authority. The five roles, StageN convention and Markdown profile remain KPS choices; none is attributed to W3C, Cochrane or ASQ.
 
-## Browse the knowledge
-- [Knowledge index](INDEX.md) connects files by kind.
-- [Method to reason map](WHY-MAP.md) traces Methods back to explanations.
-- [Source synthesis example](SOURCE-SYNTHESIS-EXAMPLE.md) distinguishes a source finding from our inference.
-- [Navigation examples](NAVIGATION.md) explain ordinary Markdown heading fragments.
+Every substantial file has a takeaway and summary. Practices put actions first and retain needed reasoning, examples, interpretation and fallback inline. Source records state actual inspection extent. No source PDF, private record, measured learning outcome or institutional endorsement is bundled or invented.
 
-## Repository layout
-```text
-concepts/       reusable definitions and distinctions
-principles/     explanatory statements with scope, evidence and limits
-models/         structural or behavioral representations
-methods/        operations with rationale and validation
-practices/      staged operational syntheses
-references/     structured records of external sources
-validate.py     structural checker
-AUTHORING.md    authoritative Markdown authoring contract
+## Versions and checks
+
+Core **content version 10.0.0** marks breaking IDs and paths. The five-role **KPS 9.x authoring language** is unchanged, and the included structural checker remains **9.1.0**. The new Core alignment test is an additional curation check, not a new domain-language requirement. See [COMPATIBILITY.md](COMPATIBILITY.md).
+
+```bash
+python validate.py .
+python test_validate.py
+python test_alignment.py
 ```
 
-## Knowledge integrity
-Principles are not normative rules. A source's publication prestige does not establish its relevance to a particular claim. Claim-driven source synthesis should distinguish directly supported premises, author inference, disagreement and limits. Practice examples and unperformed checks must not be presented as observed outcomes.
+These checks do not prove factual correctness or usability. [CHECKS.md](CHECKS.md) separates executed checks from their limits. [REVIEW.md](REVIEW.md) describes the content review.
 
-## Contribute
-KPS welcomes corrections, more defensible explanations, improved Methods, new worked examples and validator improvements. Please read [Contributing](CONTRIBUTING.md) and [Governance](GOVERNANCE.md). For problems, use the issue templates; for changes, open a pull request with the relevant evidence and validation result. Respect the [Code of conduct](CODE_OF_CONDUCT.md).
+## Publication and rights
 
-## Version and compatibility
-This open-source repository edition is **9.1.0**, refining the KPS 9.0.1 source tree. Domain projects can declare **KPS 9.x** compatibility while versioning their own content independently. Read [Compatibility](COMPATIBILITY.md) and [Release notes](RELEASE.md). No future release has been automatically validated.
+Use one change branch and PR; merge when authorized and checks pass. Keep Git history rather than parallel obsolete files. No separate tag or official release is implied. Swim, Technical Insight and REM are unchanged by this Core-only revision.
 
-## License
-**MIT License** for the KPS-authored documentation and tooling, subject to the rights of their respective authors. Third-party publications remain under their own terms; KPS Reference records describe and link to them without bundling copies. Review [LICENSE](LICENSE) and the [reference register](references/README.md) before republishing any external material.
-
-## Scope
-KPS is an authored framework for organizing reasoning. It is not a scientific certification, medical protocol, software security guarantee or engineering conformance standard. Domain implementations must assess their own risks.
+KPS-authored content and tooling use the retained [MIT license](LICENSE); cited works retain their own rights. Follow [CONTRIBUTING.md](CONTRIBUTING.md) and [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md).

@@ -18,10 +18,12 @@ doi: "10.3389/fpsyg.2023.1258359"
 alternate_url: "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2023.1258359/full"
 previous_access_extent: "Primary publisher HTML inspected: introduction, methods, results and discussion. Raw data and preregistration were not independently reanalysed. PMC access was blocked in this recheck."
 access_extent: "primary publisher article HTML"
-rechecked_this_release: true
+rechecked_this_release: false
 current_review_date: "2026-10-07"
 current_review_note: "The publisher article, including the comparison design, results and discussion, was inspected. Distinguish task/activity differences from total time and outcome-specific results from general superiority claims. Raw data were not reanalyzed."
+retained_inspection_note: "Earlier inspection retained with its original date; not a new inspection in Core 10.0.0."
 ---
+
 
 # Re examining the testing effect as a learning strategy the advantage of retrieval practice over concept mapping as a methodological artifact
 
@@ -34,7 +36,9 @@ This study revisits a particular retrieval-versus-mapping comparison by varying 
 This study revisits a particular retrieval-versus-mapping comparison by varying additional memorization and instructions. Its verbatim and inference outcomes need separate treatment. It challenges a broad interpretation of an earlier comparison, not every retrieval finding.
 
 
-## Current inspection and use limit
+## Retained inspection and use limit
+
+This account retains the 2026-10-07 inspection. The publisher URL was attempted on 2026-10-12 but yielded no usable article content; no new full-text inspection is claimed.
 
 The publisher article, including the comparison design, results and discussion, was inspected. Distinguish task/activity differences from total time and outcome-specific results from general superiority claims. Raw data were not reanalyzed.
 
@@ -47,7 +51,7 @@ The publisher article, including the comparison design, results and discussion, 
 **Date basis:** publication year shown by source  
 **External publication:** [10.3389/fpsyg.2023.1258359](https://pubmed.ncbi.nlm.nih.gov/38213612/)  
 **Accessed:** 2026-10-07  
-**Inspected extent this release:** primary publisher article HTML.
+**Previously inspected extent:** primary publisher article HTML.
 
 **Inspected alternative host:** [Original article/author record](https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2023.1258359/full). This is the same publication, not an additional independent source.
 
@@ -73,7 +77,7 @@ This tests a particular comparison. It neither establishes that retrieval is use
 
 ## Interpretation boundary
 
-The claims above are located paraphrases of the source, not independent replications. The local Summary makes the contribution understandable, but verifying it requires inspecting the external material. Downstream choices and synthesis are authored in knowledge objects; no full source copy is stored here.
+The claims above are located paraphrases of the source, not independent replications. The local Summary makes the contribution understandable, but verifying it requires inspecting the external material. Downstream KPS choices and application synthesis are authored in Practices; no full source copy is stored here.
 
 ## Deeper knowledge
 
