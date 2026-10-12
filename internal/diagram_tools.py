@@ -11,7 +11,7 @@ import textwrap
 import xml.etree.ElementTree as ET
 import validate as v
 
-ROOT = Path(__file__).resolve().parent
+ROOT = Path(__file__).resolve().parents[1]
 RELATIONS = ('uses_concepts', 'uses_principles', 'uses_models', 'uses_methods', 'uses_practices')
 
 
@@ -64,7 +64,7 @@ def svg_check(data: bytes) -> None:
 
 def run(root: Path, write: bool = False, d2: str = 'd2') -> int:
     root = root.resolve()
-    cfg = json.loads((root / 'diagrams.json').read_text(encoding='utf-8'))
+    cfg = json.loads((root / 'diagrams/manifest.json').read_text(encoding='utf-8'))
     env = {key: value for key, value in os.environ.items()
            if not key.startswith('D2_') and key not in ('OMIT_VERSION', 'DEBUG')}
     version = subprocess.run([d2, '--version'], check=True, capture_output=True,

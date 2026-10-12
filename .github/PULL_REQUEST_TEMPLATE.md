@@ -12,8 +12,8 @@ List changed knowledge roles/Practice stages and any links, dependency summaries
 
 ## Checks
 
-- [ ] Reviewed `AUTHORING.md`
+- [ ] Reviewed `docs/authoring.md`
 - [ ] Knowledge remains locally understandable/executable
 - [ ] `python validate.py .` passed (or failure explained)
-- [ ] `python test_validate.py` passed (or failure explained)
+- [ ] `python -m unittest internal.tests.test_validate` passed (or failure explained)
 - [ ] No third-party copyrighted full text or private data included

@@ -142,4 +142,4 @@ The following files explain the external meanings and procedures used above. The
 
 - [Cognitive Walkthrough](../methods/cognitive-walkthrough.md)
 
-[Authoring contract](../AUTHORING.md) defines the local file roles. [Alignment and migration](../ALIGNMENT.md) distinguishes external meaning from KPS design.
+[Authoring contract](../docs/authoring.md) defines the local file roles. [Alignment and migration](../docs/alignment.md) distinguishes external meaning from KPS design.

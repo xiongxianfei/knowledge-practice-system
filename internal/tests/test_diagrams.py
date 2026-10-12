@@ -8,7 +8,7 @@ import subprocess
 import tempfile
 import unittest
 from unittest.mock import patch
-import diagram_tools as d
+from internal import diagram_tools as d
 
 
 class DiagramTests(unittest.TestCase):
@@ -16,7 +16,7 @@ class DiagramTests(unittest.TestCase):
         self.temp = tempfile.TemporaryDirectory()
         self.root = Path(self.temp.name) / 'package'
         shutil.copytree(d.ROOT, self.root, ignore=shutil.ignore_patterns('.git', '__pycache__', '.pytest_cache'))
-        self.cfg = json.loads((self.root / 'diagrams.json').read_text())
+        self.cfg = json.loads((self.root / 'diagrams/manifest.json').read_text())
         self.original = {x['source']: (d.ROOT / x['source']).with_suffix('.svg').read_bytes()
                          for x in self.cfg['diagrams']}
 
@@ -24,7 +24,7 @@ class DiagramTests(unittest.TestCase):
         self.temp.cleanup()
 
     def save_config(self):
-        (self.root / 'diagrams.json').write_text(json.dumps(self.cfg))
+        (self.root / 'diagrams/manifest.json').write_text(json.dumps(self.cfg))
 
     def fake_cli(self, command, **kwargs):
         if command[-1] == '--version':
