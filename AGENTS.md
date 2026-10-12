@@ -1,5 +1,5 @@
 ---
-package_version: "10.0.0"
+package_version: "10.1.0"
 language: "KPS 9.x"
 reviewed: "2026-10-12"
 ---
@@ -31,3 +31,7 @@ Write actions first, preserve prerequisites and interpretation, and add examples
 ## Source grounded Core editing
 
 Apply ALIGNMENT.md: verify meaning against the located source, retain uncertainty and name adaptations. Place local workflows in Practices. Run `python test_alignment.py` as well as the structural suite. User-authorized auto-merge is allowed after CI; do not require another approval already supplied. Never disable checks or overwrite unrelated changes to force publication.
+
+## Diagrams
+
+Use D2 selectively for explanatory value. Read the owning text and cited source before drawing; keep edge meanings and limitations explicit. Never edit generated SVGs independently. For a metadata graph, change only justified document metadata and regenerate. Run diagram tests and render checks, but report a visual self-review separately from an independent reader trial. Keep source and SVG together and retain useful alternative text and nearby explanation.

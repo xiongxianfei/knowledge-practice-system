@@ -1,34 +1,32 @@
 ---
-package_version: "10.0.0"
+package_version: "10.1.0"
 language: "KPS 9.x"
 reviewed: "2026-10-12"
 ---
 
-# Professional alignment verification record
+# Selective diagram verification record
 
 ## Key takeaway
 
-Mechanical checks verify the publication and migration declarations, not the truth or authority of a claim.
+Publication checks and rendering checks do not establish source faithfulness or independent reader comprehension.
 
 ## Summary
 
-Core 10.0.0 replaces 41 local standalone objects with a smaller externally aligned library and moves their KPS-specific responsibilities into four Practices. The starting source tree matched GitHub main at `ff0d546d07cd880c743b9cec170bfb53f2263f21`, tree `46d0198be19cd849d44a75cdf6ab3a169d293f91`.
+The starting local source tree exactly matched repository main at commit `383a7b896ca3f515bd1c6937004e5e62bad9d8c1`, tree `ad2031486b78827244e4aa604dbaa97d2d46836d`. This revision adds selective diagrams without retiring or redefining any knowledge objects.
 
-## Checks actually run
+## Checks performed
 
-The unchanged 9.1 structural checker validates stages, local links, typed references, dependency records and manifest integrity. All 52 structural regression tests passed. All 12 new alignment and migration tests passed. Final computed counts are recorded in `verification.json`; that file records the local verification, not future GitHub state.
+All 52 structural regression tests, 12 source-alignment/migration tests and 16 new diagram policy/failure-path tests passed locally. The diagram unit tests mock CLI execution to exercise missing/stale artifacts, changed metadata, wrong version, failed compilation and read-only behavior; they are not actual rendering tests.
 
-The curation tests require a declared reference, relationship and source locator for each non-Practice object. They reject missing or incompatible declarations, preserved retired objects and invalid migration targets. They do not inspect a remote passage or decide whether it supports the prose.
+Separately, D2 0.9.0 rendered all six sources on a GitHub Actions Linux runner with the fixed archive SHA-256 verified. Each SVG was rerendered and compared byte-for-byte. The generated PNG previews were inspected locally; three overly wide layouts were changed to vertical layouts and rerendered. This is author visual inspection, not an independent accessibility or usability audit.
 
-## Content review performed
+The final repository workflow repeats actual D2 rendering and comparison under read-only permissions, alongside all three Python regression suites. The temporary asset-preparation workflow is not included in the final source tree. GitHub CI and merge status must be verified from GitHub; this record does not predeclare either.
 
-Author self-review compared the new summaries with their located passages and retained scope. SKOS and PROV are identified subsets, PICO and data extraction retain the intervention-review context, PDCA and cognitive walkthrough keep their procedural purpose, and learning findings retain study boundaries and uncertainty. The duplicate-extraction requirement is not reduced to a generic suggestion. Source access is recorded in [Source review](SOURCE-REVIEW.md).
+## Content and dependency review
 
-Each former object's useful KPS responsibility was assigned to a real Practice stage and inspected there. The four Practices retain all 17 original stage titles. New local reasoning, record structures, publication decisions and adaptations are explicitly application knowledge. [Migration](MIGRATION.md) provides the full accounting.
+The Concept drawing illustrates many-to-many study/report relationships. The Principle drawing follows the stated synthetic same-participant and same-outcome example, not a universal count rule. The PROV drawing preserves the four named relation directions. PDCA retains the check-to-action feedback without promising causal proof. The Practice diagram separates failed structure, failed navigation and unavailable observation. The neighborhood has four declared use edges and explicitly excludes indirect dependencies and References.
 
-## Scope and limits
-
-This is an author self-review and structural test suite, not an independent usability trial, systematic evidence review, professional certification or institutional endorsement. No real personal-learning result was recorded. Existing scientific inspection history is not claimed as new research. No sibling domain repository is migrated.
+The four Practices consuming the changed Concept, Principle, Model and Method summaries were reviewed. Their existing source meanings and application limits remain valid; only then were their dependency fingerprints refreshed. Earlier source access and empirical-learning claims were not silently revalidated. [SOURCE-REVIEW.md](SOURCE-REVIEW.md) identifies the new inspection scope.
 
 ## Reproduce
 
@@ -36,6 +34,12 @@ This is an author self-review and structural test suite, not an independent usab
 python validate.py .
 python test_validate.py
 python test_alignment.py
+python test_diagrams.py
+python diagram_tools.py --check
 ```
 
-For an extracted ZIP with a generated manifest, also run `python validate.py . --manifest`. The living source tree does not need an archive manifest. GitHub CI and merge status must be verified separately at publication time.
+The last command requires D2 0.9.0; ordinary reading and structural tests do not. After extracting a downloadable package containing a manifest, run `python validate.py . --manifest`. [DIAGRAMS.md](DIAGRAMS.md) describes rendering and semantic review.
+
+## Limits
+
+No real reader trial, screen-reader test, native GitHub browser inspection, universal SVG-viewer guarantee, external-link crawl or new scientific-effectiveness assessment is claimed. Diagram byte agreement verifies source/render freshness under the pinned tool, not whether the explanation is correct. Text remains available when a viewer cannot display SVGs.

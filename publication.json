@@ -1,6 +1,6 @@
 {
   "package": "KPS",
-  "version": "10.0.0",
+  "version": "10.1.0",
   "kps_language": "9.x",
   "validated_with": "9.1.0",
   "markdown_profile": "practical-markdown-v1",
@@ -19,5 +19,7 @@
   "license": "MIT",
   "minimum_validator": "9.1.0",
   "practice_format": "steps-first-v1",
-  "alignment_profile": "core-established-knowledge-v1"
+  "alignment_profile": "core-established-knowledge-v1",
+  "diagram_profile": "selective-d2-svg-v1",
+  "diagram_renderer": "d2 0.9.0"
 }

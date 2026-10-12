@@ -1,7 +1,7 @@
 ---
 id: "kps:method:pdca"
 type: "method"
-version: "10.0.0"
+version: "10.1.0"
 language: "KPS 9.x"
 status: "active"
 reviewed: "2026-10-12"
@@ -34,6 +34,14 @@ Acting on the result of a bounded test is different from assuming the plan succe
 2. Do a small-scale test under the agreed conditions.
 3. Check the result and what was learned.
 4. Act on that learning: adopt an appropriate change or revise the plan and repeat.
+
+## The feedback in the procedure
+
+![Plan a change, do a small test, check the result, and act on the learning before another planning cycle](../diagrams/methods/pdca-loop.svg)
+
+The return arrow is the important part: an unsatisfactory result informs revision rather than automatic rollout. An appropriate change can be adopted and monitored before another improvement cycle. The four operations are summarized from ASQ; the drawing is not a promise that repeated cycles converge or establish causality.
+
+[Editable D2 source](../diagrams/methods/pdca-loop.d2).
 
 ## Synthetic example
 

@@ -1,5 +1,5 @@
 ---
-package_version: "10.0.0"
+package_version: "10.1.0"
 language: "KPS 9.x"
 reviewed: "2026-10-12"
 ---
@@ -12,7 +12,7 @@ Read source-aligned knowledge for reusable meaning and Practices for KPS-specifi
 
 ## Summary
 
-This Core library contains 20 knowledge objects: five Concepts, four Principles, two Models, five Methods and four Practices. Seventeen supporting Reference records preserve source identity and inspection limits. The smaller library removes duplicate local abstractions rather than turning them into professional terminology.
+This Core library contains 20 knowledge objects: five Concepts, four Principles, two Models, five Methods and four Practices. Eighteen supporting Reference records preserve source identity and inspection limits. The smaller library removes duplicate local abstractions rather than turning them into professional terminology.
 
 ## Concepts
 
@@ -70,3 +70,7 @@ This Core library contains 20 knowledge objects: five Concepts, four Principles,
 - [Cognitive Walkthrough Practitioner Guide Report 93 07](references/wharton-undated-cognitive-walkthrough-report-93-07.md)
 
 [Alignment policy](ALIGNMENT.md) distinguishes source definitions from KPS application. [Migration record](MIGRATION.md) accounts for retired identifiers.
+
+## Visual reading aids
+
+[Selective diagrams](DIAGRAMS.md) explains why each image is present and how to edit it. [Use KPS neighborhood](KNOWLEDGE-MAP.md) shows one local set of typed dependencies. The [D2 documentation Reference](references/d2-undated-cli-and-svg-export.md) supports the renderer choices. Images are supporting assets, not additional knowledge objects.

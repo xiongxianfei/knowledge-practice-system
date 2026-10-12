@@ -21,3 +21,14 @@ jobs:
         run: python3 test_validate.py
       - name: Verify source alignment and migration declarations
         run: python3 test_alignment.py
+      - name: Check diagram metadata and regression behavior
+        run: python3 test_diagrams.py
+      - name: Install pinned D2 with verified digest
+        shell: bash
+        run: |
+          curl --fail --location --silent --show-error --retry 3 https://github.com/d2lang/d2/releases/download/v0.9.0/d2-v0.9.0-linux-amd64.tar.gz -o "$RUNNER_TEMP/d2.tar.gz"
+          echo "5669ddc46b99e942cc96078f4a4e36d5e62103348f4c05179ede27802fdd87a9  $RUNNER_TEMP/d2.tar.gz" | sha256sum --check
+          tar -xzf "$RUNNER_TEMP/d2.tar.gz" -C "$RUNNER_TEMP"
+          echo "$RUNNER_TEMP/d2-v0.9.0/bin" >> "$GITHUB_PATH"
+      - name: Verify D2 sources match committed SVGs
+        run: python3 diagram_tools.py --check

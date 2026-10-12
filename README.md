@@ -1,5 +1,5 @@
 ---
-package_version: "10.0.0"
+package_version: "10.1.0"
 language: "KPS 9.x"
 reviewed: "2026-10-12"
 ---
@@ -12,7 +12,7 @@ Reuse established knowledge and make KPS-specific application explicit.
 
 ## Summary
 
-KPS Core 10.0.0 organizes professional knowledge and applies it through steps-first Practices. This is a decisive content refactoring: 41 former local Concepts, Principles, Models and Methods are retired as standalone objects. Their useful application responsibilities are embedded in the four retained Practices.
+KPS Core 10.1.0 organizes professional knowledge and applies it through steps-first Practices. This release adds selective visual explanations to the source-aligned library introduced in 10.0.0. The 41 former local abstractions remain retired; their useful application responsibilities remain in the four retained Practices.
 
 ## Start with the task
 
@@ -28,7 +28,7 @@ KPS Core 10.0.0 organizes professional knowledge and applies it through steps-fi
 | Methods | PICO, Study Data Extraction, PDCA, Cognitive Walkthrough, Retrieval Practice | Published procedures, not newly named KPS workflows |
 | Practices | Use, build, improve, review | Our task-specific synthesis, explicitly identified |
 
-The library contains **20 core objects and 17 Reference records**. Smaller does not mean that every removed statement was false. Local workflow abstractions no longer masquerade as reusable professional knowledge. [INDEX.md](INDEX.md) lists the current library; [MIGRATION.md](MIGRATION.md) accounts for each old ID and destination.
+The library contains **20 core objects and 18 Reference records**. Smaller does not mean that every removed statement was false. Local workflow abstractions no longer masquerade as reusable professional knowledge. [INDEX.md](INDEX.md) lists the current library; [MIGRATION.md](MIGRATION.md) accounts for each old ID and destination.
 
 ## Authoring and source alignment
 
@@ -38,7 +38,7 @@ Every substantial file has a takeaway and summary. Practices put actions first a
 
 ## Versions and checks
 
-Core **content version 10.0.0** marks breaking IDs and paths. The five-role **KPS 9.x authoring language** is unchanged, and the included structural checker remains **9.1.0**. The new Core alignment test is an additional curation check, not a new domain-language requirement. See [COMPATIBILITY.md](COMPATIBILITY.md).
+Core 10.0.0 introduced breaking IDs and paths; **10.1.0** adds diagrams without further identity changes. The five-role **KPS 9.x authoring language** is unchanged, and the included structural checker remains **9.1.0**. The new Core alignment test is an additional curation check, not a new domain-language requirement. See [COMPATIBILITY.md](COMPATIBILITY.md).
 
 ```bash
 python validate.py .
@@ -53,3 +53,7 @@ These checks do not prove factual correctness or usability. [CHECKS.md](CHECKS.m
 Use one change branch and PR; merge when authorized and checks pass. Keep Git history rather than parallel obsolete files. No separate tag or official release is implied. Swim, Technical Insight and REM are unchanged by this Core-only revision.
 
 KPS-authored content and tooling use the retained [MIT license](LICENSE); cited works retain their own rights. Follow [CONTRIBUTING.md](CONTRIBUTING.md) and [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md).
+
+## Selective explanatory diagrams
+
+Six D2 diagrams support specific reading tasks: study/report distinction, study-level counting, PROV relation directions, PDCA feedback, a Practice decision flow, and one metadata-derived neighborhood. SVGs are committed beside their editable sources and embedded where used. Text remains sufficient without images; this is not an image quota or a new graph platform. Start with [Use KPS](practices/use-kps.md), the [knowledge neighborhood](KNOWLEDGE-MAP.md), or the [diagram guide](DIAGRAMS.md).
