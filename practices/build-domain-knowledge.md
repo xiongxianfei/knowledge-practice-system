@@ -70,7 +70,7 @@ The tree separates reusable knowledge from publication support. It does not impl
 
 Choose a stable package name and an actual reviewed version. The number does not prove compatibility; inspect the contract before declaring it.
 
-**KPS design boundary:** The five file roles, one-object-per-file rule and dependency fields are our publishing conventions. They are not prescribed by SKOS, PROV, Cochrane or ISO. Use the [authoring contract](../AUTHORING.md) for syntax; use the source-aligned library only for the source's actual meaning. A Model that merely describes our package layout is embedded here, not promoted as external theory. Domain-specific deployment technology remains replaceable.
+**KPS design boundary:** The five file roles, one-object-per-file rule and dependency fields are our publishing conventions. They are not prescribed by SKOS, PROV, Cochrane or ISO. Use the [authoring contract](../docs/authoring.md) for syntax; use the source-aligned library only for the source's actual meaning. A Model that merely describes our package layout is embedded here, not promoted as external theory. Domain-specific deployment technology remains replaceable.
 
 ## Stage2 Find evidence for explicit claims
 
@@ -214,7 +214,7 @@ Test the content as a task guide before treating a green checker as success.
 
 ```bash
 python validate.py .
-python test_validate.py
+python -m unittest internal.tests.test_validate
 # Only after inspecting changed source summaries:
 python validate.py . --accept-reviewed-summaries
 python validate.py .
@@ -272,4 +272,4 @@ The following files explain the external meanings and procedures used above. The
 
 - [Indirectness Limits Applicability](../principles/indirectness-limits-applicability.md)
 
-[Authoring contract](../AUTHORING.md) defines the local file roles. [Alignment and migration](../ALIGNMENT.md) distinguishes external meaning from KPS design.
+[Authoring contract](../docs/authoring.md) defines the local file roles. [Alignment and migration](../docs/alignment.md) distinguishes external meaning from KPS design.
