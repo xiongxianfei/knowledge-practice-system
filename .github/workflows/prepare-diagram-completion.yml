@@ -34,20 +34,22 @@ jobs:
           python3 test_alignment.py
           python3 test_diagrams.py
           python3 test_diagram_audit.py
-      - name: Record actual runner checks and remove one time preparation
+      - name: Record actual runner checks
         run: |
           python3 - <<'PY'
           from pathlib import Path
           p=Path('CHECKS.md')
           p.write_text(p.read_text()+'\n## Preparation runner results\n\nD2 0.9.0 rendered 18 pairs and a second read-only render comparison passed. The 52 structural, 12 alignment, 16 diagram-policy and 10 audit/example tests passed on the preparation runner. These 90 tests do not establish explanatory effectiveness. Final PR CI repeats the checks. Visual review is recorded separately after inspection.\n')
           PY
-          rm .github/complete_diagrams.py .github/workflows/prepare-diagram-completion.yml
+          rm .github/complete_diagrams.py
+          git restore --source=HEAD -- .github/workflows
           python3 validate.py .
       - name: Commit publication sources and generated SVGs to feature branch
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add -A
+          git diff --cached --exit-code -- .github/workflows
           git commit -m 'docs: complete Core diagram audit with editable D2 and rendered SVG'
           git push origin HEAD:feat/core-diagram-audit-10.2.0
       - name: Prepare independent review files
