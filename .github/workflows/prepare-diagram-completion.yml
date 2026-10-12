@@ -1,0 +1,63 @@
+name: Prepare audited diagram publication
+on:
+  push:
+    branches: [feat/core-diagram-audit-10.2.0]
+permissions:
+  contents: write
+jobs:
+  prepare:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: feat/core-diagram-audit-10.2.0
+          fetch-depth: 0
+      - name: Verify baseline and prepare reviewed content
+        run: |
+          git merge-base --is-ancestor 8fb6d522f5fca2b17376efe6b7eb1d37ba0b0568 HEAD
+          PYTHONPATH=. python3 .github/complete_diagrams.py
+      - name: Install pinned D2
+        shell: bash
+        run: |
+          curl --fail --location --silent --show-error --retry 3 https://github.com/d2lang/d2/releases/download/v0.9.0/d2-v0.9.0-linux-amd64.tar.gz -o "$RUNNER_TEMP/d2.tar.gz"
+          echo "5669ddc46b99e942cc96078f4a4e36d5e62103348f4c05179ede27802fdd87a9  $RUNNER_TEMP/d2.tar.gz" | sha256sum --check
+          tar -xzf "$RUNNER_TEMP/d2.tar.gz" -C "$RUNNER_TEMP"
+          echo "$RUNNER_TEMP/d2-v0.9.0/bin" >> "$GITHUB_PATH"
+      - name: Render source and run every check
+        run: |
+          python3 diagram_tools.py --write
+          python3 diagram_tools.py --check
+          python3 validate.py .
+          python3 test_validate.py
+          python3 test_alignment.py
+          python3 test_diagrams.py
+          python3 test_diagram_audit.py
+      - name: Record actual runner checks and remove one time preparation
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          p=Path('CHECKS.md')
+          p.write_text(p.read_text()+'\n## Preparation runner results\n\nD2 0.9.0 rendered 18 pairs and a second read-only render comparison passed. The 52 structural, 12 alignment, 16 diagram-policy and 10 audit/example tests passed on the preparation runner. These 90 tests do not establish explanatory effectiveness. Final PR CI repeats the checks. Visual review is recorded separately after inspection.\n')
+          PY
+          rm .github/complete_diagrams.py .github/workflows/prepare-diagram-completion.yml
+          python3 validate.py .
+      - name: Commit publication sources and generated SVGs to feature branch
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A
+          git commit -m 'docs: complete Core diagram audit with editable D2 and rendered SVG'
+          git push origin HEAD:feat/core-diagram-audit-10.2.0
+      - name: Prepare independent review files
+        run: |
+          mkdir -p "$RUNNER_TEMP/diagram-review/package" "$RUNNER_TEMP/diagram-review/tools"
+          git archive HEAD | tar -x -C "$RUNNER_TEMP/diagram-review/package"
+          cp "$RUNNER_TEMP/d2-v0.9.0/bin/d2" "$RUNNER_TEMP/diagram-review/tools/d2"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: core-diagram-audit-review
+          path: ${{ runner.temp }}/diagram-review
+          include-hidden-files: true
+          retention-days: 3

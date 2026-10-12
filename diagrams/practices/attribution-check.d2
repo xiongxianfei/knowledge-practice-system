@@ -1,0 +1,17 @@
+# KPS-authored review route, not a statistical causal-identification model.
+direction: down
+result: "Observed result"
+executed: "Intended action\nactually executed?"
+executed.shape: diamond
+execution: "Review execution first"
+changes: "Note conditions that\nchanged together"
+evidence: "Evidence distinguishes\nrival explanations?"
+evidence.shape: diamond
+unresolved: "Keep result\nmechanism unresolved"
+update: "Update scoped explanation\nretain assumptions"
+result -> executed
+executed -> execution: no or unknown
+executed -> changes: yes
+changes -> evidence: attribution limits remain
+evidence -> unresolved: no
+evidence -> update: yes
