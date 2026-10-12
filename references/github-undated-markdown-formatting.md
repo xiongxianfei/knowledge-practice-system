@@ -58,4 +58,4 @@ Relative paths are evaluated from the current file and may include a section anc
 **Locator:** Relative links and Custom anchors.
 
 ## Deeper knowledge
-The external publication above gives complete documentation. [Package navigation guide](../NAVIGATION.md) explains the selected authoring profile and its limits.
+The external publication above gives complete documentation. [Package navigation guide](../docs/authoring.md) explains the selected authoring profile and its limits.

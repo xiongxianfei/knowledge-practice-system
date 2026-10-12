@@ -56,4 +56,4 @@ The extension generates identifiers for headings and permits a custom slug funct
 Python-Markdown and MkDocs describe one implementation lineage, not two independent empirical confirmations. The package tests a conservative profile without claiming to execute this unavailable library.
 
 ## Deeper knowledge
-The external publication above gives complete documentation. [Package navigation guide](../NAVIGATION.md) explains the selected authoring profile and its limits.
+The external publication above gives complete documentation. [Package navigation guide](../docs/authoring.md) explains the selected authoring profile and its limits.

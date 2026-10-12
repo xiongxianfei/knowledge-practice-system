@@ -66,4 +66,4 @@ README.md can serve as an index page when no competing index.md is present.
 The record does not certify a particular theme, plugin, custom slug function or local MkDocs installation. This package is documentation input, not a deployed site.
 
 ## Deeper knowledge
-The external publication above gives complete documentation. [Package navigation guide](../NAVIGATION.md) explains the selected authoring profile and its limits.
+The external publication above gives complete documentation. [Package navigation guide](../docs/authoring.md) explains the selected authoring profile and its limits.

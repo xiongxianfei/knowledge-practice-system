@@ -20,4 +20,4 @@ Read the local Summary and claim contribution, then examine the scope and what t
 This package has one practical Markdown edition. Earlier source inspection notes remain historical metadata; each record states what was actually inspected and when. New inspection and retained scientific inspection history are separated in SOURCE-REVIEW.md. Official documentation describes a product's interface; it is not a test of KPS efficacy.
 
 ## Navigation
-Use the [Reference index](../INDEX.md#reference-records) for publication names and [Package navigation](../NAVIGATION.md) for profile-specific links.
+Use the [Reference index](../docs/library.md#reference-records) for publication names and [Package navigation](../docs/authoring.md) for profile-specific links.
