@@ -31,7 +31,7 @@
     },
     {
       "source": "diagrams/knowledge-map/use-kps-dependencies.d2",
-      "owner": "KNOWLEDGE-MAP.md",
+      "owner": "docs/library.md",
       "reason": "Show one Practice neighborhood, not an invented universal hierarchy.",
       "metadata_root": "kps:pr:use-kps"
     },

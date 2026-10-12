@@ -282,7 +282,9 @@ def validate(root: Path, manifest: bool=False, refresh: bool=False) -> dict[str,
         for node in graph:walk(node,[],done)
     except ValueError as exc:error('composition-cycle','metadata',str(exc))
     expected=snapshot(root,docs,byid)
-    sf=root/'summary-dependencies.json'
+    sf=root/'internal/metadata/summary-dependencies.json'
+    if not sf.is_file():
+        sf=root/'summary-dependencies.json'
     if refresh and not errors:sf.write_text(json.dumps(expected,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     if sf.exists():
         try:old=json.loads(sf.read_text())
