@@ -21,7 +21,7 @@ An *incompatible change to these requirements* needs a new KPS language major ve
 ## Folder roles
 - `concepts/`: one reusable definition or distinction per document.
 - `principles/`: one explanatory, scoped, declarative relationship per document; a **command or chosen engineering constraint** is not itself a Principle.
-- `models/`: a representation with essential terms, relationships, assumptions, implications and limits.
+- `models/`: a purposeful, simplified representation explaining relevant entities, essential attributes, relationships or rules, assumptions, implications and limits.
 - `methods/`: a repeatable operation with objective, prerequisites, rationale, executable steps, observations, expected effect and validation/counterevidence.
 - `practices/`: a staged operational synthesis that is usable without reading all its links. A Practice can compose other Practices when goals and decision logic genuinely warrant it, but stages do not each require a separate file.
 - `references/`: structured Markdown provenance records identifying actual external publications, claim contributions, checked extent, limits and non-claims. **References are not a sixth knowledge type.**
@@ -52,6 +52,16 @@ The included dependency-free validator accepts JSON-compatible single-line YAML 
 All substantial Markdown knowledge and Reference files use one semantic `# Title`, `## Key takeaway`, and `## Summary`, then locally sufficient meaning, procedure or representation, examples as appropriate, limits and deeper links. Hide links and ask whether the intended understanding/use task still works; then restore links and check the local summary faithfully preserves its source's relevant conditions. Do **not** copy all linked sources into each file.
 
 Knowledge by role must be self-contained: a Principle explains the actual relationship, not merely a command; a Model includes its representation rather than only a link; a Method includes actionable steps and safeguards; a Practice contains operationally sufficient information **in each stage**, not a list of Methods to visit elsewhere.
+
+## Model meaning and completeness
+
+A Model is a purposeful, simplified representation of a system, phenomenon or structure. It explains the relevant entities, their essential attributes, and their relationships or rules. It enables readers to interpret cases and reason about consequences within stated assumptions and limits. Terms and notation necessary to use the representation are explained locally.
+
+Here, entities are the things or categories represented; attributes are the properties needed to distinguish or describe them for the stated purpose. Essential does not mean exhaustive. Explain relevant attribute values, categories or units where their interpretation matters. Relationships may be structural, classificatory or causal; identify their meaning without implying causation or prediction where the representation does not support it.
+
+Include the representation itself in prose, a table, a diagram, equations or another suitable form. Work through a concrete case when interpretation would otherwise be ambiguous, connecting the entities and attributes through a relationship or rule to a supported conclusion. State the assumptions, evidence and limits that constrain that conclusion. A list of components alone leaves the reader to supply their relationships.
+
+These explanations clarify the existing representation and local-completeness responsibilities within KPS 9.x. They introduce no mandatory headings, metadata fields or exhaustive attribute inventories. Preserve canonical definitions while summarizing their necessary meaning at the point of use; links provide depth. The [Model template](templates.md#model-content) illustrates this guidance, and the [Model walkthrough](review.md#walk-through-a-model) checks whether a reader can use it.
 
 ## Practice stages
 A Practice heading uses **exactly** the compact pattern below, consecutively numbered in its current recommended/default order:

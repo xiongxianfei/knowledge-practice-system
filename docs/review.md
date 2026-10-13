@@ -13,7 +13,7 @@ A passed parser does not establish that a reader can act or interpret the result
 
 ## Summary
 
-Use a link-hidden walk-through and a source-fidelity check before publication. This is a review procedure, not a report of a completed independent usability test. Record the actual task, reviewer role and unresolved difficulties.
+Use a link-hidden walk-through and a source-fidelity check before publication. For a Practice, try the actions and decisions; for a Model, interpret its entities, attributes and relationships in a concrete case. This is a review procedure, not a report of a completed independent usability test. Record the actual task, reviewer role and unresolved difficulties.
 
 ## Walk through one stage
 
@@ -24,6 +24,17 @@ Use a link-hidden walk-through and a source-fidelity check before publication. T
 5. Restore links and inspect the evidence. Check source contribution, uncertainty, independence and what is not established. A real URL is not evidence of claim-source fit.
 6. Record pass, revise or unresolved with the specific observation. Label self-review, paper simulation and actual user trial differently.
 
+## Walk through a Model
+
+1. Choose the intended reader, a question within the Model's stated scope and the actual document version. Hide outbound links and attempt the interpretation using the local explanation. Note any required term or notation whose meaning must be guessed.
+2. Identify the represented entities or categories and explain the attributes relevant to that question, including the meaning of values, categories or units. Check that the reader can distinguish the cases the Model is intended to distinguish.
+3. Follow a relationship or rule through a concrete example. Explain how the represented details lead to the conclusion; merely naming components or repeating the Summary is insufficient. If a diagram cannot render, check that its essential meaning remains in text.
+4. State an assumption or limitation and identify a case or conclusion the Model does not support. For a causal or predictive Model, examine an appropriate counterexample or mismatch with observations. For a structural or classificatory Model, check relation meaning and category boundaries without inventing a causal claim.
+5. Restore links and inspect source support. Check that the local definitions, attributes and relationships preserve the source's relevant conditions, and distinguish source statements from authored synthesis and constructed examples.
+6. Record pass, revise or unresolved with the point where interpretation required guessing and any remaining evidence limit. Label an author's self-review separately from an independent reader trial. A successful walkthrough of one example does not establish general validity.
+
+For the PROV example in the [Model template](templates.md#example-using-the-prov-model), ask the reader to identify the input and output Entities, explain why their versions matter, follow `used` and `wasGeneratedBy` in the stated direction, and explain why derivation does not prove summary accuracy. These are proposed review prompts, not recorded reader results.
+
 ## Evidence of a useful review
 
 | Weak review note | Actionable note |
@@ -32,12 +43,13 @@ Use a link-hidden walk-through and a source-fidelity check before publication. T
 | More diagrams are needed | The reader cannot distinguish the successful and failure branches |
 | All links work | Source section supports only one renderer; narrow the claim |
 | CI passed so it is ready | The steps still omit the stop condition; revise content |
+| The Model names all its components | The reader cannot interpret an attribute or follow a relationship to a conclusion; explain that meaning locally |
 
 ## Local completeness record
 
 ```text
 Reader and task:
-Document version and stage:
+Document version and relevant section or stage:
 Review kind: self-review / paper simulation / independent task trial
 Where execution or interpretation required guessing:
 Missing or misleading support:

@@ -49,7 +49,38 @@ Definition; necessary distinctions; recognizable example and non-example; why it
 Declarative Statement; explanatory mechanism or relationship; evidence-supported premises; explicit derivation; independently useful applications; limits; possible challenge. Do not disguise a selected instruction as a universal truth. Scientific and domain levels can be metadata; formal or design reasoning must be labelled rather than invented as experiment.
 
 ## Model content
-Purpose; necessary terms; actual representation; relationships; assumptions; implications; how to evaluate; evidence and limitations. Summarize necessary dependencies inline instead of linking away the explanation.
+
+Use the following questions to develop a locally sufficient representation. They describe content responsibilities, not compulsory headings. Summarize necessary dependencies inline instead of linking away the explanation.
+
+| Content | Reader question |
+|---|---|
+| Purpose and scope | What can this Model help explain, and for whom? |
+| Entities and attributes | What things or categories matter, and which properties distinguish or describe them? What do the relevant values, categories or units mean? |
+| Representation and relationships | How are those things connected or constrained? What does each relation, rule or symbol mean? |
+| Worked interpretation | How do the represented attributes and relationships support a conclusion in a concrete case? |
+| Assumptions, evidence and limits | What supports the representation, what has been simplified, and where might it fail? |
+| Evaluation | How can a reader check the interpretation, identify a mismatch or recognize an unsupported conclusion? |
+
+### Example using the PROV Model
+
+The existing [PROV Data Model](../models/prov-data-model.md) supplies a provenance example. The illustration below reuses its selected relationships; the document names and conversion are synthetic. This is an authoring example, not an observed workflow or a complete PROV specification.
+
+**Purpose and entities.** Explain which input a summary came from and who was associated with its production. An Entity has fixed aspects, such as the particular document version being described. An Activity occurs over time, such as converting that document into a summary. An Agent bears responsibility, such as the editor associated with that conversion. The input document and output summary are separate Entities; their identity and version distinguish which materials are being discussed. These example details do not prescribe required PROV attributes.
+
+**Representation and interpretation.** Read each arrow from left to right:
+
+```text
+conversion Activity -- used --> input document Entity
+summary Entity -- wasGeneratedBy --> conversion Activity
+conversion Activity -- wasAssociatedWith --> editor Agent
+summary Entity -- wasDerivedFrom --> input document Entity
+```
+
+The first relationship identifies the input used by the conversion; the second identifies the Activity that produced the summary. Association records the responsible Agent, and derivation connects the output to its input. Together these statements let the reader trace the summary's production.
+
+**Assumptions and limits.** The illustration assumes that the recorded identities and relationships describe the intended versions and activity accurately. Even then, the summary may misrepresent its input: provenance does not establish correctness. This selected subset omits the full model's other relationships and constraints and is not a formal serialization.
+
+**Evaluation and support.** Ask which Entity was used, which was generated, and whether the graph establishes that the summary is accurate. The supported answers are the input document, the summary, and no. A reversed `used` arrow would change the stated relationship; a claim of accuracy would exceed what this representation establishes. The [PROV Reference](../references/w3c-2013-prov-dm.md) identifies the underlying W3C publication and inspected scope. This walkthrough applies the existing local explanation; it is not a new conformance or independent reader test.
 
 ## Method content
 Objective; inputs and prerequisites; rationale; numbered procedure; expected effect; observations and counter-signals; limits or stop conditions; example; deeper evidence. A new comparison procedure is a proposal until used; examples do not establish effectiveness.
