@@ -117,7 +117,7 @@ Root-level GitHub community and automation files are repository infrastructure r
 
 Core content 10.0.0 adopts [ALIGNMENT.md](alignment.md). Its standalone Concepts, Principles, Models and Methods identify the actual source, relation and passage. Source-defined meaning takes precedence over a conflicting local paraphrase; scope differences must not be disguised as equivalence. KPS-specific workflows, reasoning aids and design choices are embedded in Practices. Necessary file-format rules remain here as specifications, not scientific Principles.
 
-This is a Core curation decision, not a silent change to the five-role KPS 9.x language. The unchanged 9.1.0 structural checker accepts these files; `internal/tests/test_alignment.py` checks the additional Core declarations and migration. A passing test cannot determine authority, faithfulness or scientific validity. Other domain packages adopt the policy separately rather than being changed by this release.
+This is a Core curation decision, not a silent change to the five-role KPS 9.x language. The unchanged 9.1.0 structural checker accepts these files; `internal/tests/test_alignment.py` checks the additional live Core source-alignment declarations. A passing test cannot determine authority, faithfulness or scientific validity. Other domain packages adopt the policy separately rather than being changed by this release.
 
 ## Practical navigation and viewer checks
 

@@ -59,3 +59,17 @@ Core 11.0.0 consolidates overlapping root documentation and **intentionally brea
 The public command `python validate.py .` stays at the root. The validator recognizes both the new internal dependency snapshot location and the original root snapshot location for independent older domain packages. For the reorganized Core, run `python -m unittest discover -s internal/tests -p "test_*.py"` and `python -m internal.diagram_tools --check --root .` (D2 0.9.0 required for rendering checks). Follow the [10.0.0 historical migration record](history/10.0.0-migration.md) when resolving retired *knowledge* object identities; it is distinct from this file-layout change.
 
 **Dependency review for this layout change:** The GitHub Markdown reference record changed only in its local Markdown link destination; its cited publication, inspected scope and claims remain unchanged. The dependent Use KPS summary was reviewed for semantic consistency before updating the snapshot fingerprint. Other source and practice relationships were preserved.
+
+## Shared tooling maintenance
+
+Core owns the shared structural validator and its regression tests. Domains may retain a pinned copy for independent, offline checks; a workspace sync does not upgrade those copies. Review compatibility before updating a domain's tool or contract pin. Keep domain-specific checks in the domain that owns the content.
+
+The existing diagram tool is retained because it checks committed D2 sources against their SVGs and declared metadata. Its tests and alignment tests protect existing content contracts. Completed migration inventories, fixed release counts and versions no longer constrain the live alignment checker; historical mappings remain in `internal/metadata/transition.json` and the linked migration documents. Their Markdown links still undergo ordinary validation. Readers can use the Markdown and committed images without running these tools. No workspace build, sync or publication script is required.
+
+Text uses LF line endings under `.gitattributes`, preserving exact-byte dependency fingerprints across checkouts. Restore intended line endings before interpreting a fingerprint mismatch as a content revision. This rule does not alter the checker, authoring contract or knowledge identities.
+
+## Test ownership
+
+Core retains the structural validator regression suite and live source-alignment and diagram checks. Domain packages validate their own files and verify their pinned copies. Older full suites remain available alongside their validators in Core Git history: `60972c57199ae8bc21d4b7a00ac55552b4105277` for the unchanged Technical Insight checker, `9432f1ee86f641d01444038cc81b7efa596b75dc` for AI Coach, and `ce17edc3ce9fa42e47b1d05740489291a3087fb6` for English and Pentest. Swim's inspected base is `8fd410d1a8dec8b3e38352c9166639906049ec55`; its local Git and manifest adaptations retain focused domain regressions. A pin change requires reviewing its matching upstream tests; a passing suite for one version does not certify another.
+
+The test allowlist covers valid and invalid structure, links, identities and relationships, dependency changes and safe refresh behavior, provenance declarations, and existing diagram/artifact integrity. Historical inventories and arithmetic unrelated to actual repository artifacts are retired. Ordinary Markdown validation continues checking the links in migration documentation.

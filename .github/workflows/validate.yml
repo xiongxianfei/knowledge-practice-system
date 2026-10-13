@@ -19,7 +19,7 @@ jobs:
         run: python3 validate.py .
       - name: Run regression tests
         run: python3 -m unittest internal.tests.test_validate
-      - name: Verify source alignment and migration declarations
+      - name: Verify live source alignment declarations
         run: python3 -m unittest internal.tests.test_alignment
       - name: Check diagram metadata and regression behavior
         run: python3 -m unittest internal.tests.test_diagrams
