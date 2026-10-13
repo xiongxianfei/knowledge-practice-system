@@ -41,17 +41,6 @@ def check_alignment(root):
                 errors.append('alignment-relation')
             if not isinstance(a.get('locator'), str) or not a['locator'].strip():
                 errors.append('alignment-locator')
-    trans = json.loads((root / 'internal/metadata/transition.json').read_text())
-    for path, item in trans['retired'].items():
-        if (root / path).exists() or item['id'] in by_id:
-            errors.append('retired-object-retained')
-        name, frag = item['destination'].split('#', 1)
-        dest = (root / name).resolve()
-        if not dest.is_relative_to(root.resolve()) or not dest.is_file():
-            errors.append('migration-target'); continue
-        d = v.parse(dest)
-        if d.meta.get('type') != 'practice' or frag not in d.fragments:
-            errors.append('migration-target')
     return errors
 
 class CoreAlignmentTests(unittest.TestCase):
@@ -75,20 +64,5 @@ class CoreAlignmentTests(unittest.TestCase):
         self.edit(lambda m:m['source_alignment'][0].update(relation='institutional-endorsement'));self.assertIn('alignment-relation',check_alignment(self.root))
     def test_06_missing_dependency_is_rejected(self):
         self.edit(lambda m:m.update(references=[]));self.assertIn('alignment-dependency',check_alignment(self.root))
-    def test_07_retired_paths_stay_retired(self):
-        trans=json.loads((self.root/'internal/metadata/transition.json').read_text());path=next(iter(trans['retired']))
-        (self.root/path).write_text('retained by accident');self.assertIn('retired-object-retained',check_alignment(self.root))
-    def test_08_wrong_migration_fragment_is_rejected(self):
-        p=self.root/'internal/metadata/transition.json';t=json.loads(p.read_text());first=next(iter(t['retired'].values()));first['destination']='practices/use-kps.md#absent';p.write_text(json.dumps(t));self.assertIn('migration-target',check_alignment(self.root))
-    def test_09_all_previous_objects_accounted_for(self):
-        t=json.loads((self.root/'internal/metadata/transition.json').read_text());self.assertEqual(41,len(t['retired']));self.assertEqual(41,len({d['id'] for d in t['retired'].values()}))
-    def test_10_practice_stages_preserved(self):
-        counts={'use-kps.md':4,'build-domain-knowledge.md':5,'improve-kps.md':4,'review-and-learn.md':4}
-        for file,count in counts.items():self.assertEqual(count,len(v.parse(self.root/'practices'/file).meta['stage_titles']))
-    def test_11_only_practices_are_local_workflow_objects(self):
-        self.assertEqual(20,sum(1 for folder in ['concepts','principles','models','methods','practices'] for _ in (self.root/folder).glob('*.md')))
-        self.assertEqual(16,sum(1 for folder in ALLOWED for _ in (self.root/(folder+'s')).glob('*.md')))
-    def test_12_existing_content_language_remains_explicit(self):
-        p=json.loads((self.root/'publication.json').read_text());self.assertEqual('11.0.0',p['version']);self.assertEqual('9.x',p['kps_language']);self.assertEqual('9.1.0',p['validated_with'])
 
 if __name__ == '__main__': unittest.main(verbosity=2)

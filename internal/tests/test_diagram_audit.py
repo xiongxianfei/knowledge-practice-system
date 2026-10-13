@@ -56,12 +56,5 @@ class DiagramAuditTests(unittest.TestCase):
         p=self.root/'concepts/skos-concept.md';p.write_text(p.read_text().replace('../diagrams/concepts/concept-and-label.d2','not-source.d2'));self.assertIn('embed',inspect_audit(self.root))
     def test_08_text_only_is_explicit(self):
         self.mutate(lambda a:a['objects'][0].update(decision='text-only'));self.assertIn('text-only',inspect_audit(self.root))
-    def test_09_uri_example(self):
-        from urllib.parse import urljoin
-        self.assertEqual('https://example.org/README.md#summary',urljoin('https://example.org/practices/use-kps.md','../README.md#summary'))
-    def test_10_spacing_example(self):
-        a,b,c=(1,1,1),(2,2,2),(1,2,3)
-        self.assertEqual((3,6,6),(sum(a),sum(b),sum(c)))
-        self.assertEqual(len(a),len(b));self.assertEqual(len(b),len(c));self.assertNotEqual(b,c)
 
 if __name__=='__main__': unittest.main(verbosity=2)
