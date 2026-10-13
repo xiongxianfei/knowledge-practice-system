@@ -36,6 +36,8 @@ Reconstruction includes selection, explanation, integration and contextual appli
 
 An authored `docs/subject-map.md` can make the adopted subject structure visible: topics, their relationships, source basis, existing explanations and gaps. It belongs to the shared knowledge navigation; Practices select from it and own their activity sequences. The five role folders remain the storage organization, with useful overlap across topics. The [Core subject map](subject-map.md) illustrates this optional navigation document; it introduces no new knowledge type, required metadata or generated artifact.
 
+Select the subject outline from established accounts and the intended scope before mapping existing files onto it. State where the grouping is an authored synthesis across accounts. A necessary topic remains visible when its explanation is missing. Lead with what topics mean and how they connect; keep file coverage secondary. The source-to-application index and the construction Practice answer different questions and should not determine the subject divisions.
+
 ## Primary roles and useful overlap
 
 The five roles describe a document's primary contribution; they do not partition its content into mutually exclusive substances. A Concept can include a small representation; a Model can explain Concepts and Principles; a Method can explain its supporting Model; a Practice can include all of these at the point of use. Keep one primary metadata type and stable identity per object. Supporting content does not need separate identities merely because it serves another role.

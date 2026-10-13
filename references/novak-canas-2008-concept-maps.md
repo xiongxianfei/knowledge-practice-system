@@ -1,7 +1,7 @@
 ---
 id: "kps:r:novak-canas-concept-maps"
 type: "reference"
-version: "1.0.0"
+version: "1.0.1"
 language: "KPS 9.x"
 status: "active"
 reviewed: null
@@ -38,4 +38,4 @@ Introduction distinguishes concepts from propositions formed through meaningful 
 
 ## Limits and KPS use
 
-The subject map adapts these organizing ideas to Markdown navigation. It is not a full concept map or a replication of the report's learning claims. The report does not define KPS roles or the six selected subject areas. A standalone Core explanation of concept mapping remains to be developed.
+The subject map adapts these organizing ideas to Markdown navigation. It is not a full concept map or a replication of the report's learning claims. The report does not define KPS roles or the selected subject areas. A standalone Core explanation of concept mapping remains to be developed.

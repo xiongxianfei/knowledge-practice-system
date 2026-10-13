@@ -12,11 +12,11 @@ Apply source-aligned professional knowledge through locally usable, task-oriente
 
 ## Summary
 
-KPS Core contains 20 knowledge objects (five Concepts, four Principles, two Models, five Methods and four Practices) plus 19 external Reference records. Core 11.0.0 reorganizes repository documentation and tooling without changing those knowledge identities. The layout separates the knowledge library, authoring guidance, maintenance tools and historical records.
+KPS Core contains 20 knowledge objects (five Concepts, four Principles, two Models, five Methods and four Practices) plus 22 external Reference records. Core 11.0.0 reorganizes repository documentation and tooling without changing those knowledge identities. The layout separates the knowledge library, authoring guidance, maintenance tools and historical records.
 
 ## Explore by subject
 
-The [knowledge and practice subject map](docs/subject-map.md) connects knowledge organization, sources and evidence, reconstruction, practical application, learning, and knowledge development. It identifies established accounts, available explanations and gaps. Use it to explore the subject and select support for a target Practice.
+The [knowledge and practice subject map](docs/subject-map.md) connects seven areas: knowledge and understanding; inquiry and evidence; representation and organization; synthesis and communication; learning and capability; practical reasoning and action; experience and knowledge development. It presents topics and relationships, with adopted accounts, linked explanations and coverage gaps. Use it to explore the subject and select support for a target Practice.
 
 ## Start with the task
 

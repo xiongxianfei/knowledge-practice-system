@@ -9,116 +9,159 @@ reviewed: null
 
 ## Key takeaway
 
-Explore how knowledge is organized, supported, reconstructed, learned and applied, and how experience informs its revision. Select the relevant topics for a target Practice while retaining their relationships.
+Explore the subjects needed to understand, reconstruct, learn, apply and develop knowledge for a purpose. Follow their relationships, then select the explanations and activities relevant to a target Practice.
 
 ## Summary
 
-This map organizes the subject of knowledge and practice for KPS readers and authors. Its six areas bring together selected accounts from knowledge organization, evidence synthesis, learning and practical improvement. They are an authored navigation structure, not a universal taxonomy or a new theory of knowledge.
+This map brings together selected topics from epistemology, inquiry, knowledge organization, learning and practical reasoning. Its seven areas organize the subject of knowledge and practice. The grouping is an authored selection for KPS, with the adopted accounts identified below; it is not a universal taxonomy or a sequence of authoring stages.
 
-The map belongs to the shared knowledge library. A Practice selects topics and supplies activities, prerequisites and an appropriate order. Concepts, Principles, Models, Methods and Practices remain the document roles: one topic can draw on several roles, and one document can support several topics.
+## Scope
 
-## Scope and source basis
+The intended reader wants to understand a subject, accomplish a task or investigate a problem. The outline includes relevant topics beyond the current library. It selects parts of the contributing disciplines rather than attempting a complete philosophy curriculum, research handbook or theory of professional practice. Subject relationships determine the outline; the availability of files determines the linked coverage.
 
-The focus is knowledge that helps a reader understand a subject, accomplish a task or investigate a problem. The map includes useful subjects that Core has not yet explained. It is not a complete curriculum in epistemology, cognitive science, knowledge management or professional practice.
+Concepts, Principles, Models, Methods and Practices remain document roles within these subjects. A topic can draw on several roles, and an explanation can serve several topics. Practices select activities and their order. The map supplies shared subject navigation.
 
-| Established account | Structure reused here | Boundary |
-|---|---|---|
-| [W3C SKOS](../references/w3c-2009-skos-reference.md), sections 1.3, 3, 5, 8 and 10 | Concepts, labels, vocabulary relations and mappings | Organizes vocabularies; does not supply a general theory of knowledge or KPS roles |
-| [Novak and Cañas on concept maps](../references/novak-canas-2008-concept-maps.md), Introduction and Constructing Good Concept Maps | Focus questions, propositions and cross-links | Helps frame representation and reconstruction; the six areas below are our selection |
-| [W3C PROV](../references/w3c-2013-prov-dm.md) | Entities, activities, agents and derivation | Records production history without establishing truth |
-| Cochrane chapters [2](../references/cochrane-2024-review-questions-chapter-2.md), [5](../references/cochrane-2024-collecting-data-chapter-5.md) and [14](../references/cochrane-2024-certainty-chapter-14.md) | Review questions, study versus report, extraction and applicability | Intervention-review methods; general KPS use is a contextual adaptation |
-| Retrieval studies and the [later re-examination](../references/mayrhofer-2023-reexamining-the-testing-effect.md) | Retrieval, retention, spacing and comparison conditions | Selected learning findings, not a complete account of capability |
-| [Cognitive walkthrough](../references/wharton-undated-cognitive-walkthrough-report-93-07.md), [Diataxis how-to guidance](../references/procida-undated-how-to-guides.md) and [ASQ PDCA](../references/asq-undated-pdca-cycle.md) | Task actions, task-oriented guidance and iterative improvement | Distinct procedures and guidance, not one unified theory of practice |
+## Subject outline
 
-The new concept-map record identifies passages inspected on 2026-10-13. SKOS section 1.3 was also revisited for this map. Other accounts retain the inspection extents in their existing records, including abstract-only inspection for spacing. Their publications were not all reinspected for this addition. The [source-to-application table](library.md#from-sources-to-kps-applications) answers which sources support current KPS uses; this page answers which subjects readers can explore.
+1. [Knowledge and understanding](#knowledge-and-understanding) — what it means to know and understand.
+2. [Inquiry and evidence](#inquiry-and-evidence) — how questions, observations and arguments support claims.
+3. [Knowledge representation and organization](#knowledge-representation-and-organization) — how meanings and relationships are expressed and organized.
+4. [Knowledge synthesis and communication](#knowledge-synthesis-and-communication) — how accounts are compared, connected and explained for a purpose.
+5. [Learning and capability](#learning-and-capability) — how understanding and usable abilities develop.
+6. [Practical reasoning and action](#practical-reasoning-and-action) — how people deliberate, choose and act in context.
+7. [Experience and knowledge development](#experience-and-knowledge-development) — how outcomes inform further inquiry and change.
 
-## Read the coverage labels
+## Knowledge and understanding
 
-**Available** means a linked explanation covers the stated subset. **Source only** means an inspected Reference exists but a standalone Core explanation is missing. **Local synthesis** means guidance is authored in a KPS Practice. **Gap** means the topic needs suitable sources and an explanation before it can support substantive instruction. These labels describe coverage, not scientific confidence or learning achievement.
+The starting questions concern knowledge, belief and understanding, including their relationships to reasons and ability. The [epistemology account](../references/steup-neta-2024-epistemology.md) supplies selected distinctions and identifies disagreements; this outline does not settle them.
 
-## Knowledge organization and representation
-
-This area concerns what a representation distinguishes and what its relationships mean. Naming an idea, placing it in a vocabulary and making a claim about it are different operations.
-
-| Topic | Meaning and current coverage |
+| Topic | Question and connection |
 |---|---|
-| Concepts and labels | Distinguish an idea from its wording. **Available:** [SKOS Concept](../concepts/skos-concept.md), within SKOS scope. Broader accounts of concepts remain a **gap**. |
-| Identification | Distinguish a resource identifier from a label or a claim about the resource. **Available:** [Uniform Resource Identifier](../concepts/uniform-resource-identifier.md). |
-| Hierarchy and association | Separate broader vocabulary relationships from other associations. **Available:** [SKOS Data Model](../models/skos-data-model.md), a selected subset. |
-| Mapping between vocabularies | Compare meanings across schemes without treating similar labels as exact equivalence. **Available:** the mapping relations in the [SKOS model](../models/skos-data-model.md). |
-| Propositions and conceptual relationships | Express a meaningful relationship between concepts. **Source only:** [Novak and Cañas](../references/novak-canas-2008-concept-maps.md). General accounts of explanation, causal models and reasoning remain **gaps**. |
+| Knowledge belief and justification | What distinguishes knowing from believing, and how does justification bear on that distinction? Connects to evidence and inference. |
+| Knowing that and knowing how | How are factual knowledge and practical ability related? Connects to learning and action; their philosophical relationship is disputed. |
+| Understanding and explanation | What relationships must someone grasp to explain a phenomenon? Connects to models and explanatory communication. |
+| Uncertainty and limits | What remains unresolved, and where does a claim exceed its support? Connects to inquiry and judgment. |
 
-## Sources and evidence
+**Reading and coverage:** The epistemology Reference is a starting account, with selected passages inspected. Core has no standalone explanation of these foundations yet. Understanding and explanation, and broader accounts of uncertainty, need further source development.
 
-This area concerns where an account comes from, what supports a claim and where that support applies. A documented origin and adequate evidence answer different questions.
+## Inquiry and evidence
 
-| Topic | Meaning and current coverage |
+Inquiry connects a question with the observations, sources and reasoning needed to address it. The current library contributes selected provenance and intervention-review accounts to this larger subject.
+
+| Topic | Question and connection |
 |---|---|
-| Provenance and derivation | Describe how an entity was produced, used or derived and who was involved. **Available:** [Provenance](../concepts/provenance.md) and the [PROV Data Model](../models/prov-data-model.md). |
-| Questions and scope | Specify what an investigation is asking. **Available:** [PICO Question Formulation](../methods/pico-question-formulation.md) for intervention questions. Other question forms remain a **gap**. |
-| Studies and reports | Distinguish an investigation from publications describing it. **Available:** [Study and Report](../concepts/study-and-report.md) and [Study Level Evidence Independence](../principles/study-level-evidence-independence.md). |
-| Extraction and applicability | Preserve located study information and examine mismatches with the target question. **Available:** [Study Data Extraction](../methods/study-data-extraction.md), [Evidence Indirectness](../concepts/evidence-indirectness.md) and [Indirectness Limits Applicability](../principles/indirectness-limits-applicability.md). |
+| Questions and problems | What is being asked, with what scope and alternatives? Connects the purpose of inquiry to the information needed. |
+| Observation and measurement | What was observed, and how was it recorded or measured? Connects a phenomenon to the evidence used in an analysis. |
+| Sources and provenance | Where did an account come from, and how was it produced or derived? Connects claims and records to their origins. |
+| Inference and argument | How do premises support a conclusion, and what alternatives remain? Connects evidence to proposed explanations. |
+| Evidence synthesis and applicability | How can findings be considered together, and how well do they address the target question? Connects inquiry to synthesis and action. |
 
-Core explains selected evidence-handling operations. It does not yet provide a full account of inquiry, inference, evidence synthesis or justified belief.
+**Reading and coverage:** [PICO](../methods/pico-question-formulation.md) covers intervention-question formulation. [Provenance](../concepts/provenance.md) and [PROV](../models/prov-data-model.md) explain production history. [Study and Report](../concepts/study-and-report.md), [evidence independence](../principles/study-level-evidence-independence.md) and [data extraction](../methods/study-data-extraction.md) support handling study information. [Evidence Indirectness](../concepts/evidence-indirectness.md) and [its applicability relationship](../principles/indirectness-limits-applicability.md) address mismatches with an intervention question. General observation, measurement, inference and synthesis methods remain gaps. A provenance record alone does not establish a claim's truth.
 
-## Knowledge selection and reconstruction
+## Knowledge representation and organization
 
-This area concerns selecting relevant knowledge and making its relationships understandable for a purpose. In KPS, reconstruction means selecting, explaining, connecting and contextualizing established knowledge while preserving its meaning and limits.
+This area concerns expressing meanings and making their relationships navigable. The adopted SKOS subset concerns vocabularies; the concept-map account concerns propositions and explicit conceptual links. Their relationships should remain distinguishable.
 
-| Topic | Meaning and current coverage |
+| Topic | Question and connection |
 |---|---|
-| Purpose and focus | Bound the question the representation should help answer. **Source only:** the focus-question guidance in [Novak and Cañas](../references/novak-canas-2008-concept-maps.md). **Local synthesis:** defining a target in [Build domain knowledge](../practices/build-domain-knowledge.md). |
-| Established subject structure | Identify an adopted account, its distinctions and the subset needed. **Local synthesis:** [Build domain knowledge](../practices/build-domain-knowledge.md). Each domain must supply its own disciplinary sources; Core cannot determine English linguistics from its file roles. |
-| Connections across topics | Make relevant relationships explicit when organizing explanations. **Source only:** concept-map cross-links. **Available:** SKOS mappings for the narrower problem of relating vocabularies. These are different kinds of relationship. |
-| Contextual explanation | Preserve essential definitions, attributes, relationships, examples and limits where readers need them. **Local synthesis:** the domain-building Practice. A broader source-backed account of instructional explanation and knowledge synthesis remains a **gap**. |
+| Concepts terms and definitions | Which meaning is intended, and which wording names it? Connects to precise communication and comparison between accounts. |
+| Propositions and relationships | What is asserted about the concepts, and what does each relationship mean? Connects representation to explanation and argument. |
+| Categories and classification | How are items grouped, and what distinguishes hierarchy from association? Connects local distinctions to a larger subject structure. |
+| Models and representations | Which entities, attributes, relationships and assumptions are represented? Connects explanation to interpreting cases. |
+| Subject structures and mappings | How do topics fit together, and how do different vocabularies correspond? Connects organization to synthesis across accounts. |
 
-## Methods and practical application
+**Reading and coverage:** [SKOS Concept](../concepts/skos-concept.md) and the [SKOS Data Model](../models/skos-data-model.md) cover selected vocabulary distinctions. [URI](../concepts/uniform-resource-identifier.md) explains identifiers. [Novak and Cañas](../references/novak-canas-2008-concept-maps.md) provide a source account of propositions, focus questions and cross-links. Broader classification theory, formal representation and explanatory or causal models need additional coverage; SKOS is not a general theory of these subjects.
 
-This area concerns using understanding to choose and carry out actions under particular conditions. A reusable procedure supplies an operation; a KPS Practice combines relevant operations and explanations for a target outcome.
+## Knowledge synthesis and communication
 
-| Topic | Meaning and current coverage |
+Organization describes a structure of meanings; synthesis considers how selected accounts can contribute to an explanation. Communication concerns making that explanation intelligible to an audience. These topics overlap without requiring every account to be merged.
+
+| Topic | Question and connection |
 |---|---|
-| Task structure and guidance | Relate a user's purpose to actions and recognizable outcomes. **Available:** [Cognitive Walkthrough](../methods/cognitive-walkthrough.md) for interface inspection. **Source only:** [Diataxis how-to guidance](../references/procida-undated-how-to-guides.md). Neither is a general theory of practical reasoning. |
-| Applying knowledge in context | Select relevant explanations and actions for a bounded task. **Local synthesis:** [Use KPS](../practices/use-kps.md) and [Build domain knowledge](../practices/build-domain-knowledge.md). |
-| Adaptation and judgment | Decide how changing conditions affect an action and whether a method is appropriate. Existing Practices include local decisions. General accounts of decision making, professional judgment and knowledge-to-action relationships remain **gaps**. |
+| Comparing accounts | Where do accounts agree, differ in scope or use incompatible assumptions? Connects vocabulary mapping with interpretation of source claims. |
+| Selecting relevant knowledge | Which distinctions and dependencies are needed for the question or audience? Connects subject structure to practical purpose. |
+| Integrating explanations | How can contributions be connected while preserving their meaning? Connects representation with a coherent account of the problem. |
+| Assumptions and disagreement | Which conditions and competing interpretations must remain visible? Connects synthesis to evidence and uncertainty. |
+| Examples analogies and presentation | How can an explanation make its relationships understandable, and where might a comparison mislead? Connects communication to learning. |
+
+**Reading and coverage:** The [concept-map account](../references/novak-canas-2008-concept-maps.md) supports bounded questions and explicit connections. [How People Learn II](../references/national-academies-2018-knowledge-and-reasoning.md) contributes selected learning perspectives on integration and explanatory activities. [Diataxis how-to guidance](../references/procida-undated-how-to-guides.md) addresses task-oriented writing. These are partial contributions, not a complete synthesis or communication theory. Comparative synthesis, analogy and audience adaptation still need fuller accounts. KPS's own reconstruction workflow is in [Build domain knowledge](../practices/build-domain-knowledge.md).
 
 ## Learning and capability
 
-This area concerns developing understanding and the ability to use it. Remembering an explanation, analyzing an unfamiliar case and performing a task are distinct learning targets; the available library chiefly addresses selected retention questions.
+This area concerns the learner's developing understanding and ability. It connects what is learned with the conditions of learning and the situations in which it can be used.
 
-| Topic | Meaning and current coverage |
+| Topic | Question and connection |
 |---|---|
-| Retrieval and retention | Attempt to recall material and examine later performance. **Available:** [Testing Effect](../principles/testing-effect.md) and [Retrieval Practice](../methods/retrieval-practice.md), with comparator and task limits. |
-| Spacing | Distinguish total spacing from the distribution of retrieval attempts. **Available:** [Spacing Effect](../principles/spacing-effect.md), with abstract-level evidence and no universal schedule. |
-| Conceptual understanding | Represent relationships, including those across parts of a subject. **Source only:** the selected concept-map account. The [retrieval versus mapping comparison](../references/karpicke-2011-retrieval-and-concept-mapping.md) and its [re-examination](../references/mayrhofer-2023-reexamining-the-testing-effect.md) concern particular activities and outcomes. |
-| Transfer and skill development | Use learning in new situations and develop reliable performance. **Gap:** no sufficient standalone Core account. Retrieval findings alone do not establish these broader outcomes. |
+| Prior knowledge | What does the learner already bring to the subject? Connects new explanations to existing understanding. |
+| Conceptual understanding | How are ideas and their relationships integrated? Connects representations and explanations to learning. |
+| Memory and retrieval | What is retained and recalled over time? Connects learning activities to later access to knowledge. |
+| Practice and feedback | What does the learner attempt, and how are errors interpreted and addressed? Connects learning to observable activity. |
+| Transfer | How can learning be used in a different situation? Connects learning to contextual application. |
+| Skill development and expertise | How does performance develop within a domain? Connects learning with practical ability and judgment. |
+
+**Reading and coverage:** [How People Learn II](../references/national-academies-2018-knowledge-and-reasoning.md) supplies selected passages on integration, expertise and learning strategies; standalone explanations remain to be built. Existing objects cover [Testing Effect](../principles/testing-effect.md), [Retrieval Practice](../methods/retrieval-practice.md) and [Spacing Effect](../principles/spacing-effect.md). Their reported conditions and comparator limits remain in force, including abstract-only inspection for the spacing source. Feedback, transfer and wider skill development require further coverage. The additional report does not retroactively broaden the claims of the existing objects.
+
+## Practical reasoning and action
+
+The [practical-reason account](../references/wallace-kiesewetter-2024-practical-reason.md) addresses deliberation about what to do, including relations between ends and means. This area extends to action in different domains, with domain-specific procedures supplied by their own knowledge packages.
+
+| Topic | Question and connection |
+|---|---|
+| Goals values and constraints | Which ends are worth pursuing, and which conditions matter? Connects the reasons for action with the situation. |
+| Problem formulation | What decision or difficulty is being addressed? Connects practical aims to inquiry. |
+| Judgment and decision making | Which considerations support the available alternatives? Connects evidence, uncertainty and values to choice. |
+| Methods procedures and adaptation | What operation fits this situation, and which conditions require adjustment? Connects reusable guidance to contextual action. |
+| Individual and coordinated action | Who acts, and how do their activities and responsibilities fit together? Connects individual decisions with shared work. |
+
+**Reading and coverage:** The practical-reason Reference supports selected philosophical distinctions, not a decision algorithm. [Cognitive Walkthrough](../methods/cognitive-walkthrough.md) illustrates a particular task-based inspection method. [Use KPS](../practices/use-kps.md) is one local application. General decision methods, professional judgment, contextual adaptation and coordinated action still need explanations and further sources. A KPS Practice is a document for a target activity; it does not exhaust the subject of practical action.
 
 ## Experience and knowledge development
 
-This area concerns what an application reveals and how that can inform a change in understanding or action. A useful local observation can motivate further inquiry without establishing a general relationship.
+This area connects what happens during an activity with possible changes in understanding and action. It includes improvement within a situation and inquiry that might support broader conclusions.
 
-| Topic | Meaning and current coverage |
+| Topic | Question and connection |
 |---|---|
-| Improvement through trials | Plan a change, try it, interpret the result and decide what follows. **Available:** [PDCA](../methods/pdca.md). **Local synthesis:** [Improve KPS](../practices/improve-kps.md). |
-| Retaining and interpreting experience | Preserve what happened and distinguish observations from interpretations. **Local synthesis:** [Review and learn](../practices/review-and-learn.md), supported by provenance. |
-| Developing broader knowledge | Investigate whether an explanation extends beyond a local case. **Gap:** fuller accounts of research design, causal inference and generalization. PDCA and a completed Practice do not supply these by themselves. |
+| Interpreting outcomes | What happened, and which explanation might account for it? Connects experience to evidence and provenance. |
+| Reflection and error correction | What should be reconsidered in the interpretation or action? Connects experience to learning and practical reasoning. |
+| Revising explanations | Which assumptions or relationships are challenged by new information? Connects outcomes to models and renewed inquiry. |
+| Experimentation improvement and new ideas | What proposed change or explanation should be investigated next? Connects local experience to further knowledge development. |
 
-## Connections across the subject
+**Reading and coverage:** [PDCA](../methods/pdca.md) contributes a bounded improvement procedure. [Improve KPS](../practices/improve-kps.md) and [Review and learn](../practices/review-and-learn.md) are local applications. Research design, causal inference, reflective practice and innovation require fuller source-backed accounts. A useful local outcome can motivate a hypothesis without establishing its general validity.
 
-The six areas overlap and have no fixed execution order. These relationships explain how to move between them:
+## Connections across subjects
 
-| Connection | Why it matters for KPS construction |
+These are relationships to investigate and use, not a fixed processing or learning sequence.
+
+| Connection | Relationship to follow |
 |---|---|
-| Representation and reconstruction | An adopted vocabulary helps preserve distinctions when selecting a subset; explicit relationships prevent a topic list from becoming disconnected notes. |
-| Evidence and application | The target question determines which source conditions matter. Provenance helps trace a claim; applicability requires a separate judgment. |
-| Reconstruction and learning | An explanation can supply the material for a learning activity. The Practice chooses whether the target is recall, explanation, analysis or performance. |
-| Learning and application | A learner's successful recall does not by itself demonstrate use in a new situation. Transfer remains an explicit coverage gap. |
-| Application and knowledge development | Experience may motivate revising an action, an explanation or the question itself. The observation and the proposed revision remain distinguishable. |
+| Knowledge and evidence | A claim to knowledge raises questions about its support; evidence-handling procedures address only part of that question. |
+| Evidence and models | Observations and arguments can support or challenge a representation within its assumptions. |
+| Organization and synthesis | Explicit distinctions help compare accounts without silently treating different meanings as equivalent. |
+| Communication and learning | An explanation supplies material for learning; the learner's grasp of its relationships is a separate question. |
+| Learning and action | Transfer concerns using learning in another situation; recalling a statement and performing a task are different targets. |
+| Action and experience | A chosen action produces outcomes to interpret, alongside the conditions in which it was performed. |
+| Experience and inquiry | An unexpected outcome can motivate a new question or a revised explanation. |
 
-For a proposed Practice to learn an English sound system, the English package supplies the established linguistic outline. This Core map helps the author select support for organizing its distinctions, tracing its sources, building explanations and choosing learning activities. A phoneme explanation may appear in a Concept, a Model and beside a Practice activity when needed. Their shared meaning stays consistent; the sound-system topics do not become the five role folders. This is a construction example, not a recorded learning result.
+For example, an English learner might recall a sound rule but struggle to analyze a recording. This hypothetical case connects representation, learning, transfer and evidence: the recording's context, the explanation's limits and the learner's activity all become relevant questions. The English subject map supplies the linguistic distinctions; a learning Practice supplies the analysis activity. No outcome is claimed for this example.
 
-## Navigation and ownership
+## Adopted accounts and limits
 
-Keep this authored map at `docs/subject-map.md` and link it from the README. Maintain topics, relationships, source basis and coverage here; store substantive explanations in the existing role folders. A gap can remain a row until a real target warrants developing it. No empty object or generated file is needed to represent it.
+| Account | Selected contribution | Boundary |
+|---|---|---|
+| [Steup and Neta on epistemology](../references/steup-neta-2024-epistemology.md) | Knowing how, factual knowledge and justification | Selected philosophical discussion; competing accounts remain identifiable |
+| [W3C SKOS](../references/w3c-2009-skos-reference.md) | Concepts, labels, semantic relations and mappings | Vocabulary organization rather than a general knowledge theory |
+| [Novak and Cañas](../references/novak-canas-2008-concept-maps.md) | Propositions, focus questions and cross-links | Selected concept-map guidance |
+| [W3C PROV](../references/w3c-2013-prov-dm.md) | Entities, activities, agents and derivation | Production history does not certify truth |
+| Cochrane chapters [2](../references/cochrane-2024-review-questions-chapter-2.md), [5](../references/cochrane-2024-collecting-data-chapter-5.md) and [14](../references/cochrane-2024-certainty-chapter-14.md) | Questions, study information and applicability | Intervention-review context |
+| [How People Learn II chapter 5](../references/national-academies-2018-knowledge-and-reasoning.md) | Integration, expertise and learning strategies | Selected report passages; underlying studies were not independently inspected |
+| [Retrieval comparison](../references/karpicke-2011-retrieval-and-concept-mapping.md), [re-examination](../references/mayrhofer-2023-reexamining-the-testing-effect.md) and [spacing study](../references/karpicke-2011-spaced-retrieval.md) | Particular learning comparisons | Task, comparator and inspection limits remain important |
+| [Wallace and Kiesewetter on practical reason](../references/wallace-kiesewetter-2024-practical-reason.md) | Deliberation and means and ends | Philosophical accounts, not a general procedure for choosing actions |
+| [Cognitive walkthrough](../references/wharton-undated-cognitive-walkthrough-report-93-07.md), [Diataxis](../references/procida-undated-how-to-guides.md) and [ASQ PDCA](../references/asq-undated-pdca-cycle.md) | Inspection, task guidance and improvement respectively | Separate bounded contributions, not a unified theory of practice |
 
-The [knowledge index](library.md) lists files by role. [Authoring](authoring.md) defines KPS publishing conventions. [Build domain knowledge](../practices/build-domain-knowledge.md) owns the construction workflow, while other Practices own their task or learning sequences. Format rules, Git workflows and validator maintenance remain implementation documentation rather than subject areas of knowledge and practice.
+These sources support selected distinctions; they do not prescribe the seven-area outline or establish every topic listed. The three new Reference records state the passages inspected for this revision. Earlier sources retain their recorded dates and limits. A Reference link identifies a starting account; it does not mean a standalone Core explanation or a learning activity is complete.
+
+## Using the map
+
+Use the [role index](library.md) to find individual documents and its [source-to-application table](library.md#from-sources-to-kps-applications) to trace selected KPS uses. The subject map belongs to shared knowledge navigation. Practices own activity sequences, and [Build domain knowledge](../practices/build-domain-knowledge.md) owns the construction workflow. Publishing conventions are in [Authoring](authoring.md).
+
+Keep useful overlap between subjects and explanations. A topic may remain visible before its supporting document exists; a missing file does not remove it from the subject. Coverage notes identify work still needed rather than measuring confidence or learner achievement.
