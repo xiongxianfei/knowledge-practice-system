@@ -50,4 +50,4 @@ The alignment tests check declared relationships, locators, valid targets and th
 - PDCA is documented by ASQ. KPS's release process is our application, not an ASQ certification.
 - Retrieval findings do not validate the folder structure or guarantee general superiority.
 
-The [migration record](history/10.0.0-migration.md) identifies the location of each retired local object. The [source review](history/source-review.md) records what was inspected for this edition.
+The [migration record](migration.md) identifies the location of each retired local object. The [source review](source-review.md) records what was inspected for this edition.

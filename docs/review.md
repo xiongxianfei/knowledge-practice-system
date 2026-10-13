@@ -49,7 +49,7 @@ Do not fill these fields from expected results. Domain validity, physical compet
 
 ## Structural checks and limits
 
-Run `python validate.py .` and `python -m unittest internal.tests.test_validate`. Resolve file/fragment, metadata, image and dependency errors. The checker accepts substantive action lists or decision tables without the six-label form; it cannot prove that those actions are useful, safe or true. [AUTHORING.md](authoring.md) is the authority; [CHECKS.md](history/10.2.0-release.md) reports checks actually performed for this release.
+Run `python validate.py .` and `python -m unittest internal.tests.test_validate`. Resolve file/fragment, metadata, image and dependency errors. The checker accepts substantive action lists or decision tables without the six-label form; it cannot prove that those actions are useful, safe or true. [Authoring](authoring.md) is the authority. Record commands and actual results in the change PR; [source review](source-review.md) preserves inspection scope and limits.
 
 ## Source fidelity review
 

@@ -37,7 +37,7 @@ python -m unittest discover -s internal/tests -p "test_*.py"
 python -m internal.diagram_tools --check --root .
 ```
 
-The D2 rendering check requires the pinned version documented in [diagram authoring](docs/diagrams.md). Structural checks do not certify scientific validity or reader usability. The [10.2.0 release record](docs/history/10.2.0-release.md) preserves historical verification.
+The D2 rendering check requires the pinned version documented in [diagram authoring](docs/diagrams.md). Structural checks do not certify scientific validity or reader usability. Record actual command results in the change PR; [source inspection and review evidence](docs/source-review.md) retains its original scope.
 
 ## Scope and rights
 
