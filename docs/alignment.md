@@ -26,6 +26,12 @@ This is the Core library curation policy, not a claim that a professional body e
 
 The authoring specification remains necessary infrastructure. Removing local conventions from the knowledge library does not make a Markdown format externally standardized. The five roles remain KPS design choices, as explained in the [domain-building Practice](../practices/build-domain-knowledge.md#stage3-create-locally-complete-objects).
 
+## Established structure and contextual reconstruction
+
+Reuse the source's concepts, distinctions, representations and relationships when selecting support for a target Practice. Record the adopted framework and subset; a textbook chapter order is a teaching choice, not a required file hierarchy. Selection and reorganization are our application decisions. Preserve dependencies that make the source explanation work, and identify adaptations instead of transferring the source's authority to them.
+
+The admission table concerns the primary contribution of standalone Core objects. Supporting definitions, representations and procedures may overlap within and between objects when needed for local understanding. Such overlap must preserve source meaning and scope. A local workflow remains an authored Practice even when it uses an established Model; an inline definition does not turn the whole workflow into a Concept. Domain packages retain their own declared curation policies; this clarification does not impose Core's alignment metadata on them.
+
 ## Select authority for the claim
 
 Use defining specifications for their terms and relations, procedural publications for their named techniques, and applicable empirical work for effects. A standards body does not prove a learning benefit by defining a format. An experiment does not prescribe the KPS directory layout. An official software page can document a navigation convention without establishing human comprehension.
