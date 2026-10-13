@@ -24,7 +24,7 @@ Core 10.0.0 removed prior Core object IDs and filenames; 10.1.0 adds diagrams wi
 
 ## Break and migration
 
-Old links to 41 standalone local objects no longer resolve. The four Practice IDs and all 17 stage titles are retained. Migrate incoming links deliberately using [MIGRATION.md](history/10.0.0-migration.md); a new professional definition is not automatically an exact replacement for an old local role definition.
+Old links to 41 standalone local objects no longer resolve. The four Practice IDs and all 17 stage titles are retained. Migrate incoming links deliberately using [MIGRATION.md](migration.md); a new professional definition is not automatically an exact replacement for an old local role definition.
 
 Domain repositories declaring KPS 9.x do not have to adopt these new Core content IDs. They remain independently readable and versioned. No sibling repository is automatically rewritten. The additional alignment test applies to this Core; adoption by a domain is a separate requested change.
 
@@ -50,13 +50,14 @@ Core 11.0.0 consolidates overlapping root documentation and **intentionally brea
 | `CONTRIBUTING.md`, `GOVERNANCE.md`, `PUBLISHING.md` | [Contribution and governance](../.github/CONTRIBUTING.md) |
 | `CODE_OF_CONDUCT.md`, `SECURITY.md` | `.github/CODE_OF_CONDUCT.md`, `.github/SECURITY.md` |
 | `SOURCE-SYNTHESIS-EXAMPLE.md` | [Worked synthesis](examples/source-synthesis.md) |
-| `SOURCE-REVIEW.md`, `MIGRATION.md`, `RELEASE.md`, `CHECKS.md` | `docs/history/` (versioned historical records) |
+| `SOURCE-REVIEW.md`, `MIGRATION.md` | [Source inspection record](source-review.md), [identifier migration map](migration.md) |
+| `RELEASE.md`, `CHECKS.md`, `verification.json` | Obsolete release reports removed; earlier versions remain in Git |
 | `diagram_tools.py`, `test_*.py` | `internal/diagram_tools.py`, `internal/tests/` |
 | `diagrams.json`, `diagram-audit.json` | `diagrams/manifest.json`, `diagrams/audit.json` |
-| `summary-dependencies.json`, `transition.json` | `internal/metadata/` |
-| `verification.json` | `docs/history/10.1.0-verification.json` |
+| `summary-dependencies.json` | `internal/metadata/summary-dependencies.json` |
+| `transition.json` | Duplicate inventory removed; the identifier map remains in [Migration](migration.md) |
 
-The public command `python validate.py .` stays at the root. The validator recognizes both the new internal dependency snapshot location and the original root snapshot location for independent older domain packages. For the reorganized Core, run `python -m unittest discover -s internal/tests -p "test_*.py"` and `python -m internal.diagram_tools --check --root .` (D2 0.9.0 required for rendering checks). Follow the [10.0.0 historical migration record](history/10.0.0-migration.md) when resolving retired *knowledge* object identities; it is distinct from this file-layout change.
+The public command `python validate.py .` stays at the root. The validator recognizes both the new internal dependency snapshot location and the original root snapshot location for independent older domain packages. For the reorganized Core, run `python -m unittest discover -s internal/tests -p "test_*.py"` and `python -m internal.diagram_tools --check --root .` (D2 0.9.0 required for rendering checks). Follow the [10.0.0 historical migration record](migration.md) when resolving retired *knowledge* object identities; it is distinct from this file-layout change.
 
 **Dependency review for this layout change:** The GitHub Markdown reference record changed only in its local Markdown link destination; its cited publication, inspected scope and claims remain unchanged. The dependent Use KPS summary was reviewed for semantic consistency before updating the snapshot fingerprint. Other source and practice relationships were preserved.
 
@@ -64,7 +65,7 @@ The public command `python validate.py .` stays at the root. The validator recog
 
 Core owns the shared structural validator and its regression tests. Domains may retain a pinned copy for independent, offline checks; a workspace sync does not upgrade those copies. Review compatibility before updating a domain's tool or contract pin. Keep domain-specific checks in the domain that owns the content.
 
-The existing diagram tool is retained because it checks committed D2 sources against their SVGs and declared metadata. Its tests and alignment tests protect existing content contracts. Completed migration inventories, fixed release counts and versions no longer constrain the live alignment checker; historical mappings remain in `internal/metadata/transition.json` and the linked migration documents. Their Markdown links still undergo ordinary validation. Readers can use the Markdown and committed images without running these tools. No workspace build, sync or publication script is required.
+The existing diagram tool is retained because it checks committed D2 sources against their SVGs and declared metadata. Its tests and alignment tests protect existing content contracts. Completed migration inventories, fixed release counts and versions no longer constrain the live alignment checker; the useful identifier mapping remains in [Migration](migration.md). The duplicate transition inventory and obsolete release reports are removed. Links in the retained map still undergo ordinary validation. Readers can use the Markdown and committed images without running these tools. No workspace build, sync or publication script is required.
 
 Text uses LF line endings under `.gitattributes`, preserving exact-byte dependency fingerprints across checkouts. Restore intended line endings before interpreting a fingerprint mismatch as a content revision. This rule does not alter the checker, authoring contract or knowledge identities.
 

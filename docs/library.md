@@ -69,7 +69,7 @@ This Core library contains 20 knowledge objects: five Concepts, four Principles,
 - [Complex images](../references/w3c-2026-complex-images.md)
 - [Cognitive Walkthrough Practitioner Guide Report 93 07](../references/wharton-undated-cognitive-walkthrough-report-93-07.md)
 
-[Alignment policy](alignment.md) distinguishes source definitions from KPS application. [Migration record](history/10.0.0-migration.md) accounts for retired identifiers.
+[Alignment policy](alignment.md) distinguishes source definitions from KPS application. [Migration record](migration.md) accounts for retired identifiers.
 
 ## Visual reading aids
 
