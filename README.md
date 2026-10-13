@@ -1,7 +1,7 @@
 ---
 package_version: "11.0.0"
 language: "KPS 9.x"
-reviewed: "2026-10-12"
+reviewed: null
 ---
 
 # Knowledge Practice System
@@ -12,7 +12,11 @@ Apply source-aligned professional knowledge through locally usable, task-oriente
 
 ## Summary
 
-KPS Core contains 20 knowledge objects (five Concepts, four Principles, two Models, five Methods and four Practices) plus 18 external Reference records. Core 11.0.0 reorganizes repository documentation and tooling without changing those knowledge identities. The layout separates the knowledge library, authoring guidance, maintenance tools and historical records.
+KPS Core contains 20 knowledge objects (five Concepts, four Principles, two Models, five Methods and four Practices) plus 19 external Reference records. Core 11.0.0 reorganizes repository documentation and tooling without changing those knowledge identities. The layout separates the knowledge library, authoring guidance, maintenance tools and historical records.
+
+## Explore by subject
+
+The [knowledge and practice subject map](docs/subject-map.md) connects knowledge organization, sources and evidence, reconstruction, practical application, learning, and knowledge development. It identifies established accounts, available explanations and gaps. Use it to explore the subject and select support for a target Practice.
 
 ## Start with the task
 

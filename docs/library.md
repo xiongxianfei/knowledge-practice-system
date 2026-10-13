@@ -1,7 +1,7 @@
 ---
 package_version: "11.0.0"
 language: "KPS 9.x"
-reviewed: "2026-10-12"
+reviewed: null
 ---
 
 # KPS knowledge index
@@ -12,7 +12,9 @@ Read source-aligned knowledge for reusable meaning and Practices for KPS-specifi
 
 ## Summary
 
-This Core library contains 20 knowledge objects: five Concepts, four Principles, two Models, five Methods and four Practices. Eighteen supporting Reference records preserve source identity and inspection limits. The smaller library removes duplicate local abstractions rather than turning them into professional terminology.
+This Core library contains 20 knowledge objects: five Concepts, four Principles, two Models, five Methods and four Practices. Nineteen supporting Reference records preserve source identity and inspection limits. The smaller library removes duplicate local abstractions rather than turning them into professional terminology.
+
+Explore topics and their relationships in the [knowledge and practice subject map](subject-map.md). This page provides the file index by role and the [source-to-application table](#from-sources-to-kps-applications).
 
 ## Concepts
 
@@ -61,6 +63,7 @@ This Core library contains 20 knowledge objects: five Concepts, four Principles,
 - [Spaced retrieval absolute spacing enhances learning regardless of relative spacing](../references/karpicke-2011-spaced-retrieval.md)
 - [Re examining the testing effect as a learning strategy the advantage of retrieval practice over concept mapping as a methodological artifact](../references/mayrhofer-2023-reexamining-the-testing-effect.md)
 - [MkDocs Writing your docs](../references/mkdocs-undated-writing-your-docs.md)
+- [Concept maps and their construction](../references/novak-canas-2008-concept-maps.md)
 - [How to guides](../references/procida-undated-how-to-guides.md)
 - [Python Markdown Table of Contents](../references/python-markdown-undated-toc-extension.md)
 - [SKOS Reference 2009](../references/w3c-2009-skos-reference.md)
