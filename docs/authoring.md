@@ -28,6 +28,20 @@ An *incompatible change to these requirements* needs a new KPS language major ve
 
 Supporting root-level documents and verification tooling are infrastructure, not extra knowledge types.
 
+## Reconstruct knowledge for a target Practice
+
+Start with what a reader should understand, accomplish or investigate through a target Practice. Reuse established disciplinary concepts, distinctions, models and their relationships as the foundation. Inspect the relevant accounts before choosing knowledge boundaries. Select and reconstruct the material needed for the target, preserving the source's meaning, conditions and limits. A source's teaching order need not become the package's file hierarchy; competing frameworks should remain identifiable rather than being silently blended.
+
+Reconstruction includes selection, explanation, integration and contextual application. Identify the adopted source structure, the subset used and any authored adaptation. Draft the target Practice early and revise its actions and supporting knowledge together. A learning Practice can target explanation, analysis and investigation as well as performance. Its scope does not require documenting an entire discipline or inventing one object of every role.
+
+## Primary roles and useful overlap
+
+The five roles describe a document's primary contribution; they do not partition its content into mutually exclusive substances. A Concept can include a small representation; a Model can explain Concepts and Principles; a Method can explain its supporting Model; a Practice can include all of these at the point of use. Keep one primary metadata type and stable identity per object. Supporting content does not need separate identities merely because it serves another role.
+
+Choose document boundaries for coherent explanation, independent reuse and readability. Begin with sections; split when the resulting documents each have a useful purpose and preserve the relationships needed to understand them. Keep a definition and its contextual application consistent while allowing necessary overlap. Link to the owning explanation and preserve its conditions locally; avoid competing definitions or duplicated passages that serve no reader need. Review affected explanations when the shared meaning changes.
+
+For example, a Concept may define elision, a Model may relate it to other speech processes and their conditions, and a learning Practice may explain it beside an analysis task. The overlap supports different purposes. It does not make the concept, representation and procedure interchangeable. These are authoring clarifications within KPS 9.x, without new mandatory fields, headings or role counts.
+
 ## Filename and identity
 Use lowercase, meaningful kebab-case filenames, such as `spacing-effect.md` for a Principle, `study-data-extraction.md` for a Method or `build-domain-knowledge.md` for a Practice. Reference filenames identify the **publication**, normally `creator-year-short-title.md`, `creator-undated-short-title.md`, or `organization-standard-id-year.md` when the official identifier matters. Do not infer a publication year from the date accessed.
 

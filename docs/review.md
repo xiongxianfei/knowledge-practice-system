@@ -17,6 +17,8 @@ Use a link-hidden walk-through and a source-fidelity check before publication. F
 
 ## Walk through one stage
 
+First inspect the target and its knowledge selection using the reconstruction review below. A successful walkthrough of an example chosen from the draft cannot establish that the draft includes the knowledge the target requires.
+
 1. Choose a declared reader, a safe representative task and the actual document version. Read the prerequisites before hiding outbound links.
 2. Follow the steps on paper or in an authorized environment. Identify the input, operation and expected artifact without guessing missing instructions.
 3. Interpret a normal result and a failure or ambiguous result. Check that the reader can continue, revise, stop or obtain help.
@@ -34,6 +36,14 @@ Use a link-hidden walk-through and a source-fidelity check before publication. F
 6. Record pass, revise or unresolved with the point where interpretation required guessing and any remaining evidence limit. Label an author's self-review separately from an independent reader trial. A successful walkthrough of one example does not establish general validity.
 
 For the PROV example in the [Model template](templates.md#example-using-the-prov-model), ask the reader to identify the input and output Entities, explain why their versions matter, follow `used` and `wasGeneratedBy` in the stated direction, and explain why derivation does not prove summary accuracy. These are proposed review prompts, not recorded reader results.
+
+## Review knowledge reconstruction
+
+1. Identify the target Practice, intended reader, output and conditions. For a learning target, state what the reader should explain, analyze or investigate; naming headings is insufficient.
+2. Inspect the adopted disciplinary accounts and the selected subset. Check whether their important distinctions, relationships and prerequisites survive reconstruction. Distinguish the source structure from our teaching order and file boundaries. State missing support and unresolved framework differences.
+3. Trace representative target questions to the actual explanations and procedures. Select a new case or ambiguity from those questions and source boundaries, rather than only from examples already in the draft. Inspect whether the reader can reason through it with links hidden.
+4. Check useful overlap across roles. A Concept, Model and Practice may explain the same distinction for different purposes; compare the meaning and conditions, not sentence identity. Combine fragments when separation breaks understanding; split only where independent use or readability warrants it.
+5. Record separately whether coverage, local usability and source fidelity pass, need revision or remain unresolved. Structural checks and editorial self-review do not establish learning effectiveness or independent scientific approval.
 
 ## Evidence of a useful review
 
@@ -58,6 +68,12 @@ Change made and unresolved limitation:
 ```
 
 Do not fill these fields from expected results. Domain validity, physical competence and authorization remain separate judgments.
+
+## Practice reconstruction editorial review
+
+On 2026-10-13 the authoring assistant checked the revised authoring, alignment and template guidance together with Build domain knowledge 10.3.0. The walkthrough starts with a learning target, selects an established account and reconstructs an explanation before choosing a primary role and file boundary. It permits the same necessary distinction in a Concept, Model and Practice while checking consistency. Stage1 now drafts the Practice; Stage4 refines it, preserving existing stage anchors. Coverage, usability and source fidelity have separate review questions.
+
+The changes are KPS application guidance, not new empirical claims or externally prescribed taxonomy. Existing Core admission rules, metadata and validator behavior remain intact. No existing knowledge recipient depends on the changed Practice in the dependency snapshot, and no declared dependency content changed; no fingerprint refresh was needed. Linked library and contributor descriptions still fit its purpose. This was an assistant editorial walkthrough, not an independent reader trial or a measured learning result.
 
 ## Structural checks and limits
 

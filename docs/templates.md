@@ -16,6 +16,9 @@ A template supports the job of the knowledge type; it does not prove correctness
 All objects need identity, meaning, locally sufficient content, scope and support. Copy only the useful fields, replacing placeholders with real content. The examples below are fenced templates, not live published knowledge. Reference records support the five knowledge types rather than becoming a sixth type.
 
 ## Common metadata
+
+Before selecting a template, identify the target Practice, relevant established account and the coherent explanation needed by the reader. A template describes the document's primary job; it does not determine the domain's subdivisions. Include supporting knowledge from other roles inline when needed. Split only for independent use or readability, and retain the relevant source meanings and conditions in overlapping explanations.
+
 ```yaml
 ---
 id: "domain:method:meaningful-identity"
@@ -87,6 +90,8 @@ Objective; inputs and prerequisites; rationale; numbered procedure; expected eff
 
 ## Practice content
 This is one example, not a mandatory sequence of supporting headings. Keep the steps locally usable and add only the material that resolves a reader's uncertainty.
+
+Draft the target, prerequisites, output and feedback before building its supporting library, then refine them together. For a learning Practice, an output can be an explanation or an analysis of an unfamiliar case. State what would make that response adequate, what misconception requires revision and what evidence is missing. Existing knowledge can support several Practices without being rewritten into a separate copy for each.
 
 ```markdown
 # Repair a knowledge link

@@ -1,10 +1,10 @@
 ---
 id: "kps:pr:build-domain-knowledge"
 type: "practice"
-version: "10.2.0"
+version: "10.3.0"
 language: "KPS 9.x"
 status: "active"
-reviewed: "2026-10-12"
+reviewed: null
 basis_kind: "KPS-specific application synthesis; external methods are distinguished from adaptations"
 confidence: "provisional for real-world application"
 uses_methods: ["kps:method:pico-question-formulation", "kps:method:study-data-extraction", "kps:method:cognitive-walkthrough"]
@@ -22,11 +22,11 @@ uses_concepts: ["kps:concept:skos-concept", "kps:concept:study-and-report", "kps
 
 ## Key takeaway
 
-Build enough knowledge to support one real task, then verify that the task works without link-chasing.
+Reuse established knowledge for a target Practice, reconstruct its necessary explanations and verify that the task works without link-chasing.
 
 ## Summary
 
-Create a small, independent package whose reusable knowledge and task guidance agree. Start with the reader's job rather than a quota of Concepts or Methods. Keep the five knowledge roles distinct, retain the evidence behind claims, and place the essential actions inside each Practice.
+Create a small, independent package around what the reader should understand, accomplish or investigate. Reuse established disciplinary structures and reconstruct the relevant knowledge for that target Practice. Develop the Practice and its supporting explanations together. Each object has a primary role, with useful overlap between definitions, representations and procedures; source meanings and conditions remain consistent.
 
 Stage numbers give recommended order; source access, safe working conditions and permission to publish are actual prerequisites. Empty templates are not completed investigations. A plain text editor and Python are sufficient for the structural checks; no dedicated authoring application is required.
 
@@ -45,8 +45,8 @@ Decide what a reader should accomplish in the first usable slice.
 **Steps**
 
 1. Write the audience, recurring task, intended output and exclusions. A useful first scope is “maintain Markdown navigation”; “document all software engineering” is not a bounded deliverable.
-2. Inventory existing material and label observations, source extracts, proposals and private records. Do not promote a personal result into a general Principle merely because it is useful.
-3. Create the five role directories plus `references/`. Leave a directory empty rather than manufacture knowledge to fill it.
+2. Draft the target Practice's question, prerequisites, intended output and feedback criteria before populating a library. A learning target can require explaining an unfamiliar case and recognizing uncertainty. Keep unfinished stages visibly provisional and develop them with the supporting knowledge.
+3. Inventory existing material and label observations, source extracts, proposals and private records. Reuse existing objects; create role directories as needed and leave them empty rather than manufacture knowledge. Do not promote a personal result into a general Principle merely because it is useful.
 4. Draft a README that names the entry Practice, reader prerequisites and limits. Record package identity and compatibility in `publication.json`.
 
 ```text
@@ -78,12 +78,14 @@ Search for the support the claim needs, not for an impressive bibliography.
 
 **Steps**
 
-1. List candidate claims and the evidence each requires. A definition needs an appropriate defining source; a performance comparison needs the actual task, comparator and measured outcome.
+1. Inspect established accounts relevant to the target. Identify their concepts, models and relationships, the framework adopted and the subset needed. Use the discipline's structure as the foundation; distinguish it from chapter order and our learning route. Then list candidate claims and the evidence each requires. A definition needs an appropriate defining source; a performance comparison needs the actual task, comparator and measured outcome.
 2. Inspect the relevant passage. Record publication identity, URL, section locator, inspected extent and date. State “abstract only” or “landing page only” when that is all you read.
 3. Group reports that share an underlying study. Compare disagreement and applicability instead of treating every citation as independent confirmation.
 4. Write a local synthesis that separates source premises, your inference and the remaining uncertainty. Narrow or remove a claim the evidence does not support.
 
 **Source worksheet**
+
+Use a small mapping in the existing Practice or scope document: target question, established source and locator, supporting knowledge, local application and unresolved gap. Reuse the map when revising the task; no separate registry or generated report is needed. If sources disagree, preserve the differing scopes or choose and justify an account rather than silently combining incompatible claims.
 
 | Claim | Inspected support | Boundary | Consequence for the draft |
 |---|---|---|---|
@@ -116,7 +118,7 @@ Choose a file's role by its job, not by who wrote it.
 
 **Steps**
 
-1. Put definitions in Concepts, explanatory relationships in Principles, representations in Models, and reusable operations in Methods. Put your complete task workflow in a Practice. A selected rule is not an explanatory Principle.
+1. Choose each coherent explanation's primary role: definition in a Concept, explanatory relationship in a Principle, representation in a Model, repeatable operation in a Method or task synthesis in a Practice. Include supporting content from other roles wherever needed. A selected rule is not an explanatory Principle.
 2. Give each object a stable identity, semantic filename, meaningful title, Key takeaway and Summary. Include the terms and conditions necessary to understand it locally.
 3. For a Method, provide inputs, rationale, executable actions, output checks and limits. For a Model, show the representation and assumptions rather than merely naming it.
 4. Link only genuine dependencies. Where a file summarizes another object, retain the local reason or instruction as well as the link.
@@ -144,6 +146,8 @@ status: "draft"
 
 If a detail is only useful inside one step, keep it there. Split a file when it gains independent use or becomes difficult to navigate, not merely because a template has another heading.
 
+For a learning target, a Concept can define a distinction, a Model can explain the same distinction within a system, and the Practice can repeat its necessary meaning beside an exercise. This overlap is intentional. Preserve source conditions and make their differing purposes clear; do not fragment a coherent explanation to achieve role purity. Retain one primary metadata type per object.
+
 **Role assignment is KPS application knowledge**
 
 | What the file actually does | KPS role and boundary |
@@ -162,11 +166,11 @@ These are working roles, not external definitions of the five capitalized labels
 
 ## Stage4 Compile the Practice
 
-Write the actions first. Put supporting information next to the action that needs it.
+Refine the Practice drafted in Stage1 using the knowledge selected in Stage2 and reconstructed in Stage3. Revisit those stages when a task reveals missing support. Put supporting information next to the action that needs it.
 
 **Steps**
 
-1. Outline the task as a few meaningful `Stage1`, `Stage2` headings and generate a stage map from the complete headings. Explain prerequisites once at entry and repeat only local hazards where they matter.
+1. Revise the draft into a few meaningful `Stage1`, `Stage2` headings and a stage map using the complete headings. Explain prerequisites once at entry and repeat only local hazards where they matter.
 2. Write each action with an object, an operation and a visible result. Replace “review the evidence” with “record the study conditions and the exact claim the passage supports.”
 3. Add the missing explanation at the point of use. Include a worked example where a reader would otherwise guess; use a table for branching decisions and a diagram for relationships.
 4. Give the reader an interpretation and next decision: continue, revise, stop or obtain help. These can be sentences or tables; do not recreate six mandatory labels.
@@ -206,7 +210,7 @@ Test the content as a task guide before treating a green checker as success.
 
 **Steps**
 
-1. Hide links and walk through one safe example on paper. Mark each point where an input, rationale, result or fallback must be guessed. Restore the links and compare local summaries against their sources.
+1. Compare the target questions with the adopted source structure and selected support. Choose a representative case and a new or ambiguous case, hide links and walk through them on paper. Mark where an input, rationale, result or fallback must be guessed. Restore links and check source fidelity and consistency of overlapping explanations. Record coverage, usability and source-support gaps separately.
 2. Copy the inspected KPS checker and its tests into the package, retaining their provenance and license. From the package root run the commands below. If a check reports an error, inspect its file and diagnostic rather than deleting the check.
 3. Review dependent summaries after changes, then refresh their fingerprints. Do not refresh them merely to silence a failure.
 4. Inspect the publication diff for private records, secrets, source copies, accidental deletion and unsupported claims. Keep earlier versions in history, not a competing legacy knowledge folder.
