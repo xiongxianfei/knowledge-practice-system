@@ -1,7 +1,7 @@
 ---
 package_version: "11.0.0"
 language: "KPS 9.x"
-reviewed: "2026-10-12"
+reviewed: null
 ---
 
 
@@ -33,6 +33,10 @@ Supporting root-level documents and verification tooling are infrastructure, not
 Start with what a reader should understand, accomplish or investigate through a target Practice. Reuse established disciplinary concepts, distinctions, models and their relationships as the foundation. Inspect the relevant accounts before choosing knowledge boundaries. Select and reconstruct the material needed for the target, preserving the source's meaning, conditions and limits. A source's teaching order need not become the package's file hierarchy; competing frameworks should remain identifiable rather than being silently blended.
 
 Reconstruction includes selection, explanation, integration and contextual application. Identify the adopted source structure, the subset used and any authored adaptation. Draft the target Practice early and revise its actions and supporting knowledge together. A learning Practice can target explanation, analysis and investigation as well as performance. Its scope does not require documenting an entire discipline or inventing one object of every role.
+
+An authored `docs/subject-map.md` can make the adopted subject structure visible: topics, their relationships, source basis, existing explanations and gaps. It belongs to the shared knowledge navigation; Practices select from it and own their activity sequences. The five role folders remain the storage organization, with useful overlap across topics. The [Core subject map](subject-map.md) illustrates this optional navigation document; it introduces no new knowledge type, required metadata or generated artifact.
+
+Select the subject outline from established accounts and the intended scope before mapping existing files onto it. State where the grouping is an authored synthesis across accounts. A necessary topic remains visible when its explanation is missing. Lead with what topics mean and how they connect. Align existing explanations with each topic in the same table row, identifying partial coverage, source-only records and gaps there. One topic may link to several explanations, and an explanation may support several topics. The source-to-application index and the construction Practice answer different questions and should not determine the subject divisions.
 
 ## Primary roles and useful overlap
 

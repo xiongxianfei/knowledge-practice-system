@@ -1,0 +1,42 @@
+Use case: infographic-diagram.
+Asset type: a finished, premium illustrated project overview for the KPS README and knowledge-and-practice subject map. Create one wide landscape image, approximately 16:9, at highest available quality, with crisp, large, readable typography. The audience is people who want to understand what this knowledge project covers.
+
+Visual direction: elegant editorial educational infographic, warm white background, deep navy typography, restrained teal and blue with subtle warm accents. Refined hand-rendered digital illustrations with clean silhouettes, gentle shading and beautiful detail, integrated into a precise modern information layout. Not a software dashboard, not a wall poster mockup, not a generic AI circuit-board graphic. Generous margins and white space. Maintain visual readability when embedded across a README page.
+
+Title at top: "KPS"
+Subtitle directly below: "Knowledge Practice System"
+
+Show exactly seven equally valid SUBJECT panels surrounding a small central purpose area, in a carefully balanced landscape composition. Suggested structure: three stacked panels to the left, three to the right, and one wider panel beneath, with the central purpose area between them. Do not number panels, do not imply these are sequential steps, and do not use a clockwise process arrow. The seven areas can overlap and interconnect.
+
+Central purpose area: restrained open-book illustration with small connected explanatory shapes rising from it, and exact large text "Understand • Apply • Investigate". This is the purpose of the project, not an eighth subject. Keep the center compact enough that the subject labels remain prominent.
+
+Exact panel texts and distinctive illustrations:
+1. Heading: "Knowledge & understanding"
+   Supporting line: "Knowledge • Belief • Justification • Explanation"
+   Illustration: open book and a clear simple idea/light symbol.
+2. Heading: "Inquiry & evidence"
+   Supporting line: "Questions • Observation • Sources • Inference"
+   Illustration: magnifying glass over a small research notebook, no made-up data.
+3. Heading: "Knowledge representation & organization"
+   Supporting line: "Concepts • Relationships • Models • Mappings"
+   Illustration: an elegant small network of labelled-looking but text-free cards and connections.
+4. Heading: "Knowledge synthesis & communication"
+   Supporting line: "Compare • Connect • Explain"
+   Illustration: two source pages brought together beside a speech bubble, not arrows prescribing a workflow.
+5. Heading: "Learning & capability"
+   Supporting line: "Understanding • Memory • Practice • Transfer"
+   Illustration: books and a thoughtful adult reader studying, tasteful small editorial vignette, no graduation or certification imagery.
+6. Heading: "Practical reasoning & action"
+   Supporting line: "Goals • Judgment • Methods • Context"
+   Illustration: hands working with simple physical planning pieces, suggesting considered practical action rather than software.
+7. Heading: "Experience & knowledge development"
+   Supporting line: "Outcomes • Reflection • Revision • New questions"
+   Illustration: notebook with a pencil and a small revisited idea, without charts implying actual results.
+
+Selected connections: fine non-directional lines connect knowledge/understanding with inquiry/evidence, representation/organization with synthesis/communication, learning/capability with practical reasoning/action, and experience/development with inquiry/evidence and action. Route lines neatly around text. The central purpose area may have subtle associations to the group. This is a thematic subject map, NOT a graph of repository files or a causal theory. It need not depict every possible connection.
+
+Small readable footer: "Connected subjects, not a fixed sequence"
+
+Require exact spelling of all quoted text, no extra invented words, no repeated headings, no tiny unreadable labels. Wrap long headings into two balanced lines where needed. The panel numbers in this prompt are for specification only: do not print them. Match professional publication-quality alignment, hierarchy and visual craft. Keep all text safely inside the canvas with strong contrast.
+
+Avoid five-role folder diagrams, file trees, code, logos of external organizations, claims of scientific certification, fake statistics, screenshots, additional subject areas, excessive arrows or clutter. Original opaque-background illustration; render the graphic itself.

@@ -1,7 +1,7 @@
 ---
 package_version: "11.0.0"
 language: "KPS 9.x"
-reviewed: "2026-10-12"
+reviewed: null
 ---
 
 # KPS knowledge index
@@ -12,7 +12,9 @@ Read source-aligned knowledge for reusable meaning and Practices for KPS-specifi
 
 ## Summary
 
-This Core library contains 20 knowledge objects: five Concepts, four Principles, two Models, five Methods and four Practices. Eighteen supporting Reference records preserve source identity and inspection limits. The smaller library removes duplicate local abstractions rather than turning them into professional terminology.
+This Core library contains 20 knowledge objects: five Concepts, four Principles, two Models, five Methods and four Practices. Twenty-two supporting Reference records preserve source identity and inspection limits. The smaller library removes duplicate local abstractions rather than turning them into professional terminology.
+
+Explore topics and their relationships in the [knowledge and practice subject map](subject-map.md). This page provides the file index by role and the [source-to-application table](#from-sources-to-kps-applications).
 
 ## Concepts
 
@@ -61,12 +63,16 @@ This Core library contains 20 knowledge objects: five Concepts, four Principles,
 - [Spaced retrieval absolute spacing enhances learning regardless of relative spacing](../references/karpicke-2011-spaced-retrieval.md)
 - [Re examining the testing effect as a learning strategy the advantage of retrieval practice over concept mapping as a methodological artifact](../references/mayrhofer-2023-reexamining-the-testing-effect.md)
 - [MkDocs Writing your docs](../references/mkdocs-undated-writing-your-docs.md)
+- [Knowledge and reasoning](../references/national-academies-2018-knowledge-and-reasoning.md)
+- [Concept maps and their construction](../references/novak-canas-2008-concept-maps.md)
 - [How to guides](../references/procida-undated-how-to-guides.md)
 - [Python Markdown Table of Contents](../references/python-markdown-undated-toc-extension.md)
+- [Epistemology](../references/steup-neta-2024-epistemology.md)
 - [SKOS Reference 2009](../references/w3c-2009-skos-reference.md)
 - [PROV DM 2013](../references/w3c-2013-prov-dm.md)
 - [PROV Overview](../references/w3c-2013-prov-overview.md)
 - [Complex images](../references/w3c-2026-complex-images.md)
+- [Practical reason](../references/wallace-kiesewetter-2024-practical-reason.md)
 - [Cognitive Walkthrough Practitioner Guide Report 93 07](../references/wharton-undated-cognitive-walkthrough-report-93-07.md)
 
 [Alignment policy](alignment.md) distinguishes source definitions from KPS application. [Migration record](migration.md) accounts for retired identifiers.
