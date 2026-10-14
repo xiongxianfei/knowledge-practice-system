@@ -53,7 +53,6 @@ When the asset exists, embed it here with descriptive alternative text:
 
 ![Replace with a meaningful overview description](../diagrams/body-of-knowledge-overview.png)
 
-[Open the overview at full size](../diagrams/body-of-knowledge-overview.png).
 Explain the grouping and any connections. State that this represents intended
 coverage, and whether numbers or arrows indicate an actual sequence.
 Link the actual editable source or saved generation prompt beside the image.
@@ -85,7 +84,6 @@ Keep each area's established name visible as a heading inside a combined image.
 
 ![Replace with a meaningful description of the area topics](../diagrams/body-of-knowledge-area-name.png)
 
-[Open the area illustration at full size](../diagrams/body-of-knowledge-area-name.png).
 Explain the grouping and any relationships. Match labels to the written outline;
 identify any selected subset rather than implying every topic is shown.
 Link the actual editable source or saved generation prompt.

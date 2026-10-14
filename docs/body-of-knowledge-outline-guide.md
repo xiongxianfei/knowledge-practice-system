@@ -79,9 +79,9 @@ Choose the number of detailed images by subject structure and readability. Combi
 
 Preserve the written subject names as visible headings within a combined image. Solve layout constraints through spacing, wrapping or additional images, rather than renaming or merging subjects to fit the artwork. The subject structure determines the visual layout.
 
-Store assets under `diagrams/`, using `body-of-knowledge-overview.png` for the overall view and semantic names such as `body-of-knowledge-sound-systems.png` for detail. Retain the exact generation prompt for AI artwork or the editable source for a diagram. Embed each selected image in the outline with meaningful alternative text, a full-size link and a caption explaining its scope. Keep the complete text outline available when images cannot render.
+Store assets under `diagrams/`, using `body-of-knowledge-overview.png` for the overall view and semantic names such as `body-of-knowledge-sound-systems.png` for detail. Retain the exact generation prompt for AI artwork or the editable source for a diagram. Embed each selected image in the outline with meaningful alternative text and a caption explaining its scope. The embedded image already identifies its asset path; omit a separate link to open the same image. Keep the complete text outline available when images cannot render.
 
-Match labels to the written outline, distinguish optional branches, and explain any arrows. Visual associations must not imply causation, compulsory learning order or completed coverage. Inspect typography, label accuracy and completeness at normal document width; a full-size link does not excuse unreadable embedded text. Follow [diagram guidance](diagrams.md#illustrated-project-overview) for the distinction between editorial illustrations and reproducible D2 diagrams.
+Match labels to the written outline, distinguish optional branches, and explain any arrows. Visual associations must not imply causation, compulsory learning order or completed coverage. Inspect typography, label accuracy and completeness at normal document width. Follow [diagram guidance](diagrams.md#illustrated-project-overview) for the distinction between editorial illustrations and reproducible D2 diagrams.
 
 ## Worked example from singing
 

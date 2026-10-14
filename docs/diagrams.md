@@ -16,7 +16,7 @@ This guide implements [AUTHORING.md](authoring.md), rather than introducing anot
 
 ## Illustrated project overview
 
-For a new domain coverage overview, follow [Create a body of knowledge outline](body-of-knowledge-outline-guide.md#illustrate-the-written-outline): derive labels from the written outline, show all major areas together, embed the image in the outline and reuse it in the README. Keep optional branches and relationship meanings explicit, with readable text, alternative text, a full-size link and the saved prompt or editable source.
+For a new domain coverage overview, follow [Create a body of knowledge outline](body-of-knowledge-outline-guide.md#illustrate-the-written-outline): derive labels from the written outline, show all major areas together, embed the image in the outline and reuse it in the README. Keep optional branches and relationship meanings explicit, with readable text, alternative text and the saved prompt or editable source. The embedded image supplies its asset path; no separate link to open that image is needed.
 
 Use detailed illustrations beside the relevant coverage sections when the overall image cannot clearly show their topics. Group or split related areas according to label readability, with no fixed image count. State each image's scope and preserve the written coverage tables as the authoritative account of depth and gaps. The [outline template](templates.md#body-of-knowledge-outline) includes both visual levels.
 

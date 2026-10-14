@@ -16,7 +16,7 @@ KPS Core contains 20 knowledge objects (five Concepts, four Principles, two Mode
 
 ![KPS connects knowledge and understanding, inquiry and evidence, representation and organization, synthesis and communication, learning and capability, practical reasoning and action, and experience and knowledge development around the purpose of understanding, applying and investigating](diagrams/body-of-knowledge-overview.png)
 
-Explore the [Body of Knowledge Outline](docs/body-of-knowledge-outline.md) for required understanding, capabilities and gaps. [Open the illustration at full size](diagrams/body-of-knowledge-overview.png). It presents connected subject areas, not a fixed sequence or a claim that every topic is already covered.
+Explore the [Body of Knowledge Outline](docs/body-of-knowledge-outline.md) for required understanding, capabilities and gaps. It presents connected subject areas, not a fixed sequence or a claim that every topic is already covered.
 
 ## Explore by subject
 

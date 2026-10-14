@@ -27,8 +27,6 @@ This is a selected foundation, not a complete philosophy curriculum, research-me
 
 ## Overall illustration
 
-[Open the overview at full size](../diagrams/body-of-knowledge-overview.png).
-
 ![Seven connected KPS areas surround Understand Apply Investigate: knowledge and understanding; inquiry and evidence; knowledge representation and organization; knowledge synthesis and communication; learning and capability; practical reasoning and action; experience and knowledge development.](../diagrams/body-of-knowledge-overview.png)
 
 The existing illustration is reused because the seven areas remain the same. Its lines suggest associations, not causal relationships or a compulsory learning sequence. It summarizes intended coverage, not completed lessons. This AI-generated overview's original [generation prompt](../diagrams/body-of-knowledge-overview.prompt.txt) is preserved; the complete text outline below supplies all topics and the coverage tables state depth and gaps.
