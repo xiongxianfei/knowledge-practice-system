@@ -15,6 +15,10 @@ Explore the subjects needed to understand, reconstruct, learn, apply and develop
 
 This map brings together selected topics from epistemology, inquiry, knowledge organization, learning and practical reasoning. Its seven areas organize the subject of knowledge and practice. The grouping is an authored selection for KPS, with the adopted accounts identified below; it is not a universal taxonomy or a sequence of authoring stages.
 
+![Seven connected KPS subjects surround the purpose Understand Apply Investigate: knowledge and understanding, inquiry and evidence, representation and organization, synthesis and communication, learning and capability, practical reasoning and action, and experience and knowledge development](../diagrams/subject-map.png)
+
+The illustration previews the subject areas below. Lines suggest associations rather than causal relationships or a required sequence. Topic rows retain the actual coverage and gaps. This AI-generated overview was made with the built-in image generation tool; its [generation prompt](../diagrams/subject-map.prompt.txt) is retained beside the PNG.
+
 ## Scope
 
 The intended reader wants to understand a subject, accomplish a task or investigate a problem. The outline includes relevant topics beyond the current library. It selects parts of the contributing disciplines rather than attempting a complete philosophy curriculum, research handbook or theory of professional practice. Subject relationships determine the outline; the availability of files determines the linked coverage.

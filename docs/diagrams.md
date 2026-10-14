@@ -1,7 +1,7 @@
 ---
 package_version: "11.0.0"
 language: "KPS 9.x"
-reviewed: "2026-10-12"
+reviewed: null
 ---
 
 # Author useful D2 diagrams
@@ -13,6 +13,12 @@ Add a diagram only when it resolves a real reading or execution difficulty; pres
 ## Summary
 
 This guide implements [AUTHORING.md](authoring.md), rather than introducing another knowledge type or a parallel authoring standard. D2 is the preferred editable source and its generated SVG is the publication image. The [Core-wide audit](../diagrams/audit.json) records a decision for all 20 objects, with 17 explanatory sources and one small metadata graph. Shared diagrams have one editable source; there is no per-file quota. Reading needs neither a D2 installation nor a hosted diagram service.
+
+## Illustrated project overview
+
+The [subject map](subject-map.md) owns the [illustrated overview](../diagrams/subject-map.png), reused in the README to introduce the seven subject areas and the project's purpose. This requested AI-generated PNG is an editorial illustration with its [generation prompt](../diagrams/subject-map.prompt.txt) alongside it. Its associations are not metadata edges or causal claims; the subject map supplies the detailed relationships and coverage limits.
+
+The D2 manifest and render checks below cover the reproducible D2 and SVG pairs. The overview PNG is reviewed visually against its owning text; it is not a D2 rendering or a replacement for those explanatory diagrams. Revise the shared image and prompt together and keep the ordinary text links and image alternatives available.
 
 ## Original diagrams retained
 
