@@ -66,11 +66,18 @@ Name the remaining gap beside the links. A topic-level link to a Practice is use
 
 ## Illustrate the written outline
 
-Settle the area names and scope first. Create one readable overall illustration showing every major area and the learning purpose. Add detailed illustrations only when they make the topic structure easier to read. Do not put all coverage-table prose into the picture.
+Settle the area names and scope first. Use two levels of visual summary, with the written outline and coverage tables remaining authoritative for topic scope, depth and gaps.
 
-Embed the overview near the beginning of the outline and reuse it in the README. Store the asset under `diagrams/`, for example `body-of-knowledge-overview.png`, with the exact generation prompt for AI artwork or the editable source for a diagram. Include meaningful alternative text, a full-size link and a caption explaining intended coverage. Keep the complete text outline available when images cannot render.
+| Visual level | What it shows | Placement |
+|---|---|---|
+| Overall illustration | All major areas and the learning purpose | Near the beginning of the outline; reuse in the README |
+| Detailed illustrations where useful | Topics within an area or a clearly identified group of related areas, with meaningful connections | Beside or immediately before the relevant coverage sections |
 
-Match labels to the written outline, distinguish optional branches, and explain any arrows. Visual associations must not imply causation, compulsory learning order or completed coverage. Inspect typography and completeness at normal reading size. Follow [diagram guidance](diagrams.md#illustrated-project-overview) for the distinction between editorial illustrations and reproducible D2 diagrams.
+Choose the number of detailed images by subject structure and readability. Combine related areas when their labels fit comfortably; split a crowded image rather than shrinking its text. A small outline may need only the overall image. There is no fixed image count or requirement for one image per area. Detailed images should cover their declared topic scope; identify any selected subset explicitly. Keep required capabilities and coverage gaps in the tables rather than crowding them into artwork.
+
+Store assets under `diagrams/`, using `body-of-knowledge-overview.png` for the overall view and semantic names such as `body-of-knowledge-sound-systems.png` for detail. Retain the exact generation prompt for AI artwork or the editable source for a diagram. Embed each selected image in the outline with meaningful alternative text, a full-size link and a caption explaining its scope. Keep the complete text outline available when images cannot render.
+
+Match labels to the written outline, distinguish optional branches, and explain any arrows. Visual associations must not imply causation, compulsory learning order or completed coverage. Inspect typography, label accuracy and completeness at normal document width; a full-size link does not excuse unreadable embedded text. Follow [diagram guidance](diagrams.md#illustrated-project-overview) for the distinction between editorial illustrations and reproducible D2 diagrams.
 
 ## Worked example from singing
 
