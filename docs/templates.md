@@ -81,16 +81,6 @@ Source only, Partial or Covered at stated depth, with a specific explanation.
 |---|---|
 | Selected topics | Explain a dependency, overlap or other meaningful connection |
 
-## Practices and development priorities
-
-| Practice target | Topics it brings together | Availability and next work |
-|---|---|---|
-| A concrete reader target | Relevant topics and prerequisites | Available with a real link, or Proposed with missing support identified |
-
-Explain the next development priority and why it matters for the target.
-Distinguish proposed sequencing from necessary prerequisites and optional routes.
-Keep detailed activity steps in the relevant Practice.
-
 ## Source basis and adaptations
 
 | Established account | Inspected contribution | Selection and limits |
@@ -103,7 +93,7 @@ Do not imply that a syllabus establishes the effectiveness of a proposed exercis
 ## Maintaining the outline
 
 Keep required topics visible before local explanations exist. Update coverage and
-Practice links as content develops. Revise the overview when the represented
+explanation links as content develops. Revise the overview when the represented
 structure changes. Reuse explanations across topics where useful; do not require
 one file per topic or one object of every KPS role.
 ```

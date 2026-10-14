@@ -20,7 +20,7 @@ Explore the [Body of Knowledge Outline](docs/body-of-knowledge-outline.md) for r
 
 ## Explore by subject
 
-The [KPS Body of Knowledge Outline](docs/body-of-knowledge-outline.md) connects seven areas and 34 topics: knowledge and understanding; inquiry and evidence; representation and organization; synthesis and communication; learning and capability; practical reasoning and action; experience and knowledge development. Start with its [overall outline](docs/body-of-knowledge-outline.md#overall-outline), then explore topic outcomes, source basis and gaps. Its [Practice targets](docs/body-of-knowledge-outline.md#practice-targets) connect the subject to concrete tasks, and its [development priorities](docs/body-of-knowledge-outline.md#development-priorities) identify missing support to build next.
+The [KPS Body of Knowledge Outline](docs/body-of-knowledge-outline.md) connects seven areas and 34 topics: knowledge and understanding; inquiry and evidence; representation and organization; synthesis and communication; learning and capability; practical reasoning and action; experience and knowledge development. Start with its [overall outline](docs/body-of-knowledge-outline.md#overall-outline), then explore topic outcomes, source basis and gaps.
 
 ## Start with the task
 

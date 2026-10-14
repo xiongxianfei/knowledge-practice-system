@@ -49,9 +49,9 @@ Use a concrete capability to express depth. Replace a vague goal such as “mast
 
 These outcomes describe intended learning support. They are not observed learner results, completion certificates or evidence that a proposed activity works. Detailed prerequisites, actions and fallback choices belong in the relevant Practice.
 
-## Connect Practices and map gaps
+## Map existing explanations and gaps
 
-Show how each proposed Practice combines topics for a concrete target. Distinguish available Practices from proposed ones. Explain prerequisites and optional or parallel routes where they matter; a subject hierarchy alone does not establish teaching order.
+Use intended Practices while selecting scope and depth, then keep the outline focused on subject coverage. Put task navigation in the README or library, activity sequences in Practices, and development priorities in the relevant issue or work plan. The outline does not need a separate Practice mapping, authoring-instructions table or development roadmap.
 
 Map existing Concepts, Principles, Models, Methods and Practices into the coverage rows. One explanation can support several topics, and a topic can draw on several explanations. Link to canonical material and summarize the relevant contribution; do not create one file per row or one object of every role.
 
@@ -62,7 +62,7 @@ Use plain coverage descriptions consistently:
 - **Partial:** local material contributes, but a stated part of the required coverage remains unsupported.
 - **Covered at stated depth:** local material addresses the row's requirements. This says nothing about a particular learner's competence.
 
-Name the remaining gap beside the links. Prioritize the next work by the target's needs, prerequisites and significance of missing support. Develop a focused Practice and its supporting explanations together, keeping the wider coverage outline intact.
+Name the remaining gap beside the links. A topic-level link to a Practice is useful when it supplies part of the actual coverage; it need not become a separate task catalogue. Use those gaps to prioritize development outside the outline. Develop a focused Practice and its supporting explanations together, keeping the wider coverage outline intact.
 
 ## Illustrate the written outline
 
@@ -88,7 +88,7 @@ The [singing outline at commit 526c765](https://github.com/xiongxianfei/singing-
 
 The ten areas are voice production and breathing; vocal care; listening, pitch and intonation; beat, rhythm and meter; resonance and timbre; registers, range and transitions; articulation and diction; notation and sight singing; songs, phrasing and performance; and practice, feedback and skill development.
 
-This example summarizes the inspected repository document and its recorded source basis. It does not claim a new inspection of those external publications, a completed pitch-matching Practice or a learner trial. The singing scope and topic counts are examples, not defaults for other subjects.
+This example summarizes the inspected repository document and its recorded source basis. It does not claim a new inspection of those external publications, a completed pitch-matching Practice or a learner trial. The singing scope and topic counts are examples, not defaults for other subjects. That fixed revision includes a Practice pathway; the template here keeps such task navigation outside the coverage outline.
 
 ## Maintain one coverage guide
 

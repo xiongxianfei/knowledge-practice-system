@@ -23,7 +23,7 @@ Core currently provides 20 knowledge objects and 22 Reference records. These sup
 
 The audience includes learners, practitioners and authors of domain knowledge packages. Entry requires a concrete question and access to relevant material; specialised domain prerequisites still govern actual application. Intended depth is working understanding: explain a distinction, interpret a representation, compare accounts, choose an operation and justify a bounded next step. Readers need not study every area before beginning a supported Practice.
 
-This is a selected foundation, not a complete philosophy curriculum, research-methods handbook, theory of learning or professional qualification. Formal logic, statistical inference, causal identification, advanced experimental design and domain-specific operations require further sources and expertise. The [KPS application guidance](#applying-the-knowledge-through-kps) below is an authoring branch for people building packages; it does not define the subject divisions.
+This is a selected foundation, not a complete philosophy curriculum, research-methods handbook, theory of learning or professional qualification. Formal logic, statistical inference, causal identification, advanced experimental design and domain-specific operations require further sources and expertise.
 
 ## Overall illustration
 
@@ -53,7 +53,7 @@ Numbers identify areas, not lesson order. Follow each area to the required under
 
 **Partial** means existing local material contributes but leaves a stated gap. **Source only** means a relevant external contribution is recorded without a dedicated local explanation. **Missing** means focused explanation and source development are still needed. No broad topic below is claimed complete merely because a relevant file exists. Practices own detailed actions, prerequisites, interpretation and fallback choices.
 
-Use the [Practice targets](#practice-targets) to choose an application and the [development priorities](#development-priorities) to identify useful next work. Subject coverage is broader than the work needed for any one task.
+Topic-level links identify existing support and its limits. Use the [README task entry points](../README.md#start-with-the-task) to choose a Practice.
 
 ## Knowledge and understanding
 
@@ -169,38 +169,6 @@ For example, an English learner might recall a sound rule but struggle to analyz
 | [Cognitive walkthrough](../references/wharton-undated-cognitive-walkthrough-report-93-07.md), [Diataxis](../references/procida-undated-how-to-guides.md) and [ASQ PDCA](../references/asq-undated-pdca-cycle.md) | Inspection, task guidance and improvement respectively | Separate bounded contributions, not a unified theory of practice |
 
 These sources support selected distinctions; they do not prescribe the seven-area outline or establish every topic listed. This outline reuses the existing Reference records and their stated inspection extents; it does not claim fresh inspection of external publications. The knowledge and capability columns are authored coverage requirements for the KPS target, not outcomes prescribed by the cited sources. A Reference link identifies a starting account; it does not mean a standalone Core explanation or a learning activity is complete.
-
-## Practice targets
-
-These four Practices are available as authored guidance. Availability does not establish effectiveness or a learner's competence. They can be used separately; the table is not a compulsory sequence.
-
-| Practice | Target and useful output | Knowledge brought together | Limits and next support |
-|---|---|---|---|
-| [Use KPS for one real task](../practices/use-kps.md) | Answer one bounded question, apply relevant knowledge and retain an honest record | Problem formulation, relevant explanations, practical judgment, provenance and observations | Existing examples are narrow. Broader decision and context-adaptation explanations remain gaps. |
-| [Build domain knowledge](../practices/build-domain-knowledge.md) | Reconstruct a small source-linked package around a target Practice | Subject structures, evidence, representation, synthesis, communication and learner prerequisites | The [outline guide](body-of-knowledge-outline-guide.md) supplies coverage planning. General account comparison and integration still need fuller explanations. |
-| [Review and learn](../practices/review-and-learn.md) | Reconstruct an application, compare explanations and choose a warranted revision or next check | Evidence, provenance, uncertainty, reflection, learning and inference | Needs an actual usable record, or explicit hypothetical framing. General causal reasoning and transfer remain gaps. |
-| [Improve KPS](../practices/improve-kps.md) | Investigate a demonstrated reader problem and make a bounded improvement | Problem formulation, judgment, communication, observation and improvement | A local trial does not establish a universal effect. Experimental design and learning-outcome measurement need further support. |
-
-## Applying the knowledge through KPS
-
-For authors, the following local conventions apply the subject knowledge. They are supported by existing guides and Practices rather than an additional scientific knowledge role.
-
-| Author capability | Existing guidance | Boundary |
-|---|---|---|
-| Define scope, outcomes and coverage before choosing files | [Outline guide](body-of-knowledge-outline-guide.md) and [template](templates.md#body-of-knowledge-outline) | Each domain reuses its own established subject structure; KPS's seven areas are not a universal template. |
-| Choose a primary role and write a locally sufficient explanation | [Authoring contract](authoring.md) and [templates](templates.md) | The five roles allow useful overlap; they do not require one object per topic or per role. |
-| Preserve source meanings, attribution and uncertainty | [Source alignment](alignment.md) and [Build domain knowledge](../practices/build-domain-knowledge.md#stage2-find-evidence-for-explicit-claims) | Publication records and structural checks do not establish source authority or scientific truth. |
-| Present usable task guidance and visual explanations | [Build domain knowledge](../practices/build-domain-knowledge.md#stage4-compile-the-practice), [reader review](review.md) and [diagram guidance](diagrams.md) | A readable explanation and a working link do not establish learner understanding. |
-| Maintain a coherent, independently usable package | [Compatibility](compatibility.md) and [contribution guidance](../.github/CONTRIBUTING.md) | Domain adoption is explicit; source changes require meaning review, not automatic fingerprint acceptance. |
-
-## Development priorities
-
-Prioritize missing support for the target Practices rather than the number of empty topic rows. The following are proposed content-development tasks, not new completed Methods or Practices.
-
-1. **Inference and argument:** explain premises, conclusions, assumptions and alternatives around a bounded claim. This supports comparing sources in Build domain knowledge and interpreting outcomes in Review and learn. Inspect appropriate sources before writing the explanation.
-2. **Comparing and integrating accounts:** develop a worked comparison that preserves differences in meaning, scope and evidence, then shows a justified local synthesis. Support it with the first priority's reasoning account; extend the existing construction Practice rather than creating a duplicate workflow.
-3. **Observation, feedback and transfer:** explain what a task record measures and what an unfamiliar application can reveal. Develop source-supported examples for Use KPS and Review and learn; keep actual observations distinct from synthetic cases.
-4. **Judgment and contextual adaptation:** develop bounded decision examples showing alternatives, values, constraints and the limits of adapting a Method. Broader coordination and experimental-design coverage remain visible future work.
 
 ## Maintaining the outline
 
