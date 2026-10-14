@@ -19,7 +19,7 @@ For subject coverage rather than an individual object, use the [body of knowledg
 
 ## Body of knowledge outline
 
-Copy the fenced document into `docs/body-of-knowledge-outline.md` in the domain package. Replace every placeholder and example link with actual content, using the domain's package version. Area and topic names are placeholders, not a prescribed subject structure. Repeat area sections as needed and give their subheadings distinct names. Use one overall illustration and detailed illustrations where they improve readability; there is no fixed image count. Add image links only after the assets exist. This is supporting navigation with no knowledge-object `id` or `type`; it does not replace a Practice.
+Copy the fenced document into `docs/body-of-knowledge-outline.md` in the domain package. Replace every placeholder and example link with actual content, using the domain's package version. Area and topic names are placeholders, not a prescribed subject structure. Repeat area sections as needed and give their subheadings distinct names. Require one overall summary illustration. Additional subtopic illustrations are optional and chosen by the user; omit them from the default template. Add image links only after the assets exist. This is supporting navigation with no knowledge-object `id` or `type`; it does not replace a Practice.
 
 ```markdown
 ---
@@ -49,7 +49,7 @@ knowledge and Practices already available.
 
 ## Overall illustration
 
-When the asset exists, embed it here with descriptive alternative text:
+Embed the required overall summary picture here with descriptive alternative text:
 
 ![Replace with a meaningful overview description](../diagrams/body-of-knowledge-overview.png)
 
@@ -74,22 +74,6 @@ Source only, Partial or Covered at stated depth, with a specific explanation.
 
 ## Area name
 
-### Area name illustration
-
-Include this section when a detailed view helps explain the topics or their
-relationships. One illustration may cover several related areas; place it before
-their coverage sections and state which areas it includes. Omit this section
-when the overall illustration and text are sufficient.
-Keep each area's established name visible as a heading inside a combined image.
-
-![Replace with a meaningful description of the area topics](../diagrams/body-of-knowledge-area-name.png)
-
-Explain the grouping and any relationships. Match labels to the written outline;
-identify any selected subset rather than implying every topic is shown.
-Link the actual editable source or saved generation prompt.
-
-### Area name coverage
-
 | Topic | Understand — required knowledge | Be able to do — intended depth | Existing explanations and gaps |
 |---|---|---|---|
 | Topic name | Relevant meanings, mechanisms, relationships and limits | A bounded explanation, analysis, decision or task | Status; actual links where available; specific missing support |
@@ -112,12 +96,14 @@ Do not imply that a syllabus establishes the effectiveness of a proposed exercis
 ## Maintaining the outline
 
 Keep required topics visible before local explanations exist. Update coverage and
-explanation links as content develops. Revise the overall and detailed images
+explanation links as content develops. Revise the overview and any user-selected subtopic images
 when their represented structure changes. The written outline and coverage
 tables remain authoritative for topic scope, depth and gaps. Reuse explanations
 across topics where useful; do not require one file per topic or one object of
 every KPS role. Keep task catalogues and development roadmaps elsewhere.
 ```
+
+If the user chooses subtopic illustrations, add them beside the relevant coverage sections. Keep subject headings visible, match topic labels to the text, and include alternative text, a scope caption and the saved prompt or editable source. The template does not require pictures for every area or topic.
 
 The [singing worked example](body-of-knowledge-outline-guide.md#worked-example-from-singing) shows how sources, learner targets, coverage and proposed Practices fit together. Use the existing [diagram guidance](diagrams.md) for assets and the package's declared checks for publication.
 

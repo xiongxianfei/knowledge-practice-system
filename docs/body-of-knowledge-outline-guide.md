@@ -13,7 +13,7 @@ Reuse established subject structures, set the depth through the learner's intend
 
 ## Summary
 
-A body of knowledge is the organized knowledge and skills within a subject and stated scope. Its outline describes what the package needs to cover, how deeply, and where readers can find support. It guides development as well as reading. In KPS, maintain it as `docs/body-of-knowledge-outline.md`, supported by an overall illustration when useful.
+A body of knowledge is the organized knowledge and skills within a subject and stated scope. Its outline describes what the package needs to cover, how deeply, and where readers can find support. It guides development as well as reading. In KPS, maintain it as `docs/body-of-knowledge-outline.md`, with one required overall summary illustration. Additional subtopic illustrations are optional and chosen by the user.
 
 This guide describes a KPS authoring approach, not an externally standardized taxonomy or an additional knowledge role. It applies the [authoring contract](authoring.md); the [reusable template](templates.md#body-of-knowledge-outline) supplies a starting document. Concepts, Principles, Models, Methods and Practices remain the primary knowledge roles. The outline belongs to shared knowledge navigation; Practices own activity sequences.
 
@@ -68,16 +68,16 @@ Name the remaining gap beside the links. A topic-level link to a Practice is use
 
 ## Illustrate the written outline
 
-Settle the area names and scope first. Use two levels of visual summary, with the written outline and coverage tables remaining authoritative for topic scope, depth and gaps.
+Settle the area names and scope first. Require one overall summary picture showing all major areas. Additional subtopic pictures are optional: the user decides whether to include them and which topics they cover. The written outline and coverage tables remain authoritative for topic scope, depth and gaps.
 
-| Visual level | What it shows | Placement |
-|---|---|---|
-| Overall illustration | All major areas and the learning purpose | Near the beginning of the outline; reuse in the README |
-| Detailed illustrations where useful | Topics within an area or a clearly identified group of related areas, with meaningful connections | Beside or immediately before the relevant coverage sections |
+| Visual level | Requirement | What it shows | Placement |
+|---|---|---|---|
+| Overall illustration | One required | All major areas and the learning purpose | Near the beginning of the outline; reuse in the README |
+| Subtopic illustrations | Optional, selected by the user | Topics within an area or a clearly identified group of related areas, with meaningful connections | Beside or immediately before the relevant coverage sections |
 
-Choose the number of detailed images by subject structure and readability. Combine related areas when their labels fit comfortably; split a crowded image rather than shrinking its text. A small outline may need only the overall image. There is no fixed image count or requirement for one image per area. Detailed images should cover their declared topic scope; identify any selected subset explicitly. Keep required capabilities and coverage gaps in the tables rather than crowding them into artwork.
+The default template contains only the overall picture. An outline of any size can use that picture alone; topic count does not create a requirement for additional images. If the user chooses subtopic pictures, use subject structure and readability to arrange them. Cover each selected image’s declared topic scope and identify any selected subset explicitly. Keep required capabilities and coverage gaps in the tables rather than crowding them into artwork.
 
-Preserve the written subject names as visible headings within a combined image. Solve layout constraints through spacing, wrapping or additional images, rather than renaming or merging subjects to fit the artwork. The subject structure determines the visual layout.
+Preserve the written subject names as visible headings within a combined image. Solve layout constraints through spacing and wrapping; any additional images remain the user’s choice. Do not rename or merge subjects to fit the artwork. The subject structure determines the visual layout.
 
 Store assets under `diagrams/`, using `body-of-knowledge-overview.png` for the overall view and semantic names such as `body-of-knowledge-sound-systems.png` for detail. Retain the exact generation prompt for AI artwork or the editable source for a diagram. Embed each selected image in the outline with meaningful alternative text and a caption explaining its scope. The embedded image already identifies its asset path; omit a separate link to open the same image. Keep the complete text outline available when images cannot render.
 
