@@ -35,6 +35,8 @@ Choose area and topic boundaries from those accounts and the target. Where accou
 
 List the major areas and their topics together near the top of the document. Use descriptive names and links to the detailed coverage sections. Area numbers are navigation labels unless an actual sequence is explicitly intended.
 
+Keep established subject names visible as headings when they are part of the selected scope. For example, an English linguistics outline can give Phonetics, Phonology and Prosody their own headings while explaining their overlap. A convenient umbrella such as “Sound systems” may label a combined illustration, but should not replace those subject headings. State any adaptation of the source structure; equal prominence in navigation does not imply universally agreed or mutually exclusive disciplinary boundaries.
+
 Choose enough detail to make required coverage visible without turning every term into a document. Topics may overlap; cross-links should explain the connection. The five KPS roles describe how an explanation contributes, so they do not determine the subject divisions. Existing filenames must not determine which topics are included.
 
 ## Specify understanding and capability
@@ -74,6 +76,8 @@ Settle the area names and scope first. Use two levels of visual summary, with th
 | Detailed illustrations where useful | Topics within an area or a clearly identified group of related areas, with meaningful connections | Beside or immediately before the relevant coverage sections |
 
 Choose the number of detailed images by subject structure and readability. Combine related areas when their labels fit comfortably; split a crowded image rather than shrinking its text. A small outline may need only the overall image. There is no fixed image count or requirement for one image per area. Detailed images should cover their declared topic scope; identify any selected subset explicitly. Keep required capabilities and coverage gaps in the tables rather than crowding them into artwork.
+
+Preserve the written subject names as visible headings within a combined image. Solve layout constraints through spacing, wrapping or additional images, rather than renaming or merging subjects to fit the artwork. The subject structure determines the visual layout.
 
 Store assets under `diagrams/`, using `body-of-knowledge-overview.png` for the overall view and semantic names such as `body-of-knowledge-sound-systems.png` for detail. Retain the exact generation prompt for AI artwork or the editable source for a diagram. Embed each selected image in the outline with meaningful alternative text, a full-size link and a caption explaining its scope. Keep the complete text outline available when images cannot render.
 

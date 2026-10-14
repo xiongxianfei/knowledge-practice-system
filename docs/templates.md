@@ -64,6 +64,9 @@ Link the actual editable source or saved generation prompt beside the image.
 |---|---|
 | [Area name](#area-name) | Topic name; further topics selected from established accounts |
 
+Use the selected established subject names as area headings. Explain adaptations
+and overlap; a convenient visual grouping must not replace those subject names.
+
 ## Reading the coverage tables
 
 Understanding names the required knowledge; capability states the intended depth.
@@ -78,6 +81,7 @@ Include this section when a detailed view helps explain the topics or their
 relationships. One illustration may cover several related areas; place it before
 their coverage sections and state which areas it includes. Omit this section
 when the overall illustration and text are sufficient.
+Keep each area's established name visible as a heading inside a combined image.
 
 ![Replace with a meaningful description of the area topics](../diagrams/body-of-knowledge-area-name.png)
 
