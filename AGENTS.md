@@ -1,37 +1,65 @@
 ---
 package_version: "11.0.0"
 language: "KPS 9.x"
-reviewed: "2026-10-12"
+status: "draft"
+reviewed: null
 ---
 
-
-# AI contribution guidance
+# Agent guidance
 
 ## Key takeaway
-AI-assisted contributors must follow docs/authoring.md and preserve the difference between source evidence, inference and design choice.
+
+Apply the shared Core Engineering Principles together with this repository's authoring, evidence and contribution boundaries.
 
 ## Summary
-AI-assisted contributors must follow docs/authoring.md and preserve the difference between source evidence, inference and design choice.
 
-## Governing contract
-Read [docs/authoring.md](docs/authoring.md) before making any change. This file is only a quick pointer for automated assistants; it is **not** a second KPS authoring specification.
+These repository-wide instructions apply to knowledge, code, tools and workflows. The nine Core Engineering Principles are maintained verbatim across the six knowledge repositories; propose shared revisions together and keep domain-specific instructions below. Each repository carries its own copy for independent use. These are working agreements, not scientific KPS Principle objects or a replacement for the authoring contract.
 
-## Work method
-Inspect the target file, its direct dependencies, and the local evidence. Identify what the change is supposed to improve. Write the smallest independently understandable change. Do not invent observed tests, source inspection, human approvals, repository access, expert support, or performance results. When source evidence is insufficient, state the limit or leave a candidate claim provisional.
+## Project purpose
 
-## Knowledge constraints
-An explanatory Principle must not be rewritten as a command. Models must represent actual relationships. Methods must explain a rationale and a checkable operation. Practices must contain substantive inline stages with `Stage1` names and valid links. References describe external publications and their located contributions rather than becoming summaries of author preferences.
+Help human readers understand, apply and develop knowledge using the five KPS roles. Core owns the authoring convention and shared validator; domain packages adopt changes explicitly. Use the [subject map](docs/subject-map.md) for topics and the [library](docs/library.md) for existing objects.
 
-## Verify
-Run `python validate.py .` and `python -m unittest internal.tests.test_validate`; review summary dependencies before any refresh. Passing structural tests is not evidence that the material is scientifically correct.
+## Core Engineering Principles
 
-## Practice editing
-Write actions first, preserve prerequisites and interpretation, and add examples or visuals only where they improve use. Do not recreate the six-label stage form or optimize prose to a word-count threshold. Inspect `docs/review.md` as well as the structural checker. Never report a self-review as an independent reader trial.
+1. **Self-contained knowledge.** Make each substantive document understandable on its own: explain the problem, essential terms, prerequisites, mechanisms, examples, and boundaries. Link to deeper material without requiring readers to follow links to understand the core argument. Keep canonical definitions in one place; avoid needless duplication.
 
-## Source grounded Core editing
+2. **Reader-centered quality.** Evaluate whether a reader can explain *what happens, how, why, and when*; apply the knowledge to a realistic problem; predict likely outcomes and failure modes; and recognize opportunities to improve results. Correctness and clear reasoning matter more than polished prose.
 
-Apply docs/alignment.md: verify meaning against the located source, retain uncertainty and name adaptations. Place local workflows in Practices. Run `python -m unittest internal.tests.test_alignment` as well as the structural suite. User-authorized auto-merge is allowed after CI; do not require another approval already supplied. Never disable checks or overwrite unrelated changes to force publication.
+3. **Goal-oriented work.** Identify the intended reader outcome before substantial work. Choose the smallest sufficient change; prioritize important knowledge gaps and useful results. Avoid speculative infrastructure, redundant research, unnecessary documentation, and rituals that do not advance the goal. Do not skip essential verification to save effort.
 
-## Diagrams
+4. **Reuse before invention.** Look for established theory, standards, sources, methods, libraries, and tools before building alternatives. Prefer suitable, proven approaches; weigh fitness, reliability, cost, maintenance, and lock-in. Create custom solutions only when a material requirement justifies them.
 
-Use D2 selectively for explanatory value. Read the owning text and cited source before drawing; keep edge meanings and limitations explicit. Never edit generated SVGs independently. For a metadata graph, change only justified document metadata and regenerate. Run diagram tests and render checks, but report a visual self-review separately from an independent reader trial. Keep source and SVG together and retain useful alternative text and nearby explanation.
+5. **Mechanisms before memorization.** Explain causal relationships, relevant variables, assumptions, boundary conditions, and trade-offs. Show how the mechanism informs decisions and practical action. Surface possible improvements and testable hypotheses, clearly separating proposed innovations from demonstrated results.
+
+6. **Delete obsolete internal compatibility.** When replacing internal code, paths, workflows, or knowledge structures, migrate affected uses and remove superseded implementations. Do not add internal legacy shims, deprecated aliases, dual-write logic, or competing canonical documents. Assess *external* contracts separately and honor actual obligations. Preserve unique evidence, provenance, and historically useful knowledge; remove obsolete representations, not valuable facts.
+
+7. **Fix the problem class.** For defects or inconsistencies, identify the underlying cause and check for related instances. Make the smallest coherent change that addresses the confirmed class; add proportionate checks or regression coverage where useful. Do not turn isolated issues into speculative redesigns.
+
+8. **Think before acting.** Before substantive work, clarify the intended outcome, inspect relevant context, challenge important assumptions, and consider dependencies, risks, and the simplest sound approach. Scale planning to the task: small, reversible changes need no formal plan; consequential or hard-to-reverse changes deserve more analysis. Avoid analysis that does not improve the decision.
+
+9. **Test the core first; validate by risk.** First verify the main outcome: for software, the changed behavior; for knowledge, whether a reader can use it to reason through a representative problem. Expand to affected dependencies, contracts, edge cases, or regressions when the likelihood and impact of failure justify it. Prefer focused checks over redundant tests or unrelated full suites; never omit essential verification merely to save time.
+
+## Project guidance
+
+- Read [Authoring](docs/authoring.md) before changes. For knowledge claims, apply [Source alignment](docs/alignment.md): inspect the located source, retain uncertainty and distinguish source meaning, inference and local design.
+- Keep Concepts, Principles, Models, Methods and Practices in their primary roles. Principles explain relationships; Models contain representations; Methods explain checkable operations. References record publications and located contributions.
+- For Practice changes, use steps-first content, substantive inline `StageN` stages and valid stage-map links. Preserve prerequisites, interpretation and fallback decisions. Use [Reader review](docs/review.md); do not recreate mandatory six-label stages or impose a word-count threshold.
+- Reuse established subject structure for the target Practice. Keep topic meanings, connections, existing explanations and gaps aligned in the subject map. Practices own activity sequences; useful overlap between explanations is allowed.
+- Do not invent source inspection, tests, reader trials, approvals, access or results. A self-review is not an independent review; keep unsupported claims provisional.
+- For visuals, follow [Diagram guidance](docs/diagrams.md). Keep edge meanings, limits, alternative text and nearby explanations explicit. Keep D2 sources with rendered SVGs and never edit generated SVGs independently; metadata graphs use justified declared relationships. Illustrated overviews follow their separate guidance there.
+
+## Verification
+
+Run from the repository root:
+
+```bash
+python3 validate.py .
+python3 -m unittest discover -s internal/tests -p 'test_*.py'
+python3 -m internal.diagram_tools --check --root .
+```
+
+These are the structure, alignment and diagram checks required for publication. Use the pinned D2 renderer documented in [Diagram guidance](docs/diagrams.md). For changed Practices, also inspect the rendered Markdown and intended reader task. Review changed source meaning and receiving summaries before accepting dependency fingerprints; never refresh merely to make a check pass. Report actual results and limits: structural success does not establish scientific truth or reader comprehension.
+
+## Contribution workflow
+
+Follow [Contributing](.github/CONTRIBUTING.md): one coherent change, one branch and one PR to `main`. Honor existing owner authorization for merging after successful checks; otherwise leave the PR for review. Tags and official releases require an explicit request. Preserve unrelated work, protections and LF text under `.gitattributes`; never disable checks to force publication. Do not impose Core upgrades on sibling domains.
