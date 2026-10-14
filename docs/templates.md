@@ -127,6 +127,8 @@ references: []
 For the optional dependency-free checker, write metadata values in JSON-compatible YAML as shown. General Markdown content does not depend on that checker.
 
 ## Common opening
+
+Use this opening for roles other than Model. Models use the minimal skeleton below.
 ```markdown
 # Meaningful title
 
@@ -145,16 +147,29 @@ Declarative Statement; explanatory mechanism or relationship; evidence-supported
 
 ## Model content
 
-Use the following questions to develop a locally sufficient representation. They describe content responsibilities, not compulsory headings. Summarize necessary dependencies inline instead of linking away the explanation.
+Use the common identity metadata with `type: "model"`. The following is a minimal skeleton, not a fixed explanatory outline. Replace the example section and link with subject-appropriate headings.
 
-| Content | Reader question |
-|---|---|
-| Purpose and scope | What can this Model help explain, and for whom? |
-| Entities and attributes | What things or categories matter, and which properties distinguish or describe them? What do the relevant values, categories or units mean? |
-| Representation and relationships | How are those things connected or constrained? What does each relation, rule or symbol mean? |
-| Worked interpretation | How do the represented attributes and relationships support a conclusion in a concrete case? |
-| Assumptions, evidence and limits | What supports the representation, what has been simplified, and where might it fail? |
-| Evaluation | How can a reader check the interpretation, identify a mismatch or recognize an unsupported conclusion? |
+```markdown
+# Model name
+
+A short introduction explaining what this Model helps readers understand
+and the scope it covers.
+
+## Contents
+
+- [Subject topic](#subject-topic)
+
+## Subject topic
+
+Explain the relevant parts, properties and relationships. Continue with
+headings appropriate to the subject. Place sources and limitations where useful.
+```
+
+Establish coverage from credible disciplinary sources and the intended purpose, not merely the existing files. Explain the essential parts and relationships as a coherent whole, with enough definitions, examples or representations to support reasoning without following links. Identify significant omissions, assumptions, competing accounts and evidence limits.
+
+For a subsystem Model, reconcile coverage with the body-of-knowledge outline and explain relevant interactions with neighboring subsystems. Components normally stay within their owning subsystem; useful overlap is allowed. Contents should expose important topics using recognizable names and link to the actual sections in their order. The outline records required coverage; Contents locates the explanation.
+
+Only the introduction and Contents are structural expectations beyond identity and title. Key takeaway and Summary are optional for Models; an existing Summary may supply the introduction. No fixed topic count, repeated topic template, mandatory interface table, illustration quota or universal processing sequence is imposed. The example below demonstrates reasoning, not a layout to reproduce.
 
 ### Example using the PROV Model
 

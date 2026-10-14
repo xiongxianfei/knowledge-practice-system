@@ -1,7 +1,7 @@
 ---
 id: "kps:model:prov-data-model"
 type: "model"
-version: "10.1.0"
+version: "10.1.1"
 language: "KPS 9.x"
 status: "active"
 reviewed: "2026-10-12"
@@ -19,6 +19,14 @@ Represent what was used and produced separately from who was responsible.
 ## Summary
 
 This source-aligned subset helps read provenance without suggesting that a trace proves an output correct.
+
+## Contents
+
+- [Representation](#representation)
+- [Diagram of the selected relations](#diagram-of-the-selected-relations)
+- [Synthetic example](#synthetic-example)
+- [Assumptions and limits](#assumptions-and-limits)
+- [Source alignment](#source-alignment)
 
 ## Representation
 
