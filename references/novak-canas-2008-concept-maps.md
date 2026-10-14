@@ -24,7 +24,7 @@ The authors describe concept maps through concepts, explicit linking phrases, fo
 
 ## Summary
 
-This record supports the representation and reconstruction topics in the [subject map](../docs/subject-map.md). It does not establish the effectiveness of KPS.
+This record supports the representation and reconstruction topics in the [body of knowledge outline](../docs/body-of-knowledge-outline.md). It does not establish the effectiveness of KPS.
 
 ## Identity and inspected extent
 
@@ -38,4 +38,4 @@ Introduction distinguishes concepts from propositions formed through meaningful 
 
 ## Limits and KPS use
 
-The subject map adapts these organizing ideas to Markdown navigation. It is not a full concept map or a replication of the report's learning claims. The report does not define KPS roles or the selected subject areas. A standalone Core explanation of concept mapping remains to be developed.
+The body of knowledge outline adapts these organizing ideas to Markdown navigation. It is not a full concept map or a replication of the report's learning claims. The report does not define KPS roles or the selected subject areas. A standalone Core explanation of concept mapping remains to be developed.

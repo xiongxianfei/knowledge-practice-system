@@ -17,7 +17,7 @@ These repository-wide instructions apply to knowledge, code, tools and workflows
 
 ## Project purpose
 
-Help human readers understand, apply and develop knowledge using the five KPS roles. Core owns the authoring convention and shared validator; domain packages adopt changes explicitly. Use the [subject map](docs/subject-map.md) for topics and the [library](docs/library.md) for existing objects.
+Help human readers understand, apply and develop knowledge using the five KPS roles. Core owns the authoring convention and shared validator; domain packages adopt changes explicitly. Use the [body of knowledge outline](docs/body-of-knowledge-outline.md) for topics and the [library](docs/library.md) for existing objects.
 
 ## Core Engineering Principles
 
@@ -44,7 +44,7 @@ Help human readers understand, apply and develop knowledge using the five KPS ro
 - Read [Authoring](docs/authoring.md) before changes. For knowledge claims, apply [Source alignment](docs/alignment.md): inspect the located source, retain uncertainty and distinguish source meaning, inference and local design.
 - Keep Concepts, Principles, Models, Methods and Practices in their primary roles. Principles explain relationships; Models contain representations; Methods explain checkable operations. References record publications and located contributions.
 - For Practice changes, use steps-first content, substantive inline `StageN` stages and valid stage-map links. Preserve prerequisites, interpretation and fallback decisions. Use [Reader review](docs/review.md); do not recreate mandatory six-label stages or impose a word-count threshold.
-- Reuse established subject structure for the target Practice. Follow the [body of knowledge outline guide](docs/body-of-knowledge-outline-guide.md) for new coverage documents: define scope, required understanding and capabilities before mapping existing explanations and gaps. Core's current subject map remains its navigation until explicitly migrated. Practices own activity sequences; useful overlap between explanations is allowed.
+- Reuse established subject structure for the target Practice. Follow the [body of knowledge outline guide](docs/body-of-knowledge-outline-guide.md): define scope, required understanding and capabilities before mapping existing explanations and gaps. Maintain the [Core outline](docs/body-of-knowledge-outline.md) as its single subject coverage guide. Practices own activity sequences; useful overlap between explanations is allowed.
 - Do not invent source inspection, tests, reader trials, approvals, access or results. A self-review is not an independent review; keep unsupported claims provisional.
 - For visuals, follow [Diagram guidance](docs/diagrams.md). Keep edge meanings, limits, alternative text and nearby explanations explicit. Keep D2 sources with rendered SVGs and never edit generated SVGs independently; metadata graphs use justified declared relationships. Illustrated overviews follow their separate guidance there.
 

@@ -24,7 +24,7 @@ Deliberation concerns reasons for action, including questions about ends and mea
 
 ## Summary
 
-The entry supplies selected distinctions for practical reasoning in the [subject map](../docs/subject-map.md).
+The entry supplies selected distinctions for practical reasoning in the [body of knowledge outline](../docs/body-of-knowledge-outline.md).
 
 ## Identity and inspection
 

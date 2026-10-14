@@ -14,13 +14,13 @@ Apply source-aligned professional knowledge through locally usable, task-oriente
 
 KPS Core contains 20 knowledge objects (five Concepts, four Principles, two Models, five Methods and four Practices) plus 22 external Reference records. Core 11.0.0 reorganizes repository documentation and tooling without changing those knowledge identities. The layout separates the knowledge library, authoring guidance, maintenance tools and historical records.
 
-![KPS connects knowledge and understanding, inquiry and evidence, representation and organization, synthesis and communication, learning and capability, practical reasoning and action, and experience and knowledge development around the purpose of understanding, applying and investigating](diagrams/subject-map.png)
+![KPS connects knowledge and understanding, inquiry and evidence, representation and organization, synthesis and communication, learning and capability, practical reasoning and action, and experience and knowledge development around the purpose of understanding, applying and investigating](diagrams/body-of-knowledge-overview.png)
 
-Explore the [subject map](docs/subject-map.md) for explanations and links. The illustration presents connected subject areas, not a fixed sequence or a claim that every topic is already covered.
+Explore the [Body of Knowledge Outline](docs/body-of-knowledge-outline.md) for required understanding, capabilities and gaps. [Open the illustration at full size](diagrams/body-of-knowledge-overview.png). It presents connected subject areas, not a fixed sequence or a claim that every topic is already covered.
 
 ## Explore by subject
 
-The [knowledge and practice subject map](docs/subject-map.md) connects seven areas: knowledge and understanding; inquiry and evidence; representation and organization; synthesis and communication; learning and capability; practical reasoning and action; experience and knowledge development. It presents topics and relationships, with adopted accounts, linked explanations and coverage gaps. Use it to explore the subject and select support for a target Practice.
+The [KPS Body of Knowledge Outline](docs/body-of-knowledge-outline.md) connects seven areas and 34 topics: knowledge and understanding; inquiry and evidence; representation and organization; synthesis and communication; learning and capability; practical reasoning and action; experience and knowledge development. Start with its [overall outline](docs/body-of-knowledge-outline.md#overall-outline), then explore topic outcomes, source basis and gaps. Its [Practice targets](docs/body-of-knowledge-outline.md#practice-targets) connect the subject to concrete tasks, and its [development priorities](docs/body-of-knowledge-outline.md#development-priorities) identify missing support to build next.
 
 ## Start with the task
 

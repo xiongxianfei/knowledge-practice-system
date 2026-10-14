@@ -25,7 +25,7 @@ Learning includes knowledge integration and expertise as well as retention.
 
 ## Summary
 
-This chapter supplies a broader learning perspective for the [subject map](../docs/subject-map.md).
+This chapter supplies a broader learning perspective for the [body of knowledge outline](../docs/body-of-knowledge-outline.md).
 
 ## Identity and inspection
 
