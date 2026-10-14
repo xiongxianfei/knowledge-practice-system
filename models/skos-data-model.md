@@ -1,7 +1,7 @@
 ---
 id: "kps:model:skos-data-model"
 type: "model"
-version: "10.2.0"
+version: "10.2.1"
 language: "KPS 9.x"
 status: "active"
 reviewed: "2026-10-12"
@@ -19,6 +19,14 @@ Concept relationships and labels are separate parts of a vocabulary representati
 ## Summary
 
 This is an explanatory subset of W3C SKOS, not a replacement ontology or an implementation of the KPS folder structure.
+
+## Contents
+
+- [Representation](#representation)
+- [Read each vocabulary relationship separately](#read-each-vocabulary-relationship-separately)
+- [Illustrative use](#illustrative-use)
+- [Assumptions and limits](#assumptions-and-limits)
+- [Source alignment](#source-alignment)
 
 ## Representation
 

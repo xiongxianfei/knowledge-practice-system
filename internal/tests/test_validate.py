@@ -222,4 +222,37 @@ class PublicationChecks(unittest.TestCase):
         p=self.root/'publication.json';d=json.loads(p.read_text());d.pop('minimum_validator',None);p.write_text(json.dumps(d))
         self.expect('validator-version')
 
+    def flexible_model(self):
+        p = self.find('model')
+        text = p.read_text()
+        text = re.sub(r'## Key takeaway\n.*?(?=## Summary)', '', text, flags=re.S)
+        text = text.replace('## Summary\n', '', 1)
+        p.write_text(text)
+        return p
+
+    def test_model_with_introduction_and_subject_headings(self):
+        p = self.flexible_model()
+        p.write_text(p.read_text().replace('Representation', 'Entities and relations').replace('#representation', '#entities-and-relations'))
+        self.refresh_and_check()
+
+    def test_model_missing_introduction(self):
+        p = self.flexible_model()
+        p.write_text(re.sub(r'(^# [^\n]+\n).*?(?=^## Contents)', r'\1\n', p.read_text(), flags=re.M|re.S))
+        self.expect('model-introduction')
+
+    def test_model_contents_navigation(self):
+        p = self.find('model')
+        original = p.read_text()
+        for contents in ['', '- [Elsewhere](../README.md)', '- [Absent](#absent)', '```markdown\n- [Representation](#representation)\n```', '- [Limits](#assumptions-and-limits)\n- [Representation](#representation)', '- [Representation](#representation)\n- [Again](#representation)']:
+            with self.subTest(contents=contents):
+                p.write_text(re.sub(r'(^## Contents\n).*?(?=^## )', lambda m: m[1] + '\n' + contents + '\n\n', original, flags=re.M|re.S))
+                self.expect('model-contents')
+
+    def test_flexible_model_requires_declared_tool_floor(self):
+        self.flexible_model()
+        p = self.root/'publication.json'
+        data = json.loads(p.read_text()); data['minimum_validator'] = '9.1.0'
+        p.write_text(json.dumps(data))
+        self.expect('validator-version')
+
 if __name__=='__main__':unittest.main(verbosity=2)

@@ -28,7 +28,7 @@ First inspect the target and its knowledge selection using the reconstruction re
 
 ## Walk through a Model
 
-1. Choose the intended reader, a question within the Model's stated scope and the actual document version. Hide outbound links and attempt the interpretation using the local explanation. Note any required term or notation whose meaning must be guessed.
+1. Compare the stated scope and important topics with the inspected disciplinary accounts and, for subsystems, the body-of-knowledge outline. Look for essential omissions even if the existing examples work. Check that Contents exposes and locates the important explanations. Choose the intended reader, a question within that scope and the actual document version. Hide outbound links and attempt the interpretation using the local explanation. Note any required term or notation whose meaning must be guessed.
 2. Identify the represented entities or categories and explain the attributes relevant to that question, including the meaning of values, categories or units. Check that the reader can distinguish the cases the Model is intended to distinguish.
 3. Follow a relationship or rule through a concrete example. Explain how the represented details lead to the conclusion; merely naming components or repeating the Summary is insufficient. If a diagram cannot render, check that its essential meaning remains in text.
 4. State an assumption or limitation and identify a case or conclusion the Model does not support. For a causal or predictive Model, examine an appropriate counterexample or mismatch with observations. For a structural or classificatory Model, check relation meaning and category boundaries without inventing a causal claim.
@@ -82,3 +82,11 @@ Run `python validate.py .` and `python -m unittest internal.tests.test_validate`
 ## Source fidelity review
 
 For every Concept, Principle, Model and Method, compare the actual passage with the local statement. Check the discipline, edition, certainty, missing conditions and model subset. Inspect an opposing source when it could change the claim. A declared `source_alignment` field is not evidence that this review happened. Keep local adaptations in Practices and record actual inspected extent.
+
+## Flexible Model authoring review
+
+On 2026-10-14 the authoring assistant separated the Model's minimal structure from its explanatory responsibilities. Identity, title, introductory prose and linked Contents provide orientation; coverage, representation, connections and evidence limits remain substantive responsibilities without fixed section names or quotas. The Model template, authoring contract and walkthrough were compared for agreement. Other knowledge roles retain their existing opening rules.
+
+The two Core Models gain Contents without changing their source-defined explanations or selected relationships. Their summaries and the three receiving Practice summaries (Build domain knowledge, Review and learn, Use KPS) were compared before refreshing dependency fingerprints. No new source inspection, independent review or reader trial is claimed for these navigation edits.
+
+Validator 9.2.0 accepts a plain introduction or an existing Summary, checks that Contents links address local sections in heading order, and requires a suitable declared tool floor for the flexible opening. It does not grade topic completeness or infer explanatory quality from section names. Four bounded regression methods cover the flexible opening, absent introduction, malformed Contents and the tool floor; existing non-Model opening checks remain. All 86 Core tests and the 18 D2/SVG source-render checks passed. The renderer was initially absent from PATH; the existing pinned D2 0.9.0 binary was then used successfully. This is a proposed checker revision, not an official release or automatic upgrade of other domains.
