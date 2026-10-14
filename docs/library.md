@@ -14,7 +14,7 @@ Read source-aligned knowledge for reusable meaning and Practices for KPS-specifi
 
 This Core library contains 20 knowledge objects: five Concepts, four Principles, two Models, five Methods and four Practices. Twenty-two supporting Reference records preserve source identity and inspection limits. The smaller library removes duplicate local abstractions rather than turning them into professional terminology.
 
-Explore topics and their relationships in the [knowledge and practice subject map](subject-map.md). This page provides the file index by role and the [source-to-application table](#from-sources-to-kps-applications).
+Explore topics and their relationships in the [KPS Body of Knowledge Outline](body-of-knowledge-outline.md). This page provides the file index by role and the [source-to-application table](#from-sources-to-kps-applications).
 
 ## Concepts
 

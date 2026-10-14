@@ -16,7 +16,11 @@ This guide implements [AUTHORING.md](authoring.md), rather than introducing anot
 
 ## Illustrated project overview
 
-The [subject map](subject-map.md) owns the [illustrated overview](../diagrams/subject-map.png), reused in the README to introduce the seven subject areas and the project's purpose. This requested AI-generated PNG is an editorial illustration with its [generation prompt](../diagrams/subject-map.prompt.txt) alongside it. Its associations are not metadata edges or causal claims; the subject map supplies the detailed relationships and coverage limits.
+For a new domain coverage overview, follow [Create a body of knowledge outline](body-of-knowledge-outline-guide.md#illustrate-the-written-outline): include one required overall summary picture, derive its labels from the written outline, show all major areas together, embed it in the outline and reuse it in the README. Keep optional branches and relationship meanings explicit, with readable text, alternative text and the saved prompt or editable source. The embedded image supplies its asset path; no separate link to open that image is needed.
+
+Subtopic summary pictures are optional and chosen by the user. If selected, place them beside the relevant coverage sections, arrange their topics for readability and state each image's scope. The written coverage tables remain the authoritative account of depth and gaps. The [outline template](templates.md#body-of-knowledge-outline) includes only the required overview picture by default.
+
+The [body of knowledge outline](body-of-knowledge-outline.md) owns the [illustrated overview](../diagrams/body-of-knowledge-overview.png), reused in the README to introduce the seven subject areas and the project's purpose. This existing AI-generated PNG is retained because the area structure is unchanged, with its original [generation prompt](../diagrams/body-of-knowledge-overview.prompt.txt) alongside it. Its associations are not metadata edges or causal claims; the outline supplies the detailed relationships and coverage limits.
 
 The D2 manifest and render checks below cover the reproducible D2 and SVG pairs. The overview PNG is reviewed visually against its owning text; it is not a D2 rendering or a replacement for those explanatory diagrams. Revise the shared image and prompt together and keep the ordinary text links and image alternatives available.
 

@@ -24,7 +24,7 @@ Knowledge, justification and knowing how raise distinct questions with competing
 
 ## Summary
 
-This selected reading supports foundational topics in the [subject map](../docs/subject-map.md), without adopting one complete epistemology.
+This selected reading supports foundational topics in the [body of knowledge outline](../docs/body-of-knowledge-outline.md), without adopting one complete epistemology.
 
 ## Identity and inspection
 
