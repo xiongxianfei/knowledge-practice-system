@@ -16,6 +16,8 @@ This guide implements [AUTHORING.md](authoring.md), rather than introducing anot
 
 ## Illustrated project overview
 
+For a new domain coverage overview, follow [Create a body of knowledge outline](body-of-knowledge-outline-guide.md#illustrate-the-written-outline): derive labels from the written outline, show all major areas together, embed the image in the outline and reuse it in the README. Keep optional branches and relationship meanings explicit, with readable text, alternative text, a full-size link and the saved prompt or editable source.
+
 The [subject map](subject-map.md) owns the [illustrated overview](../diagrams/subject-map.png), reused in the README to introduce the seven subject areas and the project's purpose. This requested AI-generated PNG is an editorial illustration with its [generation prompt](../diagrams/subject-map.prompt.txt) alongside it. Its associations are not metadata edges or causal claims; the subject map supplies the detailed relationships and coverage limits.
 
 The D2 manifest and render checks below cover the reproducible D2 and SVG pairs. The overview PNG is reviewed visually against its owning text; it is not a D2 rendering or a replacement for those explanatory diagrams. Revise the shared image and prompt together and keep the ordinary text links and image alternatives available.

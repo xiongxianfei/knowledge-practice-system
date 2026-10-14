@@ -35,6 +35,8 @@ Browse the [knowledge library](docs/library.md) for Concepts, Principles, Models
 
 The [authoring contract](docs/authoring.md) governs structure; the [Core source-alignment policy](docs/alignment.md) distinguishes professional knowledge from KPS-specific applications. See [templates](docs/templates.md), [reader review](docs/review.md), [diagram authoring](docs/diagrams.md), and [compatibility and migration](docs/compatibility.md). [Contributing](.github/CONTRIBUTING.md) describes project decisions and publication.
 
+To define a domain's required coverage, use [Create a body of knowledge outline](docs/body-of-knowledge-outline-guide.md) and its [copyable template](docs/templates.md#body-of-knowledge-outline). The guide connects established subject structures with learner targets, Practices, gaps and summary illustrations, using singing as a worked example.
+
 ## Validate
 
 From the repository root:

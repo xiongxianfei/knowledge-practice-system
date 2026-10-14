@@ -1,7 +1,7 @@
 ---
-package_version: "10.0.0"
+package_version: "11.0.0"
 language: "KPS 9.x"
-reviewed: "2026-10-12"
+reviewed: null
 ---
 
 
@@ -14,6 +14,101 @@ A template supports the job of the knowledge type; it does not prove correctness
 
 ## Summary
 All objects need identity, meaning, locally sufficient content, scope and support. Copy only the useful fields, replacing placeholders with real content. The examples below are fenced templates, not live published knowledge. Reference records support the five knowledge types rather than becoming a sixth type.
+
+For subject coverage rather than an individual object, use the [body of knowledge outline template](#body-of-knowledge-outline) and its [authoring guide](body-of-knowledge-outline-guide.md).
+
+## Body of knowledge outline
+
+Copy the fenced document into `docs/body-of-knowledge-outline.md` in the domain package. Replace every placeholder and example link with actual content, using the domain's package version. The topic and Practice names below are placeholders, not a prescribed subject structure. Repeat area sections as needed. Add image links only after the assets exist. This is supporting navigation with no knowledge-object `id` or `type`; it does not replace a Practice.
+
+```markdown
+---
+package_version: "REPLACE_WITH_DOMAIN_VERSION"
+language: "KPS 9.x"
+status: "draft"
+reviewed: null
+---
+
+# Subject Body of Knowledge Outline
+
+## Key takeaway
+
+State what this subject coverage enables the intended reader to understand and do.
+
+## Summary
+
+Describe the selected subject scope and distinguish intended coverage from the
+knowledge and Practices already available.
+
+## Purpose and scope
+
+- Audience and starting knowledge: replace with actual readers and prerequisites.
+- Learning target: state a concrete capability or set of capabilities.
+- Depth and context: state the level, tradition, setting or other relevant limits.
+- Optional branches and exclusions: identify what is optional or outside this edition.
+
+## Overall illustration
+
+When the asset exists, embed it here with descriptive alternative text:
+![Replace with a meaningful overview description](../diagrams/body-of-knowledge-overview.png)
+
+[Open the overview at full size](../diagrams/body-of-knowledge-overview.png).
+Explain the grouping and any connections. State that this represents intended
+coverage, and whether numbers or arrows indicate an actual sequence.
+Link the actual editable source or saved generation prompt beside the image.
+
+## Overall outline
+
+| Area | Topics to cover |
+|---|---|
+| [Area name](#area-name) | Topic name; further topics selected from established accounts |
+
+## Required coverage
+
+Understanding names the required knowledge; capability states the intended depth.
+Coverage describes available support, not learner competence. Use Missing,
+Source only, Partial or Covered at stated depth, with a specific explanation.
+
+### Area name
+
+| Topic | Understand — required knowledge | Be able to do — intended depth | Existing explanations and gaps |
+|---|---|---|---|
+| Topic name | Relevant meanings, mechanisms, relationships and limits | A bounded explanation, analysis, decision or task | Status; actual links where available; specific missing support |
+
+## Connections between topics
+
+| Connected topics | Relationship and why it matters |
+|---|---|
+| Selected topics | Explain a dependency, overlap or other meaningful connection |
+
+## Practices and development priorities
+
+| Practice target | Topics it brings together | Availability and next work |
+|---|---|---|
+| A concrete reader target | Relevant topics and prerequisites | Available with a real link, or Proposed with missing support identified |
+
+Explain the next development priority and why it matters for the target.
+Distinguish proposed sequencing from necessary prerequisites and optional routes.
+Keep detailed activity steps in the relevant Practice.
+
+## Source basis and adaptations
+
+| Established account | Inspected contribution | Selection and limits |
+|---|---|---|
+| Actual publication Reference link | Located structure or topic contribution and inspected extent | What was selected, adapted, excluded or left provisional |
+
+Explain any locally authored grouping and disagreements between accounts.
+Do not imply that a syllabus establishes the effectiveness of a proposed exercise.
+
+## Maintaining the outline
+
+Keep required topics visible before local explanations exist. Update coverage and
+Practice links as content develops. Revise the overview when the represented
+structure changes. Reuse explanations across topics where useful; do not require
+one file per topic or one object of every KPS role.
+```
+
+The [singing worked example](body-of-knowledge-outline-guide.md#worked-example-from-singing) shows how sources, learner targets, coverage and proposed Practices fit together. Use the existing [diagram guidance](diagrams.md) for assets and the package's declared checks for publication.
 
 ## Common metadata
 
