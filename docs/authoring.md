@@ -95,15 +95,19 @@ A Practice must provide enough information to act, interpret results and choose 
 
 | Required responsibility | What must be clear to the reader |
 |---|---|
-| Outcome and scope | What the Practice helps accomplish and where it applies |
+| Outcome and scope | What the Practice helps accomplish, where it applies and what counts as success |
 | Necessary starting conditions | The knowledge, materials, inputs and relevant constraints needed to begin; do not invent prerequisites |
 | Usable actions | What to do, with essential instructions available locally |
 | Essential reasoning | Why important choices matter and the relationships needed to adapt them |
-| Observations and interpretation | What to inspect, what a result supports and what remains uncertain |
-| Adaptation and completion | How to continue, revise, finish, pause or obtain help under relevant conditions |
-| Evidence boundaries | Which statements are source-supported, authored choices, illustrative cases or actual observations |
+| Observations and interpretation | How to judge results against explicit criteria, including relevant quality, cost or effort trade-offs and uncertainty |
+| Adaptation and completion | How to continue, finish, pause or obtain help; which choices can change, which constraints must remain, and how to judge an adjustment |
+| Evidence boundaries | Which statements are source-supported, authored choices, illustrative cases or actual observations; available reference results and their conditions, or what remains untested |
 
 Explain shared context once and retain the conditions needed at each point of use. A short task may combine an action, reason, observation and next decision in one paragraph. A complex task may need several steps or branches. Cover consequential or likely difficulties rather than attempting an exhaustive list of hypothetical failures. Links add depth; they must not contain instructions essential to performing a stage.
+
+Success criteria may be quantitative or qualitative; they must let the reader distinguish a useful result from completion of the steps alone. Explain relevant trade-offs: faster work may not be better if accuracy falls. Where previous results are available, identify their source, task, conditions and evaluation basis before using them as a reference. If no comparable outcome evidence exists, state that limit rather than inventing a benchmark or claiming proven effectiveness. Repeatable instructions do not guarantee equal or better outcomes in another setting.
+
+Make adaptation boundaries intelligible: explain why a constraint matters and distinguish it from a replaceable tool, example or sequence choice. When improvement is needed, connect an observed limitation to a proposed change and its expected benefit, describe a proportionate way to examine the result, and state what would support retaining, revising or abandoning the change. Keep relevant conditions comparable where feasible and record differences that limit interpretation. A before-and-after difference alone does not isolate the change's effect. An inconclusive result can justify a provisional choice or further investigation; it is not proof of improvement. These responsibilities belong beside the relevant actions, not in a new mandatory section or scoring system.
 
 ## Practice stages
 

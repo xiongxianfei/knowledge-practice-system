@@ -1,7 +1,7 @@
 ---
 id: "kps:pr:use-kps"
 type: "practice"
-version: "10.2.0"
+version: "10.3.0"
 language: "KPS 9.x"
 status: "active"
 reviewed: null
@@ -40,7 +40,7 @@ Stage numbers show recommended order. Actual prerequisites and authorization gov
 
 ## Stage1 Bound the task
 
-1. Record the question, context and finish condition in one sentence. For example: “Make the stage-map link reach the intended section in this Markdown viewer.”
+1. Record the question, context and finish condition in one sentence. For example: “Make the stage-map link reach the intended section in this Markdown viewer while preserving other valid links.” Judge the result by navigation to the intended target, not just by whether an edit was made.
 2. Separate the observed symptom from your explanation. “Clicking the link does not scroll” is an observation; “the viewer is broken” is a hypothesis.
 3. State the permitted scope. For the example, work in a copy of one document; do not rename an entire repository or change access settings.
 4. List the missing information that could change the repair: the literal link, the complete heading, and the reader being used.
@@ -88,7 +88,7 @@ The table is a troubleshooting aid, not proof of the cause. The essential repair
 1. Save the original text and record the expected result before editing. In the example, the prediction is navigation to the named section, not improved reader comprehension.
 2. Apply the fragment correction to the working copy. Use the package checker from the repository root: `python validate.py .`.
 3. Read the diagnostic, not just the exit code. A missing-target error concerns the file; a missing-fragment error concerns the heading. Resolve the reported location without disabling the check.
-4. Render the document in the intended reader and click the repaired link. Record the viewer, document version, result and anything not tested.
+4. Render the document in the intended reader and click the repaired link; check other links affected by the edit too. Compare with the original symptom under the same viewing conditions where possible. Record the viewer, document version, result and anything not tested. Faster editing is not a useful improvement if navigation elsewhere breaks.
 
 ![After a bounded edit, failed structure checks return to diagnostics; a passed check leads to a viewer test, with separate paths for success, failure and an unavailable test](../diagrams/practices/check-and-observe.svg)
 
@@ -103,7 +103,11 @@ A passed checker cannot establish that a person understands the instructions. If
 1. Record what happened, including an inconclusive result. Do not overwrite the original symptom with the explanation adopted later.
 2. Change only the justified target: a link, local instruction, qualification, or reusable Method. A one-file repair does not justify a universal claim about all renderers.
 3. Check the files that summarize the changed object. Preserve their essential instructions and conditions; only then refresh dependency fingerprints with `python validate.py . --accept-reviewed-summaries`.
-4. Choose the next action: retain the repair, revise it, investigate a competing explanation, or stop because the task is complete.
+4. Choose the next action: retain the repair, revise it, investigate a competing explanation, or stop because the task is complete. The editor or note format can change; the intended destination, affected-link checks and honest reporting of untested behavior must remain. A broader change needs its own scope and criteria.
+
+If applying the instructions exposes a limitation, propose the smallest change that addresses it and state what would count as a better result. For example, suppose a reader cannot distinguish a missing file from a wrong fragment. A clearer diagnostic explanation is a candidate improvement; a new heading name does not address that confusion. Try the revised explanation on a representative case of each kind and inspect whether the selected repair fits the actual fault. Retain it provisionally if it resolves the difficulty without introducing misleading guidance; revise it if confusion persists, or defer the judgment when no reader response is available. Additional text has a reading cost, so add the distinction where it supports the decision rather than repeating the whole procedure.
+
+This is an illustrative improvement decision, not an observed reader trial. A successful link repair would establish that bounded result; it would not establish improved comprehension, faster future work or superiority across viewers. No comparative outcome benchmark for this Practice has been established here.
 
 **Small record to copy**
 
