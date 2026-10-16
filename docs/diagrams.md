@@ -12,7 +12,7 @@ Add a diagram only when it resolves a real reading or execution difficulty; pres
 
 ## Summary
 
-This guide implements [AUTHORING.md](authoring.md), rather than introducing another knowledge type or a parallel authoring standard. D2 is the preferred editable source and its generated SVG is the publication image. The [Core-wide audit](../diagrams/audit.json) records a decision for all 20 objects, with 17 explanatory sources and one small metadata graph. Shared diagrams have one editable source; there is no per-file quota. Reading needs neither a D2 installation nor a hosted diagram service.
+This guide implements [authoring contract](authoring.md), rather than introducing another knowledge type or a parallel authoring standard. D2 is the preferred editable source and its generated SVG is the publication image. The [Core-wide audit](../diagrams/audit.json) records a decision for all 20 objects, with 17 explanatory sources and one small metadata graph. Shared diagrams have one editable source; there is no per-file quota. Reading needs neither a D2 installation nor a hosted diagram service.
 
 ## Illustrated project overview
 

@@ -49,6 +49,8 @@ For example, a Concept may define elision, a Model may relate it to other speech
 ## Filename and identity
 Use lowercase, meaningful kebab-case filenames, such as `spacing-effect.md` for a Principle, `study-data-extraction.md` for a Method or `build-domain-knowledge.md` for a Practice. Reference filenames identify the **publication**, normally `creator-year-short-title.md`, `creator-undated-short-title.md`, or `organization-standard-id-year.md` when the official identifier matters. Do not infer a publication year from the date accessed.
 
+Ordinary documentation filenames also use lowercase kebab-case, for example `authoring.md`, `index.md`, `scientific-policy.md` and `body-of-knowledge-outline.md`. Preserve established repository filenames such as `README.md`, `AGENTS.md`, `LICENSE`, `NOTICE.md` and GitHub community files such as `CONTRIBUTING.md`; tools may depend on their exact spelling. File capitalization does not establish document authority. For an explicit rename, update incoming links, generated navigation, tools, tests and local provenance paths together, and remove the superseded path. Preserve original source paths in provenance and former paths in migration records. Existing files are migrated deliberately, not renamed automatically by this convention.
+
 Metadata must include a stable `id`, `type`, `version`, `language` and `status` for a knowledge object. Stable IDs are **not** Markdown link anchors. Metadata is for identities, indexing and typed dependency hints; body prose explains why the relationships matter.
 
 ```yaml
@@ -89,8 +91,35 @@ These are explanatory responsibilities, not section names. Apart from Contents, 
 
 The introduction orients the reader to purpose and scope. Contents links to actual sections in document order, using recognizable subject terms and useful subsection links, indented to reflect the heading hierarchy. It makes important coverage visible; it is not a second outline or proof that the scope is complete. Validator 9.2.0 checks the opening and Contents navigation, not scientific coverage or explanation quality. Packages using a Model without the former Key takeaway and Summary opening declare `minimum_validator: "9.2.0"` (or later) in publication.json. Existing domains adopt this change explicitly.
 
+## Practice responsibilities
+
+A Practice must provide enough information to act, interpret results and choose the next action. Authors may combine these responsibilities and organize them according to the task. These are requirements for useful content, not a prescribed set of headings or fields in every stage.
+
+| Required responsibility | What must be clear to the reader |
+|---|---|
+| Outcome and scope | What the Practice helps accomplish, where it applies and what counts as success |
+| Necessary starting conditions | The knowledge, materials, inputs and relevant constraints needed to begin; do not invent prerequisites |
+| Usable actions | What to do, with essential instructions available locally |
+| Essential reasoning | Why important choices matter and the relationships needed to adapt them |
+| Observations and interpretation | How to judge results against explicit criteria, including relevant quality, cost or effort trade-offs and uncertainty |
+| Adaptation and completion | How to continue, finish, pause or obtain help; which choices can change, which constraints must remain, and how to judge an adjustment |
+| Evidence boundaries | Which statements are source-supported, authored choices, illustrative cases or actual observations; available reference results and their conditions, or what remains untested |
+
+Explain shared context once and retain the conditions needed at each point of use. A short task may combine an action, reason, observation and next decision in one paragraph. A complex task may need several steps or branches. Cover consequential or likely difficulties rather than attempting an exhaustive list of hypothetical failures. Links add depth; they must not contain instructions essential to performing a stage.
+
+When a method choice materially affects the outcome, explain beside the action why it fits the goal and current conditions, relevant alternatives and trade-offs, and what observation would justify changing it. Distinguish source-supported findings, local observations and author judgment; a reasonable choice is not proof of superiority. The Method owns the reusable operation and its general applicability and limits; the Practice owns contextual selection, adaptation and how the result informs the next decision. Keep essential instructions local. Ordinary actions do not each need a Method file, and stages need not correspond one-to-one with Methods. No separate comparison section or exhaustive alternatives list is required.
+
+Success criteria may be quantitative or qualitative; they must let the reader distinguish a useful result from completion of the steps alone. Explain relevant trade-offs: faster work may not be better if accuracy falls. Where previous results are available, identify their source, task, conditions and evaluation basis before using them as a reference. If no comparable outcome evidence exists, state that limit rather than inventing a benchmark or claiming proven effectiveness. Repeatable instructions do not guarantee equal or better outcomes in another setting.
+
+Make adaptation boundaries intelligible: explain why a constraint matters and distinguish it from a replaceable tool, example or sequence choice. When improvement is needed, connect an observed limitation to a proposed change and its expected benefit, describe a proportionate way to examine the result, and state what would support retaining, revising or abandoning the change. Keep relevant conditions comparable where feasible and record differences that limit interpretation. A before-and-after difference alone does not isolate the change's effect. An inconclusive result can justify a provisional choice or further investigation; it is not proof of improvement. These responsibilities belong beside the relevant actions, not in a new mandatory section or scoring system.
+
 ## Practice stages
-A Practice heading uses **exactly** the compact pattern below, consecutively numbered in its current recommended/default order:
+
+### Required format
+
+Use the common identity metadata with `type: "practice"` and the steps-first profile described under Format and tool compatibility. Retain one title, Key takeaway, Summary, a linked stage map, substantive inline stages and a current practice summary. The current summary contains only actual recorded experience or an explicitly blank record; a constructed example is not a successful run.
+
+A stage heading uses **exactly** the compact pattern below, consecutively numbered in its current recommended/default order:
 
 ```markdown
 ## Stage1 Breathing and air access
@@ -98,13 +127,15 @@ A Practice heading uses **exactly** the compact pattern below, consecutively num
 ## Stage3 Kick preparation and completion
 ```
 
-**Stage numbers communicate recommended order**, not mandatory sequential completion and not permanent identity. Stage prerequisites and real-world safety/authority boundaries state actual dependencies. Keep the Stage name semantic and visible; avoid opaque code headings such as `TI-03` or `F4`.
+**Stage numbers communicate recommended order**, not mandatory sequential completion and not permanent identity. Stage prerequisites and real-world safety/authority boundaries state actual dependencies. Keep names meaningful and preserve stable links when revising existing Practices. If stages move or names change, update the stage map and affected incoming links together.
 
-Write **steps first**, after only the context and prerequisites needed to begin safely. Numbered actions are the usual presentation; a decision table or branching procedure can be clearer for a non-linear task. Keep the action, necessary explanation, expected output or interpretation, and next/fallback decision locally available. These are content responsibilities, not six mandatory labels.
+Keep substantive actions inline under each stage, after the context and prerequisites needed to begin. A numbered action list, decision table or branching procedure can provide steps-first content. This format does not require a fixed number of stages or a particular number of actions.
 
-Do not require `Goal`, `Why`, `What to do`, `What to observe`, `Success signal`, or `Next` at the start of every stage. Labels may be used where genuinely helpful. Do not repeat the same content as an introduction, card and procedure. Use bold `Steps` or another descriptive label for recurring blocks; give navigable subheadings unique meaningful names.
+### Recommended presentation
 
-Start a Practice with a meaningful Summary and a stage map. End with a current working summary containing only actual recorded experience, or an explicitly blank record. Stages remain in the same file unless a split genuinely improves use. No fixed stage length or quota of examples, charts or links defines completeness.
+Place explanations and decision support beside the actions they clarify. Use an example when the expected action or result would otherwise be ambiguous, a table when alternatives need comparison, or a diagram when a relationship is difficult to express compactly. These aids are optional unless needed to make the particular instructions understandable; no example or illustration quota applies.
+
+Do not require `Goal`, `Why`, `What to do`, `What to observe`, `Success signal`, or `Next` at the start of every stage. Use labels only where helpful. Combine responsibilities in natural prose and avoid repeating the same information as an introduction, card and procedure. Prompts, checklists and record templates are optional aids, not additional required sections. Keep stages in the same file unless a split genuinely improves use, and do not add filler to satisfy a word-count threshold.
 
 ## Supporting material at the point of use
 

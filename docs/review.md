@@ -21,7 +21,7 @@ First inspect the target and its knowledge selection using the reconstruction re
 
 1. Choose a declared reader, a safe representative task and the actual document version. Read the prerequisites before hiding outbound links.
 2. Follow the steps on paper or in an authorized environment. Identify the input, operation and expected artifact without guessing missing instructions.
-3. Interpret a normal result and a failure or ambiguous result. Check that the reader can continue, revise, stop or obtain help.
+3. Interpret a normal result and a failure or ambiguous result against the stated success criteria and relevant trade-offs. Check that the reader can continue, revise, stop or obtain help. Propose an adjustment to the uncertain case: identify what can change, what must remain and what observation would justify retaining or rejecting the adjustment. A paper walkthrough checks the guidance; it does not establish the adjustment's effectiveness.
 4. Inspect each example, table and diagram at its point of use. Verify that it answers a real question and agrees with the instructions. If images are disabled, their essential meaning must remain in text.
 5. Restore links and inspect the evidence. Check source contribution, uncertainty, independence and what is not established. A real URL is not evidence of claim-source fit.
 6. Record pass, revise or unresolved with the specific observation. Label self-review, paper simulation and actual user trial differently.
