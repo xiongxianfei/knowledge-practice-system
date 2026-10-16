@@ -139,7 +139,7 @@ A stage heading uses **exactly** the compact pattern below, consecutively number
 
 **Stage numbers communicate recommended order**, not mandatory sequential completion and not permanent identity. Stage prerequisites and real-world safety/authority boundaries state actual dependencies. Keep names meaningful and preserve stable links when revising existing Practices. If stages move or names change, update the stage map and affected incoming links together.
 
-Keep substantive actions inline under each stage, after the context and prerequisites needed to begin. A numbered action list, decision table or branching procedure can provide steps-first content. This format does not require a fixed number of stages or a particular number of actions.
+Keep substantive actions inline under each stage, after the context and prerequisites needed to begin. Use connected prose, a list, a table or a combination according to the task. Steps-first means making the actions and decisions usable at the point of need; it does not prescribe list markers, a fixed number of stages or a particular number of actions.
 
 ### Recommended presentation
 
@@ -148,6 +148,8 @@ Place explanations and decision support beside the actions they clarify. Use an 
 Do not require `Goal`, `Why`, `What to do`, `What to observe`, `Success signal`, or `Next` at the start of every stage. Use labels only where helpful. Combine responsibilities in natural prose and avoid repeating the same information as an introduction, card and procedure. Prompts, checklists and record templates are optional aids, not additional required sections. Keep stages in the same file unless a split genuinely improves use, and do not add filler to satisfy a word-count threshold.
 
 ## Supporting material at the point of use
+
+Link the first useful mention of a Concept, Model or Method to its owning document with ordinary Markdown. Explain the necessary distinction, relationship or operation locally, including relevant conditions and limits. Supporting links provide depth; their presence does not make a stage dependent on them, and their absence does not establish completeness. Avoid repeated links that add no reader value.
 
 Place the support beside the action it clarifies. Add a worked example when the required output would otherwise be ambiguous, a decision table when outcomes lead to different actions, and a diagram when a relationship is hard to express compactly. Explain the visual's essential meaning in nearby text. For quantitative charts retain data, units, scale choices and interpretation; label synthetic data and do not manufacture results.
 
@@ -186,7 +188,7 @@ Start with a question and candidate claim, identify required evidence, inspect w
 A Reference must include its full identity, external URL/DOI, reliable publication/update-date basis or `undated`, access and inspection extent, located relevant claims, limitations and **what it does not establish**. Do not copy restricted full texts into the repository or imply full-text access from abstract-only inspection.
 
 ## Validation and review
-Run `python validate.py .` and `python -m unittest internal.tests.test_validate`. The checker covers structurally testable elements, including section IDs, stage order/maps, metadata relationships, missing inline actions, local image targets, and declared dependency changes. It does not enforce repeated stage labels or a word-count minimum. The absence of a required action structure is a mechanical error; the usefulness of the steps, examples, source fit, interpretation and fallback requires the content review in `docs/review.md`. It is **not** a proof of scientific truth or user comprehension. If a canonical source changes, review affected local summaries before refreshing the dependency snapshot using `--accept-reviewed-summaries`.
+Run `python validate.py .` and `python -m unittest internal.tests.test_validate`. The checker covers structurally testable elements, including section IDs, stage order/maps, metadata relationships, local image targets, and declared dependency changes. It does not infer usability from list markers, tables, link presence or word counts. Whether a reader can act, interpret a result and choose the next action requires the content review in `docs/review.md`. It is **not** a proof of scientific truth or user comprehension. If a canonical source changes, review affected local summaries before refreshing the dependency snapshot using `--accept-reviewed-summaries`.
 
 Root-level GitHub community and automation files are repository infrastructure rather than KPS knowledge objects; the checker applies KPS-specific Markdown rules to the knowledge/content documents, not the GitHub form templates under `.github/`.
 

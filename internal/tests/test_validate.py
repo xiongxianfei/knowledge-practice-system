@@ -35,14 +35,6 @@ class PublicationChecks(unittest.TestCase):
         paths=v.manifest_payload_files(self.root)
         (self.root/'MANIFEST.sha256').write_text(''.join(v.sha(p)+'  '+p.relative_to(self.root).as_posix()+'\n' for p in paths))
 
-    def stage_body(self, body):
-        p = self.find('practice')
-        text = p.read_text()
-        match = re.search(r'^## Stage1 [^\n]+\n', text, re.M)
-        end = re.search(r'^## ', text[match.end():], re.M)
-        finish = match.end() + end.start() if end else len(text)
-        p.write_text(text[:match.end()] + '\n' + body + '\n\n' + text[finish:])
-        return p
     def refresh_and_check(self):
         result = v.validate(self.root, refresh=True)
         self.assertTrue(result['ok'], result['errors'])
@@ -59,9 +51,6 @@ class PublicationChecks(unittest.TestCase):
     def test_05_missing_method_rationale(self):
         ps=[p for p in sorted(self.root.rglob('*.md')) if v.parse(p).meta.get('type')=='method' and '\n## Rationale\n' in p.read_text()]
         p=ps[0];p.write_text(p.read_text().replace('## Rationale','## Explanation',1));self.expect('method-rationale')
-    def test_06_link_only_stage_action(self):
-        self.stage_body('1. [Read more](../README.md)')
-        self.expect('stage-actions')
     def test_07_nonconsecutive_stage(self):
         p=self.find('practice');p.write_text(p.read_text().replace('## Stage2 ','## Stage99 ',1));self.expect('stage-order')
     def test_08_invented_ti_fragment(self):
@@ -127,33 +116,6 @@ class PublicationChecks(unittest.TestCase):
         self.assertTrue(result['ok'],result['errors'])
 
 
-    def test_32_short_steps_first_stage(self):
-        self.stage_body('Work on a copy.\n\n**Steps**\n1. Save the original sentence and compare the edited meaning.\n\nIf the meaning changes, restore the original.')
-        self.refresh_and_check()
-
-    def test_33_action_text_without_six_labels(self):
-        self.assertTrue(v.has_local_actions('1. Compare the target with the complete heading.'))
-
-    def test_34_decision_table_stage(self):
-        self.stage_body('Use the observed condition to choose the action.\n\n| Condition | Response |\n|---|---|\n| Target absent | Correct the relative path |\n| Target present | Compare the heading fragment |')
-        self.refresh_and_check()
-
-    def test_35_missing_stage_actions(self):
-        self.stage_body('This stage has useful goals but no operation or decision procedure.')
-        self.expect('stage-actions')
-
-    def test_36_fenced_steps_are_not_live_actions(self):
-        self.stage_body('```markdown\n1. A code example alone is not an executable stage.\n```')
-        self.expect('stage-actions')
-
-    def test_37_labels_do_not_substitute_for_actions(self):
-        self.stage_body('**Goal:** Read well.\n**Why:** Quality matters.\n**What to do:** Read.\n**What to observe:** Content.\n**Success signal:** Better.\n**Next:** Continue.\n**Procedure:** See another document.')
-        self.expect('stage-actions')
-
-    def test_38_legacy_procedure_still_works(self):
-        self.stage_body('**Goal:** Check a target.\n**Why:** Missing targets cannot navigate.\n**What to do:** Compare the heading.\n**What to observe:** Target exists.\n**Success signal:** Target matches.\n**Next:** Test in a viewer.\n**Procedure**\n1. Compare the fragment to the complete heading.\n2. Correct a mismatch and test the destination.')
-        self.refresh_and_check()
-
     def test_39_local_image_target(self):
         asset = self.root/'assets'/'sample.svg'
         asset.parent.mkdir(parents=True,exist_ok=True)
@@ -184,13 +146,6 @@ class PublicationChecks(unittest.TestCase):
         self.add(self.root/'README.md','```markdown\n![Not live](missing.svg)\n```')
         self.refresh_and_check()
 
-    def test_45_conditional_branch_actions(self):
-        self.stage_body('- If the target is missing, correct its relative path.\n- Otherwise compare the complete heading and fragment.')
-        self.refresh_and_check()
-
-    def test_46_link_only_table_not_actions(self):
-        self.assertFalse(v.has_local_actions('| Condition | Response |\n|---|---|\n| [A](a.md) | [B](b.md) |'))
-
     def test_47_newer_minimum_validator_rejected(self):
         p=self.root/'publication.json';d=json.loads(p.read_text());d['minimum_validator']='9.99.0';p.write_text(json.dumps(d))
         self.expect('validator-version')
@@ -213,10 +168,6 @@ class PublicationChecks(unittest.TestCase):
         result=v.validate(self.root,refresh=True)
         self.assertFalse(result['ok'])
         self.assertEqual(old,(self.root/'internal/metadata/summary-dependencies.json').read_bytes())
-
-    def test_51_heading_steps_not_mandatory_label(self):
-        self.stage_body('### Repair the destination\n\n1. Compare the complete heading and update the fragment.\n\nIf the target is missing, stop and restore it first.')
-        self.refresh_and_check()
 
     def test_52_steps_first_requires_declared_tool_floor(self):
         p=self.root/'publication.json';d=json.loads(p.read_text());d.pop('minimum_validator',None);p.write_text(json.dumps(d))
