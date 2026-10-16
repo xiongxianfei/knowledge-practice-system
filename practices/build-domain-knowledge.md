@@ -1,7 +1,7 @@
 ---
 id: "kps:pr:build-domain-knowledge"
 type: "practice"
-version: "10.3.0"
+version: "10.4.0"
 language: "KPS 9.x"
 status: "active"
 reviewed: null
@@ -100,7 +100,7 @@ Use a small mapping in the existing Practice or scope document: target question,
 1. For terminology or a defined data relation, inspect the defining specification. For effectiveness, inspect the relevant experiment or review; a standards logo does not establish an effect.
 2. For an intervention question, [PICO](../methods/pico-question-formulation.md) can clarify population, intervention, comparator and outcome. For an identifier definition, skip PICO and inspect the defining section. Using “reader and task” in place of a clinical population is our explicit analogy, not a Cochrane requirement.
 3. Apply the discipline of [study data extraction](../methods/study-data-extraction.md) to a local claim worksheet: source/version, locator, exact supported claim, conditions, contrary evidence and what was not inspected. This small worksheet is not a systematic review.
-4. Keep the source, our inference and our chosen action in separate cells. If no source supports a purported definition or established Method, move the local idea into this Practice or leave it a private hypothesis.
+4. Keep the source, our inference and our chosen action in separate cells. For a Method, inspect the actual operation in a procedural account or worked analysis; the source need not prescribe our exact sequence. Distinguish supported operations from changes we propose. If the basis is missing, do not label the procedure established: retain the proposal in this Practice or private investigation notes under Core's curation policy, and identify what support is still needed.
 
 ```text
 Inspected source -> located premise -> qualified inference -> local action
@@ -122,6 +122,14 @@ Choose a file's role by its job, not by who wrote it.
 2. Give each object a stable identity, semantic filename, meaningful title, Key takeaway and Summary. Include the terms and conditions necessary to understand it locally.
 3. For a Method, provide inputs, rationale, executable actions, output checks and limits. For a Model, show the representation and assumptions rather than merely naming it.
 4. Link only genuine dependencies. Where a file summarizes another object, retain the local reason or instruction as well as the link.
+
+**When an operation deserves a Method**
+
+Start with its intended output and the reader's difficulty. Search existing explanations and relevant published methods before inventing a procedure. If the operation has repeatable decisions, an interpretable output and useful explanation independent of the immediate example, document it in `methods/`; one intended Practice is enough. Explain conditions, actions, reasoning, output checks, uncertainty and limits in a presentation that suits the operation. If it is only a short instruction for this one situation, leave it inline.
+
+Distinguish documenting an established method from adapting supported operations or proposing something untested. For an adaptation, name the supported parts, the changes and why they fit; never imply the whole local sequence is prescribed or validated by the source. A reusable adaptation can be a Method. An unsupported proposal remains in the Practice or private investigation notes under [Core's alignment policy](../docs/alignment.md). Source citations alone do not settle this distinction.
+
+For example, comparing recurring passages to infer song sections can become a reusable Method if the analytical operation and interpretation are grounded in inspected music-theory accounts. Selecting two passages of a particular song and choosing a question for a beginner belong in that song-learning Practice. This is an illustrative authoring decision, not music-theory evidence or a required template for other domains. After extraction, retain the essential comparison, interpretation and uncertain-result fallback beside the Practice action, with a named link to the Method for depth. Check that each document remains usable on its own.
 
 **Minimal metadata**
 
@@ -155,8 +163,8 @@ For a learning target, a Concept can define a distinction, a Model can explain t
 | Explains an externally defined term | Concept; preserve that discipline and scope |
 | Explains a published empirical or methodological relationship | Principle; state conditions rather than commands |
 | Shows an established representation | Model; distinguish the full model from the subset shown |
-| Teaches a published repeatable technique | Method; identify the actual procedure and limitations |
-| Chooses and adapts knowledge for a local task | Practice; identify the adaptation as ours |
+| Teaches a supported repeatable operation, including a reusable adaptation | Method; identify the source basis, authored changes and limitations |
+| Selects and applies knowledge for a particular goal and conditions | Practice; explain the contextual choices and next decisions |
 
 These are working roles, not external definitions of the five capitalized labels. Our own rule, such as “store each claim in one file,” stays here or in the authoring specification. It does not become a scientific Principle.
 

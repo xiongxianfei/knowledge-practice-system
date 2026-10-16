@@ -196,7 +196,7 @@ The first relationship identifies the input used by the conversion; the second i
 
 ## Method content
 
-> **Template guidance — remove before use:** Follow [Method purpose and depth](authoring.md#method-purpose-and-depth). Explain the established operation sufficiently for its intended use, choosing headings and examples that suit it. Cover necessary conditions, reasoning, actions, result interpretation and limits without treating this list as a fixed layout. Keep contextual selection and authored adaptations in the Practice. An illustrative application is not evidence of effectiveness.
+> **Template guidance — remove before use:** Follow [Method purpose and depth](authoring.md#method-purpose-and-depth). Explain the operation sufficiently for its intended use, choosing headings and examples that suit it. Cover necessary conditions, reasoning, actions and decisions, output interpretation and checks, and limits without treating this list as a fixed layout. Make clear whether you are documenting an established method, adapting supported operations or presenting a proposal permitted by the package's curation policy. Identify inspected support, authored changes and untested expectations in ordinary prose; no new metadata fields are required. A reusable adaptation may belong here even when the source does not prescribe the identical sequence. Particular goals, selected inputs and coaching prompts belong in the Practice, which retains essential actions inline. An illustrative application is not evidence of effectiveness.
 
 ## Practice content
 

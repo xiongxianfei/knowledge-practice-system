@@ -81,7 +81,7 @@ Run `python validate.py .` and `python -m unittest internal.tests.test_validate`
 
 ## Source fidelity review
 
-For every Concept, Principle, Model and Method, compare the actual passage with the local statement. Check the discipline, edition, certainty, missing conditions and model subset. Inspect an opposing source when it could change the claim. A declared `source_alignment` field is not evidence that this review happened. Keep local adaptations in Practices and record actual inspected extent.
+For every Concept, Principle, Model and Method, compare the actual passage with the local statement. Check the discipline, edition, certainty, missing conditions and model subset. Inspect an opposing source when it could change the claim. A declared `source_alignment` field is not evidence that this review happened. For a Method adaptation, distinguish the published operation from changed steps, their rationale and untested expectations; do not demand identical source wording or sequence. Check whether a reader can execute the operation and interpret an uncertain result with links hidden. Particular application choices remain in the Practice. Record actual inspected extent; a walkthrough is not an efficacy trial.
 
 ## Flexible Model authoring review
 
