@@ -24,7 +24,7 @@ First inspect the target and its knowledge selection using the reconstruction re
 3. Interpret a normal result and a failure or ambiguous result against the stated success criteria and relevant trade-offs. Check that the reader can continue, revise, stop or obtain help. Propose an adjustment to the uncertain case: identify what can change, what must remain and what observation would justify retaining or rejecting the adjustment. A paper walkthrough checks the guidance; it does not establish the adjustment's effectiveness.
 4. Inspect each example, table and diagram at its point of use. Verify that it answers a real question and agrees with the instructions. If images are disabled, their essential meaning must remain in text.
 5. Restore links and inspect the evidence. Check source contribution, uncertainty, independence and what is not established. A real URL is not evidence of claim-source fit.
-6. Record pass, revise or unresolved with the specific observation. Label self-review, paper simulation and actual user trial differently.
+6. Record change-specific findings in the PR description: location, what the reader would have to guess, its consequence, and the correction or remaining gap. State the representative task and whether this was self-review, a paper simulation or an actual user trial. If no material gap was found, report that scope and limit without inventing a finding. Keep lasting explanations in their owning documents; no separate review file or completeness score is needed.
 
 ## Walk through a Model
 
@@ -77,7 +77,7 @@ The changes are KPS application guidance, not new empirical claims or externally
 
 ## Structural checks and limits
 
-Run `python validate.py .` and `python -m unittest internal.tests.test_validate`. Resolve file/fragment, metadata, image and dependency errors. The checker accepts substantive action lists or decision tables without the six-label form; it cannot prove that those actions are useful, safe or true. [Authoring](authoring.md) is the authority. Record commands and actual results in the change PR; [source review](source-review.md) preserves inspection scope and limits.
+Run `python validate.py .` and `python -m unittest internal.tests.test_validate`. Resolve file/fragment, metadata, image and dependency errors. The checker verifies stage navigation and links without using action-list formatting or link presence as a proxy for usability. It cannot establish that the instructions are complete, useful, safe or true. [Authoring](authoring.md) is the authority. Record commands and actual results in the change PR; [source review](source-review.md) preserves inspection scope and limits.
 
 ## Source fidelity review
 

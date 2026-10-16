@@ -2,7 +2,7 @@
   "package": "KPS",
   "version": "11.0.0",
   "kps_language": "9.x",
-  "validated_with": "9.2.0",
+  "validated_with": "9.2.1",
   "markdown_profile": "practical-markdown-v1",
   "released": "2026-10-12",
   "independent": true,

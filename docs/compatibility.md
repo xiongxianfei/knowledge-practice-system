@@ -17,7 +17,7 @@ Core 10.0.0 removed prior Core object IDs and filenames; 10.1.0 adds diagrams wi
 ## Declarations
 
 ```json
-{"version":"11.0.0","kps_language":"9.x","validated_with":"9.2.0","minimum_validator":"9.2.0","alignment_profile":"core-established-knowledge-v1"}
+{"version":"11.0.0","kps_language":"9.x","validated_with":"9.2.1","minimum_validator":"9.2.0","alignment_profile":"core-established-knowledge-v1"}
 ```
 
 `version` identifies this Core content release. `validated_with` names the structural authoring/checker revision actually used, not a claim that another institution approved the content. `alignment_profile` identifies this Core's additional curation policy.
@@ -31,6 +31,8 @@ Domain repositories declaring KPS 9.x do not have to adopt these new Core conten
 ## Tool boundary
 
 Validator 9.2.0 allows Model introductory prose instead of mandatory Key takeaway and Summary headings, and checks linked Contents. Other roles keep their opening requirements. Existing Model headings may remain; add Contents when adopting this checker. A package using the flexible opening declares a minimum checker of 9.2.0. This is an explicitly adopted authoring/checker revision within KPS 9.x, not a change to the five roles or an official content release. A 9.0 checker still does not understand steps-first content. Structural checks do not establish the truth of a source paraphrase. Format changes that alter roles or navigation still require a separate language-compatibility assessment.
+
+Validator 9.2.1 removes the `stage-actions` list/table heuristic. It retains stage identities, order, navigation, metadata and link checks. Practice usability is assessed through a representative editorial walkthrough; a structurally valid link-only stage can still be editorially incomplete. Earlier unadapted checkers may reject usable prose-based stages. Packages relying on this relaxation declare a minimum checker of 9.2.1 or document an explicit local backport. Existing content here still fits the 9.2.0 floor. Domain adoption is separate; this does not change the five roles or create an official release.
 
 ## Diagram authoring in Core 10 1 0
 
