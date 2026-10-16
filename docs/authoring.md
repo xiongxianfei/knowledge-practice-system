@@ -49,6 +49,8 @@ For example, a Concept may define elision, a Model may relate it to other speech
 ## Filename and identity
 Use lowercase, meaningful kebab-case filenames, such as `spacing-effect.md` for a Principle, `study-data-extraction.md` for a Method or `build-domain-knowledge.md` for a Practice. Reference filenames identify the **publication**, normally `creator-year-short-title.md`, `creator-undated-short-title.md`, or `organization-standard-id-year.md` when the official identifier matters. Do not infer a publication year from the date accessed.
 
+Ordinary documentation filenames also use lowercase kebab-case, for example `authoring.md`, `index.md`, `scientific-policy.md` and `body-of-knowledge-outline.md`. Preserve established repository filenames such as `README.md`, `AGENTS.md`, `LICENSE`, `NOTICE.md` and GitHub community files such as `CONTRIBUTING.md`; tools may depend on their exact spelling. File capitalization does not establish document authority. For an explicit rename, update incoming links, generated navigation, tools, tests and local provenance paths together, and remove the superseded path. Preserve original source paths in provenance and former paths in migration records. Existing files are migrated deliberately, not renamed automatically by this convention.
+
 Metadata must include a stable `id`, `type`, `version`, `language` and `status` for a knowledge object. Stable IDs are **not** Markdown link anchors. Metadata is for identities, indexing and typed dependency hints; body prose explains why the relationships matter.
 
 ```yaml

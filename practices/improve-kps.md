@@ -66,7 +66,7 @@ Prefer the repair that solves the observed problem without creating a second sou
 **Steps**
 
 1. Compare a local edit with a contract or validator change. State which files and readers each option affects.
-2. Write the new rule in `AUTHORING.md` only if it is an actual authoring convention. A rule about Markdown is not a scientific Principle.
+2. Write the new rule in [the authoring contract](../docs/authoring.md) only if it is an actual authoring convention. A rule about Markdown is not a scientific Principle.
 3. Specify machine checks separately from human review. A program can detect a missing target; it cannot establish that the linked evidence supports a claim.
 4. Record the compatibility boundary and a migration route before changing templates.
 
