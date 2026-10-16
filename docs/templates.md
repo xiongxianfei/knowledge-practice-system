@@ -198,49 +198,45 @@ The first relationship identifies the input used by the conversion; the second i
 Objective; inputs and prerequisites; rationale; numbered procedure; expected effect; observations and counter-signals; limits or stop conditions; example; deeper evidence. A new comparison procedure is a proposal until used; examples do not establish effectiveness.
 
 ## Practice content
-This is one example, not a mandatory sequence of supporting headings. Keep the steps locally usable and add only the material that resolves a reader's uncertainty.
 
-Draft the target, prerequisites, output and feedback before building its supporting library, then refine them together. For a learning Practice, an output can be an explanation or an analysis of an unfamiliar case. State what would make that response adequate, what misconception requires revision and what evidence is missing. Existing knowledge can support several Practices without being rewritten into a separate copy for each.
+Use the [authoring contract](authoring.md#practice-responsibilities) for required responsibilities and format. The following is a minimal starting point, not a required sequence of supporting headings. Add the common identity metadata with `type: "practice"` and `practice_format: "steps-first-v1"`; the package must declare a minimum compatible checker of 9.1.0 or later.
 
 ```markdown
-# Repair a knowledge link
+> **Template guidance — remove before use**
+>
+> Adapt the stage names, number, order and detail to the task. Keep actions,
+> essential reasoning, observations and next decisions locally usable.
+> Combine these responsibilities where natural; add support only where useful.
+
+# Practice name
 
 ## Key takeaway
-Correct a real target and check it in the intended viewer.
+
+The central action or decision this Practice helps the reader make.
 
 ## Summary
-Work in a copy of the affected document. Stage numbers show recommended order;
-permission and safe working conditions are actual prerequisites.
+
+The intended outcome, scope and necessary starting conditions.
 
 ## Stage map
-1. [Stage1 Locate and repair the target](#stage1-locate-and-repair-the-target)
 
-## Stage1 Locate and repair the target
-Check the destination before changing the heading.
+1. [Stage1 Meaningful action](#stage1-meaningful-action)
 
-**Steps**
-1. Compare the complete heading with the link's fragment.
-2. For "Stage1 Capture a record", use #stage1-capture-a-record.
-3. Run the checker and then click the link in the intended viewer.
+## Stage1 Meaningful action
 
-If the file is missing, repair its path first. If the fragment matches but
-navigation fails, inspect viewer support; do not claim a successful click test.
-
-**Worked example**
-The short fragment #stage1 does not match the complete example heading.
-This is an illustrative repair, not an observed result.
-
-**Useful resource**
-[GitHub section links](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#section-links)
-explains GitHub heading identifiers, not every reader.
+1. Describe an action with the context and reason needed to carry it out.
+2. Explain how to interpret its result and choose the next action or finish.
 
 ## Current practice summary
-Actual document, action, observed result and remaining issue: not recorded.
+
+Actual application and observations: not recorded.
 ```
 
-For a branching task, a decision table can replace an ordered list. The inputs, actions and completion/fallback conditions still need to be understandable. Diagrams need a text explanation; quantitative charts need the source data and scale. Never add filler merely to reach a length threshold.
+Replace the placeholders and update links as stages are added or renamed. The two numbered lines illustrate combining responsibilities; they are not a two-step requirement. A decision table may be clearer for a branching task. No separate rationale, worked-example, diagram, prompt or record section is compulsory. Keep important limits and source support beside the relevant claim or action.
 
-Use `practice_format: "steps-first-v1"` and record a minimum checker of 9.1.0 for this presentation. The old six labels are not required. Practice composition stays optional and must not create circular containment.
+Draft the target Practice early and refine its actions with the supporting knowledge. For a learning Practice, an output may be an explanation or analysis; state what makes it adequate and what evidence is still missing. Reuse existing explanations without copying their whole documents. Practice composition remains optional and must not create circular containment.
+
+The existing [Use KPS Practice](../practices/use-kps.md) demonstrates a bounded link-repair task with a worked case and conditional decisions. Its particular topic, stage count and illustrations are examples, not additions to the contract. Check a representative normal and uncertain result using the [reader walkthrough](review.md#walk-through-one-stage).
 
 ## Reference content
 Publication identity, creators, publication or update year and its basis, external URL or DOI, actual access date and extent, located claims, evidence family, limitations and non-claims. Use creator-year-short-title filenames, or `undated` when a date was not established. The record must summarize what the source contributes without requiring immediate external access; it is not a copy of the publication.

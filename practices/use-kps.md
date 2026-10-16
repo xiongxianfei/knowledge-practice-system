@@ -1,10 +1,10 @@
 ---
 id: "kps:pr:use-kps"
 type: "practice"
-version: "10.1.0"
+version: "10.2.0"
 language: "KPS 9.x"
 status: "active"
-reviewed: "2026-10-12"
+reviewed: null
 basis_kind: "KPS-specific application synthesis; external methods are distinguished from adaptations"
 confidence: "provisional for real-world application"
 uses_methods: ["kps:method:retrieval-practice"]
@@ -40,10 +40,6 @@ Stage numbers show recommended order. Actual prerequisites and authorization gov
 
 ## Stage1 Bound the task
 
-Write what needs to change before choosing a tool or building a library.
-
-**Steps**
-
 1. Record the question, context and finish condition in one sentence. For example: “Make the stage-map link reach the intended section in this Markdown viewer.”
 2. Separate the observed symptom from your explanation. “Clicking the link does not scroll” is an observation; “the viewer is broken” is a hypothesis.
 3. State the permitted scope. For the example, work in a copy of one document; do not rename an entire repository or change access settings.
@@ -62,11 +58,7 @@ If the question is actually about an unsafe action or missing permission, stop a
 
 ## Stage2 Retrieve and inspect the local explanation
 
-Start with the file that answers the question. Do not require yourself to traverse every Concept and Reference first.
-
-**Steps**
-
-1. Read a candidate Method or Practice and restate the action, reason and limit without following its links. If a critical term is undefined, supply that definition locally or mark the document unsuitable.
+1. Start with the Method or Practice that answers the question; there is no need to traverse every Concept and Reference first. Read it and restate the action, reason and limit without following its links. If a critical term is undefined, supply that definition locally or mark the document unsuitable.
 2. Distinguish a source-supported premise from a KPS convention. In this example, the package's profile constructs a lowercase, hyphenated fragment from the complete simple heading; a YAML object ID does not supply the destination.
 3. Locate the exact supporting section when verification matters. For this example, [GitHub section-link documentation](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#section-links) describes GitHub's behavior, not every Markdown application.
 4. Write the smallest candidate repair and one alternative explanation. If the target heading exists and the fragment already matches, investigate viewer behavior instead of inventing another anchor.
@@ -93,38 +85,20 @@ The table is a troubleshooting aid, not proof of the cause. The essential repair
 
 ## Stage3 Use and observe
 
-Make one bounded change and check whether it was actually applied.
-
-**Steps**
-
 1. Save the original text and record the expected result before editing. In the example, the prediction is navigation to the named section, not improved reader comprehension.
 2. Apply the fragment correction to the working copy. Use the package checker from the repository root: `python validate.py .`.
 3. Read the diagnostic, not just the exit code. A missing-target error concerns the file; a missing-fragment error concerns the heading. Resolve the reported location without disabling the check.
 4. Render the document in the intended reader and click the repaired link. Record the viewer, document version, result and anything not tested.
 
-**Observation route**
-
-```text
-Edit made -> structural check -> click in intended viewer
-                 |                        |
-               fails                    fails
-                 v                        v
-          inspect diagnostic       inspect renderer behavior
-```
-
 ![After a bounded edit, failed structure checks return to diagnostics; a passed check leads to a viewer test, with separate paths for success, failure and an unavailable test](../diagrams/practices/check-and-observe.svg)
 
-This expands the text route above. Failed local checks lead to a path/fragment repair and another check. Passing them permits a viewer test; failed navigation leaves the cause open, while an unavailable viewer must be recorded as untested. Only an observed success supports recording that navigation worked. This is our KPS repair workflow, not a general rule supplied by an external standards body.
+Failed local checks lead to a path/fragment repair and another check. Passing them permits a viewer test; failed navigation leaves the cause open, while an unavailable viewer must be recorded as untested. Only an observed success supports recording that navigation worked. This is our KPS repair workflow, not a general rule supplied by an external standards body.
 
 [Editable D2 source](../diagrams/practices/check-and-observe.d2).
 
-The diagram separates textual validity from actual navigation. A passed checker cannot establish that a person understands the instructions. If rendering is unavailable, report “structurally checked; click behavior untested” rather than success.
+A passed checker cannot establish that a person understands the instructions. If rendering is unavailable, report “structurally checked; click behavior untested” rather than success.
 
 ## Stage4 Update the smallest justified target
-
-Keep observation, interpretation and revision separate.
-
-**Steps**
 
 1. Record what happened, including an inconclusive result. Do not overwrite the original symptom with the explanation adopted later.
 2. Change only the justified target: a link, local instruction, qualification, or reusable Method. A one-file repair does not justify a universal claim about all renderers.
