@@ -210,6 +210,9 @@ Use the [authoring contract](authoring.md#practice-responsibilities) for require
 > Combine these responsibilities where natural; add support only where useful.
 > Explain how users judge results and adapt the approach. Include previous
 > outcomes when supported, and distinguish proposed from demonstrated improvements.
+> Choose approaches from the reader need, not only existing Method files. Where
+> selection matters, explain when alternatives fit beside the action; the examples
+> are not an exhaustive menu or a requirement to create a file for every activity.
 
 # Practice name
 
